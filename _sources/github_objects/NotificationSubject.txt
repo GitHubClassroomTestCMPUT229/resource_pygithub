@@ -1,0 +1,4 @@
+NotificationSubject
+===================
+
+.. autoclass:: github.NotificationSubject.NotificationSubject()

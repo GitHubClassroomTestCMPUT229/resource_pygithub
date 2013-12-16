@@ -1,0 +1,4 @@
+StatsPunchCard
+==============
+
+.. autoclass:: github.StatsPunchCard.StatsPunchCard()

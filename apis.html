@@ -1,0 +1,813 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>APIs &mdash; PyGithub 1.22.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.22.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="PyGithub 1.22.0 documentation" href="index.html" />
+    <link rel="up" title="Reference" href="reference.html" />
+    <link rel="next" title="Utilities" href="utilities.html" />
+    <link rel="prev" title="Main class: Github" href="github.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="utilities.html" title="Utilities"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="github.html" title="Main class: Github"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">PyGithub 1.22.0 documentation</a> &raquo;</li>
+          <li><a href="reference.html" accesskey="U">Reference</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="apis">
+<h1>APIs<a class="headerlink" href="#apis" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><tt class="docutils literal"><span class="pre">/api/last-message.json</span></tt><ul>
+<li>GET: <a class="reference internal" href="github.html#github.MainClass.Github.get_last_api_status_message" title="github.MainClass.Github.get_last_api_status_message"><tt class="xref py py-meth docutils literal"><span class="pre">github.MainClass.Github.get_last_api_status_message()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/api/messages.json</span></tt><ul>
+<li>GET: <a class="reference internal" href="github.html#github.MainClass.Github.get_api_status_messages" title="github.MainClass.Github.get_api_status_messages"><tt class="xref py py-meth docutils literal"><span class="pre">github.MainClass.Github.get_api_status_messages()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/api/status.json</span></tt><ul>
+<li>GET: <a class="reference internal" href="github.html#github.MainClass.Github.get_api_status" title="github.MainClass.Github.get_api_status"><tt class="xref py py-meth docutils literal"><span class="pre">github.MainClass.Github.get_api_status()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/authorizations</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.get_authorizations" title="github.AuthenticatedUser.AuthenticatedUser.get_authorizations"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.get_authorizations()</span></tt></a></li>
+<li>POST: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.create_authorization" title="github.AuthenticatedUser.AuthenticatedUser.create_authorization"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.create_authorization()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/authorizations/:id</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.get_authorization" title="github.AuthenticatedUser.AuthenticatedUser.get_authorization"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.get_authorization()</span></tt></a></li>
+<li>PATCH: <a class="reference internal" href="github_objects/Authorization.html#github.Authorization.Authorization.edit" title="github.Authorization.Authorization.edit"><tt class="xref py py-meth docutils literal"><span class="pre">github.Authorization.Authorization.edit()</span></tt></a></li>
+<li>DELETE: <a class="reference internal" href="github_objects/Authorization.html#github.Authorization.Authorization.delete" title="github.Authorization.Authorization.delete"><tt class="xref py py-meth docutils literal"><span class="pre">github.Authorization.Authorization.delete()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/emojis</span></tt><ul>
+<li>GET: <a class="reference internal" href="github.html#github.MainClass.Github.get_emojis" title="github.MainClass.Github.get_emojis"><tt class="xref py py-meth docutils literal"><span class="pre">github.MainClass.Github.get_emojis()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/events</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.get_events" title="github.AuthenticatedUser.AuthenticatedUser.get_events"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.get_events()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/gists</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.get_gists" title="github.AuthenticatedUser.AuthenticatedUser.get_gists"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.get_gists()</span></tt></a></li>
+<li>POST: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.create_gist" title="github.AuthenticatedUser.AuthenticatedUser.create_gist"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.create_gist()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/gists/:gist_id/comments</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Gist.html#github.Gist.Gist.get_comments" title="github.Gist.Gist.get_comments"><tt class="xref py py-meth docutils literal"><span class="pre">github.Gist.Gist.get_comments()</span></tt></a></li>
+<li>POST: <a class="reference internal" href="github_objects/Gist.html#github.Gist.Gist.create_comment" title="github.Gist.Gist.create_comment"><tt class="xref py py-meth docutils literal"><span class="pre">github.Gist.Gist.create_comment()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/gists/:gist_id/comments/:id</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Gist.html#github.Gist.Gist.get_comment" title="github.Gist.Gist.get_comment"><tt class="xref py py-meth docutils literal"><span class="pre">github.Gist.Gist.get_comment()</span></tt></a></li>
+<li>PATCH: <a class="reference internal" href="github_objects/GistComment.html#github.GistComment.GistComment.edit" title="github.GistComment.GistComment.edit"><tt class="xref py py-meth docutils literal"><span class="pre">github.GistComment.GistComment.edit()</span></tt></a></li>
+<li>DELETE: <a class="reference internal" href="github_objects/GistComment.html#github.GistComment.GistComment.delete" title="github.GistComment.GistComment.delete"><tt class="xref py py-meth docutils literal"><span class="pre">github.GistComment.GistComment.delete()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/gists/:id</span></tt><ul>
+<li>GET: <a class="reference internal" href="github.html#github.MainClass.Github.get_gist" title="github.MainClass.Github.get_gist"><tt class="xref py py-meth docutils literal"><span class="pre">github.MainClass.Github.get_gist()</span></tt></a></li>
+<li>PATCH: <a class="reference internal" href="github_objects/Gist.html#github.Gist.Gist.edit" title="github.Gist.Gist.edit"><tt class="xref py py-meth docutils literal"><span class="pre">github.Gist.Gist.edit()</span></tt></a></li>
+<li>DELETE: <a class="reference internal" href="github_objects/Gist.html#github.Gist.Gist.delete" title="github.Gist.Gist.delete"><tt class="xref py py-meth docutils literal"><span class="pre">github.Gist.Gist.delete()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/gists/:id/forks</span></tt><ul>
+<li>POST: <a class="reference internal" href="github_objects/Gist.html#github.Gist.Gist.create_fork" title="github.Gist.Gist.create_fork"><tt class="xref py py-meth docutils literal"><span class="pre">github.Gist.Gist.create_fork()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/gists/:id/star</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Gist.html#github.Gist.Gist.is_starred" title="github.Gist.Gist.is_starred"><tt class="xref py py-meth docutils literal"><span class="pre">github.Gist.Gist.is_starred()</span></tt></a></li>
+<li>PUT: <a class="reference internal" href="github_objects/Gist.html#github.Gist.Gist.set_starred" title="github.Gist.Gist.set_starred"><tt class="xref py py-meth docutils literal"><span class="pre">github.Gist.Gist.set_starred()</span></tt></a></li>
+<li>DELETE: <a class="reference internal" href="github_objects/Gist.html#github.Gist.Gist.reset_starred" title="github.Gist.Gist.reset_starred"><tt class="xref py py-meth docutils literal"><span class="pre">github.Gist.Gist.reset_starred()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/gists/public</span></tt><ul>
+<li>GET: <a class="reference internal" href="github.html#github.MainClass.Github.get_gists" title="github.MainClass.Github.get_gists"><tt class="xref py py-meth docutils literal"><span class="pre">github.MainClass.Github.get_gists()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/gists/starred</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.get_starred_gists" title="github.AuthenticatedUser.AuthenticatedUser.get_starred_gists"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.get_starred_gists()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/gitignore/templates</span></tt><ul>
+<li>GET: <a class="reference internal" href="github.html#github.MainClass.Github.get_gitignore_templates" title="github.MainClass.Github.get_gitignore_templates"><tt class="xref py py-meth docutils literal"><span class="pre">github.MainClass.Github.get_gitignore_templates()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/gitignore/templates/:name</span></tt><ul>
+<li>GET: <a class="reference internal" href="github.html#github.MainClass.Github.get_gitignore_template" title="github.MainClass.Github.get_gitignore_template"><tt class="xref py py-meth docutils literal"><span class="pre">github.MainClass.Github.get_gitignore_template()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/hooks</span></tt><ul>
+<li>GET: <a class="reference internal" href="github.html#github.MainClass.Github.get_hooks" title="github.MainClass.Github.get_hooks"><tt class="xref py py-meth docutils literal"><span class="pre">github.MainClass.Github.get_hooks()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/hooks/:name</span></tt><ul>
+<li>GET: <a class="reference internal" href="github.html#github.MainClass.Github.get_hook" title="github.MainClass.Github.get_hook"><tt class="xref py py-meth docutils literal"><span class="pre">github.MainClass.Github.get_hook()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/hub</span></tt><ul>
+<li>POST: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.subscribe_to_hub" title="github.Repository.Repository.subscribe_to_hub"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.subscribe_to_hub()</span></tt></a> or <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.unsubscribe_from_hub" title="github.Repository.Repository.unsubscribe_from_hub"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.unsubscribe_from_hub()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/issues</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.get_issues" title="github.AuthenticatedUser.AuthenticatedUser.get_issues"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.get_issues()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/legacy/issues/search/:owner/:repository/:state/:keyword</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.legacy_search_issues" title="github.Repository.Repository.legacy_search_issues"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.legacy_search_issues()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/legacy/repos/search/:keyword</span></tt><ul>
+<li>GET: <a class="reference internal" href="github.html#github.MainClass.Github.legacy_search_repos" title="github.MainClass.Github.legacy_search_repos"><tt class="xref py py-meth docutils literal"><span class="pre">github.MainClass.Github.legacy_search_repos()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/legacy/user/email/:email</span></tt><ul>
+<li>GET: <a class="reference internal" href="github.html#github.MainClass.Github.legacy_search_user_by_email" title="github.MainClass.Github.legacy_search_user_by_email"><tt class="xref py py-meth docutils literal"><span class="pre">github.MainClass.Github.legacy_search_user_by_email()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/legacy/user/search/:keyword</span></tt><ul>
+<li>GET: <a class="reference internal" href="github.html#github.MainClass.Github.legacy_search_users" title="github.MainClass.Github.legacy_search_users"><tt class="xref py py-meth docutils literal"><span class="pre">github.MainClass.Github.legacy_search_users()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/markdown</span></tt><ul>
+<li>POST: <a class="reference internal" href="github.html#github.MainClass.Github.render_markdown" title="github.MainClass.Github.render_markdown"><tt class="xref py py-meth docutils literal"><span class="pre">github.MainClass.Github.render_markdown()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/markdown/raw</span></tt><ul>
+<li>POST: Not implemented, see <tt class="docutils literal"><span class="pre">/markdown</span></tt></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/networks/:owner/:repo/events</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_network_events" title="github.Repository.Repository.get_network_events"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_network_events()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/notifications</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.get_notifications" title="github.AuthenticatedUser.AuthenticatedUser.get_notifications"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.get_notifications()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/notifications/threads/:id</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.get_notification" title="github.AuthenticatedUser.AuthenticatedUser.get_notification"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.get_notification()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/orgs/:org</span></tt><ul>
+<li>GET: <a class="reference internal" href="github.html#github.MainClass.Github.get_organization" title="github.MainClass.Github.get_organization"><tt class="xref py py-meth docutils literal"><span class="pre">github.MainClass.Github.get_organization()</span></tt></a></li>
+<li>PATCH: <a class="reference internal" href="github_objects/Organization.html#github.Organization.Organization.edit" title="github.Organization.Organization.edit"><tt class="xref py py-meth docutils literal"><span class="pre">github.Organization.Organization.edit()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/orgs/:org/events</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Organization.html#github.Organization.Organization.get_events" title="github.Organization.Organization.get_events"><tt class="xref py py-meth docutils literal"><span class="pre">github.Organization.Organization.get_events()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/orgs/:org/issues</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Organization.html#github.Organization.Organization.get_issues" title="github.Organization.Organization.get_issues"><tt class="xref py py-meth docutils literal"><span class="pre">github.Organization.Organization.get_issues()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/orgs/:org/members</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Organization.html#github.Organization.Organization.get_members" title="github.Organization.Organization.get_members"><tt class="xref py py-meth docutils literal"><span class="pre">github.Organization.Organization.get_members()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/orgs/:org/members/:user</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Organization.html#github.Organization.Organization.has_in_members" title="github.Organization.Organization.has_in_members"><tt class="xref py py-meth docutils literal"><span class="pre">github.Organization.Organization.has_in_members()</span></tt></a></li>
+<li>DELETE: <a class="reference internal" href="github_objects/Organization.html#github.Organization.Organization.remove_from_members" title="github.Organization.Organization.remove_from_members"><tt class="xref py py-meth docutils literal"><span class="pre">github.Organization.Organization.remove_from_members()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/orgs/:org/public_members</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Organization.html#github.Organization.Organization.get_public_members" title="github.Organization.Organization.get_public_members"><tt class="xref py py-meth docutils literal"><span class="pre">github.Organization.Organization.get_public_members()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/orgs/:org/public_members/:user</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Organization.html#github.Organization.Organization.has_in_public_members" title="github.Organization.Organization.has_in_public_members"><tt class="xref py py-meth docutils literal"><span class="pre">github.Organization.Organization.has_in_public_members()</span></tt></a></li>
+<li>PUT: <a class="reference internal" href="github_objects/Organization.html#github.Organization.Organization.add_to_public_members" title="github.Organization.Organization.add_to_public_members"><tt class="xref py py-meth docutils literal"><span class="pre">github.Organization.Organization.add_to_public_members()</span></tt></a></li>
+<li>DELETE: <a class="reference internal" href="github_objects/Organization.html#github.Organization.Organization.remove_from_public_members" title="github.Organization.Organization.remove_from_public_members"><tt class="xref py py-meth docutils literal"><span class="pre">github.Organization.Organization.remove_from_public_members()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/orgs/:org/repos</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Organization.html#github.Organization.Organization.get_repos" title="github.Organization.Organization.get_repos"><tt class="xref py py-meth docutils literal"><span class="pre">github.Organization.Organization.get_repos()</span></tt></a></li>
+<li>POST: <a class="reference internal" href="github_objects/Organization.html#github.Organization.Organization.create_repo" title="github.Organization.Organization.create_repo"><tt class="xref py py-meth docutils literal"><span class="pre">github.Organization.Organization.create_repo()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/orgs/:org/teams</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Organization.html#github.Organization.Organization.get_teams" title="github.Organization.Organization.get_teams"><tt class="xref py py-meth docutils literal"><span class="pre">github.Organization.Organization.get_teams()</span></tt></a></li>
+<li>POST: <a class="reference internal" href="github_objects/Organization.html#github.Organization.Organization.create_team" title="github.Organization.Organization.create_team"><tt class="xref py py-meth docutils literal"><span class="pre">github.Organization.Organization.create_team()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/rate_limit</span></tt><ul>
+<li>GET: Not implemented, see <cite>Github.rate_limiting</cite></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.get_repo" title="github.AuthenticatedUser.AuthenticatedUser.get_repo"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.get_repo()</span></tt></a> or <a class="reference internal" href="github.html#github.MainClass.Github.get_repo" title="github.MainClass.Github.get_repo"><tt class="xref py py-meth docutils literal"><span class="pre">github.MainClass.Github.get_repo()</span></tt></a> or <a class="reference internal" href="github_objects/NamedUser.html#github.NamedUser.NamedUser.get_repo" title="github.NamedUser.NamedUser.get_repo"><tt class="xref py py-meth docutils literal"><span class="pre">github.NamedUser.NamedUser.get_repo()</span></tt></a> or <a class="reference internal" href="github_objects/Organization.html#github.Organization.Organization.get_repo" title="github.Organization.Organization.get_repo"><tt class="xref py py-meth docutils literal"><span class="pre">github.Organization.Organization.get_repo()</span></tt></a></li>
+<li>PATCH: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.edit" title="github.Repository.Repository.edit"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.edit()</span></tt></a></li>
+<li>DELETE: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.delete" title="github.Repository.Repository.delete"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.delete()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/:archive_format/:ref</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_archive_link" title="github.Repository.Repository.get_archive_link"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_archive_link()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/assignees</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_assignees" title="github.Repository.Repository.get_assignees"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_assignees()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/assignees/:assignee</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.has_in_assignees" title="github.Repository.Repository.has_in_assignees"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.has_in_assignees()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/branches</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_branches" title="github.Repository.Repository.get_branches"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_branches()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/branches/:branch</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_branch" title="github.Repository.Repository.get_branch"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_branch()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/collaborators</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_collaborators" title="github.Repository.Repository.get_collaborators"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_collaborators()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/collaborators/:user</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.has_in_collaborators" title="github.Repository.Repository.has_in_collaborators"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.has_in_collaborators()</span></tt></a></li>
+<li>PUT: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.add_to_collaborators" title="github.Repository.Repository.add_to_collaborators"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.add_to_collaborators()</span></tt></a></li>
+<li>DELETE: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.remove_from_collaborators" title="github.Repository.Repository.remove_from_collaborators"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.remove_from_collaborators()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/comments</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_comments" title="github.Repository.Repository.get_comments"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_comments()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/comments/:id</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_comment" title="github.Repository.Repository.get_comment"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_comment()</span></tt></a></li>
+<li>PATCH: <a class="reference internal" href="github_objects/CommitComment.html#github.CommitComment.CommitComment.edit" title="github.CommitComment.CommitComment.edit"><tt class="xref py py-meth docutils literal"><span class="pre">github.CommitComment.CommitComment.edit()</span></tt></a></li>
+<li>DELETE: <a class="reference internal" href="github_objects/CommitComment.html#github.CommitComment.CommitComment.delete" title="github.CommitComment.CommitComment.delete"><tt class="xref py py-meth docutils literal"><span class="pre">github.CommitComment.CommitComment.delete()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/commits</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_commits" title="github.Repository.Repository.get_commits"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_commits()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/commits/:sha</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_commit" title="github.Repository.Repository.get_commit"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_commit()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/commits/:sha/comments</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Commit.html#github.Commit.Commit.get_comments" title="github.Commit.Commit.get_comments"><tt class="xref py py-meth docutils literal"><span class="pre">github.Commit.Commit.get_comments()</span></tt></a></li>
+<li>POST: <a class="reference internal" href="github_objects/Commit.html#github.Commit.Commit.create_comment" title="github.Commit.Commit.create_comment"><tt class="xref py py-meth docutils literal"><span class="pre">github.Commit.Commit.create_comment()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/compare/:base...:head</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.compare" title="github.Repository.Repository.compare"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.compare()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/contents/:path</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_contents" title="github.Repository.Repository.get_contents"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_contents()</span></tt></a> or <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_dir_contents" title="github.Repository.Repository.get_dir_contents"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_dir_contents()</span></tt></a> or <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_file_contents" title="github.Repository.Repository.get_file_contents"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_file_contents()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/contributors</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_contributors" title="github.Repository.Repository.get_contributors"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_contributors()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/downloads</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_downloads" title="github.Repository.Repository.get_downloads"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_downloads()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/downloads/:id</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_download" title="github.Repository.Repository.get_download"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_download()</span></tt></a></li>
+<li>DELETE: <a class="reference internal" href="github_objects/Download.html#github.Download.Download.delete" title="github.Download.Download.delete"><tt class="xref py py-meth docutils literal"><span class="pre">github.Download.Download.delete()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/events</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_events" title="github.Repository.Repository.get_events"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_events()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/forks</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_forks" title="github.Repository.Repository.get_forks"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_forks()</span></tt></a></li>
+<li>POST: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.create_fork" title="github.AuthenticatedUser.AuthenticatedUser.create_fork"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.create_fork()</span></tt></a> or <a class="reference internal" href="github_objects/Organization.html#github.Organization.Organization.create_fork" title="github.Organization.Organization.create_fork"><tt class="xref py py-meth docutils literal"><span class="pre">github.Organization.Organization.create_fork()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/git/blobs</span></tt><ul>
+<li>POST: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.create_git_blob" title="github.Repository.Repository.create_git_blob"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.create_git_blob()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/git/blobs/:sha</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_git_blob" title="github.Repository.Repository.get_git_blob"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_git_blob()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/git/commits</span></tt><ul>
+<li>POST: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.create_git_commit" title="github.Repository.Repository.create_git_commit"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.create_git_commit()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/git/commits/:sha</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_git_commit" title="github.Repository.Repository.get_git_commit"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_git_commit()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/git/refs</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_git_refs" title="github.Repository.Repository.get_git_refs"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_git_refs()</span></tt></a></li>
+<li>POST: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.create_git_ref" title="github.Repository.Repository.create_git_ref"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.create_git_ref()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/git/refs/:ref</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_git_ref" title="github.Repository.Repository.get_git_ref"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_git_ref()</span></tt></a></li>
+<li>PATCH: <a class="reference internal" href="github_objects/GitRef.html#github.GitRef.GitRef.edit" title="github.GitRef.GitRef.edit"><tt class="xref py py-meth docutils literal"><span class="pre">github.GitRef.GitRef.edit()</span></tt></a></li>
+<li>DELETE: <a class="reference internal" href="github_objects/GitRef.html#github.GitRef.GitRef.delete" title="github.GitRef.GitRef.delete"><tt class="xref py py-meth docutils literal"><span class="pre">github.GitRef.GitRef.delete()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/git/tags</span></tt><ul>
+<li>POST: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.create_git_tag" title="github.Repository.Repository.create_git_tag"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.create_git_tag()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/git/tags/:sha</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_git_tag" title="github.Repository.Repository.get_git_tag"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_git_tag()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/git/trees</span></tt><ul>
+<li>POST: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.create_git_tree" title="github.Repository.Repository.create_git_tree"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.create_git_tree()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/git/trees/:sha</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_git_tree" title="github.Repository.Repository.get_git_tree"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_git_tree()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/hooks</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_hooks" title="github.Repository.Repository.get_hooks"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_hooks()</span></tt></a></li>
+<li>POST: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.create_hook" title="github.Repository.Repository.create_hook"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.create_hook()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/hooks/:id</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_hook" title="github.Repository.Repository.get_hook"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_hook()</span></tt></a></li>
+<li>PATCH: <a class="reference internal" href="github_objects/Hook.html#github.Hook.Hook.edit" title="github.Hook.Hook.edit"><tt class="xref py py-meth docutils literal"><span class="pre">github.Hook.Hook.edit()</span></tt></a></li>
+<li>DELETE: <a class="reference internal" href="github_objects/Hook.html#github.Hook.Hook.delete" title="github.Hook.Hook.delete"><tt class="xref py py-meth docutils literal"><span class="pre">github.Hook.Hook.delete()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/hooks/:id/tests</span></tt><ul>
+<li>POST: <a class="reference internal" href="github_objects/Hook.html#github.Hook.Hook.test" title="github.Hook.Hook.test"><tt class="xref py py-meth docutils literal"><span class="pre">github.Hook.Hook.test()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/issues</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_issues" title="github.Repository.Repository.get_issues"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_issues()</span></tt></a></li>
+<li>POST: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.create_issue" title="github.Repository.Repository.create_issue"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.create_issue()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/issues/:issue_number/events</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Issue.html#github.Issue.Issue.get_events" title="github.Issue.Issue.get_events"><tt class="xref py py-meth docutils literal"><span class="pre">github.Issue.Issue.get_events()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/issues/:number</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_issue" title="github.Repository.Repository.get_issue"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_issue()</span></tt></a></li>
+<li>PATCH: <a class="reference internal" href="github_objects/Issue.html#github.Issue.Issue.edit" title="github.Issue.Issue.edit"><tt class="xref py py-meth docutils literal"><span class="pre">github.Issue.Issue.edit()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/issues/:number/comments</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Issue.html#github.Issue.Issue.get_comments" title="github.Issue.Issue.get_comments"><tt class="xref py py-meth docutils literal"><span class="pre">github.Issue.Issue.get_comments()</span></tt></a> or <a class="reference internal" href="github_objects/PullRequest.html#github.PullRequest.PullRequest.get_issue_comments" title="github.PullRequest.PullRequest.get_issue_comments"><tt class="xref py py-meth docutils literal"><span class="pre">github.PullRequest.PullRequest.get_issue_comments()</span></tt></a></li>
+<li>POST: <a class="reference internal" href="github_objects/Issue.html#github.Issue.Issue.create_comment" title="github.Issue.Issue.create_comment"><tt class="xref py py-meth docutils literal"><span class="pre">github.Issue.Issue.create_comment()</span></tt></a> or <a class="reference internal" href="github_objects/PullRequest.html#github.PullRequest.PullRequest.create_issue_comment" title="github.PullRequest.PullRequest.create_issue_comment"><tt class="xref py py-meth docutils literal"><span class="pre">github.PullRequest.PullRequest.create_issue_comment()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/issues/:number/labels</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Issue.html#github.Issue.Issue.get_labels" title="github.Issue.Issue.get_labels"><tt class="xref py py-meth docutils literal"><span class="pre">github.Issue.Issue.get_labels()</span></tt></a></li>
+<li>POST: <a class="reference internal" href="github_objects/Issue.html#github.Issue.Issue.add_to_labels" title="github.Issue.Issue.add_to_labels"><tt class="xref py py-meth docutils literal"><span class="pre">github.Issue.Issue.add_to_labels()</span></tt></a></li>
+<li>PUT: <a class="reference internal" href="github_objects/Issue.html#github.Issue.Issue.set_labels" title="github.Issue.Issue.set_labels"><tt class="xref py py-meth docutils literal"><span class="pre">github.Issue.Issue.set_labels()</span></tt></a></li>
+<li>DELETE: <a class="reference internal" href="github_objects/Issue.html#github.Issue.Issue.delete_labels" title="github.Issue.Issue.delete_labels"><tt class="xref py py-meth docutils literal"><span class="pre">github.Issue.Issue.delete_labels()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/issues/:number/labels/:name</span></tt><ul>
+<li>DELETE: <a class="reference internal" href="github_objects/Issue.html#github.Issue.Issue.remove_from_labels" title="github.Issue.Issue.remove_from_labels"><tt class="xref py py-meth docutils literal"><span class="pre">github.Issue.Issue.remove_from_labels()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/issues/comments</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_issues_comments" title="github.Repository.Repository.get_issues_comments"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_issues_comments()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/issues/comments/:id</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Issue.html#github.Issue.Issue.get_comment" title="github.Issue.Issue.get_comment"><tt class="xref py py-meth docutils literal"><span class="pre">github.Issue.Issue.get_comment()</span></tt></a> or <a class="reference internal" href="github_objects/PullRequest.html#github.PullRequest.PullRequest.get_issue_comment" title="github.PullRequest.PullRequest.get_issue_comment"><tt class="xref py py-meth docutils literal"><span class="pre">github.PullRequest.PullRequest.get_issue_comment()</span></tt></a></li>
+<li>PATCH: <a class="reference internal" href="github_objects/IssueComment.html#github.IssueComment.IssueComment.edit" title="github.IssueComment.IssueComment.edit"><tt class="xref py py-meth docutils literal"><span class="pre">github.IssueComment.IssueComment.edit()</span></tt></a></li>
+<li>DELETE: <a class="reference internal" href="github_objects/IssueComment.html#github.IssueComment.IssueComment.delete" title="github.IssueComment.IssueComment.delete"><tt class="xref py py-meth docutils literal"><span class="pre">github.IssueComment.IssueComment.delete()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/issues/events</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_issues_events" title="github.Repository.Repository.get_issues_events"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_issues_events()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/issues/events/:id</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_issues_event" title="github.Repository.Repository.get_issues_event"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_issues_event()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/keys</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_keys" title="github.Repository.Repository.get_keys"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_keys()</span></tt></a></li>
+<li>POST: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.create_key" title="github.Repository.Repository.create_key"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.create_key()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/keys/:id</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_key" title="github.Repository.Repository.get_key"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_key()</span></tt></a></li>
+<li>PATCH: <a class="reference internal" href="github_objects/RepositoryKey.html#github.RepositoryKey.RepositoryKey.edit" title="github.RepositoryKey.RepositoryKey.edit"><tt class="xref py py-meth docutils literal"><span class="pre">github.RepositoryKey.RepositoryKey.edit()</span></tt></a></li>
+<li>DELETE: <a class="reference internal" href="github_objects/RepositoryKey.html#github.RepositoryKey.RepositoryKey.delete" title="github.RepositoryKey.RepositoryKey.delete"><tt class="xref py py-meth docutils literal"><span class="pre">github.RepositoryKey.RepositoryKey.delete()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/labels</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_labels" title="github.Repository.Repository.get_labels"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_labels()</span></tt></a></li>
+<li>POST: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.create_label" title="github.Repository.Repository.create_label"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.create_label()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/labels/:name</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_label" title="github.Repository.Repository.get_label"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_label()</span></tt></a></li>
+<li>PATCH: <a class="reference internal" href="github_objects/Label.html#github.Label.Label.edit" title="github.Label.Label.edit"><tt class="xref py py-meth docutils literal"><span class="pre">github.Label.Label.edit()</span></tt></a></li>
+<li>DELETE: <a class="reference internal" href="github_objects/Label.html#github.Label.Label.delete" title="github.Label.Label.delete"><tt class="xref py py-meth docutils literal"><span class="pre">github.Label.Label.delete()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/languages</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_languages" title="github.Repository.Repository.get_languages"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_languages()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/merges</span></tt><ul>
+<li>POST: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.merge" title="github.Repository.Repository.merge"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.merge()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/milestones</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_milestones" title="github.Repository.Repository.get_milestones"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_milestones()</span></tt></a></li>
+<li>POST: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.create_milestone" title="github.Repository.Repository.create_milestone"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.create_milestone()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/milestones/:number</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_milestone" title="github.Repository.Repository.get_milestone"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_milestone()</span></tt></a></li>
+<li>PATCH: <a class="reference internal" href="github_objects/Milestone.html#github.Milestone.Milestone.edit" title="github.Milestone.Milestone.edit"><tt class="xref py py-meth docutils literal"><span class="pre">github.Milestone.Milestone.edit()</span></tt></a></li>
+<li>DELETE: <a class="reference internal" href="github_objects/Milestone.html#github.Milestone.Milestone.delete" title="github.Milestone.Milestone.delete"><tt class="xref py py-meth docutils literal"><span class="pre">github.Milestone.Milestone.delete()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/milestones/:number/labels</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Milestone.html#github.Milestone.Milestone.get_labels" title="github.Milestone.Milestone.get_labels"><tt class="xref py py-meth docutils literal"><span class="pre">github.Milestone.Milestone.get_labels()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/pulls</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_pulls" title="github.Repository.Repository.get_pulls"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_pulls()</span></tt></a></li>
+<li>POST: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.create_pull" title="github.Repository.Repository.create_pull"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.create_pull()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/pulls/:number</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_pull" title="github.Repository.Repository.get_pull"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_pull()</span></tt></a></li>
+<li>PATCH: <a class="reference internal" href="github_objects/PullRequest.html#github.PullRequest.PullRequest.edit" title="github.PullRequest.PullRequest.edit"><tt class="xref py py-meth docutils literal"><span class="pre">github.PullRequest.PullRequest.edit()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/pulls/:number/comments</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/PullRequest.html#github.PullRequest.PullRequest.get_comments" title="github.PullRequest.PullRequest.get_comments"><tt class="xref py py-meth docutils literal"><span class="pre">github.PullRequest.PullRequest.get_comments()</span></tt></a> or <a class="reference internal" href="github_objects/PullRequest.html#github.PullRequest.PullRequest.get_review_comments" title="github.PullRequest.PullRequest.get_review_comments"><tt class="xref py py-meth docutils literal"><span class="pre">github.PullRequest.PullRequest.get_review_comments()</span></tt></a></li>
+<li>POST: <a class="reference internal" href="github_objects/PullRequest.html#github.PullRequest.PullRequest.create_comment" title="github.PullRequest.PullRequest.create_comment"><tt class="xref py py-meth docutils literal"><span class="pre">github.PullRequest.PullRequest.create_comment()</span></tt></a> or <a class="reference internal" href="github_objects/PullRequest.html#github.PullRequest.PullRequest.create_review_comment" title="github.PullRequest.PullRequest.create_review_comment"><tt class="xref py py-meth docutils literal"><span class="pre">github.PullRequest.PullRequest.create_review_comment()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/pulls/:number/commits</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/PullRequest.html#github.PullRequest.PullRequest.get_commits" title="github.PullRequest.PullRequest.get_commits"><tt class="xref py py-meth docutils literal"><span class="pre">github.PullRequest.PullRequest.get_commits()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/pulls/:number/files</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/PullRequest.html#github.PullRequest.PullRequest.get_files" title="github.PullRequest.PullRequest.get_files"><tt class="xref py py-meth docutils literal"><span class="pre">github.PullRequest.PullRequest.get_files()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/pulls/:number/merge</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/PullRequest.html#github.PullRequest.PullRequest.is_merged" title="github.PullRequest.PullRequest.is_merged"><tt class="xref py py-meth docutils literal"><span class="pre">github.PullRequest.PullRequest.is_merged()</span></tt></a></li>
+<li>PUT: <a class="reference internal" href="github_objects/PullRequest.html#github.PullRequest.PullRequest.merge" title="github.PullRequest.PullRequest.merge"><tt class="xref py py-meth docutils literal"><span class="pre">github.PullRequest.PullRequest.merge()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/pulls/comments</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_pulls_comments" title="github.Repository.Repository.get_pulls_comments"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_pulls_comments()</span></tt></a> or <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_pulls_review_comments" title="github.Repository.Repository.get_pulls_review_comments"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_pulls_review_comments()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/pulls/comments/:number</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/PullRequest.html#github.PullRequest.PullRequest.get_comment" title="github.PullRequest.PullRequest.get_comment"><tt class="xref py py-meth docutils literal"><span class="pre">github.PullRequest.PullRequest.get_comment()</span></tt></a> or <a class="reference internal" href="github_objects/PullRequest.html#github.PullRequest.PullRequest.get_review_comment" title="github.PullRequest.PullRequest.get_review_comment"><tt class="xref py py-meth docutils literal"><span class="pre">github.PullRequest.PullRequest.get_review_comment()</span></tt></a></li>
+<li>PATCH: <a class="reference internal" href="github_objects/PullRequestComment.html#github.PullRequestComment.PullRequestComment.edit" title="github.PullRequestComment.PullRequestComment.edit"><tt class="xref py py-meth docutils literal"><span class="pre">github.PullRequestComment.PullRequestComment.edit()</span></tt></a></li>
+<li>DELETE: <a class="reference internal" href="github_objects/PullRequestComment.html#github.PullRequestComment.PullRequestComment.delete" title="github.PullRequestComment.PullRequestComment.delete"><tt class="xref py py-meth docutils literal"><span class="pre">github.PullRequestComment.PullRequestComment.delete()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/readme</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_readme" title="github.Repository.Repository.get_readme"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_readme()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/stargazers</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_stargazers" title="github.Repository.Repository.get_stargazers"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_stargazers()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/stats/code_frequency</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_stats_code_frequency" title="github.Repository.Repository.get_stats_code_frequency"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_stats_code_frequency()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/stats/commit_activity</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_stats_commit_activity" title="github.Repository.Repository.get_stats_commit_activity"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_stats_commit_activity()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/stats/contributors</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_stats_contributors" title="github.Repository.Repository.get_stats_contributors"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_stats_contributors()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/stats/participation</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_stats_participation" title="github.Repository.Repository.get_stats_participation"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_stats_participation()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/stats/punch_card</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_stats_punch_card" title="github.Repository.Repository.get_stats_punch_card"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_stats_punch_card()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/statuses/:ref</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Commit.html#github.Commit.Commit.get_statuses" title="github.Commit.Commit.get_statuses"><tt class="xref py py-meth docutils literal"><span class="pre">github.Commit.Commit.get_statuses()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/statuses/:sha</span></tt><ul>
+<li>POST: <a class="reference internal" href="github_objects/Commit.html#github.Commit.Commit.create_status" title="github.Commit.Commit.create_status"><tt class="xref py py-meth docutils literal"><span class="pre">github.Commit.Commit.create_status()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/subscribers</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_subscribers" title="github.Repository.Repository.get_subscribers"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_subscribers()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/tags</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_tags" title="github.Repository.Repository.get_tags"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_tags()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/teams</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_teams" title="github.Repository.Repository.get_teams"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_teams()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repos/:owner/:repo/watchers</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_watchers" title="github.Repository.Repository.get_watchers"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_watchers()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/repositories</span></tt><ul>
+<li>GET: <a class="reference internal" href="github.html#github.MainClass.Github.get_repos" title="github.MainClass.Github.get_repos"><tt class="xref py py-meth docutils literal"><span class="pre">github.MainClass.Github.get_repos()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/teams/:id</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Organization.html#github.Organization.Organization.get_team" title="github.Organization.Organization.get_team"><tt class="xref py py-meth docutils literal"><span class="pre">github.Organization.Organization.get_team()</span></tt></a></li>
+<li>PATCH: <a class="reference internal" href="github_objects/Team.html#github.Team.Team.edit" title="github.Team.Team.edit"><tt class="xref py py-meth docutils literal"><span class="pre">github.Team.Team.edit()</span></tt></a></li>
+<li>DELETE: <a class="reference internal" href="github_objects/Team.html#github.Team.Team.delete" title="github.Team.Team.delete"><tt class="xref py py-meth docutils literal"><span class="pre">github.Team.Team.delete()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/teams/:id/members</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Team.html#github.Team.Team.get_members" title="github.Team.Team.get_members"><tt class="xref py py-meth docutils literal"><span class="pre">github.Team.Team.get_members()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/teams/:id/members/:user</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Team.html#github.Team.Team.has_in_members" title="github.Team.Team.has_in_members"><tt class="xref py py-meth docutils literal"><span class="pre">github.Team.Team.has_in_members()</span></tt></a></li>
+<li>PUT: <a class="reference internal" href="github_objects/Team.html#github.Team.Team.add_to_members" title="github.Team.Team.add_to_members"><tt class="xref py py-meth docutils literal"><span class="pre">github.Team.Team.add_to_members()</span></tt></a></li>
+<li>DELETE: <a class="reference internal" href="github_objects/Team.html#github.Team.Team.remove_from_members" title="github.Team.Team.remove_from_members"><tt class="xref py py-meth docutils literal"><span class="pre">github.Team.Team.remove_from_members()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/teams/:id/repos</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Team.html#github.Team.Team.get_repos" title="github.Team.Team.get_repos"><tt class="xref py py-meth docutils literal"><span class="pre">github.Team.Team.get_repos()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/teams/:id/repos/:org/:repo</span></tt><ul>
+<li>PUT: <a class="reference internal" href="github_objects/Team.html#github.Team.Team.add_to_repos" title="github.Team.Team.add_to_repos"><tt class="xref py py-meth docutils literal"><span class="pre">github.Team.Team.add_to_repos()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/teams/:id/repos/:owner/:repo</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/Team.html#github.Team.Team.has_in_repos" title="github.Team.Team.has_in_repos"><tt class="xref py py-meth docutils literal"><span class="pre">github.Team.Team.has_in_repos()</span></tt></a></li>
+<li>DELETE: <a class="reference internal" href="github_objects/Team.html#github.Team.Team.remove_from_repos" title="github.Team.Team.remove_from_repos"><tt class="xref py py-meth docutils literal"><span class="pre">github.Team.Team.remove_from_repos()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/user</span></tt><ul>
+<li>GET: <a class="reference internal" href="github.html#github.MainClass.Github.get_user" title="github.MainClass.Github.get_user"><tt class="xref py py-meth docutils literal"><span class="pre">github.MainClass.Github.get_user()</span></tt></a></li>
+<li>PATCH: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.edit" title="github.AuthenticatedUser.AuthenticatedUser.edit"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.edit()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/user/emails</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.get_emails" title="github.AuthenticatedUser.AuthenticatedUser.get_emails"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.get_emails()</span></tt></a></li>
+<li>POST: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.add_to_emails" title="github.AuthenticatedUser.AuthenticatedUser.add_to_emails"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.add_to_emails()</span></tt></a></li>
+<li>DELETE: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.remove_from_emails" title="github.AuthenticatedUser.AuthenticatedUser.remove_from_emails"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.remove_from_emails()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/user/followers</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.get_followers" title="github.AuthenticatedUser.AuthenticatedUser.get_followers"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.get_followers()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/user/following</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.get_following" title="github.AuthenticatedUser.AuthenticatedUser.get_following"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.get_following()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/user/following/:user</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.has_in_following" title="github.AuthenticatedUser.AuthenticatedUser.has_in_following"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.has_in_following()</span></tt></a></li>
+<li>PUT: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.add_to_following" title="github.AuthenticatedUser.AuthenticatedUser.add_to_following"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.add_to_following()</span></tt></a></li>
+<li>DELETE: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.remove_from_following" title="github.AuthenticatedUser.AuthenticatedUser.remove_from_following"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.remove_from_following()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/user/issues</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.get_user_issues" title="github.AuthenticatedUser.AuthenticatedUser.get_user_issues"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.get_user_issues()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/user/keys</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.get_keys" title="github.AuthenticatedUser.AuthenticatedUser.get_keys"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.get_keys()</span></tt></a></li>
+<li>POST: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.create_key" title="github.AuthenticatedUser.AuthenticatedUser.create_key"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.create_key()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/user/keys/:id</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.get_key" title="github.AuthenticatedUser.AuthenticatedUser.get_key"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.get_key()</span></tt></a></li>
+<li>PATCH: <a class="reference internal" href="github_objects/UserKey.html#github.UserKey.UserKey.edit" title="github.UserKey.UserKey.edit"><tt class="xref py py-meth docutils literal"><span class="pre">github.UserKey.UserKey.edit()</span></tt></a></li>
+<li>DELETE: <a class="reference internal" href="github_objects/UserKey.html#github.UserKey.UserKey.delete" title="github.UserKey.UserKey.delete"><tt class="xref py py-meth docutils literal"><span class="pre">github.UserKey.UserKey.delete()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/user/orgs</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.get_orgs" title="github.AuthenticatedUser.AuthenticatedUser.get_orgs"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.get_orgs()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/user/repos</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.get_repos" title="github.AuthenticatedUser.AuthenticatedUser.get_repos"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.get_repos()</span></tt></a></li>
+<li>POST: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.create_repo" title="github.AuthenticatedUser.AuthenticatedUser.create_repo"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.create_repo()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/user/starred</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.get_starred" title="github.AuthenticatedUser.AuthenticatedUser.get_starred"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.get_starred()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/user/starred/:owner/:repo</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.has_in_starred" title="github.AuthenticatedUser.AuthenticatedUser.has_in_starred"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.has_in_starred()</span></tt></a></li>
+<li>PUT: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.add_to_starred" title="github.AuthenticatedUser.AuthenticatedUser.add_to_starred"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.add_to_starred()</span></tt></a></li>
+<li>DELETE: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.remove_from_starred" title="github.AuthenticatedUser.AuthenticatedUser.remove_from_starred"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.remove_from_starred()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/user/subscriptions</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.get_subscriptions" title="github.AuthenticatedUser.AuthenticatedUser.get_subscriptions"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.get_subscriptions()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/user/subscriptions/:owner/:repo</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.has_in_subscriptions" title="github.AuthenticatedUser.AuthenticatedUser.has_in_subscriptions"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.has_in_subscriptions()</span></tt></a></li>
+<li>PUT: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.add_to_subscriptions" title="github.AuthenticatedUser.AuthenticatedUser.add_to_subscriptions"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.add_to_subscriptions()</span></tt></a></li>
+<li>DELETE: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.remove_from_subscriptions" title="github.AuthenticatedUser.AuthenticatedUser.remove_from_subscriptions"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.remove_from_subscriptions()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/user/teams</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.get_teams" title="github.AuthenticatedUser.AuthenticatedUser.get_teams"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.get_teams()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/user/watched</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.get_watched" title="github.AuthenticatedUser.AuthenticatedUser.get_watched"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.get_watched()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/user/watched/:owner/:repo</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.has_in_watched" title="github.AuthenticatedUser.AuthenticatedUser.has_in_watched"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.has_in_watched()</span></tt></a></li>
+<li>PUT: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.add_to_watched" title="github.AuthenticatedUser.AuthenticatedUser.add_to_watched"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.add_to_watched()</span></tt></a></li>
+<li>DELETE: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.remove_from_watched" title="github.AuthenticatedUser.AuthenticatedUser.remove_from_watched"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.remove_from_watched()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/users</span></tt><ul>
+<li>GET: <a class="reference internal" href="github.html#github.MainClass.Github.get_users" title="github.MainClass.Github.get_users"><tt class="xref py py-meth docutils literal"><span class="pre">github.MainClass.Github.get_users()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/users/:user</span></tt><ul>
+<li>GET: <a class="reference internal" href="github.html#github.MainClass.Github.get_user" title="github.MainClass.Github.get_user"><tt class="xref py py-meth docutils literal"><span class="pre">github.MainClass.Github.get_user()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/users/:user/events</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/NamedUser.html#github.NamedUser.NamedUser.get_events" title="github.NamedUser.NamedUser.get_events"><tt class="xref py py-meth docutils literal"><span class="pre">github.NamedUser.NamedUser.get_events()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/users/:user/events/orgs/:org</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/AuthenticatedUser.html#github.AuthenticatedUser.AuthenticatedUser.get_organization_events" title="github.AuthenticatedUser.AuthenticatedUser.get_organization_events"><tt class="xref py py-meth docutils literal"><span class="pre">github.AuthenticatedUser.AuthenticatedUser.get_organization_events()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/users/:user/events/public</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/NamedUser.html#github.NamedUser.NamedUser.get_public_events" title="github.NamedUser.NamedUser.get_public_events"><tt class="xref py py-meth docutils literal"><span class="pre">github.NamedUser.NamedUser.get_public_events()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/users/:user/followers</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/NamedUser.html#github.NamedUser.NamedUser.get_followers" title="github.NamedUser.NamedUser.get_followers"><tt class="xref py py-meth docutils literal"><span class="pre">github.NamedUser.NamedUser.get_followers()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/users/:user/following</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/NamedUser.html#github.NamedUser.NamedUser.get_following" title="github.NamedUser.NamedUser.get_following"><tt class="xref py py-meth docutils literal"><span class="pre">github.NamedUser.NamedUser.get_following()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/users/:user/following/:target_user</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/NamedUser.html#github.NamedUser.NamedUser.has_in_following" title="github.NamedUser.NamedUser.has_in_following"><tt class="xref py py-meth docutils literal"><span class="pre">github.NamedUser.NamedUser.has_in_following()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/users/:user/gists</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/NamedUser.html#github.NamedUser.NamedUser.get_gists" title="github.NamedUser.NamedUser.get_gists"><tt class="xref py py-meth docutils literal"><span class="pre">github.NamedUser.NamedUser.get_gists()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/users/:user/keys</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/NamedUser.html#github.NamedUser.NamedUser.get_keys" title="github.NamedUser.NamedUser.get_keys"><tt class="xref py py-meth docutils literal"><span class="pre">github.NamedUser.NamedUser.get_keys()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/users/:user/orgs</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/NamedUser.html#github.NamedUser.NamedUser.get_orgs" title="github.NamedUser.NamedUser.get_orgs"><tt class="xref py py-meth docutils literal"><span class="pre">github.NamedUser.NamedUser.get_orgs()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/users/:user/received_events</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/NamedUser.html#github.NamedUser.NamedUser.get_received_events" title="github.NamedUser.NamedUser.get_received_events"><tt class="xref py py-meth docutils literal"><span class="pre">github.NamedUser.NamedUser.get_received_events()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/users/:user/received_events/public</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/NamedUser.html#github.NamedUser.NamedUser.get_public_received_events" title="github.NamedUser.NamedUser.get_public_received_events"><tt class="xref py py-meth docutils literal"><span class="pre">github.NamedUser.NamedUser.get_public_received_events()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/users/:user/repos</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/NamedUser.html#github.NamedUser.NamedUser.get_repos" title="github.NamedUser.NamedUser.get_repos"><tt class="xref py py-meth docutils literal"><span class="pre">github.NamedUser.NamedUser.get_repos()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/users/:user/starred</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/NamedUser.html#github.NamedUser.NamedUser.get_starred" title="github.NamedUser.NamedUser.get_starred"><tt class="xref py py-meth docutils literal"><span class="pre">github.NamedUser.NamedUser.get_starred()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/users/:user/subscriptions</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/NamedUser.html#github.NamedUser.NamedUser.get_subscriptions" title="github.NamedUser.NamedUser.get_subscriptions"><tt class="xref py py-meth docutils literal"><span class="pre">github.NamedUser.NamedUser.get_subscriptions()</span></tt></a></li>
+</ul>
+</li>
+<li><tt class="docutils literal"><span class="pre">/users/:user/watched</span></tt><ul>
+<li>GET: <a class="reference internal" href="github_objects/NamedUser.html#github.NamedUser.NamedUser.get_watched" title="github.NamedUser.NamedUser.get_watched"><tt class="xref py py-meth docutils literal"><span class="pre">github.NamedUser.NamedUser.get_watched()</span></tt></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="github.html"
+                        title="previous chapter">Main class: Github</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="utilities.html"
+                        title="next chapter">Utilities</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/apis.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="utilities.html" title="Utilities"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="github.html" title="Main class: Github"
+             >previous</a> |</li>
+        <li><a href="index.html">PyGithub 1.22.0 documentation</a> &raquo;</li>
+          <li><a href="reference.html" >Reference</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Vincent Jacques.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

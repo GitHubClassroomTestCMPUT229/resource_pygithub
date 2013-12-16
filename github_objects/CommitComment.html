@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>CommitComment &mdash; PyGithub 1.22.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.22.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="PyGithub 1.22.0 documentation" href="../index.html" />
+    <link rel="up" title="Github objects" href="../github_objects.html" />
+    <link rel="next" title="GistComment" href="GistComment.html" />
+    <link rel="prev" title="StatsCodeFrequency" href="StatsCodeFrequency.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="GistComment.html" title="GistComment"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="StatsCodeFrequency.html" title="StatsCodeFrequency"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">PyGithub 1.22.0 documentation</a> &raquo;</li>
+          <li><a href="../reference.html" >Reference</a> &raquo;</li>
+          <li><a href="../github_objects.html" accesskey="U">Github objects</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="commitcomment">
+<h1>CommitComment<a class="headerlink" href="#commitcomment" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="github.CommitComment.CommitComment">
+<em class="property">class </em><tt class="descclassname">github.CommitComment.</tt><tt class="descname">CommitComment</tt><a class="headerlink" href="#github.CommitComment.CommitComment" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class represents CommitComments as returned for example by <a class="reference external" href="http://developer.github.com/v3/todo">http://developer.github.com/v3/todo</a></p>
+<dl class="attribute">
+<dt id="github.CommitComment.CommitComment.body">
+<tt class="descname">body</tt><a class="headerlink" href="#github.CommitComment.CommitComment.body" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.CommitComment.CommitComment.commit_id">
+<tt class="descname">commit_id</tt><a class="headerlink" href="#github.CommitComment.CommitComment.commit_id" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.CommitComment.CommitComment.created_at">
+<tt class="descname">created_at</tt><a class="headerlink" href="#github.CommitComment.CommitComment.created_at" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">datetime.datetime</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.CommitComment.CommitComment.html_url">
+<tt class="descname">html_url</tt><a class="headerlink" href="#github.CommitComment.CommitComment.html_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.CommitComment.CommitComment.id">
+<tt class="descname">id</tt><a class="headerlink" href="#github.CommitComment.CommitComment.id" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">integer</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.CommitComment.CommitComment.line">
+<tt class="descname">line</tt><a class="headerlink" href="#github.CommitComment.CommitComment.line" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">integer</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.CommitComment.CommitComment.path">
+<tt class="descname">path</tt><a class="headerlink" href="#github.CommitComment.CommitComment.path" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.CommitComment.CommitComment.position">
+<tt class="descname">position</tt><a class="headerlink" href="#github.CommitComment.CommitComment.position" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">integer</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.CommitComment.CommitComment.updated_at">
+<tt class="descname">updated_at</tt><a class="headerlink" href="#github.CommitComment.CommitComment.updated_at" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">datetime.datetime</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.CommitComment.CommitComment.url">
+<tt class="descname">url</tt><a class="headerlink" href="#github.CommitComment.CommitComment.url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.CommitComment.CommitComment.user">
+<tt class="descname">user</tt><a class="headerlink" href="#github.CommitComment.CommitComment.user" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="NamedUser.html#github.NamedUser.NamedUser" title="github.NamedUser.NamedUser"><tt class="xref py py-class docutils literal"><span class="pre">github.NamedUser.NamedUser</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.CommitComment.CommitComment.delete">
+<tt class="descname">delete</tt><big>(</big><big>)</big><a class="headerlink" href="#github.CommitComment.CommitComment.delete" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><a class="reference external" href="http://developer.github.com/v3/repos/comments">DELETE /repos/:owner/:repo/comments/:id</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.CommitComment.CommitComment.edit">
+<tt class="descname">edit</tt><big>(</big><em>body</em><big>)</big><a class="headerlink" href="#github.CommitComment.CommitComment.edit" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><a class="reference external" href="http://developer.github.com/v3/repos/comments">PATCH /repos/:owner/:repo/comments/:id</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><strong>body</strong> &#8211; string</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="StatsCodeFrequency.html"
+                        title="previous chapter">StatsCodeFrequency</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="GistComment.html"
+                        title="next chapter">GistComment</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/github_objects/CommitComment.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="GistComment.html" title="GistComment"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="StatsCodeFrequency.html" title="StatsCodeFrequency"
+             >previous</a> |</li>
+        <li><a href="../index.html">PyGithub 1.22.0 documentation</a> &raquo;</li>
+          <li><a href="../reference.html" >Reference</a> &raquo;</li>
+          <li><a href="../github_objects.html" >Github objects</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Vincent Jacques.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

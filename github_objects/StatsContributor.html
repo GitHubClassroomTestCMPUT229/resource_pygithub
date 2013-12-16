@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>StatsContributor &mdash; PyGithub 1.22.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.22.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="PyGithub 1.22.0 documentation" href="../index.html" />
+    <link rel="up" title="Github objects" href="../github_objects.html" />
+    <link rel="next" title="AuthenticatedUser" href="AuthenticatedUser.html" />
+    <link rel="prev" title="StatsPunchCard" href="StatsPunchCard.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="AuthenticatedUser.html" title="AuthenticatedUser"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="StatsPunchCard.html" title="StatsPunchCard"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">PyGithub 1.22.0 documentation</a> &raquo;</li>
+          <li><a href="../reference.html" >Reference</a> &raquo;</li>
+          <li><a href="../github_objects.html" accesskey="U">Github objects</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="statscontributor">
+<h1>StatsContributor<a class="headerlink" href="#statscontributor" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="github.StatsContributor.StatsContributor">
+<em class="property">class </em><tt class="descclassname">github.StatsContributor.</tt><tt class="descname">StatsContributor</tt><a class="headerlink" href="#github.StatsContributor.StatsContributor" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class represents statistics of a contibutor. The reference can be found here <a class="reference external" href="http://developer.github.com/v3/repos/statistics/#get-contributors-list-with-additions-deletions-and-commit-counts">http://developer.github.com/v3/repos/statistics/#get-contributors-list-with-additions-deletions-and-commit-counts</a></p>
+<dl class="class">
+<dt id="github.StatsContributor.StatsContributor.Week">
+<em class="property">class </em><tt class="descname">Week</tt><big>(</big><em>requester</em>, <em>headers</em>, <em>attributes</em>, <em>completed</em><big>)</big><a class="headerlink" href="#github.StatsContributor.StatsContributor.Week" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class represents weekly statistics of a contibutor.</p>
+<dl class="attribute">
+<dt id="github.StatsContributor.StatsContributor.Week.w">
+<tt class="descname">w</tt><a class="headerlink" href="#github.StatsContributor.StatsContributor.Week.w" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">datetime.datetime</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.StatsContributor.StatsContributor.Week.a">
+<tt class="descname">a</tt><a class="headerlink" href="#github.StatsContributor.StatsContributor.Week.a" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.StatsContributor.StatsContributor.Week.d">
+<tt class="descname">d</tt><a class="headerlink" href="#github.StatsContributor.StatsContributor.Week.d" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.StatsContributor.StatsContributor.Week.c">
+<tt class="descname">c</tt><a class="headerlink" href="#github.StatsContributor.StatsContributor.Week.c" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.StatsContributor.StatsContributor.author">
+<tt class="descclassname">StatsContributor.</tt><tt class="descname">author</tt><a class="headerlink" href="#github.StatsContributor.StatsContributor.author" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="NamedUser.html#github.NamedUser.NamedUser" title="github.NamedUser.NamedUser"><tt class="xref py py-class docutils literal"><span class="pre">github.NamedUser.NamedUser</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.StatsContributor.StatsContributor.total">
+<tt class="descclassname">StatsContributor.</tt><tt class="descname">total</tt><a class="headerlink" href="#github.StatsContributor.StatsContributor.total" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.StatsContributor.StatsContributor.weeks">
+<tt class="descclassname">StatsContributor.</tt><tt class="descname">weeks</tt><a class="headerlink" href="#github.StatsContributor.StatsContributor.weeks" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">list of <a class="reference internal" href="#github.StatsContributor.StatsContributor.Week" title="github.StatsContributor.StatsContributor.Week"><tt class="xref py py-class docutils literal"><span class="pre">Week</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="StatsPunchCard.html"
+                        title="previous chapter">StatsPunchCard</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="AuthenticatedUser.html"
+                        title="next chapter">AuthenticatedUser</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/github_objects/StatsContributor.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="AuthenticatedUser.html" title="AuthenticatedUser"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="StatsPunchCard.html" title="StatsPunchCard"
+             >previous</a> |</li>
+        <li><a href="../index.html">PyGithub 1.22.0 documentation</a> &raquo;</li>
+          <li><a href="../reference.html" >Reference</a> &raquo;</li>
+          <li><a href="../github_objects.html" >Github objects</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Vincent Jacques.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

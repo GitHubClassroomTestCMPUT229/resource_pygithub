@@ -1,0 +1,4 @@
+StatsCommitActivity
+===================
+
+.. autoclass:: github.StatsCommitActivity.StatsCommitActivity()

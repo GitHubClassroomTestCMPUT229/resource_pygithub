@@ -1,0 +1,542 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Change log &mdash; PyGithub 1.22.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.22.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="PyGithub 1.22.0 documentation" href="index.html" />
+    <link rel="next" title="Contributing" href="contributing.html" />
+    <link rel="prev" title="GitBlob" href="github_objects/GitBlob.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="contributing.html" title="Contributing"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="github_objects/GitBlob.html" title="GitBlob"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">PyGithub 1.22.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="change-log">
+<h1>Change log<a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="stable-versions">
+<h2>Stable versions<a class="headerlink" href="#stable-versions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="version-1-22-0-december-15th-2013">
+<h3><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues?milestone=34&amp;state=closed">Version 1.22.0</a> (December 15th, 2013)<a class="headerlink" href="#version-1-22-0-december-15th-2013" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/pull/209">Emojis</a>, thanks to <a class="reference external" href="https://github.com/evolvelight">evolvelight</a></li>
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/pull/212">Repository.stargazers_count</a>, thanks to <a class="reference external" href="https://github.com/cameronbwhite">cameronbwhite</a></li>
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/pull/213">User.get_teams</a>, thanks to <a class="reference external" href="https://github.com/poulp">poulp</a></li>
+</ul>
+</div>
+<div class="section" id="version-1-21-0-november-th-2013">
+<h3><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues?milestone=33&amp;state=closed">Version 1.21.0</a> (November ??th, 2013)<a class="headerlink" href="#version-1-21-0-november-th-2013" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/202">Accept</a> strings as well as <tt class="docutils literal"><span class="pre">Label</span></tt> objects in <tt class="docutils literal"><span class="pre">Issue.add_to_labels</span></tt>, <tt class="docutils literal"><span class="pre">Issue.remove_from_labels</span></tt> and <tt class="docutils literal"><span class="pre">Issue.set_labels</span></tt>. Thank you <a class="reference external" href="https://github.com/acdha">acdha</a> for asking</li>
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/201">Implement</a> equality comparison for <em>completable</em> github objects (ie. those who have a <tt class="docutils literal"><span class="pre">url</span></tt> attribute). Warning, comparison is still not implemented for non-completable objects. This will be done in version 2.0 of PyGithub. Thank you <a class="reference external" href="https://github.com/OddBloke">OddBloke</a> for asking</li>
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/204">Add</a> parameter <tt class="docutils literal"><span class="pre">author</span></tt> to <tt class="docutils literal"><span class="pre">Repository.get_commits</span></tt>. Thank you <a class="reference external" href="https://github.com/naorrosenberg">naorrosenberg</a> for asking</li>
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/203">Implement</a> the statistics end points. Thank you <a class="reference external" href="https://github.com/naorrosenberg">naorrosenberg</a> for asking</li>
+</ul>
+</div>
+<div class="section" id="version-1-20-0-october-20th-2013-first-seattle-edition">
+<h3><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues?milestone=32&amp;state=closed">Version 1.20.0</a> (October 20th, 2013) (First Seattle edition)<a class="headerlink" href="#version-1-20-0-october-20th-2013-first-seattle-edition" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/196">Implement</a> <tt class="docutils literal"><span class="pre">Github.get_hook(name)</span></tt>. Thank you <a class="reference external" href="https://github.com/klmitch">klmitch</a> for asking</li>
+<li>In case bad data is returned by Github API v3, <a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/195">raise</a> an exception only when the user accesses the faulty attribute, not when constructing the object containing this attribute. Thank you <a class="reference external" href="https://github.com/klmitch">klmitch</a> for asking</li>
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/199">Fix</a> parameter public/private of <tt class="docutils literal"><span class="pre">Repository.edit</span></tt>. Thank you <a class="reference external" href="https://github.com/daireobroin449">daireobroin449</a> for reporting the issue</li>
+<li>Remove <tt class="docutils literal"><span class="pre">Repository.create_download</span></tt> and <tt class="docutils literal"><span class="pre">NamedUser.create_gist</span></tt> as the corrensponding APIs are not documented anymore</li>
+</ul>
+</div>
+<div class="section" id="version-1-19-0-september-8th-2013-akfish-s-edition">
+<h3><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues?milestone=31&amp;state=closed">Version 1.19.0</a> (September 8th, 2013) (AKFish&#8217;s edition)<a class="headerlink" href="#version-1-19-0-september-8th-2013-akfish-s-edition" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Implement <a class="reference external" href="http://developer.github.com/guides/getting-started/#conditional-requests">conditional requests</a> by the method <tt class="docutils literal"><span class="pre">GithubObject.update</span></tt>. Thank you very much <a class="reference external" href="https://github.com/akfish">akfish</a> for the pull request and your collaboration!</li>
+<li>Implement persistence of PyGithub objects: <tt class="docutils literal"><span class="pre">Github.save</span></tt> and <tt class="docutils literal"><span class="pre">Github.load</span></tt>. Don&#8217;t forget to <tt class="docutils literal"><span class="pre">update</span></tt> your objects after loading them, it won&#8217;t decrease your rate limiting quota if nothing has changed. Again, thank you <a class="reference external" href="https://github.com/akfish">akfish</a></li>
+<li>Implement <tt class="docutils literal"><span class="pre">Github.get_repos</span></tt> to get all public repositories</li>
+<li>Implement <tt class="docutils literal"><span class="pre">NamedUser.has_in_following</span></tt></li>
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/188">Implement</a> <tt class="docutils literal"><span class="pre">Github.get_api_status</span></tt>, <tt class="docutils literal"><span class="pre">Github.get_last_api_status_message</span></tt> and <tt class="docutils literal"><span class="pre">Github.get_api_status_messages</span></tt>. Thank you <a class="reference external" href="https://github.com/ruxandraburtica">ruxandraburtica</a> for asking</li>
+<li>Implement <tt class="docutils literal"><span class="pre">Github.get_rate_limit</span></tt></li>
+<li>Add many missing attributes</li>
+<li>Technical change: HTTP headers are now stored in retrieved objects. This is a base for new functionalities. Thank you <a class="reference external" href="https://github.com/akfish">akfish</a> for the pull request</li>
+<li>Use the new URL to fork gists (minor change)</li>
+<li>Use the new URL to test hooks (minor change)</li>
+</ul>
+</div>
+<div class="section" id="version-1-18-0-august-21st-2013-benodet-edition">
+<h3><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues?milestone=30&amp;state=closed">Version 1.18.0</a> (August 21st, 2013) (Bénodet edition)<a class="headerlink" href="#version-1-18-0-august-21st-2013-benodet-edition" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/pull/181">Issues</a>&#8216; <tt class="docutils literal"><span class="pre">repository</span></tt> attribute will never be <tt class="docutils literal"><span class="pre">None</span></tt>. Thank you <a class="reference external" href="https://github.com/stuglaser">stuglaser</a> for the pull request</li>
+<li>No more false assumption on <a class="reference external" href="https://github.com/jacquev6/PyGithub/pull/186">rate_limiting</a>, and creation of <tt class="docutils literal"><span class="pre">rate_limiting_resettime</span></tt>. Thank you <a class="reference external" href="https://github.com/edjackson">edjackson</a> for the pull request</li>
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/pull/187">New</a> parameters <tt class="docutils literal"><span class="pre">since</span></tt> and <tt class="docutils literal"><span class="pre">until</span></tt> to <tt class="docutils literal"><span class="pre">Repository.get_commits</span></tt>. Thank you <a class="reference external" href="https://github.com/apetresc">apetresc</a> for the pull request</li>
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/pull/182">Catch</a> Json parsing exception for some internal server errors, and throw a better exception. Thank you <a class="reference external" href="https://github.com/MarkRoddy">MarkRoddy</a> for the pull request</li>
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/pull/184">Allow</a> reversed iteration of <a href="#id1"><span class="problematic" id="id2">``</span></a>PaginatedList``s. Thank you <a class="reference external" href="https://github.com/davidbrai">davidbrai</a> for the pull request</li>
+</ul>
+</div>
+<div class="section" id="version-1-17-0-jully-7th-2013-hamburg-edition">
+<h3><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues?milestone=29&amp;state=closed">Version 1.17.0</a> (Jully 7th, 2013) (Hamburg edition)<a class="headerlink" href="#version-1-17-0-jully-7th-2013-hamburg-edition" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/pull/176">Fix</a> bug in <tt class="docutils literal"><span class="pre">Repository.get_comment</span></tt> when using custom <tt class="docutils literal"><span class="pre">per_page</span></tt>. Thank you <a class="reference external" href="https://github.com/davidbrai">davidbrai</a></li>
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/pull/174">Handle</a> Http redirects in <tt class="docutils literal"><span class="pre">Repository.get_dir_contents</span></tt>. Thank you <a class="reference external" href="https://github.com/MarkRoddy">MarkRoddy</a></li>
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/173">Implement</a> API <tt class="docutils literal"><span class="pre">/user</span></tt> in <tt class="docutils literal"><span class="pre">Github.get_users</span></tt>. Thank you <a class="reference external" href="https://github.com/rakeshcusat">rakeshcusat</a> for asking</li>
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/pull/171">Improve</a> the documentation. Thank you <a class="reference external" href="https://github.com/martinqt">martinqt</a></li>
+</ul>
+</div>
+<div class="section" id="version-1-16-0-may-31th-2013-concarneau-edition">
+<h3>Version 1.16.0 (May 31th, 2013) (Concarneau edition)<a class="headerlink" href="#version-1-16-0-may-31th-2013-concarneau-edition" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/pull/170">Add</a> the html_url attribute to IssueComment and PullRequestComment</li>
+</ul>
+</div>
+<div class="section" id="version-1-15-0-may-17th-2013-switzerland-edition">
+<h3><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues?milestone=25&amp;state=closed">Version 1.15.0</a> (May 17th, 2013) (Switzerland edition)<a class="headerlink" href="#version-1-15-0-may-17th-2013-switzerland-edition" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/166">Implement</a> listing of user issues with all parameters. Thank you Daehyok Shin for reporting</li>
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/152">Raise</a> two new specific exceptions</li>
+</ul>
+</div>
+<div class="section" id="version-1-14-2-april-25th-2013">
+<h3><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues?milestone=27&amp;state=closed">Version 1.14.2</a> (April 25th, 2013)<a class="headerlink" href="#version-1-14-2-april-25th-2013" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/158">Fix</a> paginated requests when using secret-key oauth. Thank you <a class="reference external" href="https://github.com/jseabold">jseabold</a> for analysing the bug</li>
+</ul>
+</div>
+<div class="section" id="version-1-14-1-april-25th-2013">
+<h3><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues?milestone=26&amp;state=closed">Version 1.14.1</a> (April 25th, 2013)<a class="headerlink" href="#version-1-14-1-april-25th-2013" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Set the default User-Agent header to &#8220;PyGithub/Python&#8221;. (Github has <a class="reference external" href="http://developer.github.com/changes/2013-04-24-user-agent-required/">enforced the User Agent header</a> yesterday.) Thank you <a class="reference external" href="https://github.com/jjh42">jjh42</a> for <a class="reference external" href="https://github.com/jacquev6/PyGithub/pull/161">the fix</a>, thank you <a class="reference external" href="https://github.com/jasenmh">jasenmh</a> and <a class="reference external" href="https://github.com/pconrad">pconrad</a> for reporting <a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/160">the issue</a>.</li>
+</ul>
+</div>
+<div class="section" id="version-1-14-0-april-22nd-2013">
+<h3><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues?milestone=24&amp;state=closed">Version 1.14.0</a> (April 22nd, 2013)<a class="headerlink" href="#version-1-14-0-april-22nd-2013" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/156">Improve</a> gist edition. Thank you <a class="reference external" href="https://github.com/jasonwiener">jasonwiener</a> for asking:<ul>
+<li>Delete a file with <tt class="docutils literal"><span class="pre">gist.edit(files={&quot;name.txt&quot;:</span> <span class="pre">None})</span></tt></li>
+<li>Rename a file with <tt class="docutils literal"><span class="pre">gist.edit(files={&quot;old_name.txt&quot;:</span> <span class="pre">github.InputFileContent(gist.files[&quot;old_name.txt&quot;].content,</span> <span class="pre">new_name=&quot;new_name.txt&quot;)})</span></tt></li>
+</ul>
+</li>
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/152">Raise</a> specific exceptions. Thank you <a class="reference external" href="https://github.com/pconrad">pconrad</a> for giving me the idea</li>
+</ul>
+</div>
+<div class="section" id="version-1-13-1-march-28nd-2013">
+<h3>Version 1.13.1 (March 28nd, 2013)<a class="headerlink" href="#version-1-13-1-march-28nd-2013" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/153">Fix</a> login/password authentication for Python 3. Thank you <a class="reference external" href="https://github.com/sebastianstigler">sebastianstigler</a> for reporting</li>
+</ul>
+</div>
+<div class="section" id="version-1-13-0-march-22nd-2013">
+<h3><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues?milestone=23&amp;state=closed">Version 1.13.0</a> (March 22nd, 2013)<a class="headerlink" href="#version-1-13-0-march-22nd-2013" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/143">Fix</a> for Python 3 on case-insensitive file-systems. Thank you <a class="reference external" href="https://github.com/ptwobrussell">ptwobrussell</a> for reporting</li>
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/144">Expose</a> raw data returned by Github for all objects. Thank you <a class="reference external" href="https://github.com/ptwobrussell">ptwobrussell</a> for asking</li>
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/145">Add</a> a property <a class="reference internal" href="github.html#github.MainClass.Github.per_page" title="github.MainClass.Github.per_page"><tt class="xref py py-attr docutils literal"><span class="pre">github.MainClass.Github.per_page</span></tt></a> (and a parameter to the constructor) to change the number of items requested in paginated requests. Thank you again <a class="reference external" href="https://github.com/ptwobrussell">ptwobrussell</a> for asking</li>
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/pull/148">Implement</a> the first part of the <a class="reference external" href="http://developer.github.com/changes/2012-10-26-notifications-api/">Notifications</a> API. Thank you <a class="reference external" href="https://github.com/pgolm">pgolm</a></li>
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/149">Fix</a> automated tests on Python 3.3. Thank you <a class="reference external" href="https://github.com/bkabrda">bkabrda</a> for reporting</li>
+</ul>
+</div>
+<div class="section" id="version-1-12-2-march-3rd-2013">
+<h3>Version 1.12.2 (March 3rd, 2013)<a class="headerlink" href="#version-1-12-2-march-3rd-2013" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/142">Fix</a> major issue with Python 3: Json decoding was broken. Thank you <a class="reference external" href="https://github.com/bilderbuchi">bilderbuchi</a> for reporting</li>
+</ul>
+</div>
+<div class="section" id="version-1-12-1-february-20th-2013">
+<h3>Version 1.12.1 (February 20th, 2013)<a class="headerlink" href="#version-1-12-1-february-20th-2013" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Nothing, but packaging/upload of 1.12.0 failed</li>
+</ul>
+</div>
+<div class="section" id="version-1-12-0-february-20th-2013">
+<h3><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues?milestone=22&amp;state=closed">Version 1.12.0</a> (February 20th, 2013)<a class="headerlink" href="#version-1-12-0-february-20th-2013" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Much better documentation: <a class="reference external" href="http://jacquev6.github.com/PyGithub">http://jacquev6.github.com/PyGithub</a></li>
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/140">Implement</a> <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_dir_contents" title="github.Repository.Repository.get_dir_contents"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_dir_contents()</span></tt></a>. Thank you <a class="reference external" href="https://github.com/ksookocheff-va">ksookocheff-va</a> for asking</li>
+</ul>
+</div>
+<div class="section" id="version-1-11-1-february-9th-2013-london-edition">
+<h3><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues?milestone=21&amp;state=closed">Version 1.11.1</a> (February 9th, 2013) (London edition)<a class="headerlink" href="#version-1-11-1-february-9th-2013-london-edition" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Fix <a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/139#issuecomment-13280121">bug</a> in lazy completion. Thank you <a class="reference external" href="https://github.com/ianozsvald">ianozsvald</a> for pinpointing it</li>
+</ul>
+</div>
+<div class="section" id="version-1-11-0-february-7th-2013">
+<h3><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues?milestone=19&amp;state=closed">Version 1.11.0</a> (February 7th, 2013)<a class="headerlink" href="#version-1-11-0-february-7th-2013" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Fix bug in PaginatedList without url parameters. Thank you <a class="reference external" href="https://github.com/llimllib">llimllib</a> for the <a class="reference external" href="https://github.com/jacquev6/PyGithub/pull/133">contribution</a></li>
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/130">Implement</a> <a class="reference internal" href="github_objects/NamedUser.html#github.NamedUser.NamedUser.get_keys" title="github.NamedUser.NamedUser.get_keys"><tt class="xref py py-meth docutils literal"><span class="pre">github.NamedUser.NamedUser.get_keys()</span></tt></a></li>
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/129">Support PubSubHub</a>: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.subscribe_to_hub" title="github.Repository.Repository.subscribe_to_hub"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.subscribe_to_hub()</span></tt></a> and <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.unsubscribe_from_hub" title="github.Repository.Repository.unsubscribe_from_hub"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.unsubscribe_from_hub()</span></tt></a></li>
+<li><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/134">Publish the oauth scopes</a> in <a class="reference internal" href="github.html#github.MainClass.Github.oauth_scopes" title="github.MainClass.Github.oauth_scopes"><tt class="xref py py-attr docutils literal"><span class="pre">github.MainClass.Github.oauth_scopes</span></tt></a>, thank you <a class="reference external" href="https://github.com/bilderbuchi">bilderbuchi</a> for asking</li>
+</ul>
+</div>
+<div class="section" id="version-1-10-0-december-25th-2012-christmas-2012-edition">
+<h3><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues?milestone=16&amp;state=closed">Version 1.10.0</a> (December 25th, 2012) (Christmas 2012 edition)<a class="headerlink" href="#version-1-10-0-december-25th-2012-christmas-2012-edition" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Major improvement: support Python 3! PyGithub is automaticaly tested on <a class="reference external" href="http://travis-ci.org/jacquev6/PyGithub">Travis</a> with versions 2.5, 2.6, 2.7, 3.1 and 3.2 of Python</li>
+<li>Add a shortcut function <a class="reference internal" href="github.html#github.MainClass.Github.get_repo" title="github.MainClass.Github.get_repo"><tt class="xref py py-meth docutils literal"><span class="pre">github.MainClass.Github.get_repo()</span></tt></a> to get a repo directly from its full name. thank you <a class="reference external" href="https://github.com/lwc">lwc</a> for the contribution</li>
+<li><a class="reference internal" href="github.html#github.MainClass.Github.get_gitignore_templates" title="github.MainClass.Github.get_gitignore_templates"><tt class="xref py py-meth docutils literal"><span class="pre">github.MainClass.Github.get_gitignore_templates()</span></tt></a> and <a class="reference internal" href="github.html#github.MainClass.Github.get_gitignore_template" title="github.MainClass.Github.get_gitignore_template"><tt class="xref py py-meth docutils literal"><span class="pre">github.MainClass.Github.get_gitignore_template()</span></tt></a> for APIs <tt class="docutils literal"><span class="pre">/gitignore/templates</span></tt></li>
+<li>Add the optional <tt class="docutils literal"><span class="pre">ref</span></tt> parameter to <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_contents" title="github.Repository.Repository.get_contents"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_contents()</span></tt></a> and <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_readme" title="github.Repository.Repository.get_readme"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_readme()</span></tt></a>. Thank you <a class="reference external" href="https://github.com/fixxxeruk">fixxxeruk</a> for the contribution</li>
+<li>Get comments for all issues and all pull requests on a repository (<tt class="docutils literal"><span class="pre">GET</span> <span class="pre">/repos/:owner/:repo/pulls/comments</span></tt>: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_pulls_comments" title="github.Repository.Repository.get_pulls_comments"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_pulls_comments()</span></tt></a> or <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_pulls_review_comments" title="github.Repository.Repository.get_pulls_review_comments"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_pulls_review_comments()</span></tt></a>; <tt class="docutils literal"><span class="pre">GET</span> <span class="pre">/repos/:owner/:repo/issues/comments</span></tt>: <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository.get_issues_comments" title="github.Repository.Repository.get_issues_comments"><tt class="xref py py-meth docutils literal"><span class="pre">github.Repository.Repository.get_issues_comments()</span></tt></a>)</li>
+</ul>
+</div>
+<div class="section" id="version-1-9-1-november-20th-2012">
+<h3><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues?milestone-17&amp;state-closed">Version 1.9.1</a> (November 20th, 2012)<a class="headerlink" href="#version-1-9-1-november-20th-2012" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Fix an assertion failure when integers returned by Github do not fit in a Python <tt class="docutils literal"><span class="pre">int</span></tt></li>
+</ul>
+</div>
+<div class="section" id="version-1-9-0-november-19th-2012">
+<h3><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues?milestone-14&amp;state-closed">Version 1.9.0</a> (November 19th, 2012)<a class="headerlink" href="#version-1-9-0-november-19th-2012" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>You can now use your client_id and client_secret to increase rate limiting without authentication</li>
+<li>You can now send a custom User-Agent</li>
+<li>PullRequest now has its &#8216;assignee&#8217; attribute, thank you <a class="reference external" href="https://github.com/mstead">mstead</a></li>
+<li>Repository.edit now has &#8216;default_branch&#8217; parameter</li>
+<li>create_repo has &#8216;auto_init&#8217; and &#8216;gitignore_template&#8217; parameters</li>
+<li>GistComment URL is changed (see <a class="reference external" href="http://developer.github.com/changes/2012-10-31-gist-comment-uris">http://developer.github.com/changes/2012-10-31-gist-comment-uris</a>)</li>
+<li>A typo in the readme was fixed by <a class="reference external" href="https://github.com/tymofij">tymofij</a>, thank you</li>
+<li>Internal stuff:<ul>
+<li>Add encoding comment to Python files, thank you <a class="reference external" href="https://github.com/Zearin">Zearin</a></li>
+<li>Restore support of Python 2.5</li>
+<li>Restore coverage measurement in setup.py test</li>
+<li>Small refactoring</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="version-1-8-1-october-28th-2012">
+<h3><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues?milestone-15&amp;state-closed">Version 1.8.1</a> (October 28th, 2012)<a class="headerlink" href="#version-1-8-1-october-28th-2012" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Repository.get_git_ref prepends &#8220;refs/&#8221; to the requested references. Thank you <a class="reference external" href="https://github.com/simon-weber">simon-weber</a> for noting the incoherence between documentation and behavior. If you feel like it&#8217;s a breaking change, please see <a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/104">this issue</a></li>
+</ul>
+</div>
+<div class="section" id="version-1-8-0-september-30th-2012">
+<h3><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues?milestone-13&amp;state-closed">Version 1.8.0</a> (September 30th, 2012)<a class="headerlink" href="#version-1-8-0-september-30th-2012" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Enable <a class="reference external" href="http://travis-ci.org/#!/jacquev6/PyGithub">Travis CI</a></li>
+<li>Fix error 500 when json payload contains percent character (<cite>%</cite>). Thank you again <a class="reference external" href="https://github.com/quixotique">quixotique</a> for pointing that and reporting it to Github</li>
+<li>Enable debug logging. Logger name is <cite>&#8220;github&#8221;</cite>. Simple logging can be enabled by <cite>github.enable_console_debug_logging()</cite>. Thank you <a class="reference external" href="https://github.com/quixotique">quixotique</a> for the merge request and the advice</li>
+<li>Publish tests in the PyPi source archive to ease QA tests of the <a class="reference external" href="http://www.freshports.org/devel/py-pygithub">FreeBSD port</a>. Thank you <a class="reference external" href="https://github.com/koobs">koobs</a> for maintaining this port</li>
+<li>Switch to <a class="reference external" href="http://semver.org/">Semantic Versioning</a></li>
+<li>Respect <a class="reference external" href="http://www.python.org/dev/peps/pep-0008">pep8 Style Guide for Python Code</a></li>
+</ul>
+</div>
+<div class="section" id="version-1-7-september-12th-2012">
+<h3><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues?milestone-12&amp;state-closed">Version 1.7</a> (September 12th, 2012)<a class="headerlink" href="#version-1-7-september-12th-2012" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Be able to clear the assignee and the milestone of an Issue. Thank you <a class="reference external" href="https://github.com/quixotique">quixotique</a> for the merge request</li>
+<li>Fix an AssertionFailure in <cite>Organization.get_xxx</cite> when using Github Enterprise. Thank you <a class="reference external" href="https://github.com/mnsanghvi">mnsanghvi</a> for pointing that</li>
+<li>Expose pagination to users needing it (<cite>PaginatedList.get_page</cite>). Thank you <a class="reference external" href="https://github.com/kukuts">kukuts</a> for asking</li>
+<li>Improve handling of legacy search APIs</li>
+<li>Small refactoring (documentation, removal of old code generation artifacts)</li>
+</ul>
+</div>
+<div class="section" id="version-1-6-september-8th-2012">
+<h3><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues?milestone-10&amp;state-closed">Version 1.6</a> (September 8th, 2012)<a class="headerlink" href="#version-1-6-september-8th-2012" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Restore support for Python 2.5</li>
+<li>Implement new APIS:<ul>
+<li>/hooks (undocumented, but mentioned in <a class="reference external" href="http://developer.github.com/v3/repos/hooks/#create-a-hook">http://developer.github.com/v3/repos/hooks/#create-a-hook</a>)</li>
+<li><a class="reference external" href="http://developer.github.com/v3/repos/merging">Merging</a></li>
+<li><a class="reference external" href="http://developer.github.com/v3/repos/starring">Starring</a> and <a class="reference external" href="http://developer.github.com/v3/repos/watching">subscriptions</a></li>
+<li><a class="reference external" href="http://developer.github.com/v3/issues/assignees">Assignees</a></li>
+<li><a class="reference external" href="http://developer.github.com/v3/repos/statuses">Commit statuses</a></li>
+<li><a class="reference external" href="http://developer.github.com/v3/repos/contents">Contents</a>, thank you <a class="reference external" href="https://github.com/berndca">berndca</a> for asking</li>
+</ul>
+</li>
+<li>Clarify issue and review comments on PullRequest, thank you <a class="reference external" href="https://github.com/nixoz2k7">nixoz2k7</a> for asking</li>
+</ul>
+</div>
+<div class="section" id="version-1-5-september-5th-2012">
+<h3><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues?milestone-9&amp;state-closed">Version 1.5</a> (September 5th, 2012)<a class="headerlink" href="#version-1-5-september-5th-2012" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Add a timeout option, thank you much <a class="reference external" href="https://github.com/xobb1t">xobb1t</a> for the merge request. <em>This drops Python 2.5 support</em>. I may be able to restore it in next version.</li>
+<li>Implement <cite>Repository.delete</cite>, thank you <a class="reference external" href="https://github.com/pmchen">pmchen</a> for asking</li>
+</ul>
+</div>
+<div class="section" id="version-1-4-august-4th-2012">
+<h3><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues?milestone-8&amp;state-closed">Version 1.4</a> (August 4th, 2012)<a class="headerlink" href="#version-1-4-august-4th-2012" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Allow connection to a custom Github URL, for Github Enterprise, thank you very much <a class="reference external" href="https://github.com/engie">engie</a> for the merge request</li>
+</ul>
+</div>
+<div class="section" id="version-1-3-july-13th-2012">
+<h3><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues?milestone-7&amp;state-closed">Version 1.3</a> (July 13th, 2012)<a class="headerlink" href="#version-1-3-july-13th-2012" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Implement <a class="reference external" href="http://developer.github.com/v3/markdown">markdown rendering</a></li>
+<li><cite>GitAuthor.date</cite> is now a datetime, thank you <a class="reference external" href="https://github.com/bilderbuchi">bilderbuchi</a></li>
+<li>Fix documentation of <cite>Github.get_gist</cite>: <cite>id</cite> is a string, not an integer</li>
+</ul>
+</div>
+<div class="section" id="version-1-2-june-29th-2012">
+<h3><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues?milestone-6&amp;state-closed">Version 1.2</a> (June 29th, 2012)<a class="headerlink" href="#version-1-2-june-29th-2012" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Implement <a class="reference external" href="http://developer.github.com/v3/search">legacy search APIs</a>, thank you <a class="reference external" href="https://github.com/kukuts">kukuts</a> for telling me Github had released them</li>
+<li>Fix a bug with issue labels containing spaces, thank you <a class="reference external" href="https://github.com/philipkimmey">philipkimmey</a> for detecting the bug and fixing it</li>
+<li>Clarify how collections of objects are returned by <cite>get_*</cite> methods, thank you <a class="reference external" href="https://github.com/bilderbuchi">bilderbuchi</a> for asking</li>
+</ul>
+</div>
+<div class="section" id="version-1-1-june-20th-2012">
+<h3>Version 1.1 (June 20th, 2012)<a class="headerlink" href="#version-1-1-june-20th-2012" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Restore compatibility with Python 2.5, thank you <a class="reference external" href="https://github.com/pmuilu">pmuilu</a></li>
+<li>Use <cite>package_data</cite> instead of <cite>data_files</cite> for documentation files in <cite>setup.py</cite>, thank you <a class="reference external" href="https://github.com/malexw">malexw</a> for reporting</li>
+</ul>
+</div>
+<div class="section" id="version-1-0-june-3rd-2012">
+<h3><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues?milestone-2&amp;state-closed">Version 1.0</a> (June 3rd, 2012)<a class="headerlink" href="#version-1-0-june-3rd-2012" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Complete rewrite, with no more complicated meta-description</li>
+<li>Full typing of attributes and parameters</li>
+<li>Full documentation of attributes and parameters</li>
+<li>More usable exceptions raised in case on problems with the API</li>
+<li>Some bugs and limitations fixed, special thanks to <a class="reference external" href="https://github.com/bilderbuchi">bilderbuchi</a>, <a class="reference external" href="https://github.com/roskakori">roskakori</a> and <a class="reference external" href="https://github.com/tallforasmurf">tallforasmurf</a> for reporting them!</li>
+</ul>
+</div>
+</div>
+<div class="section" id="pre-release-versions">
+<h2>Pre-release versions<a class="headerlink" href="#pre-release-versions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="version-0-7-may-26th-2012">
+<h3><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues?milestone-5&amp;state-closed">Version 0.7</a> (May 26th, 2012)<a class="headerlink" href="#version-0-7-may-26th-2012" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Use PyGithub with OAuth authentication or with no authentication at all</li>
+</ul>
+</div>
+<div class="section" id="version-0-6-april-17th-2012">
+<h3><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues?milestone-4&amp;state-closed">Version 0.6</a> (April 17th, 2012)<a class="headerlink" href="#version-0-6-april-17th-2012" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Fix <a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/21">issue 21</a> (KeyError when accessing repositories)</li>
+<li>Re-completed the API with NamedUser.create_gist</li>
+</ul>
+</div>
+<div class="section" id="version-0-5-march-19th-2012">
+<h3><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues?milestone-3&amp;state-closed">Version 0.5</a> (March 19th, 2012)<a class="headerlink" href="#version-0-5-march-19th-2012" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Major achievement: <strong>all APIs are implemented</strong></li>
+<li>More refactoring, of course</li>
+</ul>
+</div>
+<div class="section" id="version-0-4-march-12th-2012">
+<h3><a class="reference external" href="https://github.com/jacquev6/PyGithub/issues?milestone-1&amp;state-closed">Version 0.4</a> (March 12th, 2012)<a class="headerlink" href="#version-0-4-march-12th-2012" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>The list of the not implemented APIs is shorter than the list of the implemented APIs</li>
+<li>APIs <em>not implemented</em>:<ul>
+<li>GET <cite>/gists/public</cite></li>
+<li>GET <cite>/issues</cite></li>
+<li>GET <cite>/repos/:owner/:repo/compare/:base...:head</cite></li>
+<li>GET <cite>/repos/:owner/:repo/git/trees/:sha?recursive-1</cite></li>
+<li>POST <cite>/repos/:owner/:repo/git/trees?base_tree-</cite></li>
+</ul>
+</li>
+<li>Gists</li>
+<li>Autorizations</li>
+<li>Keys</li>
+<li>Hooks</li>
+<li>Events</li>
+<li>Merge pull requests</li>
+<li>More refactoring, one more time</li>
+</ul>
+</div>
+<div class="section" id="version-0-3-february-26th-2012">
+<h3>Version 0.3 (February 26th, 2012)<a class="headerlink" href="#version-0-3-february-26th-2012" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>More refactoring</li>
+<li>Issues, milestones and their labels</li>
+<li>NamedUser:<ul>
+<li>emails</li>
+</ul>
+</li>
+<li>Repository:<ul>
+<li>downloads</li>
+<li>tags, branches, commits and comments (not the same as &#8220;Git objects&#8221; of version 0.2)</li>
+<li>pull requests (no automatic merge yet)</li>
+</ul>
+</li>
+<li>Automatic generation of the reference documentation of classes, with less &#8220;see API&#8221;s, and less errors</li>
+</ul>
+</div>
+<div class="section" id="version-0-2-february-23rd-2012">
+<h3>Version 0.2 (February 23rd, 2012)<a class="headerlink" href="#version-0-2-february-23rd-2012" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Refactoring</li>
+<li>Teams details and modification<ul>
+<li>basic attributes</li>
+<li>list teams in organizations, on repositories</li>
+</ul>
+</li>
+<li>Git objects<ul>
+<li>create and get tags, references, commits, trees, blobs</li>
+<li>list and edit references</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="version-0-1-february-19th-2012">
+<h3>Version 0.1 (February 19th, 2012)<a class="headerlink" href="#version-0-1-february-19th-2012" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>User details and modification<ul>
+<li>basic attributes</li>
+<li>followers, following, watching</li>
+<li>organizations</li>
+<li>repositories</li>
+</ul>
+</li>
+<li>Repository details and modification<ul>
+<li>basic attributes</li>
+<li>forking</li>
+<li>collaborators, contributors, watchers</li>
+</ul>
+</li>
+<li>Organization details and modification<ul>
+<li>basic attributes</li>
+<li>members and public members</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Change log</a><ul>
+<li><a class="reference internal" href="#stable-versions">Stable versions</a><ul>
+<li><a class="reference internal" href="#version-1-22-0-december-15th-2013">Version 1.22.0 (December 15th, 2013)</a></li>
+<li><a class="reference internal" href="#version-1-21-0-november-th-2013">Version 1.21.0 (November ??th, 2013)</a></li>
+<li><a class="reference internal" href="#version-1-20-0-october-20th-2013-first-seattle-edition">Version 1.20.0 (October 20th, 2013) (First Seattle edition)</a></li>
+<li><a class="reference internal" href="#version-1-19-0-september-8th-2013-akfish-s-edition">Version 1.19.0 (September 8th, 2013) (AKFish&#8217;s edition)</a></li>
+<li><a class="reference internal" href="#version-1-18-0-august-21st-2013-benodet-edition">Version 1.18.0 (August 21st, 2013) (Bénodet edition)</a></li>
+<li><a class="reference internal" href="#version-1-17-0-jully-7th-2013-hamburg-edition">Version 1.17.0 (Jully 7th, 2013) (Hamburg edition)</a></li>
+<li><a class="reference internal" href="#version-1-16-0-may-31th-2013-concarneau-edition">Version 1.16.0 (May 31th, 2013) (Concarneau edition)</a></li>
+<li><a class="reference internal" href="#version-1-15-0-may-17th-2013-switzerland-edition">Version 1.15.0 (May 17th, 2013) (Switzerland edition)</a></li>
+<li><a class="reference internal" href="#version-1-14-2-april-25th-2013">Version 1.14.2 (April 25th, 2013)</a></li>
+<li><a class="reference internal" href="#version-1-14-1-april-25th-2013">Version 1.14.1 (April 25th, 2013)</a></li>
+<li><a class="reference internal" href="#version-1-14-0-april-22nd-2013">Version 1.14.0 (April 22nd, 2013)</a></li>
+<li><a class="reference internal" href="#version-1-13-1-march-28nd-2013">Version 1.13.1 (March 28nd, 2013)</a></li>
+<li><a class="reference internal" href="#version-1-13-0-march-22nd-2013">Version 1.13.0 (March 22nd, 2013)</a></li>
+<li><a class="reference internal" href="#version-1-12-2-march-3rd-2013">Version 1.12.2 (March 3rd, 2013)</a></li>
+<li><a class="reference internal" href="#version-1-12-1-february-20th-2013">Version 1.12.1 (February 20th, 2013)</a></li>
+<li><a class="reference internal" href="#version-1-12-0-february-20th-2013">Version 1.12.0 (February 20th, 2013)</a></li>
+<li><a class="reference internal" href="#version-1-11-1-february-9th-2013-london-edition">Version 1.11.1 (February 9th, 2013) (London edition)</a></li>
+<li><a class="reference internal" href="#version-1-11-0-february-7th-2013">Version 1.11.0 (February 7th, 2013)</a></li>
+<li><a class="reference internal" href="#version-1-10-0-december-25th-2012-christmas-2012-edition">Version 1.10.0 (December 25th, 2012) (Christmas 2012 edition)</a></li>
+<li><a class="reference internal" href="#version-1-9-1-november-20th-2012">Version 1.9.1 (November 20th, 2012)</a></li>
+<li><a class="reference internal" href="#version-1-9-0-november-19th-2012">Version 1.9.0 (November 19th, 2012)</a></li>
+<li><a class="reference internal" href="#version-1-8-1-october-28th-2012">Version 1.8.1 (October 28th, 2012)</a></li>
+<li><a class="reference internal" href="#version-1-8-0-september-30th-2012">Version 1.8.0 (September 30th, 2012)</a></li>
+<li><a class="reference internal" href="#version-1-7-september-12th-2012">Version 1.7 (September 12th, 2012)</a></li>
+<li><a class="reference internal" href="#version-1-6-september-8th-2012">Version 1.6 (September 8th, 2012)</a></li>
+<li><a class="reference internal" href="#version-1-5-september-5th-2012">Version 1.5 (September 5th, 2012)</a></li>
+<li><a class="reference internal" href="#version-1-4-august-4th-2012">Version 1.4 (August 4th, 2012)</a></li>
+<li><a class="reference internal" href="#version-1-3-july-13th-2012">Version 1.3 (July 13th, 2012)</a></li>
+<li><a class="reference internal" href="#version-1-2-june-29th-2012">Version 1.2 (June 29th, 2012)</a></li>
+<li><a class="reference internal" href="#version-1-1-june-20th-2012">Version 1.1 (June 20th, 2012)</a></li>
+<li><a class="reference internal" href="#version-1-0-june-3rd-2012">Version 1.0 (June 3rd, 2012)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#pre-release-versions">Pre-release versions</a><ul>
+<li><a class="reference internal" href="#version-0-7-may-26th-2012">Version 0.7 (May 26th, 2012)</a></li>
+<li><a class="reference internal" href="#version-0-6-april-17th-2012">Version 0.6 (April 17th, 2012)</a></li>
+<li><a class="reference internal" href="#version-0-5-march-19th-2012">Version 0.5 (March 19th, 2012)</a></li>
+<li><a class="reference internal" href="#version-0-4-march-12th-2012">Version 0.4 (March 12th, 2012)</a></li>
+<li><a class="reference internal" href="#version-0-3-february-26th-2012">Version 0.3 (February 26th, 2012)</a></li>
+<li><a class="reference internal" href="#version-0-2-february-23rd-2012">Version 0.2 (February 23rd, 2012)</a></li>
+<li><a class="reference internal" href="#version-0-1-february-19th-2012">Version 0.1 (February 19th, 2012)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="github_objects/GitBlob.html"
+                        title="previous chapter">GitBlob</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="contributing.html"
+                        title="next chapter">Contributing</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/changes.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="contributing.html" title="Contributing"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="github_objects/GitBlob.html" title="GitBlob"
+             >previous</a> |</li>
+        <li><a href="index.html">PyGithub 1.22.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Vincent Jacques.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

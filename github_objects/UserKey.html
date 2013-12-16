@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>UserKey &mdash; PyGithub 1.22.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.22.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="PyGithub 1.22.0 documentation" href="../index.html" />
+    <link rel="up" title="Github objects" href="../github_objects.html" />
+    <link rel="next" title="GitignoreTemplate" href="GitignoreTemplate.html" />
+    <link rel="prev" title="RateLimit" href="RateLimit.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="GitignoreTemplate.html" title="GitignoreTemplate"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="RateLimit.html" title="RateLimit"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">PyGithub 1.22.0 documentation</a> &raquo;</li>
+          <li><a href="../reference.html" >Reference</a> &raquo;</li>
+          <li><a href="../github_objects.html" accesskey="U">Github objects</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="userkey">
+<h1>UserKey<a class="headerlink" href="#userkey" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="github.UserKey.UserKey">
+<em class="property">class </em><tt class="descclassname">github.UserKey.</tt><tt class="descname">UserKey</tt><a class="headerlink" href="#github.UserKey.UserKey" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class represents UserKeys. The reference can be found here <a class="reference external" href="http://developer.github.com/v3/users/keys/">http://developer.github.com/v3/users/keys/</a></p>
+<dl class="attribute">
+<dt id="github.UserKey.UserKey.id">
+<tt class="descname">id</tt><a class="headerlink" href="#github.UserKey.UserKey.id" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">integer</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.UserKey.UserKey.key">
+<tt class="descname">key</tt><a class="headerlink" href="#github.UserKey.UserKey.key" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.UserKey.UserKey.title">
+<tt class="descname">title</tt><a class="headerlink" href="#github.UserKey.UserKey.title" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.UserKey.UserKey.url">
+<tt class="descname">url</tt><a class="headerlink" href="#github.UserKey.UserKey.url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.UserKey.UserKey.verified">
+<tt class="descname">verified</tt><a class="headerlink" href="#github.UserKey.UserKey.verified" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.UserKey.UserKey.delete">
+<tt class="descname">delete</tt><big>(</big><big>)</big><a class="headerlink" href="#github.UserKey.UserKey.delete" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><a class="reference external" href="http://developer.github.com/v3/users/keys">DELETE /user/keys/:id</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.UserKey.UserKey.edit">
+<tt class="descname">edit</tt><big>(</big><em>title=NotSet</em>, <em>key=NotSet</em><big>)</big><a class="headerlink" href="#github.UserKey.UserKey.edit" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><p class="first"><a class="reference external" href="http://developer.github.com/v3/users/keys">PATCH /user/keys/:id</a></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>title</strong> &#8211; string</li>
+<li><strong>key</strong> &#8211; string</li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="RateLimit.html"
+                        title="previous chapter">RateLimit</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="GitignoreTemplate.html"
+                        title="next chapter">GitignoreTemplate</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/github_objects/UserKey.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="GitignoreTemplate.html" title="GitignoreTemplate"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="RateLimit.html" title="RateLimit"
+             >previous</a> |</li>
+        <li><a href="../index.html">PyGithub 1.22.0 documentation</a> &raquo;</li>
+          <li><a href="../reference.html" >Reference</a> &raquo;</li>
+          <li><a href="../github_objects.html" >Github objects</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Vincent Jacques.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

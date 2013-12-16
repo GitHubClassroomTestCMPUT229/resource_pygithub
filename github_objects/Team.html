@@ -1,0 +1,415 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Team &mdash; PyGithub 1.22.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.22.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="PyGithub 1.22.0 documentation" href="../index.html" />
+    <link rel="up" title="Github objects" href="../github_objects.html" />
+    <link rel="next" title="GitObject" href="GitObject.html" />
+    <link rel="prev" title="PullRequest" href="PullRequest.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="GitObject.html" title="GitObject"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="PullRequest.html" title="PullRequest"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">PyGithub 1.22.0 documentation</a> &raquo;</li>
+          <li><a href="../reference.html" >Reference</a> &raquo;</li>
+          <li><a href="../github_objects.html" accesskey="U">Github objects</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="team">
+<h1>Team<a class="headerlink" href="#team" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="github.Team.Team">
+<em class="property">class </em><tt class="descclassname">github.Team.</tt><tt class="descname">Team</tt><a class="headerlink" href="#github.Team.Team" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class represents Teams. The reference can be found here <a class="reference external" href="http://developer.github.com/v3/orgs/teams/">http://developer.github.com/v3/orgs/teams/</a></p>
+<dl class="attribute">
+<dt id="github.Team.Team.id">
+<tt class="descname">id</tt><a class="headerlink" href="#github.Team.Team.id" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">integer</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.Team.Team.members_count">
+<tt class="descname">members_count</tt><a class="headerlink" href="#github.Team.Team.members_count" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">integer</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.Team.Team.members_url">
+<tt class="descname">members_url</tt><a class="headerlink" href="#github.Team.Team.members_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.Team.Team.name">
+<tt class="descname">name</tt><a class="headerlink" href="#github.Team.Team.name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.Team.Team.permission">
+<tt class="descname">permission</tt><a class="headerlink" href="#github.Team.Team.permission" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.Team.Team.repos_count">
+<tt class="descname">repos_count</tt><a class="headerlink" href="#github.Team.Team.repos_count" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">integer</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.Team.Team.repositories_url">
+<tt class="descname">repositories_url</tt><a class="headerlink" href="#github.Team.Team.repositories_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.Team.Team.slug">
+<tt class="descname">slug</tt><a class="headerlink" href="#github.Team.Team.slug" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.Team.Team.url">
+<tt class="descname">url</tt><a class="headerlink" href="#github.Team.Team.url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.Team.Team.add_to_members">
+<tt class="descname">add_to_members</tt><big>(</big><em>member</em><big>)</big><a class="headerlink" href="#github.Team.Team.add_to_members" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><a class="reference external" href="http://developer.github.com/v3/orgs/teams">PUT /teams/:id/members/:user</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><strong>member</strong> &#8211; <a class="reference internal" href="NamedUser.html#github.NamedUser.NamedUser" title="github.NamedUser.NamedUser"><tt class="xref py py-class docutils literal"><span class="pre">github.NamedUser.NamedUser</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.Team.Team.add_to_repos">
+<tt class="descname">add_to_repos</tt><big>(</big><em>repo</em><big>)</big><a class="headerlink" href="#github.Team.Team.add_to_repos" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><a class="reference external" href="http://developer.github.com/v3/orgs/teams">PUT /teams/:id/repos/:org/:repo</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><strong>repo</strong> &#8211; <a class="reference internal" href="Repository.html#github.Repository.Repository" title="github.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">github.Repository.Repository</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.Team.Team.delete">
+<tt class="descname">delete</tt><big>(</big><big>)</big><a class="headerlink" href="#github.Team.Team.delete" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><a class="reference external" href="http://developer.github.com/v3/orgs/teams">DELETE /teams/:id</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.Team.Team.edit">
+<tt class="descname">edit</tt><big>(</big><em>name</em>, <em>permission=NotSet</em><big>)</big><a class="headerlink" href="#github.Team.Team.edit" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><p class="first"><a class="reference external" href="http://developer.github.com/v3/orgs/teams">PATCH /teams/:id</a></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>name</strong> &#8211; string</li>
+<li><strong>permission</strong> &#8211; string</li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.Team.Team.get_members">
+<tt class="descname">get_members</tt><big>(</big><big>)</big><a class="headerlink" href="#github.Team.Team.get_members" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><a class="reference external" href="http://developer.github.com/v3/orgs/teams">GET /teams/:id/members</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../utilities.html#github.PaginatedList.PaginatedList" title="github.PaginatedList.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">github.PaginatedList.PaginatedList</span></tt></a> of <a class="reference internal" href="NamedUser.html#github.NamedUser.NamedUser" title="github.NamedUser.NamedUser"><tt class="xref py py-class docutils literal"><span class="pre">github.NamedUser.NamedUser</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.Team.Team.get_repos">
+<tt class="descname">get_repos</tt><big>(</big><big>)</big><a class="headerlink" href="#github.Team.Team.get_repos" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><a class="reference external" href="http://developer.github.com/v3/orgs/teams">GET /teams/:id/repos</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../utilities.html#github.PaginatedList.PaginatedList" title="github.PaginatedList.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">github.PaginatedList.PaginatedList</span></tt></a> of <a class="reference internal" href="Repository.html#github.Repository.Repository" title="github.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">github.Repository.Repository</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.Team.Team.has_in_members">
+<tt class="descname">has_in_members</tt><big>(</big><em>member</em><big>)</big><a class="headerlink" href="#github.Team.Team.has_in_members" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><a class="reference external" href="http://developer.github.com/v3/orgs/teams">GET /teams/:id/members/:user</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><strong>member</strong> &#8211; <a class="reference internal" href="NamedUser.html#github.NamedUser.NamedUser" title="github.NamedUser.NamedUser"><tt class="xref py py-class docutils literal"><span class="pre">github.NamedUser.NamedUser</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.Team.Team.has_in_repos">
+<tt class="descname">has_in_repos</tt><big>(</big><em>repo</em><big>)</big><a class="headerlink" href="#github.Team.Team.has_in_repos" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><a class="reference external" href="http://developer.github.com/v3/orgs/teams">GET /teams/:id/repos/:owner/:repo</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><strong>repo</strong> &#8211; <a class="reference internal" href="Repository.html#github.Repository.Repository" title="github.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">github.Repository.Repository</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.Team.Team.remove_from_members">
+<tt class="descname">remove_from_members</tt><big>(</big><em>member</em><big>)</big><a class="headerlink" href="#github.Team.Team.remove_from_members" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><a class="reference external" href="http://developer.github.com/v3/orgs/teams">DELETE /teams/:id/members/:user</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><strong>member</strong> &#8211; <a class="reference internal" href="NamedUser.html#github.NamedUser.NamedUser" title="github.NamedUser.NamedUser"><tt class="xref py py-class docutils literal"><span class="pre">github.NamedUser.NamedUser</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.Team.Team.remove_from_repos">
+<tt class="descname">remove_from_repos</tt><big>(</big><em>repo</em><big>)</big><a class="headerlink" href="#github.Team.Team.remove_from_repos" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><a class="reference external" href="http://developer.github.com/v3/orgs/teams">DELETE /teams/:id/repos/:owner/:repo</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><strong>repo</strong> &#8211; <a class="reference internal" href="Repository.html#github.Repository.Repository" title="github.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">github.Repository.Repository</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="PullRequest.html"
+                        title="previous chapter">PullRequest</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="GitObject.html"
+                        title="next chapter">GitObject</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/github_objects/Team.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="GitObject.html" title="GitObject"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="PullRequest.html" title="PullRequest"
+             >previous</a> |</li>
+        <li><a href="../index.html">PyGithub 1.22.0 documentation</a> &raquo;</li>
+          <li><a href="../reference.html" >Reference</a> &raquo;</li>
+          <li><a href="../github_objects.html" >Github objects</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Vincent Jacques.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

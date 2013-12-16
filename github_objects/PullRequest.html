@@ -1,0 +1,819 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>PullRequest &mdash; PyGithub 1.22.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.22.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="PyGithub 1.22.0 documentation" href="../index.html" />
+    <link rel="up" title="Github objects" href="../github_objects.html" />
+    <link rel="next" title="Team" href="Team.html" />
+    <link rel="prev" title="Rate" href="Rate.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="Team.html" title="Team"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Rate.html" title="Rate"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">PyGithub 1.22.0 documentation</a> &raquo;</li>
+          <li><a href="../reference.html" >Reference</a> &raquo;</li>
+          <li><a href="../github_objects.html" accesskey="U">Github objects</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="pullrequest">
+<h1>PullRequest<a class="headerlink" href="#pullrequest" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="github.PullRequest.PullRequest">
+<em class="property">class </em><tt class="descclassname">github.PullRequest.</tt><tt class="descname">PullRequest</tt><a class="headerlink" href="#github.PullRequest.PullRequest" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class represents PullRequests. The reference can be found here <a class="reference external" href="http://developer.github.com/v3/pulls/">http://developer.github.com/v3/pulls/</a></p>
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.additions">
+<tt class="descname">additions</tt><a class="headerlink" href="#github.PullRequest.PullRequest.additions" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">integer</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.assignee">
+<tt class="descname">assignee</tt><a class="headerlink" href="#github.PullRequest.PullRequest.assignee" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="NamedUser.html#github.NamedUser.NamedUser" title="github.NamedUser.NamedUser"><tt class="xref py py-class docutils literal"><span class="pre">github.NamedUser.NamedUser</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.base">
+<tt class="descname">base</tt><a class="headerlink" href="#github.PullRequest.PullRequest.base" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="PullRequestPart.html#github.PullRequestPart.PullRequestPart" title="github.PullRequestPart.PullRequestPart"><tt class="xref py py-class docutils literal"><span class="pre">github.PullRequestPart.PullRequestPart</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.body">
+<tt class="descname">body</tt><a class="headerlink" href="#github.PullRequest.PullRequest.body" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.changed_files">
+<tt class="descname">changed_files</tt><a class="headerlink" href="#github.PullRequest.PullRequest.changed_files" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">integer</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.closed_at">
+<tt class="descname">closed_at</tt><a class="headerlink" href="#github.PullRequest.PullRequest.closed_at" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">datetime.datetime</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.comments">
+<tt class="descname">comments</tt><a class="headerlink" href="#github.PullRequest.PullRequest.comments" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">integer</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.comments_url">
+<tt class="descname">comments_url</tt><a class="headerlink" href="#github.PullRequest.PullRequest.comments_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.commits">
+<tt class="descname">commits</tt><a class="headerlink" href="#github.PullRequest.PullRequest.commits" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">integer</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.commits_url">
+<tt class="descname">commits_url</tt><a class="headerlink" href="#github.PullRequest.PullRequest.commits_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.created_at">
+<tt class="descname">created_at</tt><a class="headerlink" href="#github.PullRequest.PullRequest.created_at" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">datetime.datetime</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.deletions">
+<tt class="descname">deletions</tt><a class="headerlink" href="#github.PullRequest.PullRequest.deletions" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">integer</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.diff_url">
+<tt class="descname">diff_url</tt><a class="headerlink" href="#github.PullRequest.PullRequest.diff_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.head">
+<tt class="descname">head</tt><a class="headerlink" href="#github.PullRequest.PullRequest.head" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="PullRequestPart.html#github.PullRequestPart.PullRequestPart" title="github.PullRequestPart.PullRequestPart"><tt class="xref py py-class docutils literal"><span class="pre">github.PullRequestPart.PullRequestPart</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.html_url">
+<tt class="descname">html_url</tt><a class="headerlink" href="#github.PullRequest.PullRequest.html_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.id">
+<tt class="descname">id</tt><a class="headerlink" href="#github.PullRequest.PullRequest.id" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">integer</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.issue_url">
+<tt class="descname">issue_url</tt><a class="headerlink" href="#github.PullRequest.PullRequest.issue_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.merge_commit_sha">
+<tt class="descname">merge_commit_sha</tt><a class="headerlink" href="#github.PullRequest.PullRequest.merge_commit_sha" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.mergeable">
+<tt class="descname">mergeable</tt><a class="headerlink" href="#github.PullRequest.PullRequest.mergeable" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.mergeable_state">
+<tt class="descname">mergeable_state</tt><a class="headerlink" href="#github.PullRequest.PullRequest.mergeable_state" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.merged">
+<tt class="descname">merged</tt><a class="headerlink" href="#github.PullRequest.PullRequest.merged" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.merged_at">
+<tt class="descname">merged_at</tt><a class="headerlink" href="#github.PullRequest.PullRequest.merged_at" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">datetime.datetime</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.merged_by">
+<tt class="descname">merged_by</tt><a class="headerlink" href="#github.PullRequest.PullRequest.merged_by" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="NamedUser.html#github.NamedUser.NamedUser" title="github.NamedUser.NamedUser"><tt class="xref py py-class docutils literal"><span class="pre">github.NamedUser.NamedUser</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.milestone">
+<tt class="descname">milestone</tt><a class="headerlink" href="#github.PullRequest.PullRequest.milestone" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="Milestone.html#github.Milestone.Milestone" title="github.Milestone.Milestone"><tt class="xref py py-class docutils literal"><span class="pre">github.Milestone.Milestone</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.number">
+<tt class="descname">number</tt><a class="headerlink" href="#github.PullRequest.PullRequest.number" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">integer</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.patch_url">
+<tt class="descname">patch_url</tt><a class="headerlink" href="#github.PullRequest.PullRequest.patch_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.review_comment_url">
+<tt class="descname">review_comment_url</tt><a class="headerlink" href="#github.PullRequest.PullRequest.review_comment_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.review_comments">
+<tt class="descname">review_comments</tt><a class="headerlink" href="#github.PullRequest.PullRequest.review_comments" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">integer</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.review_comments_url">
+<tt class="descname">review_comments_url</tt><a class="headerlink" href="#github.PullRequest.PullRequest.review_comments_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.state">
+<tt class="descname">state</tt><a class="headerlink" href="#github.PullRequest.PullRequest.state" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.title">
+<tt class="descname">title</tt><a class="headerlink" href="#github.PullRequest.PullRequest.title" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.updated_at">
+<tt class="descname">updated_at</tt><a class="headerlink" href="#github.PullRequest.PullRequest.updated_at" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">datetime.datetime</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.url">
+<tt class="descname">url</tt><a class="headerlink" href="#github.PullRequest.PullRequest.url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="github.PullRequest.PullRequest.user">
+<tt class="descname">user</tt><a class="headerlink" href="#github.PullRequest.PullRequest.user" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="NamedUser.html#github.NamedUser.NamedUser" title="github.NamedUser.NamedUser"><tt class="xref py py-class docutils literal"><span class="pre">github.NamedUser.NamedUser</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.PullRequest.PullRequest.create_comment">
+<tt class="descname">create_comment</tt><big>(</big><em>body</em>, <em>commit_id</em>, <em>path</em>, <em>position</em><big>)</big><a class="headerlink" href="#github.PullRequest.PullRequest.create_comment" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><p class="first"><a class="reference external" href="http://developer.github.com/v3/pulls/comments">POST /repos/:owner/:repo/pulls/:number/comments</a></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>body</strong> &#8211; string</li>
+<li><strong>commit_id</strong> &#8211; <a class="reference internal" href="Commit.html#github.Commit.Commit" title="github.Commit.Commit"><tt class="xref py py-class docutils literal"><span class="pre">github.Commit.Commit</span></tt></a></li>
+<li><strong>path</strong> &#8211; string</li>
+<li><strong>position</strong> &#8211; integer</li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="PullRequestComment.html#github.PullRequestComment.PullRequestComment" title="github.PullRequestComment.PullRequestComment"><tt class="xref py py-class docutils literal"><span class="pre">github.PullRequestComment.PullRequestComment</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.PullRequest.PullRequest.create_review_comment">
+<tt class="descname">create_review_comment</tt><big>(</big><em>body</em>, <em>commit_id</em>, <em>path</em>, <em>position</em><big>)</big><a class="headerlink" href="#github.PullRequest.PullRequest.create_review_comment" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><p class="first"><a class="reference external" href="http://developer.github.com/v3/pulls/comments">POST /repos/:owner/:repo/pulls/:number/comments</a></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>body</strong> &#8211; string</li>
+<li><strong>commit_id</strong> &#8211; <a class="reference internal" href="Commit.html#github.Commit.Commit" title="github.Commit.Commit"><tt class="xref py py-class docutils literal"><span class="pre">github.Commit.Commit</span></tt></a></li>
+<li><strong>path</strong> &#8211; string</li>
+<li><strong>position</strong> &#8211; integer</li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="PullRequestComment.html#github.PullRequestComment.PullRequestComment" title="github.PullRequestComment.PullRequestComment"><tt class="xref py py-class docutils literal"><span class="pre">github.PullRequestComment.PullRequestComment</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.PullRequest.PullRequest.create_issue_comment">
+<tt class="descname">create_issue_comment</tt><big>(</big><em>body</em><big>)</big><a class="headerlink" href="#github.PullRequest.PullRequest.create_issue_comment" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><a class="reference external" href="http://developer.github.com/v3/issues/comments">POST /repos/:owner/:repo/issues/:number/comments</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><strong>body</strong> &#8211; string</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="IssueComment.html#github.IssueComment.IssueComment" title="github.IssueComment.IssueComment"><tt class="xref py py-class docutils literal"><span class="pre">github.IssueComment.IssueComment</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.PullRequest.PullRequest.edit">
+<tt class="descname">edit</tt><big>(</big><em>title=NotSet</em>, <em>body=NotSet</em>, <em>state=NotSet</em><big>)</big><a class="headerlink" href="#github.PullRequest.PullRequest.edit" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><p class="first"><a class="reference external" href="http://developer.github.com/v3/pulls">PATCH /repos/:owner/:repo/pulls/:number</a></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>title</strong> &#8211; string</li>
+<li><strong>body</strong> &#8211; string</li>
+<li><strong>state</strong> &#8211; string</li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.PullRequest.PullRequest.get_comment">
+<tt class="descname">get_comment</tt><big>(</big><em>id</em><big>)</big><a class="headerlink" href="#github.PullRequest.PullRequest.get_comment" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><a class="reference external" href="http://developer.github.com/v3/pulls/comments">GET /repos/:owner/:repo/pulls/comments/:number</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><strong>id</strong> &#8211; integer</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="PullRequestComment.html#github.PullRequestComment.PullRequestComment" title="github.PullRequestComment.PullRequestComment"><tt class="xref py py-class docutils literal"><span class="pre">github.PullRequestComment.PullRequestComment</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.PullRequest.PullRequest.get_review_comment">
+<tt class="descname">get_review_comment</tt><big>(</big><em>id</em><big>)</big><a class="headerlink" href="#github.PullRequest.PullRequest.get_review_comment" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><a class="reference external" href="http://developer.github.com/v3/pulls/comments">GET /repos/:owner/:repo/pulls/comments/:number</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><strong>id</strong> &#8211; integer</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="PullRequestComment.html#github.PullRequestComment.PullRequestComment" title="github.PullRequestComment.PullRequestComment"><tt class="xref py py-class docutils literal"><span class="pre">github.PullRequestComment.PullRequestComment</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.PullRequest.PullRequest.get_comments">
+<tt class="descname">get_comments</tt><big>(</big><big>)</big><a class="headerlink" href="#github.PullRequest.PullRequest.get_comments" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><a class="reference external" href="http://developer.github.com/v3/pulls/comments">GET /repos/:owner/:repo/pulls/:number/comments</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../utilities.html#github.PaginatedList.PaginatedList" title="github.PaginatedList.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">github.PaginatedList.PaginatedList</span></tt></a> of <a class="reference internal" href="PullRequestComment.html#github.PullRequestComment.PullRequestComment" title="github.PullRequestComment.PullRequestComment"><tt class="xref py py-class docutils literal"><span class="pre">github.PullRequestComment.PullRequestComment</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.PullRequest.PullRequest.get_review_comments">
+<tt class="descname">get_review_comments</tt><big>(</big><big>)</big><a class="headerlink" href="#github.PullRequest.PullRequest.get_review_comments" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><a class="reference external" href="http://developer.github.com/v3/pulls/comments">GET /repos/:owner/:repo/pulls/:number/comments</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../utilities.html#github.PaginatedList.PaginatedList" title="github.PaginatedList.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">github.PaginatedList.PaginatedList</span></tt></a> of <a class="reference internal" href="PullRequestComment.html#github.PullRequestComment.PullRequestComment" title="github.PullRequestComment.PullRequestComment"><tt class="xref py py-class docutils literal"><span class="pre">github.PullRequestComment.PullRequestComment</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.PullRequest.PullRequest.get_commits">
+<tt class="descname">get_commits</tt><big>(</big><big>)</big><a class="headerlink" href="#github.PullRequest.PullRequest.get_commits" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><a class="reference external" href="http://developer.github.com/v3/pulls">GET /repos/:owner/:repo/pulls/:number/commits</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../utilities.html#github.PaginatedList.PaginatedList" title="github.PaginatedList.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">github.PaginatedList.PaginatedList</span></tt></a> of <a class="reference internal" href="Commit.html#github.Commit.Commit" title="github.Commit.Commit"><tt class="xref py py-class docutils literal"><span class="pre">github.Commit.Commit</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.PullRequest.PullRequest.get_files">
+<tt class="descname">get_files</tt><big>(</big><big>)</big><a class="headerlink" href="#github.PullRequest.PullRequest.get_files" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><a class="reference external" href="http://developer.github.com/v3/pulls">GET /repos/:owner/:repo/pulls/:number/files</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../utilities.html#github.PaginatedList.PaginatedList" title="github.PaginatedList.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">github.PaginatedList.PaginatedList</span></tt></a> of <a class="reference internal" href="File.html#github.File.File" title="github.File.File"><tt class="xref py py-class docutils literal"><span class="pre">github.File.File</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.PullRequest.PullRequest.get_issue_comment">
+<tt class="descname">get_issue_comment</tt><big>(</big><em>id</em><big>)</big><a class="headerlink" href="#github.PullRequest.PullRequest.get_issue_comment" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><a class="reference external" href="http://developer.github.com/v3/issues/comments">GET /repos/:owner/:repo/issues/comments/:id</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><strong>id</strong> &#8211; integer</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="IssueComment.html#github.IssueComment.IssueComment" title="github.IssueComment.IssueComment"><tt class="xref py py-class docutils literal"><span class="pre">github.IssueComment.IssueComment</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.PullRequest.PullRequest.get_issue_comments">
+<tt class="descname">get_issue_comments</tt><big>(</big><big>)</big><a class="headerlink" href="#github.PullRequest.PullRequest.get_issue_comments" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><a class="reference external" href="http://developer.github.com/v3/issues/comments">GET /repos/:owner/:repo/issues/:number/comments</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../utilities.html#github.PaginatedList.PaginatedList" title="github.PaginatedList.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">github.PaginatedList.PaginatedList</span></tt></a> of <a class="reference internal" href="IssueComment.html#github.IssueComment.IssueComment" title="github.IssueComment.IssueComment"><tt class="xref py py-class docutils literal"><span class="pre">github.IssueComment.IssueComment</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.PullRequest.PullRequest.is_merged">
+<tt class="descname">is_merged</tt><big>(</big><big>)</big><a class="headerlink" href="#github.PullRequest.PullRequest.is_merged" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><a class="reference external" href="http://developer.github.com/v3/pulls">GET /repos/:owner/:repo/pulls/:number/merge</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.PullRequest.PullRequest.merge">
+<tt class="descname">merge</tt><big>(</big><em>commit_message=NotSet</em><big>)</big><a class="headerlink" href="#github.PullRequest.PullRequest.merge" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><a class="reference external" href="http://developer.github.com/v3/pulls">PUT /repos/:owner/:repo/pulls/:number/merge</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><strong>commit_message</strong> &#8211; string</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="PullRequestMergeStatus.html#github.PullRequestMergeStatus.PullRequestMergeStatus" title="github.PullRequestMergeStatus.PullRequestMergeStatus"><tt class="xref py py-class docutils literal"><span class="pre">github.PullRequestMergeStatus.PullRequestMergeStatus</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Rate.html"
+                        title="previous chapter">Rate</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="Team.html"
+                        title="next chapter">Team</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/github_objects/PullRequest.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="Team.html" title="Team"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Rate.html" title="Rate"
+             >previous</a> |</li>
+        <li><a href="../index.html">PyGithub 1.22.0 documentation</a> &raquo;</li>
+          <li><a href="../reference.html" >Reference</a> &raquo;</li>
+          <li><a href="../github_objects.html" >Github objects</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Vincent Jacques.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

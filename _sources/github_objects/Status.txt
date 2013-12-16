@@ -1,0 +1,4 @@
+Status
+======
+
+.. autoclass:: github.Status.Status()

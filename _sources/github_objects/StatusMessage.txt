@@ -1,0 +1,4 @@
+StatusMessage
+=============
+
+.. autoclass:: github.StatusMessage.StatusMessage()

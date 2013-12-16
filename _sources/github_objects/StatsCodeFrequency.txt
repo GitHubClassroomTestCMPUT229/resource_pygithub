@@ -1,0 +1,4 @@
+StatsCodeFrequency
+==================
+
+.. autoclass:: github.StatsCodeFrequency.StatsCodeFrequency()

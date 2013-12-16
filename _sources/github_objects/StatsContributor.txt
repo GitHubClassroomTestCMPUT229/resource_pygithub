@@ -1,0 +1,4 @@
+StatsContributor
+================
+
+.. autoclass:: github.StatsContributor.StatsContributor()

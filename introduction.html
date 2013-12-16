@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Introduction &mdash; PyGithub 1.22.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.22.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="PyGithub 1.22.0 documentation" href="index.html" />
+    <link rel="next" title="Reference" href="reference.html" />
+    <link rel="prev" title="PyGithub" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="reference.html" title="Reference"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="PyGithub"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">PyGithub 1.22.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>PyGithub is a Python (2 and 3) library to use the <a class="reference external" href="http://developer.github.com/v3">Github API v3</a>.
+With it, you can manage your <a class="reference external" href="http://github.com">Github</a> resources (repositories, user profiles, organizations, etc.) from Python scripts.</p>
+<p>Should you have any question, any remark, or if you find a bug,
+or if there is something you can do with the API but not with PyGithub,
+please <a class="reference external" href="https://github.com/jacquev6/PyGithub/issues">open an issue</a>.</p>
+<div class="section" id="very-short-tutorial">
+<h2>(Very short) tutorial<a class="headerlink" href="#very-short-tutorial" title="Permalink to this headline">¶</a></h2>
+<p>First create a Github instance:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">github</span> <span class="kn">import</span> <span class="n">Github</span>
+
+<span class="n">g</span> <span class="o">=</span> <span class="n">Github</span><span class="p">(</span><span class="s">&quot;user&quot;</span><span class="p">,</span> <span class="s">&quot;password&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Then play with your Github objects:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">repo</span> <span class="ow">in</span> <span class="n">g</span><span class="o">.</span><span class="n">get_user</span><span class="p">()</span><span class="o">.</span><span class="n">get_repos</span><span class="p">():</span>
+    <span class="k">print</span> <span class="n">repo</span><span class="o">.</span><span class="n">name</span>
+    <span class="n">repo</span><span class="o">.</span><span class="n">edit</span><span class="p">(</span><span class="n">has_wiki</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="download-and-install">
+<h2>Download and install<a class="headerlink" href="#download-and-install" title="Permalink to this headline">¶</a></h2>
+<p>This package is in the <a class="reference external" href="http://pypi.python.org/pypi/PyGithub">Python Package Index</a>,
+so <tt class="docutils literal"><span class="pre">easy_install</span> <span class="pre">PyGithub</span></tt> or <tt class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">PyGithub</span></tt> should be enough.
+You can also clone it on <a class="reference external" href="http://github.com/jacquev6/PyGithub">Github</a>.</p>
+</div>
+<div class="section" id="licensing">
+<h2>Licensing<a class="headerlink" href="#licensing" title="Permalink to this headline">¶</a></h2>
+<p>PyGithub is distributed under the GNU Lesser General Public Licence.
+See files COPYING and COPYING.LESSER, as requested by <a class="reference external" href="http://www.gnu.org/licenses/gpl-howto.html">GNU</a>.</p>
+</div>
+<div class="section" id="what-next">
+<h2>What next?<a class="headerlink" href="#what-next" title="Permalink to this headline">¶</a></h2>
+<p>You need to use a Github API and wonder which class implements it? <a class="reference external" href="todointernallink">Reference of APIs</a></p>
+<p>You want all the details about PyGithub classes? <a class="reference external" href="todointernallink">Reference of classes</a></p>
+</div>
+<div class="section" id="projects-using-pygithub">
+<h2>Projects using PyGithub<a class="headerlink" href="#projects-using-pygithub" title="Permalink to this headline">¶</a></h2>
+<p>(<a class="reference external" href="https://github.com/jacquev6/PyGithub/issues">Open an issue</a> if you want to be listed here, I&#8217;ll be glad to add your project)</p>
+<ul class="simple">
+<li><a class="reference external" href="http://devassistant.org">DevAssistant</a></li>
+<li><a class="reference external" href="https://upverter.com">Upverter</a> is a web-based schematic capture and PCB layout tool for people who design electronics. Designers can attach a Github project to an Upverter project.</li>
+<li><a class="reference external" href="http://n.tkte.ch">Notifico</a> receives messages (such as commits and issues) from services and scripts and delivers them to IRC channels. It can import/sync from Github.</li>
+<li><a class="reference external" href="http://pypi.python.org/pypi/tratihubis/">Tratihubis</a> converts Trac tickets to Github issues</li>
+<li><a class="reference external" href="https://github.com/CMB/cligh">https://github.com/CMB/cligh</a></li>
+<li><a class="reference external" href="https://github.com/natduca/quickopen">https://github.com/natduca/quickopen</a> uses PyGithub to automaticaly create issues</li>
+<li><a class="reference external" href="https://gist.github.com/3433798">https://gist.github.com/3433798</a></li>
+<li><a class="reference external" href="https://github.com/zsiciarz/aquila-dsp.org">https://github.com/zsiciarz/aquila-dsp.org</a></li>
+<li><a class="reference external" href="https://github.com/robcowie/virtualenvwrapper.github">https://github.com/robcowie/virtualenvwrapper.github</a></li>
+</ul>
+</div>
+<div class="section" id="they-talk-about-pygithub">
+<h2>They talk about PyGithub<a class="headerlink" href="#they-talk-about-pygithub" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://stackoverflow.com/questions/10625190/most-suitable-python-library-for-github-api-v3">http://stackoverflow.com/questions/10625190/most-suitable-python-library-for-github-api-v3</a></li>
+<li><a class="reference external" href="http://stackoverflow.com/questions/12379637/django-social-auth-github-authentication">http://stackoverflow.com/questions/12379637/django-social-auth-github-authentication</a></li>
+<li><a class="reference external" href="http://www.freebsd.org/cgi/cvsweb.cgi/ports/devel/py-pygithub/">http://www.freebsd.org/cgi/cvsweb.cgi/ports/devel/py-pygithub/</a></li>
+<li><a class="reference external" href="https://bugzilla.redhat.com/show_bug.cgi?id=910565">https://bugzilla.redhat.com/show_bug.cgi?id=910565</a></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Introduction</a><ul>
+<li><a class="reference internal" href="#very-short-tutorial">(Very short) tutorial</a></li>
+<li><a class="reference internal" href="#download-and-install">Download and install</a></li>
+<li><a class="reference internal" href="#licensing">Licensing</a></li>
+<li><a class="reference internal" href="#what-next">What next?</a></li>
+<li><a class="reference internal" href="#projects-using-pygithub">Projects using PyGithub</a></li>
+<li><a class="reference internal" href="#they-talk-about-pygithub">They talk about PyGithub</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">PyGithub</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="reference.html"
+                        title="next chapter">Reference</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/introduction.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="reference.html" title="Reference"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="PyGithub"
+             >previous</a> |</li>
+        <li><a href="index.html">PyGithub 1.22.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Vincent Jacques.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

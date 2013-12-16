@@ -1,0 +1,4 @@
+RateLimit
+=========
+
+.. autoclass:: github.RateLimit.RateLimit()

@@ -1,0 +1,4 @@
+Notification
+============
+
+.. autoclass:: github.Notification.Notification()

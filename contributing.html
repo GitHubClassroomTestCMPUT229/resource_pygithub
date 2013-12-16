@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Contributing &mdash; PyGithub 1.22.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.22.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="PyGithub 1.22.0 documentation" href="index.html" />
+    <link rel="prev" title="Change log" href="changes.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="changes.html" title="Change log"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">PyGithub 1.22.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="contributing">
+<h1>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="issues">
+<h2>Issues<a class="headerlink" href="#issues" title="Permalink to this headline">¶</a></h2>
+<p>A good issue includes a <a class="reference external" href="http://sscce.org/">short, self contained, correct example</a> of the problem, something like:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">assert</span> <span class="n">github</span><span class="o">.</span><span class="n">Github</span><span class="p">()</span><span class="o">.</span><span class="n">get_user</span><span class="p">(</span><span class="s">&quot;jacquev6&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s">&quot;Vincent Jacques&quot;</span>
+</pre></div>
+</div>
+<p>It is even better if you provide the debug logs associated with your issue.
+Enable them with <a class="reference internal" href="utilities.html#github.enable_console_debug_logging" title="github.enable_console_debug_logging"><tt class="xref py py-func docutils literal"><span class="pre">github.enable_console_debug_logging()</span></tt></a> and copy them in the body of the issue.
+Warning, you may want to remove some private information (authentication information is removed, but there may be private stuff in the messages)</p>
+<p>If for any reason you are not able to do that, open your issue anyway and we will see what is needed to solve your problem.</p>
+</div>
+<div class="section" id="pull-requests">
+<h2>Pull requests<a class="headerlink" href="#pull-requests" title="Permalink to this headline">¶</a></h2>
+<p>Please do your pull requests on the <tt class="docutils literal"><span class="pre">develop</span></tt> branch.</p>
+<div class="section" id="automated-tests">
+<h3>Automated tests<a class="headerlink" href="#automated-tests" title="Permalink to this headline">¶</a></h3>
+<p>You can run the tests through <tt class="docutils literal"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">github.tests</span></tt>. Run a specific test with <tt class="docutils literal"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">github.tests</span> <span class="pre">TestCase</span></tt> or <tt class="docutils literal"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">github.tests</span> <span class="pre">TestCase.testMethod</span></tt>.</p>
+<p>If you add a new test, for example <tt class="docutils literal"><span class="pre">Issue139.testCompletion</span></tt>, you must add an import in <tt class="docutils literal"><span class="pre">github/tests/AllTests.py</span></tt>. Then, you have to run <tt class="docutils literal"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">github.tests</span> <span class="pre">Issue139.testCompletion</span> <span class="pre">--record</span></tt> to create the <tt class="docutils literal"><span class="pre">github/tests/ReplayData/*.txt</span></tt> files needed for you new test. Check them and commit them as well. You will need a <tt class="docutils literal"><span class="pre">GithubCredentials.py</span></tt> file at the root of the project with the following contents:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">login</span> <span class="o">=</span> <span class="s">&quot;my_login&quot;</span>
+<span class="n">password</span> <span class="o">=</span> <span class="s">&quot;my_password&quot;</span>
+<span class="n">oauth_token</span> <span class="o">=</span> <span class="s">&quot;my_token&quot;</span>  <span class="c"># Can be left empty if not used</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="coding-conventions">
+<h3>Coding conventions<a class="headerlink" href="#coding-conventions" title="Permalink to this headline">¶</a></h3>
+<p>PyGithub follows <a class="reference external" href="http://www.python.org/dev/peps/pep-0008/">pep8 Style Guide for Python Code</a> except for line length.
+Please check your code with <a class="reference external" href="http://pypi.python.org/pypi/pep8">pep8 Python style guide checker</a>, by running <tt class="docutils literal"><span class="pre">pep8</span> <span class="pre">--ignore=E501</span> <span class="pre">github</span></tt>.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Contributing</a><ul>
+<li><a class="reference internal" href="#issues">Issues</a></li>
+<li><a class="reference internal" href="#pull-requests">Pull requests</a><ul>
+<li><a class="reference internal" href="#automated-tests">Automated tests</a></li>
+<li><a class="reference internal" href="#coding-conventions">Coding conventions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="changes.html"
+                        title="previous chapter">Change log</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/contributing.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="changes.html" title="Change log"
+             >previous</a> |</li>
+        <li><a href="index.html">PyGithub 1.22.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Vincent Jacques.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

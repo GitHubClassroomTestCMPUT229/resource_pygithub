@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Reference &mdash; PyGithub 1.22.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.22.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="PyGithub 1.22.0 documentation" href="index.html" />
+    <link rel="next" title="Main class: Github" href="github.html" />
+    <link rel="prev" title="Introduction" href="introduction.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="github.html" title="Main class: Github"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="introduction.html" title="Introduction"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">PyGithub 1.22.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-github">
+<span id="reference"></span><h1>Reference<a class="headerlink" href="#module-github" title="Permalink to this headline">¶</a></h1>
+<p>The primary class you will instanciate is <a class="reference internal" href="github.html#github.MainClass.Github" title="github.MainClass.Github"><tt class="xref py py-class docutils literal"><span class="pre">github.MainClass.Github</span></tt></a>.
+From its <tt class="docutils literal"><span class="pre">get_</span></tt>, <tt class="docutils literal"><span class="pre">create_</span></tt> methods, you will obtain instances of all Github objects
+like <a class="reference internal" href="github_objects/NamedUser.html#github.NamedUser.NamedUser" title="github.NamedUser.NamedUser"><tt class="xref py py-class docutils literal"><span class="pre">github.NamedUser.NamedUser</span></tt></a> or <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository" title="github.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">github.Repository.Repository</span></tt></a>.</p>
+<p>All classes inherit from <a class="reference internal" href="github_objects.html#github.GithubObject.GithubObject" title="github.GithubObject.GithubObject"><tt class="xref py py-class docutils literal"><span class="pre">github.GithubObject.GithubObject</span></tt></a>.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="github.html">Main class: Github</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apis.html">APIs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="utilities.html">Utilities</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="utilities.html#logging">Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utilities.html#module-github.GithubException">Error Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utilities.html#default-argument">Default argument</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utilities.html#pagination">Pagination</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utilities.html#input-classes">Input classes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="github_objects.html">Github objects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/StatsParticipation.html">StatsParticipation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/HookDescription.html">HookDescription</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/Gist.html">Gist</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/Tag.html">Tag</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/GitTree.html">GitTree</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/GitTag.html">GitTag</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/Event.html">Event</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/ContentFile.html">ContentFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/Repository.html">Repository</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/GistFile.html">GistFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/NamedUser.html">NamedUser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/RepositoryKey.html">RepositoryKey</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/PullRequestComment.html">PullRequestComment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/RateLimit.html">RateLimit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/UserKey.html">UserKey</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/GitignoreTemplate.html">GitignoreTemplate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/AuthorizationApplication.html">AuthorizationApplication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/Download.html">Download</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/Organization.html">Organization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/IssueComment.html">IssueComment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/GitAuthor.html">GitAuthor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/StatsCodeFrequency.html">StatsCodeFrequency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/CommitComment.html">CommitComment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/GistComment.html">GistComment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/Notification.html">Notification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/StatusMessage.html">StatusMessage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/Rate.html">Rate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/PullRequest.html">PullRequest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/Team.html">Team</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/GitObject.html">GitObject</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/GistHistoryState.html">GistHistoryState</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/NotificationSubject.html">NotificationSubject</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/Commit.html">Commit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/Permissions.html">Permissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/File.html">File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/Hook.html">Hook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/GitRef.html">GitRef</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/PullRequestMergeStatus.html">PullRequestMergeStatus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/StatsPunchCard.html">StatsPunchCard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/StatsContributor.html">StatsContributor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/AuthenticatedUser.html">AuthenticatedUser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/CommitStats.html">CommitStats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/IssuePullRequest.html">IssuePullRequest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/GitCommit.html">GitCommit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/PullRequestPart.html">PullRequestPart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/HookResponse.html">HookResponse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/Plan.html">Plan</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/CommitStatus.html">CommitStatus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/Branch.html">Branch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/StatsCommitActivity.html">StatsCommitActivity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/Milestone.html">Milestone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/GitTreeElement.html">GitTreeElement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/Status.html">Status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/Issue.html">Issue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/IssueEvent.html">IssueEvent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/Label.html">Label</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/Comparison.html">Comparison</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/Authorization.html">Authorization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_objects/GitBlob.html">GitBlob</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="introduction.html"
+                        title="previous chapter">Introduction</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="github.html"
+                        title="next chapter">Main class: Github</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/reference.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="github.html" title="Main class: Github"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="introduction.html" title="Introduction"
+             >previous</a> |</li>
+        <li><a href="index.html">PyGithub 1.22.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Vincent Jacques.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

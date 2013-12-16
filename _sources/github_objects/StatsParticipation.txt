@@ -1,0 +1,4 @@
+StatsParticipation
+==================
+
+.. autoclass:: github.StatsParticipation.StatsParticipation()
