@@ -1,0 +1,400 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Reference documentation &mdash; PyGithub 2.0.0-alpha.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2.0.0-alpha.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="PyGithub 2.0.0-alpha.1 documentation" href="index.html" />
+    <link rel="next" title="Base and utility classes" href="reference/bases.html" />
+    <link rel="prev" title="Rationale" href="rationale.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="reference/bases.html" title="Base and utility classes"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="rationale.html" title="Rationale"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">PyGithub 2.0.0-alpha.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="reference-documentation">
+<span id="reference"></span><h1>Reference documentation<a class="headerlink" href="#reference-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="reference/bases.html">Base and utility classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/bases.html#session-builder">Session builder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/bases.html#base-classes">Base classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/bases.html#module-PyGithub.Blocking._Details.Exceptions">Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/bases.html#pagination">Pagination</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/bases.html#logging">Logging</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference/classes.html">Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/classes/AuthenticatedUser.html">AuthenticatedUser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/classes/Contributor.html">Contributor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/classes/Entity.html">Entity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/classes/Github.html">Github</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/classes/Organization.html">Organization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/classes/Repository.html">Repository</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/classes/Subscription.html">Subscription</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/classes/Team.html">Team</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/classes/User.html">User</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference/apis.html">From Github API v3 to PyGithub</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-api-last-message-json">GET /api/last-message.json</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-api-messages-json">GET /api/messages.json</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-api-status-json">GET /api/status.json</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-applications-client-id-tokens">DELETE /applications/:client_id/tokens</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-applications-client-id-tokens-access-token">DELETE /applications/:client_id/tokens/:access_token</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-applications-client-id-tokens-access-token">GET /applications/:client_id/tokens/:access_token</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-authorizations">GET /authorizations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-authorizations">POST /authorizations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-authorizations-id">DELETE /authorizations/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-authorizations-id">GET /authorizations/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#patch-authorizations-id">PATCH /authorizations/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#put-authorizations-clients-client-id">PUT /authorizations/clients/:client_id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-emojis">GET /emojis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-events">GET /events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-feeds">GET /feeds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-gists">GET /gists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-gists">POST /gists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-gists-gist-id-comments">GET /gists/:gist_id/comments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-gists-gist-id-comments">POST /gists/:gist_id/comments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-gists-gist-id-comments-id">DELETE /gists/:gist_id/comments/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-gists-gist-id-comments-id">GET /gists/:gist_id/comments/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#patch-gists-gist-id-comments-id">PATCH /gists/:gist_id/comments/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-gists-id">DELETE /gists/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-gists-id">GET /gists/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#patch-gists-id">PATCH /gists/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-gists-id-forks">POST /gists/:id/forks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-gists-id-star">DELETE /gists/:id/star</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-gists-id-star">GET /gists/:id/star</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#put-gists-id-star">PUT /gists/:id/star</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-gists-public">GET /gists/public</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-gists-starred">GET /gists/starred</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-gitignore-templates">GET /gitignore/templates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-gitignore-templates-name">GET /gitignore/templates/:name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-hooks">GET /hooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-hooks-name">GET /hooks/:name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-hub">POST /hub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-issues">GET /issues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-markdown">POST /markdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-meta">GET /meta</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-networks-owner-repo-events">GET /networks/:owner/:repo/events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-notifications">GET /notifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#put-notifications">PUT /notifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-notifications-threads-id">GET /notifications/threads/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#patch-notifications-threads-id">PATCH /notifications/threads/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-notifications-threads-id-subscription">DELETE /notifications/threads/:id/subscription</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-notifications-threads-id-subscription">GET /notifications/threads/:id/subscription</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#put-notifications-threads-id-subscription">PUT /notifications/threads/:id/subscription</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-orgs-org">GET /orgs/:org</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#patch-orgs-org">PATCH /orgs/:org</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-orgs-org-events">GET /orgs/:org/events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-orgs-org-issues">GET /orgs/:org/issues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-orgs-org-members">GET /orgs/:org/members</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-orgs-org-members-user">DELETE /orgs/:org/members/:user</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-orgs-org-members-user">GET /orgs/:org/members/:user</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-orgs-org-public-members">GET /orgs/:org/public_members</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-orgs-org-public-members-user">DELETE /orgs/:org/public_members/:user</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-orgs-org-public-members-user">GET /orgs/:org/public_members/:user</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#put-orgs-org-public-members-user">PUT /orgs/:org/public_members/:user</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-orgs-org-repos">GET /orgs/:org/repos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-orgs-org-repos">POST /orgs/:org/repos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-orgs-org-teams">GET /orgs/:org/teams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-orgs-org-teams">POST /orgs/:org/teams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-rate-limit">GET /rate_limit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-repos-owner-repo">DELETE /repos/:owner/:repo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo">GET /repos/:owner/:repo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#patch-repos-owner-repo">PATCH /repos/:owner/:repo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-archive-format-ref">GET /repos/:owner/:repo/:archive_format/:ref</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-assignees">GET /repos/:owner/:repo/assignees</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-assignees-assignee">GET /repos/:owner/:repo/assignees/:assignee</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-branches">GET /repos/:owner/:repo/branches</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-branches-branch">GET /repos/:owner/:repo/branches/:branch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-collaborators">GET /repos/:owner/:repo/collaborators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-repos-owner-repo-collaborators-user">DELETE /repos/:owner/:repo/collaborators/:user</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-collaborators-user">GET /repos/:owner/:repo/collaborators/:user</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#put-repos-owner-repo-collaborators-user">PUT /repos/:owner/:repo/collaborators/:user</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-comments">GET /repos/:owner/:repo/comments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-repos-owner-repo-comments-id">DELETE /repos/:owner/:repo/comments/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-comments-id">GET /repos/:owner/:repo/comments/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#patch-repos-owner-repo-comments-id">PATCH /repos/:owner/:repo/comments/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-commits">GET /repos/:owner/:repo/commits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-commits-sha">GET /repos/:owner/:repo/commits/:sha</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-commits-sha-comments">GET /repos/:owner/:repo/commits/:sha/comments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-repos-owner-repo-commits-sha-comments">POST /repos/:owner/:repo/commits/:sha/comments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-compare-base-head">GET /repos/:owner/:repo/compare/:base...:head</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-compare-user1-branchname-user2-branchname">GET /repos/:owner/:repo/compare/user1:branchname...user2:branchname</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-repos-owner-repo-contents-path">DELETE /repos/:owner/:repo/contents/:path</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-contents-path">GET /repos/:owner/:repo/contents/:path</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#put-repos-owner-repo-contents-path">PUT /repos/:owner/:repo/contents/:path</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-contributors">GET /repos/:owner/:repo/contributors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-deployments">GET /repos/:owner/:repo/deployments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-repos-owner-repo-deployments">POST /repos/:owner/:repo/deployments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-deployments-id-statuses">GET /repos/:owner/:repo/deployments/:id/statuses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-repos-owner-repo-deployments-id-statuses">POST /repos/:owner/:repo/deployments/:id/statuses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-downloads">GET /repos/:owner/:repo/downloads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-repos-owner-repo-downloads-id">DELETE /repos/:owner/:repo/downloads/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-downloads-id">GET /repos/:owner/:repo/downloads/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-events">GET /repos/:owner/:repo/events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-forks">GET /repos/:owner/:repo/forks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-repos-owner-repo-forks">POST /repos/:owner/:repo/forks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-repos-owner-repo-git-blobs">POST /repos/:owner/:repo/git/blobs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-git-blobs-sha">GET /repos/:owner/:repo/git/blobs/:sha</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-repos-owner-repo-git-commits">POST /repos/:owner/:repo/git/commits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-git-commits-sha">GET /repos/:owner/:repo/git/commits/:sha</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-git-refs">GET /repos/:owner/:repo/git/refs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-repos-owner-repo-git-refs">POST /repos/:owner/:repo/git/refs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-repos-owner-repo-git-refs-ref">DELETE /repos/:owner/:repo/git/refs/:ref</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-git-refs-ref">GET /repos/:owner/:repo/git/refs/:ref</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#patch-repos-owner-repo-git-refs-ref">PATCH /repos/:owner/:repo/git/refs/:ref</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-repos-owner-repo-git-tags">POST /repos/:owner/:repo/git/tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-git-tags-sha">GET /repos/:owner/:repo/git/tags/:sha</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-repos-owner-repo-git-trees">POST /repos/:owner/:repo/git/trees</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-git-trees-sha">GET /repos/:owner/:repo/git/trees/:sha</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-hooks">GET /repos/:owner/:repo/hooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-repos-owner-repo-hooks">POST /repos/:owner/:repo/hooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-repos-owner-repo-hooks-id">DELETE /repos/:owner/:repo/hooks/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-hooks-id">GET /repos/:owner/:repo/hooks/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#patch-repos-owner-repo-hooks-id">PATCH /repos/:owner/:repo/hooks/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-repos-owner-repo-hooks-id-pings">POST /repos/:owner/:repo/hooks/:id/pings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-repos-owner-repo-hooks-id-tests">POST /repos/:owner/:repo/hooks/:id/tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-issues">GET /repos/:owner/:repo/issues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-repos-owner-repo-issues">POST /repos/:owner/:repo/issues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-issues-issue-number-events">GET /repos/:owner/:repo/issues/:issue_number/events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-issues-number">GET /repos/:owner/:repo/issues/:number</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#patch-repos-owner-repo-issues-number">PATCH /repos/:owner/:repo/issues/:number</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-issues-number-comments">GET /repos/:owner/:repo/issues/:number/comments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-repos-owner-repo-issues-number-comments">POST /repos/:owner/:repo/issues/:number/comments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-repos-owner-repo-issues-number-labels">DELETE /repos/:owner/:repo/issues/:number/labels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-issues-number-labels">GET /repos/:owner/:repo/issues/:number/labels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-repos-owner-repo-issues-number-labels">POST /repos/:owner/:repo/issues/:number/labels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#put-repos-owner-repo-issues-number-labels">PUT /repos/:owner/:repo/issues/:number/labels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-repos-owner-repo-issues-number-labels-name">DELETE /repos/:owner/:repo/issues/:number/labels/:name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-issues-comments">GET /repos/:owner/:repo/issues/comments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-repos-owner-repo-issues-comments-id">DELETE /repos/:owner/:repo/issues/comments/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-issues-comments-id">GET /repos/:owner/:repo/issues/comments/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#patch-repos-owner-repo-issues-comments-id">PATCH /repos/:owner/:repo/issues/comments/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-issues-events">GET /repos/:owner/:repo/issues/events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-issues-events-id">GET /repos/:owner/:repo/issues/events/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-keys">GET /repos/:owner/:repo/keys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-repos-owner-repo-keys">POST /repos/:owner/:repo/keys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-repos-owner-repo-keys-id">DELETE /repos/:owner/:repo/keys/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-keys-id">GET /repos/:owner/:repo/keys/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-labels">GET /repos/:owner/:repo/labels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-repos-owner-repo-labels">POST /repos/:owner/:repo/labels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-repos-owner-repo-labels-name">DELETE /repos/:owner/:repo/labels/:name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-labels-name">GET /repos/:owner/:repo/labels/:name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#patch-repos-owner-repo-labels-name">PATCH /repos/:owner/:repo/labels/:name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-languages">GET /repos/:owner/:repo/languages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-repos-owner-repo-merges">POST /repos/:owner/:repo/merges</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-milestones">GET /repos/:owner/:repo/milestones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-repos-owner-repo-milestones">POST /repos/:owner/:repo/milestones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-repos-owner-repo-milestones-number">DELETE /repos/:owner/:repo/milestones/:number</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-milestones-number">GET /repos/:owner/:repo/milestones/:number</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#patch-repos-owner-repo-milestones-number">PATCH /repos/:owner/:repo/milestones/:number</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-milestones-number-labels">GET /repos/:owner/:repo/milestones/:number/labels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-notifications">GET /repos/:owner/:repo/notifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#put-repos-owner-repo-notifications">PUT /repos/:owner/:repo/notifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-pages">GET /repos/:owner/:repo/pages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-pages-builds">GET /repos/:owner/:repo/pages/builds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-pages-builds-latest">GET /repos/:owner/:repo/pages/builds/latest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-pulls">GET /repos/:owner/:repo/pulls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-repos-owner-repo-pulls">POST /repos/:owner/:repo/pulls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-pulls-number">GET /repos/:owner/:repo/pulls/:number</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#patch-repos-owner-repo-pulls-number">PATCH /repos/:owner/:repo/pulls/:number</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-pulls-number-comments">GET /repos/:owner/:repo/pulls/:number/comments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-repos-owner-repo-pulls-number-comments">POST /repos/:owner/:repo/pulls/:number/comments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-pulls-number-commits">GET /repos/:owner/:repo/pulls/:number/commits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-pulls-number-files">GET /repos/:owner/:repo/pulls/:number/files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-pulls-number-merge">GET /repos/:owner/:repo/pulls/:number/merge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#put-repos-owner-repo-pulls-number-merge">PUT /repos/:owner/:repo/pulls/:number/merge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-pulls-comments">GET /repos/:owner/:repo/pulls/comments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-repos-owner-repo-pulls-comments-number">DELETE /repos/:owner/:repo/pulls/comments/:number</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-pulls-comments-number">GET /repos/:owner/:repo/pulls/comments/:number</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#patch-repos-owner-repo-pulls-comments-number">PATCH /repos/:owner/:repo/pulls/comments/:number</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-readme">GET /repos/:owner/:repo/readme</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-releases">GET /repos/:owner/:repo/releases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-repos-owner-repo-releases">POST /repos/:owner/:repo/releases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-repos-owner-repo-releases-id">DELETE /repos/:owner/:repo/releases/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-releases-id">GET /repos/:owner/:repo/releases/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#patch-repos-owner-repo-releases-id">PATCH /repos/:owner/:repo/releases/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-releases-id-assets">GET /repos/:owner/:repo/releases/:id/assets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-repos-owner-repo-releases-assets-id">DELETE /repos/:owner/:repo/releases/assets/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-releases-assets-id">GET /repos/:owner/:repo/releases/assets/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#patch-repos-owner-repo-releases-assets-id">PATCH /repos/:owner/:repo/releases/assets/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-stargazers">GET /repos/:owner/:repo/stargazers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-stats-code-frequency">GET /repos/:owner/:repo/stats/code_frequency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-stats-commit-activity">GET /repos/:owner/:repo/stats/commit_activity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-stats-contributors">GET /repos/:owner/:repo/stats/contributors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-stats-participation">GET /repos/:owner/:repo/stats/participation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-stats-punch-card">GET /repos/:owner/:repo/stats/punch_card</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-statuses-ref">GET /repos/:owner/:repo/statuses/:ref</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-repos-owner-repo-statuses-sha">POST /repos/:owner/:repo/statuses/:sha</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-subscribers">GET /repos/:owner/:repo/subscribers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-repos-owner-repo-subscription">DELETE /repos/:owner/:repo/subscription</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-subscription">GET /repos/:owner/:repo/subscription</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#put-repos-owner-repo-subscription">PUT /repos/:owner/:repo/subscription</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-tags">GET /repos/:owner/:repo/tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-teams">GET /repos/:owner/:repo/teams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repositories">GET /repositories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-search-code">GET /search/code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-search-issues">GET /search/issues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-search-repositories">GET /search/repositories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-search-users">GET /search/users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-teams-id">DELETE /teams/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-teams-id">GET /teams/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#patch-teams-id">PATCH /teams/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-teams-id-members">GET /teams/:id/members</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-teams-id-members-user">DELETE /teams/:id/members/:user</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-teams-id-members-user">GET /teams/:id/members/:user</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#put-teams-id-members-user">PUT /teams/:id/members/:user</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-teams-id-repos">GET /teams/:id/repos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#put-teams-id-repos-org-repo">PUT /teams/:id/repos/:org/:repo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-teams-id-repos-owner-repo">DELETE /teams/:id/repos/:owner/:repo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-teams-id-repos-owner-repo">GET /teams/:id/repos/:owner/:repo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-user">GET /user</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#patch-user">PATCH /user</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-user-emails">DELETE /user/emails</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-user-emails">GET /user/emails</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-user-emails">POST /user/emails</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-user-followers">GET /user/followers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-user-following">GET /user/following</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-user-following-user">DELETE /user/following/:user</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-user-following-user">GET /user/following/:user</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#put-user-following-user">PUT /user/following/:user</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-user-issues">GET /user/issues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-user-keys">GET /user/keys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-user-keys">POST /user/keys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-user-keys-id">DELETE /user/keys/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-user-keys-id">GET /user/keys/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-user-orgs">GET /user/orgs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-user-repos">GET /user/repos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-user-repos">POST /user/repos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-user-starred">GET /user/starred</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-user-starred-owner-repo">DELETE /user/starred/:owner/:repo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-user-starred-owner-repo">GET /user/starred/:owner/:repo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#put-user-starred-owner-repo">PUT /user/starred/:owner/:repo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-user-subscriptions">GET /user/subscriptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-user-subscriptions-owner-repo">DELETE /user/subscriptions/:owner/:repo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-user-subscriptions-owner-repo">GET /user/subscriptions/:owner/:repo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#put-user-subscriptions-owner-repo">PUT /user/subscriptions/:owner/:repo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-user-teams">GET /user/teams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-users">GET /users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-users-user">GET /users/:user</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-users-user-events">GET /users/:user/events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-users-user-events-orgs-org">GET /users/:user/events/orgs/:org</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-users-user-events-public">GET /users/:user/events/public</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-users-user-followers">GET /users/:user/followers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-users-user-following">GET /users/:user/following</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-users-user-following-target-user">GET /users/:user/following/:target_user</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-users-user-gists">GET /users/:user/gists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-users-user-keys">GET /users/:user/keys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-users-user-orgs">GET /users/:user/orgs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-users-user-received-events">GET /users/:user/received_events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-users-user-received-events-public">GET /users/:user/received_events/public</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-users-user-repos">GET /users/:user/repos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-users-user-starred">GET /users/:user/starred</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-users-user-subscriptions">GET /users/:user/subscriptions</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="rationale.html"
+                        title="previous chapter">Rationale</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="reference/bases.html"
+                        title="next chapter">Base and utility classes</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/reference.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="reference/bases.html" title="Base and utility classes"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="rationale.html" title="Rationale"
+             >previous</a> |</li>
+        <li><a href="index.html">PyGithub 2.0.0-alpha.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013-2014, Vincent Jacques.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

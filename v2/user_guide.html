@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>User guide &mdash; PyGithub 2.0.0-alpha.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2.0.0-alpha.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="PyGithub 2.0.0-alpha.1 documentation" href="index.html" />
+    <link rel="next" title="Rationale" href="rationale.html" />
+    <link rel="prev" title="Introduction" href="introduction.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="rationale.html" title="Rationale"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="introduction.html" title="Introduction"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">PyGithub 2.0.0-alpha.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="user-guide">
+<span id="id1"></span><h1>User guide<a class="headerlink" href="#user-guide" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-PyGithub.Blocking._Details.Builder">
+<span id="configuring-the-github-session"></span><span id="configuration"></span><h2>Configuring the GitHub session<a class="headerlink" href="#module-PyGithub.Blocking._Details.Builder" title="Permalink to this headline">¶</a></h2>
+<p>&#64;todoAlpha Write introduction on configuration.</p>
+<p>For reference, see <a class="reference internal" href="reference/bases.html#PyGithub.Blocking._Details.Builder.Builder" title="PyGithub.Blocking._Details.Builder.Builder"><tt class="xref py py-class docutils literal"><span class="pre">Builder</span></tt></a>.</p>
+</div>
+<div class="section" id="module-PyGithub.Blocking._Details.BaseGithubObject">
+<span id="common-functionalities"></span><h2>Common functionalities<a class="headerlink" href="#module-PyGithub.Blocking._Details.BaseGithubObject" title="Permalink to this headline">¶</a></h2>
+<p>&#64;todoAlpha Write introduction on common functionalities.</p>
+</div>
+<div class="section" id="module-PyGithub.Blocking._Details.PaginatedList">
+<span id="pagination"></span><h2>Pagination<a class="headerlink" href="#module-PyGithub.Blocking._Details.PaginatedList" title="Permalink to this headline">¶</a></h2>
+<p>&#64;todoAlpha Write introduction on pagination.</p>
+<p>For reference, see <a class="reference internal" href="reference/bases.html#PyGithub.Blocking._Details.PaginatedList.PaginatedList" title="PyGithub.Blocking._Details.PaginatedList.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">PaginatedList</span></tt></a>.</p>
+</div>
+<div class="section" id="naming-conventions">
+<h2>Naming conventions<a class="headerlink" href="#naming-conventions" title="Permalink to this headline">¶</a></h2>
+<p>Methods and attributes mapping exactly to the GitHub API v3 are in lower case like <a class="reference internal" href="reference/classes/AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.create_repo" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.create_repo"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.create_repo()</span></tt></a> and <a class="reference internal" href="reference/classes/Repository.html#PyGithub.Blocking.Repository.Repository.stargazers_count" title="PyGithub.Blocking.Repository.Repository.stargazers_count"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.stargazers_count</span></tt></a>.</p>
+<p>Methods and attributes more specific to PyGithub are in upper camel case like <a class="reference internal" href="reference/bases.html#PyGithub.Blocking._Details.Session.Session.RateLimit" title="PyGithub.Blocking._Details.Session.Session.RateLimit"><tt class="xref py py-attr docutils literal"><span class="pre">Session.RateLimit</span></tt></a>.</p>
+</div>
+<div class="section" id="access-to-common-resources">
+<h2>Access to common resources<a class="headerlink" href="#access-to-common-resources" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="users-organizations">
+<h3>Users, organizations<a class="headerlink" href="#users-organizations" title="Permalink to this headline">¶</a></h3>
+<p>You can access a user by <a class="reference internal" href="reference/classes/Github.html#PyGithub.Blocking.Github.Github.get_user" title="PyGithub.Blocking.Github.Github.get_user"><tt class="xref py py-meth docutils literal"><span class="pre">Github.get_user()</span></tt></a> and the authenticated user by <a class="reference internal" href="reference/classes/Github.html#PyGithub.Blocking.Github.Github.get_authenticated_user" title="PyGithub.Blocking.Github.Github.get_authenticated_user"><tt class="xref py py-meth docutils literal"><span class="pre">Github.get_authenticated_user()</span></tt></a>. For orgs, use <a class="reference internal" href="reference/classes/Github.html#PyGithub.Blocking.Github.Github.get_org" title="PyGithub.Blocking.Github.Github.get_org"><tt class="xref py py-meth docutils literal"><span class="pre">Github.get_org()</span></tt></a>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">nvie</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">get_user</span><span class="p">(</span><span class="s">&quot;nvie&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">nvie</span><span class="o">.</span><span class="n">name</span>
+<span class="go">Vincent Driessen</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">me</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">get_authenticated_user</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">me</span><span class="o">.</span><span class="n">login</span>
+<span class="go">jacquev6</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">me</span><span class="o">.</span><span class="n">name</span>
+<span class="go">Vincent Jacques</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">github</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">get_org</span><span class="p">(</span><span class="s">&quot;github&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">github</span><span class="o">.</span><span class="n">location</span>
+<span class="go">San Francisco, CA</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="repositories">
+<h3>Repositories<a class="headerlink" href="#repositories" title="Permalink to this headline">¶</a></h3>
+<p>There are several ways to access a repository:</p>
+<ul>
+<li><p class="first">if you already have the <a class="reference internal" href="reference/classes/User.html#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a>, <a class="reference internal" href="reference/classes/AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser"><tt class="xref py py-class docutils literal"><span class="pre">AuthenticatedUser</span></tt></a> or <a class="reference internal" href="reference/classes/Organization.html#PyGithub.Blocking.Organization.Organization" title="PyGithub.Blocking.Organization.Organization"><tt class="xref py py-class docutils literal"><span class="pre">Organization</span></tt></a> owning the repo, call its <tt class="xref py py-meth docutils literal"><span class="pre">get_repo()</span></tt> method:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gitflow</span> <span class="o">=</span> <span class="n">nvie</span><span class="o">.</span><span class="n">get_repo</span><span class="p">(</span><span class="s">&quot;gitflow&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">gitflow</span><span class="o">.</span><span class="n">description</span>
+<span class="go">Git extensions to provide high-level repository operations for Vincent Driessen&#39;s branching model.</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">pygithub</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">get_repo</span><span class="p">(</span><span class="s">&quot;PyGithub&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">pygithub</span><span class="o">.</span><span class="n">description</span>
+<span class="go">Python library implementing the full Github API v3</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">if you have its full name, use <a class="reference internal" href="reference/classes/Github.html#PyGithub.Blocking.Github.Github.get_repo" title="PyGithub.Blocking.Github.Github.get_repo"><tt class="xref py py-meth docutils literal"><span class="pre">Github.get_repo()</span></tt></a>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">whisper</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">get_repo</span><span class="p">(</span><span class="s">&quot;graphite-project/whisper&quot;</span><span class="p">)</span>  <span class="c"># You don&#39;t have to know if graphite-project is a user or an org</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">whisper</span><span class="o">.</span><span class="n">created_at</span>
+<span class="go">datetime.datetime(2012, 5, 7, 21, 30, 26)</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">if you have the login of its owner and its name, you can call <a class="reference internal" href="reference/classes/Github.html#PyGithub.Blocking.Github.Github.get_repo" title="PyGithub.Blocking.Github.Github.get_repo"><tt class="xref py py-meth docutils literal"><span class="pre">Github.get_repo()</span></tt></a> with a tuple:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">apidoc</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">get_repo</span><span class="p">((</span><span class="s">&quot;github&quot;</span><span class="p">,</span> <span class="s">&quot;developer.github.com&quot;</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">apidoc</span><span class="o">.</span><span class="n">description</span>
+<span class="go">GitHub API documentation</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">if you want to list someone&#8217;s repositories, use <tt class="xref py py-meth docutils literal"><span class="pre">get_repos()</span></tt>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">repo</span> <span class="ow">in</span> <span class="n">g</span><span class="o">.</span><span class="n">get_org</span><span class="p">(</span><span class="s">&quot;graphite-project&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_repos</span><span class="p">():</span>
+<span class="gp">... </span>    <span class="k">print</span> <span class="n">repo</span><span class="o">.</span><span class="n">name</span>
+<span class="go">carbon</span>
+<span class="go">whisper</span>
+<span class="go">graphite-web</span>
+<span class="go">ceres</span>
+<span class="go">graphite-project.github.com</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">User guide</a><ul>
+<li><a class="reference internal" href="#module-PyGithub.Blocking._Details.Builder">Configuring the GitHub session</a></li>
+<li><a class="reference internal" href="#module-PyGithub.Blocking._Details.BaseGithubObject">Common functionalities</a></li>
+<li><a class="reference internal" href="#module-PyGithub.Blocking._Details.PaginatedList">Pagination</a></li>
+<li><a class="reference internal" href="#naming-conventions">Naming conventions</a></li>
+<li><a class="reference internal" href="#access-to-common-resources">Access to common resources</a><ul>
+<li><a class="reference internal" href="#users-organizations">Users, organizations</a></li>
+<li><a class="reference internal" href="#repositories">Repositories</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="introduction.html"
+                        title="previous chapter">Introduction</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="rationale.html"
+                        title="next chapter">Rationale</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/user_guide.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="rationale.html" title="Rationale"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="introduction.html" title="Introduction"
+             >previous</a> |</li>
+        <li><a href="index.html">PyGithub 2.0.0-alpha.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013-2014, Vincent Jacques.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

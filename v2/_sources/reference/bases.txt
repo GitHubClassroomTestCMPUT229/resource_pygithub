@@ -1,0 +1,38 @@
+Base and utility classes
+========================
+
+.. automodule:: PyGithub.Blocking
+    :members:
+
+Session builder
+---------------
+
+.. autoclass:: PyGithub.Blocking._Details.Builder::Builder
+    :members:
+
+.. autoclass:: PyGithub.Blocking._Details.Session::Session()
+    :members:
+
+Base classes
+------------
+
+.. autoclass:: PyGithub.Blocking._Details.BaseGithubObject::SessionedGithubObject()
+    :members:
+
+.. autoclass:: PyGithub.Blocking._Details.BaseGithubObject::UpdatableGithubObject()
+    :members:
+
+Exceptions
+----------
+
+.. automodule:: PyGithub.Blocking._Details.Exceptions
+    :members:
+
+Pagination
+----------
+
+.. autoclass:: PyGithub.Blocking._Details.PaginatedList::PaginatedList()
+    :members:
+
+Logging
+-------

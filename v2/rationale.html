@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Rationale &mdash; PyGithub 2.0.0-alpha.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2.0.0-alpha.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="PyGithub 2.0.0-alpha.1 documentation" href="index.html" />
+    <link rel="next" title="Reference documentation" href="reference.html" />
+    <link rel="prev" title="User guide" href="user_guide.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="reference.html" title="Reference documentation"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="user_guide.html" title="User guide"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">PyGithub 2.0.0-alpha.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="rationale">
+<span id="id1"></span><h1>Rationale<a class="headerlink" href="#rationale" title="Permalink to this headline">¶</a></h1>
+<p>Please note this section is in progress. I&#8217;ll be happy to give you more explainations if you want.
+<a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/new">Open an issue</a>.</p>
+<div class="section" id="raise-late-on-bad-attributes">
+<h2>Raise late on bad attributes<a class="headerlink" href="#raise-late-on-bad-attributes" title="Permalink to this headline">¶</a></h2>
+<p>If GitHub returns an unexpected type for an attribute, PyGithub will raise an exception only when you access the attribute.
+This means the user is impacted only by errors in hte data he uses.</p>
+</div>
+<div class="section" id="generate-the-code">
+<h2>Generate the code<a class="headerlink" href="#generate-the-code" title="Permalink to this headline">¶</a></h2>
+<p>The biggest challenge in maintaining PyGithub v1 was the amount of very similar code.
+For v2, I&#8217;ve decided to generate all the repeated code from a structured description of the GitHub Api v3.</p>
+<p>Another approach would have been to write meta-code that generates needed classe on the fly, but documenting and debuging
+such a code is a nightmare. By generating the code, I&#8217;m able to experiment with manual code and only when it&#8217;s validated
+I modify the generator.</p>
+<p>Commiting the generated code allows me to review all changes and makes it easy for people to look into the real code.</p>
+</div>
+<div class="section" id="naming-conventions">
+<h2>Naming conventions<a class="headerlink" href="#naming-conventions" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Lower case separated by underscores for method and attributes mapping directly to GitHub API v3</li>
+<li>Pascal case for method and attributes specific to PyGithub.</li>
+</ul>
+<p>The package itself has been renamed <cite>PyGithub</cite> to make it obvious that it&#8217;s installed by <tt class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">PyGithub</span></tt>.</p>
+</div>
+<div class="section" id="delete-does-not-invalidate-the-object">
+<h2><tt class="xref py py-meth docutils literal"><span class="pre">delete()</span></tt> does not invalidate the object<a class="headerlink" href="#delete-does-not-invalidate-the-object" title="Permalink to this headline">¶</a></h2>
+<p>Nothing is done to prevent you from using an object after a call to its <tt class="xref py py-meth docutils literal"><span class="pre">delete()</span></tt> method. Just don&#8217;t.
+This way, you&#8217;re free to use the properties of a deleted object if you want.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Rationale</a><ul>
+<li><a class="reference internal" href="#raise-late-on-bad-attributes">Raise late on bad attributes</a></li>
+<li><a class="reference internal" href="#generate-the-code">Generate the code</a></li>
+<li><a class="reference internal" href="#naming-conventions">Naming conventions</a></li>
+<li><a class="reference internal" href="#delete-does-not-invalidate-the-object"><tt class="docutils literal"><span class="pre">delete()</span></tt> does not invalidate the object</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="user_guide.html"
+                        title="previous chapter">User guide</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="reference.html"
+                        title="next chapter">Reference documentation</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/rationale.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="reference.html" title="Reference documentation"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="user_guide.html" title="User guide"
+             >previous</a> |</li>
+        <li><a href="index.html">PyGithub 2.0.0-alpha.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013-2014, Vincent Jacques.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>
