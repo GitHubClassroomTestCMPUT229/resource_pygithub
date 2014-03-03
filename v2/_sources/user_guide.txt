@@ -10,6 +10,8 @@ Configuring the GitHub session
 
 .. automodule:: PyGithub.Blocking.Builder
 
+:class:`.Builder`
+
 Common functionalities
 ----------------------
 
