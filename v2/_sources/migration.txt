@@ -7,7 +7,7 @@ This migration guide may look a bit terse. I will update it with your questions,
 don't hesitate to `open an issue <https://github.com/jacquev6/PyGithub/issues/new>`_.
 
 The main difference between v1 and v2 is how you build the :class:`.Github` instance:
-in v2, you ``import PyGithub.Blocking`` and the configure it using the :class:`.Builder` as described in :ref:`configuration`.
+in v2, you ``import PyGithub`` and then configure it using the :class:`.Builder` as described in :ref:`configuration`.
 
 Another difference is that in :class:`.Github`, there are now two different methods to acces the authenticated user
 (:meth:`.Github.get_authenticated_user`) and another user by its login (:meth:`.Github.get_user`).

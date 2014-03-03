@@ -33,7 +33,7 @@ Access to common resources
 ..  Authenticate for doctest but don't show it in the doc
     >>> import PyGithub.Blocking
     >>> import GithubCredentials
-    >>> g = PyGithub.Blocking.Builder().Login(GithubCredentials.login, GithubCredentials.password).Build()
+    >>> g = PyGithub.BlockingBuilder().Login(GithubCredentials.login, GithubCredentials.password).Build()
 
 Users, organizations
 ~~~~~~~~~~~~~~~~~~~~

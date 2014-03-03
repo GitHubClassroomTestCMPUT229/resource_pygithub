@@ -13,9 +13,9 @@ First use
 
 ::
 
-    >>> import PyGithub.Blocking
+    >>> import PyGithub
 
-    >>> g = PyGithub.Blocking.Builder().Build()
+    >>> g = PyGithub.BlockingBuilder().Build()
 
     >>> u = g.get_user("jacquev6")
     >>> print u.name
@@ -23,7 +23,7 @@ First use
 
     >>> r = u.get_repo("PyGithub")
     >>> print r.stargazers_count
-    352
+    354
 
 Identification
 --------------
@@ -31,11 +31,11 @@ Identification
 To access your private resources, `you must authenticate <http://developer.github.com/v3/auth/>`__.
 The simplest authentication is with your login and password::
 
-    >>> g = PyGithub.Blocking.Builder().Login("your_login", "your_password").Build()
+    >>> g = PyGithub.BlockingBuilder().Login("your_login", "your_password").Build()
 
 ..  Authenticate for doctest but don't show it in the doc
     >>> import GithubCredentials
-    >>> g = PyGithub.Blocking.Builder().Login(GithubCredentials.login, GithubCredentials.password).Build()
+    >>> g = PyGithub.BlockingBuilder().Login(GithubCredentials.login, GithubCredentials.password).Build()
 
 Then you can retrieve the authenticated user::
 
