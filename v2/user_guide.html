@@ -119,6 +119,35 @@ You should use this class as a classic Python
 <span class="go">jacquev6/vincent-jacques.net</span>
 </pre></div>
 </div>
+<p>You can also build a list from a PaginatedList (all the subsequent requests to GitHub will be performed
+during the conversion instead of lazilly during the iteration):</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">repositories</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">get_repos</span><span class="p">())</span>  <span class="c"># repositories is a plain list</span>
+</pre></div>
+</div>
+<p>GitHub provide no way to know the number of items a paginated request will return, so PaginatedList has no
+length:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">get_repos</span><span class="p">())</span>
+<span class="go">Exception raised:</span>
+<span class="go">    Traceback (most recent call last):</span>
+<span class="go">      File &quot;/usr/lib/python2.7/doctest.py&quot;, line 1289, in __run</span>
+<span class="go">        compileflags, 1) in test.globs</span>
+<span class="go">      File &quot;&lt;doctest PaginatedList.py[8]&gt;&quot;, line 1, in &lt;module&gt;</span>
+<span class="go">        len(user.get_repos())</span>
+<span class="go">    TypeError: object of type &#39;PaginatedList&#39; has no len()</span>
+</pre></div>
+</div>
+<p>If you really mean to take the length of a PaginatedList, you have to explicitelly construct a list and then use its length:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">get_repos</span><span class="p">()))</span>
+<span class="go">25</span>
+</pre></div>
+</div>
+<p>But often, there is an attribute in the parent object:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">user</span><span class="o">.</span><span class="n">public_repos</span>
+<span class="go">22</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">user</span><span class="o">.</span><span class="n">owned_private_repos</span>
+<span class="go">3</span>
+</pre></div>
+</div>
 <p>For reference, see <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.PaginatedList.PaginatedList" title="PyGithub.Blocking.PaginatedList.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">PaginatedList</span></tt></a>.</p>
 </div>
 <div class="section" id="naming-conventions">
