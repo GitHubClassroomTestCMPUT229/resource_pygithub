@@ -1,6 +1,9 @@
 Base and utility classes
 ========================
 
+.. automodule:: PyGithub
+    :members:
+
 .. automodule:: PyGithub.Blocking
     :members:
 

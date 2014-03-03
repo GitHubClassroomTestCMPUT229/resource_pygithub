@@ -10,7 +10,7 @@ Raise late on bad attributes
 ----------------------------
 
 If GitHub returns an unexpected type for an attribute, PyGithub will raise an exception only when you access the attribute.
-This means the user is impacted only by errors in hte data he uses.
+This means the user is impacted only by errors in the data he uses.
 
 Generate the code
 -----------------
@@ -18,9 +18,8 @@ Generate the code
 The biggest challenge in maintaining PyGithub v1 was the amount of very similar code.
 For v2, I've decided to generate all the repeated code from a structured description of the GitHub Api v3.
 
-Another approach would have been to write meta-code that generates needed classe on the fly, but documenting and debuging
-such a code is a nightmare. By generating the code, I'm able to experiment with manual code and only when it's validated
-I modify the generator.
+Another approach would have been to write meta-code that generates needed classe on the fly, but documenting and debuging such
+code is a nightmare. By generating the code, I'm able to experiment with manual code and modify the generator only when it's validated.
 
 Commiting the generated code allows me to review all changes and makes it easy for people to look into the real code.
 
