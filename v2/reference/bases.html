@@ -181,11 +181,14 @@ and then access its <a class="reference internal" href="#PyGithub.Blocking.BaseG
 <dl class="class">
 <dt id="PyGithub.Blocking.BaseGithubObject.SessionedGithubObject">
 <em class="property">class </em><tt class="descclassname">PyGithub.Blocking.BaseGithubObject.</tt><tt class="descname">SessionedGithubObject</tt><a class="headerlink" href="#PyGithub.Blocking.BaseGithubObject.SessionedGithubObject" title="Permalink to this definition">¶</a></dt>
-<dd><p>&#64;todoAlpha Document.</p>
+<dd><p>You should not manipulate this class directly. It is public only to document its <a class="reference internal" href="#PyGithub.Blocking.BaseGithubObject.SessionedGithubObject.Session" title="PyGithub.Blocking.BaseGithubObject.SessionedGithubObject.Session"><tt class="xref py py-attr docutils literal"><span class="pre">Session</span></tt></a>
+attribute, but this is an implementation detail. The <a class="reference internal" href="#PyGithub.Blocking.BaseGithubObject.SessionedGithubObject.Session" title="PyGithub.Blocking.BaseGithubObject.SessionedGithubObject.Session"><tt class="xref py py-attr docutils literal"><span class="pre">Session</span></tt></a> attribute may be moved to another class
+or duplicated in concrete subclasses.</p>
 <dl class="attribute">
 <dt id="PyGithub.Blocking.BaseGithubObject.SessionedGithubObject.Session">
 <tt class="descname">Session</tt><a class="headerlink" href="#PyGithub.Blocking.BaseGithubObject.SessionedGithubObject.Session" title="Permalink to this definition">¶</a></dt>
-<dd><p>&#64;todoAlpha Document</p>
+<dd><p>You can use this shared attribute to access session-wide information, like your
+<a class="reference external" href="http://developer.github.com/v3/#rate-limiting">rate limit</a> in <a class="reference internal" href="#PyGithub.Blocking.Session.Session.RateLimit" title="PyGithub.Blocking.Session.Session.RateLimit"><tt class="xref py py-attr docutils literal"><span class="pre">RateLimit</span></tt></a></p>
 </dd></dl>
 
 </dd></dl>
@@ -193,8 +196,9 @@ and then access its <a class="reference internal" href="#PyGithub.Blocking.BaseG
 <dl class="class">
 <dt id="PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject">
 <em class="property">class </em><tt class="descclassname">PyGithub.Blocking.BaseGithubObject.</tt><tt class="descname">UpdatableGithubObject</tt><a class="headerlink" href="#PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject" title="Permalink to this definition">¶</a></dt>
-<dd><p>Base class: <a class="reference internal" href="#PyGithub.Blocking.BaseGithubObject.SessionedGithubObject" title="PyGithub.Blocking.BaseGithubObject.SessionedGithubObject"><tt class="xref py py-class docutils literal"><span class="pre">SessionedGithubObject</span></tt></a></p>
-<p>&#64;todoAlpha Document.</p>
+<dd><p>You should not manipulate this class directly. It is public only to document its <a class="reference internal" href="#PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject.update" title="PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject.update"><tt class="xref py py-meth docutils literal"><span class="pre">update()</span></tt></a>
+method, but this is an implementation detail. The <a class="reference internal" href="#PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject.update" title="PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject.update"><tt class="xref py py-meth docutils literal"><span class="pre">update()</span></tt></a> method may be moved to another class
+or duplicated in concrete subclasses.</p>
 <dl class="method">
 <dt id="PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject.update">
 <tt class="descname">update</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject.update" title="Permalink to this definition">¶</a></dt>

@@ -80,13 +80,14 @@ on a <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.
 <div class="section" id="access-to-the-session">
 <h3>Access to the session<a class="headerlink" href="#access-to-the-session" title="Permalink to this headline">¶</a></h3>
 <p>All objects returned by PyGithub inherit a <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.BaseGithubObject.SessionedGithubObject.Session" title="PyGithub.Blocking.BaseGithubObject.SessionedGithubObject.Session"><tt class="xref py py-attr docutils literal"><span class="pre">Session</span></tt></a> attribute. You can use it to access session-wide
-information, like your rate limit in <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.Session.Session.RateLimit" title="PyGithub.Blocking.Session.Session.RateLimit"><tt class="xref py py-attr docutils literal"><span class="pre">RateLimit</span></tt></a>.</p>
+information, like your <a class="reference external" href="http://developer.github.com/v3/#rate-limiting">rate limit</a> in <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.Session.Session.RateLimit" title="PyGithub.Blocking.Session.Session.RateLimit"><tt class="xref py py-attr docutils literal"><span class="pre">RateLimit</span></tt></a>.</p>
 </div>
 <div class="section" id="conditional-requests">
 <h3>Conditional requests<a class="headerlink" href="#conditional-requests" title="Permalink to this headline">¶</a></h3>
 <p>Most objects returned by PyGithub inherit a <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject.update" title="PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject.update"><tt class="xref py py-meth docutils literal"><span class="pre">update()</span></tt></a> method from <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject" title="PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject"><tt class="xref py py-class docutils literal"><span class="pre">UpdatableGithubObject</span></tt></a>.
-You can use this method to make a conditional request. The object&#8217;s attributes will be updated, and
-your rate limit consumed, only if the object has changed since it was created or last updated.</p>
+You can use this method to make a <a class="reference external" href="http://developer.github.com/v3/#conditional-requests">conditional request</a>.
+The object&#8217;s attributes will be updated, and your rate limit consumed, only if the object has changed since it
+was created or last updated.</p>
 </div>
 </div>
 <div class="section" id="module-PyGithub.Blocking.PaginatedList">
