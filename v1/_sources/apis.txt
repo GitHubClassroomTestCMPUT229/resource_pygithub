@@ -512,9 +512,13 @@ APIs
 
   * GET: :meth:`github.MainClass.Github.get_repos`
 
+* ``/search/code``
+
+  * GET: :meth:`github.MainClass.Github.search_code`
+
 * ``/search/issues``
 
-  * GET: :meth:`github.MainClass.Github.search_code` or :meth:`github.MainClass.Github.search_issues`
+  * GET: :meth:`github.MainClass.Github.search_issues`
 
 * ``/search/repositories``
 
