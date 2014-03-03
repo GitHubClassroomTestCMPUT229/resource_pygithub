@@ -79,7 +79,8 @@ on a <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.
 <span id="common-functionalities"></span><h2>Common functionalities<a class="headerlink" href="#module-PyGithub.Blocking.BaseGithubObject" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="access-to-the-session">
 <h3>Access to the session<a class="headerlink" href="#access-to-the-session" title="Permalink to this headline">¶</a></h3>
-<p>All objects returned by PyGithub inherit a <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.BaseGithubObject.SessionedGithubObject.Session" title="PyGithub.Blocking.BaseGithubObject.SessionedGithubObject.Session"><tt class="xref py py-attr docutils literal"><span class="pre">Session</span></tt></a> attribute.</p>
+<p>All objects returned by PyGithub inherit a <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.BaseGithubObject.SessionedGithubObject.Session" title="PyGithub.Blocking.BaseGithubObject.SessionedGithubObject.Session"><tt class="xref py py-attr docutils literal"><span class="pre">Session</span></tt></a> attribute. You can use it to access session-wide
+information, like your rate limit in <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.Session.Session.RateLimit" title="PyGithub.Blocking.Session.Session.RateLimit"><tt class="xref py py-attr docutils literal"><span class="pre">RateLimit</span></tt></a>.</p>
 </div>
 <div class="section" id="conditional-requests">
 <h3>Conditional requests<a class="headerlink" href="#conditional-requests" title="Permalink to this headline">¶</a></h3>
