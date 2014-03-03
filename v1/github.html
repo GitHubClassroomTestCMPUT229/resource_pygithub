@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Main class: Github &mdash; PyGithub 1.22.0 documentation</title>
+    <title>Main class: Github &mdash; PyGithub 1.23.0 documentation</title>
     
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '1.22.0',
+        VERSION:     '1.23.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,7 +24,7 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="top" title="PyGithub 1.22.0 documentation" href="index.html" />
+    <link rel="top" title="PyGithub 1.23.0 documentation" href="index.html" />
     <link rel="up" title="Reference" href="reference.html" />
     <link rel="next" title="APIs" href="apis.html" />
     <link rel="prev" title="Reference" href="reference.html" /> 
@@ -45,7 +45,7 @@
         <li class="right" >
           <a href="reference.html" title="Reference"
              accesskey="P">previous</a> |</li>
-        <li><a href="index.html">PyGithub 1.22.0 documentation</a> &raquo;</li>
+        <li><a href="index.html">PyGithub 1.23.0 documentation</a> &raquo;</li>
           <li><a href="reference.html" accesskey="U">Reference</a> &raquo;</li> 
       </ul>
     </div>  
@@ -321,6 +321,106 @@
 </dd></dl>
 
 <dl class="method">
+<dt id="github.MainClass.Github.search_repositories">
+<tt class="descname">search_repositories</tt><big>(</big><em>query</em>, <em>sort=NotSet</em>, <em>order=NotSet</em>, <em>**qualifiers</em><big>)</big><a class="headerlink" href="#github.MainClass.Github.search_repositories" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><p class="first"><a class="reference external" href="http://developer.github.com/v3/search">GET /search/repositories</a></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>query</strong> &#8211; string</li>
+<li><strong>sort</strong> &#8211; string (&#8216;stars&#8217;, &#8216;forks&#8217;, &#8216;updated&#8217;)</li>
+<li><strong>order</strong> &#8211; string (&#8216;asc&#8217;, &#8216;desc&#8217;)</li>
+<li><strong>qualifiers</strong> &#8211; keyword dict query qualifiers</li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="utilities.html#github.PaginatedList.PaginatedList" title="github.PaginatedList.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">github.PaginatedList.PaginatedList</span></tt></a> of <a class="reference internal" href="github_objects/Repository.html#github.Repository.Repository" title="github.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">github.Repository.Repository</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.MainClass.Github.search_users">
+<tt class="descname">search_users</tt><big>(</big><em>query</em>, <em>sort=NotSet</em>, <em>order=NotSet</em>, <em>**qualifiers</em><big>)</big><a class="headerlink" href="#github.MainClass.Github.search_users" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><p class="first"><a class="reference external" href="http://developer.github.com/v3/search">GET /search/users</a></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>query</strong> &#8211; string</li>
+<li><strong>sort</strong> &#8211; string (&#8216;followers&#8217;, &#8216;repositories&#8217;, &#8216;joined&#8217;)</li>
+<li><strong>order</strong> &#8211; string (&#8216;asc&#8217;, &#8216;desc&#8217;)</li>
+<li><strong>qualifiers</strong> &#8211; keyword dict query qualifiers</li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="utilities.html#github.PaginatedList.PaginatedList" title="github.PaginatedList.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">github.PaginatedList.PaginatedList</span></tt></a> of <a class="reference internal" href="github_objects/NamedUser.html#github.NamedUser.NamedUser" title="github.NamedUser.NamedUser"><tt class="xref py py-class docutils literal"><span class="pre">github.NamedUser.NamedUser</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.MainClass.Github.search_issues">
+<tt class="descname">search_issues</tt><big>(</big><em>query</em>, <em>sort=NotSet</em>, <em>order=NotSet</em>, <em>**qualifiers</em><big>)</big><a class="headerlink" href="#github.MainClass.Github.search_issues" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><p class="first"><a class="reference external" href="http://developer.github.com/v3/search">GET /search/issues</a></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>query</strong> &#8211; string</li>
+<li><strong>sort</strong> &#8211; string (&#8216;comments&#8217;, &#8216;created&#8217;, &#8216;updated&#8217;)</li>
+<li><strong>order</strong> &#8211; string (&#8216;asc&#8217;, &#8216;desc&#8217;)</li>
+<li><strong>qualifiers</strong> &#8211; keyword dict query qualifiers</li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="utilities.html#github.PaginatedList.PaginatedList" title="github.PaginatedList.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">github.PaginatedList.PaginatedList</span></tt></a> of <a class="reference internal" href="github_objects/Issue.html#github.Issue.Issue" title="github.Issue.Issue"><tt class="xref py py-class docutils literal"><span class="pre">github.Issue.Issue</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="github.MainClass.Github.search_code">
+<tt class="descname">search_code</tt><big>(</big><em>query</em>, <em>sort=NotSet</em>, <em>order=NotSet</em>, <em>**qualifiers</em><big>)</big><a class="headerlink" href="#github.MainClass.Github.search_code" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Calls:</th><td class="field-body"><p class="first"><a class="reference external" href="http://developer.github.com/v3/search">GET /search/issues</a></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>query</strong> &#8211; string</li>
+<li><strong>sort</strong> &#8211; string (&#8216;indexed&#8217;)</li>
+<li><strong>order</strong> &#8211; string (&#8216;asc&#8217;, &#8216;desc&#8217;)</li>
+<li><strong>qualifiers</strong> &#8211; keyword dict query qualifiers</li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="utilities.html#github.PaginatedList.PaginatedList" title="github.PaginatedList.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">github.PaginatedList.PaginatedList</span></tt></a> of <a class="reference internal" href="github_objects/ContentFile.html#github.ContentFile.ContentFile" title="github.ContentFile.ContentFile"><tt class="xref py py-class docutils literal"><span class="pre">github.ContentFile.ContentFile</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
 <dt id="github.MainClass.Github.render_markdown">
 <tt class="descname">render_markdown</tt><big>(</big><em>text</em>, <em>context=NotSet</em><big>)</big><a class="headerlink" href="#github.MainClass.Github.render_markdown" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
@@ -581,7 +681,7 @@ But NO EFFORT is made to remove sensitive information from the object&#8217;s at
         <li class="right" >
           <a href="reference.html" title="Reference"
              >previous</a> |</li>
-        <li><a href="index.html">PyGithub 1.22.0 documentation</a> &raquo;</li>
+        <li><a href="index.html">PyGithub 1.23.0 documentation</a> &raquo;</li>
           <li><a href="reference.html" >Reference</a> &raquo;</li> 
       </ul>
     </div>

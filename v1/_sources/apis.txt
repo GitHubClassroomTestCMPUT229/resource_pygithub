@@ -512,6 +512,18 @@ APIs
 
   * GET: :meth:`github.MainClass.Github.get_repos`
 
+* ``/search/issues``
+
+  * GET: :meth:`github.MainClass.Github.search_code` or :meth:`github.MainClass.Github.search_issues`
+
+* ``/search/repositories``
+
+  * GET: :meth:`github.MainClass.Github.search_repositories`
+
+* ``/search/users``
+
+  * GET: :meth:`github.MainClass.Github.search_users`
+
 * ``/teams/:id``
 
   * GET: :meth:`github.Organization.Organization.get_team`
