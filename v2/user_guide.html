@@ -77,6 +77,10 @@ on a <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.
 </div>
 <div class="section" id="module-PyGithub.Blocking.BaseGithubObject">
 <span id="common-functionalities"></span><h2>Common functionalities<a class="headerlink" href="#module-PyGithub.Blocking.BaseGithubObject" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="access-to-the-session">
+<h3>Access to the session<a class="headerlink" href="#access-to-the-session" title="Permalink to this headline">¶</a></h3>
+<p>All objects returned by PyGithub inherit a <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.BaseGithubObject.SessionedGithubObject.Session" title="PyGithub.Blocking.BaseGithubObject.SessionedGithubObject.Session"><tt class="xref py py-attr docutils literal"><span class="pre">Session</span></tt></a> attribute.</p>
+</div>
 <div class="section" id="conditional-requests">
 <h3>Conditional requests<a class="headerlink" href="#conditional-requests" title="Permalink to this headline">¶</a></h3>
 <p>Most objects returned by PyGithub inherit a <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject.update" title="PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject.update"><tt class="xref py py-meth docutils literal"><span class="pre">update()</span></tt></a> method from <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject" title="PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject"><tt class="xref py py-class docutils literal"><span class="pre">UpdatableGithubObject</span></tt></a>.
@@ -174,6 +178,7 @@ your rate limit consumed, only if the object has changed since it was created or
 <li><a class="reference internal" href="#">User guide</a><ul>
 <li><a class="reference internal" href="#module-PyGithub.Blocking.Builder">Configuring the GitHub session</a></li>
 <li><a class="reference internal" href="#module-PyGithub.Blocking.BaseGithubObject">Common functionalities</a><ul>
+<li><a class="reference internal" href="#access-to-the-session">Access to the session</a></li>
 <li><a class="reference internal" href="#conditional-requests">Conditional requests</a></li>
 </ul>
 </li>
