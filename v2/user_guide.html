@@ -101,12 +101,22 @@ You should use this class as a classic Python
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">user</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">get_authenticated_user</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">repositories</span> <span class="o">=</span> <span class="n">user</span><span class="o">.</span><span class="n">get_repos</span><span class="p">()</span>  <span class="c"># repositories is a PaginatedList</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">repo</span> <span class="ow">in</span> <span class="n">repositories</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="k">print</span> <span class="n">repo</span><span class="o">.</span><span class="n">full_name</span>
+<span class="gp">... </span>    <span class="k">print</span> <span class="n">repo</span><span class="o">.</span><span class="n">full_name</span>  
+<span class="go">jacquev6/ActionTree</span>
+<span class="go">jacquev6/AnotherPyGraphvizAgain</span>
+<span class="gp">...</span>
+<span class="go">jacquev6/ViDE</span>
+<span class="go">jacquev6/vincent-jacques.net</span>
 </pre></div>
 </div>
 <p>or shorter:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">repo</span> <span class="ow">in</span> <span class="n">user</span><span class="o">.</span><span class="n">get_repos</span><span class="p">():</span>
-<span class="gp">... </span>    <span class="k">print</span> <span class="n">repo</span><span class="o">.</span><span class="n">full_name</span>
+<span class="gp">... </span>    <span class="k">print</span> <span class="n">repo</span><span class="o">.</span><span class="n">full_name</span>  
+<span class="go">jacquev6/ActionTree</span>
+<span class="go">jacquev6/AnotherPyGraphvizAgain</span>
+<span class="gp">...</span>
+<span class="go">jacquev6/ViDE</span>
+<span class="go">jacquev6/vincent-jacques.net</span>
 </pre></div>
 </div>
 <p>For reference, see <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.PaginatedList.PaginatedList" title="PyGithub.Blocking.PaginatedList.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">PaginatedList</span></tt></a>.</p>
