@@ -57,7 +57,22 @@
 <span id="id1"></span><h1>User guide<a class="headerlink" href="#user-guide" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="module-PyGithub.Blocking.Builder">
 <span id="configuring-the-github-session"></span><span id="configuration"></span><h2>Configuring the GitHub session<a class="headerlink" href="#module-PyGithub.Blocking.Builder" title="Permalink to this headline">¶</a></h2>
-<p>&#64;todoAlpha Write introduction on configuration.</p>
+<p>All the configuration of how to use the GitHub API v3 is done by calling several methods
+on a <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.Builder.Builder" title="PyGithub.Blocking.Builder.Builder"><tt class="xref py py-class docutils literal"><span class="pre">Builder</span></tt></a> object and finally calling its <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.Builder.Builder.Build" title="PyGithub.Blocking.Builder.Builder.Build"><tt class="xref py py-meth docutils literal"><span class="pre">Builder.Build()</span></tt></a> method.</p>
+<p>For example, you choose the authentication type by calling <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.Builder.Builder.OAuth" title="PyGithub.Blocking.Builder.Builder.OAuth"><tt class="xref py py-meth docutils literal"><span class="pre">Builder.OAuth()</span></tt></a> or <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.Builder.Builder.Login" title="PyGithub.Blocking.Builder.Builder.Login"><tt class="xref py py-meth docutils literal"><span class="pre">Builder.Login()</span></tt></a>.</p>
+<p>A complete example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">PyGithub</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">PyGithub</span><span class="o">.</span><span class="n">BlockingBuilder</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span><span class="o">.</span><span class="n">Login</span><span class="p">(</span><span class="s">&quot;your_login&quot;</span><span class="p">,</span> <span class="s">&quot;your_password&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span><span class="o">.</span><span class="n">UserAgent</span><span class="p">(</span><span class="s">&quot;MyWonderfulApplication-1.0.0&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">g</span> <span class="o">=</span> <span class="n">b</span><span class="o">.</span><span class="n">Build</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Because all methods return the Builder itself, you can chain calls:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">g</span> <span class="o">=</span> <span class="n">PyGithub</span><span class="o">.</span><span class="n">BlockingBuilder</span><span class="p">()</span><span class="o">.</span><span class="n">Login</span><span class="p">(</span><span class="s">&quot;your_login&quot;</span><span class="p">,</span> <span class="s">&quot;your_password&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">UserAgent</span><span class="p">(</span><span class="s">&quot;MyWonderfulApplication-1.0.0&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">Build</span><span class="p">()</span>
+</pre></div>
+</div>
 <p>For reference, see <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.Builder.Builder" title="PyGithub.Blocking.Builder.Builder"><tt class="xref py py-class docutils literal"><span class="pre">Builder</span></tt></a>.</p>
 </div>
 <div class="section" id="module-PyGithub.Blocking.BaseGithubObject">
