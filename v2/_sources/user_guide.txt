@@ -15,6 +15,7 @@ Common functionalities
 
 .. automodule:: PyGithub.Blocking.BaseGithubObject
 
+.. @todoSomeday Fix this ref...
 .. _pagination_foo:
 
 Pagination
