@@ -84,8 +84,8 @@ information, like your <a class="reference external" href="http://developer.gith
 </div>
 <div class="section" id="conditional-requests">
 <h3>Conditional requests<a class="headerlink" href="#conditional-requests" title="Permalink to this headline">¶</a></h3>
-<p>Most objects returned by PyGithub inherit a <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject.update" title="PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject.update"><tt class="xref py py-meth docutils literal"><span class="pre">update()</span></tt></a> method from <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject" title="PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject"><tt class="xref py py-class docutils literal"><span class="pre">UpdatableGithubObject</span></tt></a>.
-You can use this method to make a <a class="reference external" href="http://developer.github.com/v3/#conditional-requests">conditional request</a>.
+<p>Many objects returned by PyGithub have a <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject.update" title="PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject.update"><tt class="xref py py-meth docutils literal"><span class="pre">update()</span></tt></a> method.
+You can use it to make a <a class="reference external" href="http://developer.github.com/v3/#conditional-requests">conditional request</a>.
 The object&#8217;s attributes will be updated, and your rate limit consumed, only if the object has changed since it
 was created or last updated.</p>
 </div>
