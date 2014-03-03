@@ -7,31 +7,31 @@ Base and utility classes
 Session builder
 ---------------
 
-.. autoclass:: PyGithub.Blocking._Details.Builder::Builder
+.. autoclass:: PyGithub.Blocking.Builder::Builder
     :members:
 
-.. autoclass:: PyGithub.Blocking._Details.Session::Session()
+.. autoclass:: PyGithub.Blocking.Session::Session()
     :members:
 
 Base classes
 ------------
 
-.. autoclass:: PyGithub.Blocking._Details.BaseGithubObject::SessionedGithubObject()
+.. autoclass:: PyGithub.Blocking.BaseGithubObject::SessionedGithubObject()
     :members:
 
-.. autoclass:: PyGithub.Blocking._Details.BaseGithubObject::UpdatableGithubObject()
+.. autoclass:: PyGithub.Blocking.BaseGithubObject::UpdatableGithubObject()
     :members:
 
 Exceptions
 ----------
 
-.. automodule:: PyGithub.Blocking._Details.Exceptions
+.. automodule:: PyGithub.Blocking.Exceptions
     :members:
 
 Pagination
 ----------
 
-.. autoclass:: PyGithub.Blocking._Details.PaginatedList::PaginatedList()
+.. autoclass:: PyGithub.Blocking.PaginatedList::PaginatedList()
     :members:
 
 Logging
