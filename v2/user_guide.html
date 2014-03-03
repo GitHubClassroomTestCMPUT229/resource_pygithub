@@ -77,7 +77,12 @@ on a <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.
 </div>
 <div class="section" id="module-PyGithub.Blocking.BaseGithubObject">
 <span id="common-functionalities"></span><h2>Common functionalities<a class="headerlink" href="#module-PyGithub.Blocking.BaseGithubObject" title="Permalink to this headline">¶</a></h2>
-<p>Most objects returned by PyGithub inherit a <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject.update" title="PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject.update"><tt class="xref py py-meth docutils literal"><span class="pre">update()</span></tt></a> method.</p>
+<div class="section" id="conditional-requests">
+<h3>Conditional requests<a class="headerlink" href="#conditional-requests" title="Permalink to this headline">¶</a></h3>
+<p>Most objects returned by PyGithub inherit a <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject.update" title="PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject.update"><tt class="xref py py-meth docutils literal"><span class="pre">update()</span></tt></a> method from <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject" title="PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject"><tt class="xref py py-class docutils literal"><span class="pre">UpdatableGithubObject</span></tt></a>.
+You can use this method to make a conditional request. The object&#8217;s attributes will be updated, and
+your rate limit consumed, only if the object has changed since it was created or last updated.</p>
+</div>
 </div>
 <div class="section" id="module-PyGithub.Blocking.PaginatedList">
 <span id="pagination"></span><h2>Pagination<a class="headerlink" href="#module-PyGithub.Blocking.PaginatedList" title="Permalink to this headline">¶</a></h2>
@@ -168,7 +173,10 @@ on a <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.
   <ul>
 <li><a class="reference internal" href="#">User guide</a><ul>
 <li><a class="reference internal" href="#module-PyGithub.Blocking.Builder">Configuring the GitHub session</a></li>
-<li><a class="reference internal" href="#module-PyGithub.Blocking.BaseGithubObject">Common functionalities</a></li>
+<li><a class="reference internal" href="#module-PyGithub.Blocking.BaseGithubObject">Common functionalities</a><ul>
+<li><a class="reference internal" href="#conditional-requests">Conditional requests</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#module-PyGithub.Blocking.PaginatedList">Pagination</a></li>
 <li><a class="reference internal" href="#naming-conventions">Naming conventions</a></li>
 <li><a class="reference internal" href="#access-to-common-resources">Access to common resources</a><ul>
