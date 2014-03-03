@@ -64,8 +64,10 @@ on a <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">PyGithub</span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">PyGithub</span><span class="o">.</span><span class="n">BlockingBuilder</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span><span class="o">.</span><span class="n">Login</span><span class="p">(</span><span class="s">&quot;your_login&quot;</span><span class="p">,</span> <span class="s">&quot;your_password&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span><span class="o">.</span><span class="n">UserAgent</span><span class="p">(</span><span class="s">&quot;MyWonderfulApplication-1.0.0&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span><span class="o">.</span><span class="n">Login</span><span class="p">(</span><span class="s">&quot;your_login&quot;</span><span class="p">,</span> <span class="s">&quot;your_password&quot;</span><span class="p">)</span>  
+<span class="go">&lt;PyGithub.Blocking.Builder.Builder object at 0x...&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span><span class="o">.</span><span class="n">UserAgent</span><span class="p">(</span><span class="s">&quot;MyWonderfulApplication-1.0.0&quot;</span><span class="p">)</span>  
+<span class="go">&lt;PyGithub.Blocking.Builder.Builder object at 0x...&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">g</span> <span class="o">=</span> <span class="n">b</span><span class="o">.</span><span class="n">Build</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -96,15 +98,15 @@ was created or last updated.</p>
 You should use this class as a classic Python
 <a class="reference external" href="http://docs.python.org/2/library/stdtypes.html?highlight=__iter__#iterator-types">iterator type</a>.</p>
 <p>Example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">user</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">get_user</span><span class="p">()</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">user</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">get_authenticated_user</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">repositories</span> <span class="o">=</span> <span class="n">user</span><span class="o">.</span><span class="n">get_repos</span><span class="p">()</span>  <span class="c"># repositories is a PaginatedList</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">repo</span> <span class="ow">in</span> <span class="n">repositories</span><span class="p">:</span>
-<span class="gp">&gt;&gt;&gt; </span>    <span class="k">print</span> <span class="n">repo</span><span class="o">.</span><span class="n">full_name</span>
+<span class="gp">... </span>    <span class="k">print</span> <span class="n">repo</span><span class="o">.</span><span class="n">full_name</span>
 </pre></div>
 </div>
 <p>or shorter:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">repo</span> <span class="ow">in</span> <span class="n">user</span><span class="o">.</span><span class="n">get_repos</span><span class="p">():</span>
-<span class="gp">&gt;&gt;&gt; </span>    <span class="k">print</span> <span class="n">repo</span><span class="o">.</span><span class="n">full_name</span>
+<span class="gp">... </span>    <span class="k">print</span> <span class="n">repo</span><span class="o">.</span><span class="n">full_name</span>
 </pre></div>
 </div>
 <p>For reference, see <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.PaginatedList.PaginatedList" title="PyGithub.Blocking.PaginatedList.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">PaginatedList</span></tt></a>.</p>
