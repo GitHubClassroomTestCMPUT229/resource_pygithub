@@ -15,8 +15,6 @@ Common functionalities
 
 .. automodule:: PyGithub.Blocking.BaseGithubObject
 
-.. _pagination:
-
 Pagination
 ----------
 
