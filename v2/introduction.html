@@ -57,7 +57,13 @@
 <span id="id1"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>While v2 is in alpha, you have to clone or download it from <a class="reference external" href="https://github.com/jacquev6/PyGithub/tree/develop_v2">Github</a> and run <tt class="docutils literal"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">install</span></tt>. You may want to use <a class="reference external" href="http://www.virtualenv.org/">Virtualenv</a>.</p>
+<p>While v2 is in alpha, you have to clone or download it from <a class="reference external" href="https://github.com/jacquev6/PyGithub/tree/develop_v2">Github</a> and run <tt class="docutils literal"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">install</span></tt>. You may want to use <a class="reference external" href="http://www.virtualenv.org/">Virtualenv</a> to avoid conflicts with your existing install of v1:</p>
+<div class="highlight-python"><pre>&gt; virtualenv env
+&gt; source env/bin/activate
+&gt; git clone git@github.com:jacquev6/PyGithub
+&gt; git checkout develop_v2
+&gt; python setup.py install</pre>
+</div>
 </div>
 <div class="section" id="first-use">
 <h2>First use<a class="headerlink" href="#first-use" title="Permalink to this headline">¶</a></h2>
