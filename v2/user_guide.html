@@ -134,12 +134,12 @@ length:</p>
 </div>
 <p>If you really mean to take the length of a PaginatedList, you have to explicitelly construct a list and then use its length:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">get_repos</span><span class="p">()))</span>
-<span class="go">25</span>
+<span class="go">27</span>
 </pre></div>
 </div>
 <p>But often, there is an attribute in the parent object:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">user</span><span class="o">.</span><span class="n">public_repos</span>
-<span class="go">22</span>
+<span class="go">24</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">user</span><span class="o">.</span><span class="n">owned_private_repos</span>
 <span class="go">3</span>
 </pre></div>

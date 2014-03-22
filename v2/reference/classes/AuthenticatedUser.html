@@ -145,6 +145,28 @@
 </dd></dl>
 
 <dl class="method">
+<dt id="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.create_key">
+<tt class="descname">create_key</tt><big>(</big><em>title</em>, <em>key</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.create_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/users/keys#create-a-public-key">POST /user/keys</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>title</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+<li><strong>key</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="PublicKey.html#PyGithub.Blocking.PublicKey.PublicKey" title="PyGithub.Blocking.PublicKey.PublicKey"><tt class="xref py py-class docutils literal"><span class="pre">PublicKey</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
 <dt id="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.create_repo">
 <tt class="descname">create_repo</tt><big>(</big><em>name</em>, <em>description=None</em>, <em>homepage=None</em>, <em>private=None</em>, <em>has_issues=None</em>, <em>has_wiki=None</em>, <em>has_downloads=None</em>, <em>auto_init=None</em>, <em>gitignore_template=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.create_repo" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/repos#create">POST /user/repos</a> end point.</p>
@@ -257,6 +279,38 @@
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>per_page</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../bases.html#PyGithub.Blocking.PaginatedList.PaginatedList" title="PyGithub.Blocking.PaginatedList.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">PaginatedList</span></tt></a> of <a class="reference internal" href="User.html#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_key">
+<tt class="descname">get_key</tt><big>(</big><em>id</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/users/keys#get-a-single-public-key">GET /user/keys/:id</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>id</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="PublicKey.html#PyGithub.Blocking.PublicKey.PublicKey" title="PyGithub.Blocking.PublicKey.PublicKey"><tt class="xref py py-class docutils literal"><span class="pre">PublicKey</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_keys">
+<tt class="descname">get_keys</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_keys" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/users/keys#list-your-public-keys">GET /user/keys</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">list</span></tt> of <a class="reference internal" href="PublicKey.html#PyGithub.Blocking.PublicKey.PublicKey" title="PyGithub.Blocking.PublicKey.PublicKey"><tt class="xref py py-class docutils literal"><span class="pre">PublicKey</span></tt></a></td>
 </tr>
 </tbody>
 </table>
