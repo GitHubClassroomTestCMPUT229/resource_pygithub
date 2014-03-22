@@ -58,11 +58,13 @@
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>While v2 is in alpha, you have to clone or download it from <a class="reference external" href="https://github.com/jacquev6/PyGithub/tree/develop_v2">Github</a> and run <tt class="docutils literal"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">install</span></tt>. You may want to use <a class="reference external" href="http://www.virtualenv.org/">Virtualenv</a> to avoid conflicts with your existing install of v1:</p>
-<div class="highlight-python"><pre>&gt; virtualenv env
-&gt; source env/bin/activate
-&gt; git clone git@github.com:jacquev6/PyGithub
-&gt; git checkout develop_v2
-&gt; python setup.py install</pre>
+<div class="highlight-python"><pre>git clone git@github.com:jacquev6/PyGithub --branch develop_v2
+cd PyGithub
+virtualenv env
+source env/bin/activate
+pip install -r requirements.txt
+python setup.py install
+python -c "import PyGithub"</pre>
 </div>
 </div>
 <div class="section" id="first-use">
