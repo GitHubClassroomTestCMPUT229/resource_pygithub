@@ -26,7 +26,7 @@
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="top" title="PyGithub 2.0.0-alpha.1 documentation" href="../../index.html" />
     <link rel="up" title="Classes" href="../classes.html" />
-    <link rel="next" title="Subscription" href="Subscription.html" />
+    <link rel="next" title="Submodule" href="Submodule.html" />
     <link rel="prev" title="PublicKey" href="PublicKey.html" /> 
   </head>
   <body>
@@ -40,7 +40,7 @@
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="Subscription.html" title="Subscription"
+          <a href="Submodule.html" title="Submodule"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="PublicKey.html" title="PublicKey"
@@ -1287,6 +1287,34 @@
 </dd></dl>
 
 <dl class="method">
+<dt id="PyGithub.Blocking.Repository.Repository.get_contents">
+<tt class="descclassname">Repository.</tt><tt class="descname">get_contents</tt><big>(</big><em>path</em>, <em>ref=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Repository.Repository.get_contents" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/repos/contents#get-contents">GET /repos/:owner/:repo/contents/:path</a> end point.</p>
+<dl class="docutils">
+<dt>The following methods also call this end point:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="Dir.html#PyGithub.Blocking.Dir.Dir.get_contents" title="PyGithub.Blocking.Dir.Dir.get_contents"><tt class="xref py py-meth docutils literal"><span class="pre">Dir.get_contents()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>path</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+<li><strong>ref</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="File.html#PyGithub.Blocking.File.File" title="PyGithub.Blocking.File.File"><tt class="xref py py-class docutils literal"><span class="pre">File</span></tt></a> or <a class="reference internal" href="SymLink.html#PyGithub.Blocking.SymLink.SymLink" title="PyGithub.Blocking.SymLink.SymLink"><tt class="xref py py-class docutils literal"><span class="pre">SymLink</span></tt></a> or <a class="reference internal" href="Submodule.html#PyGithub.Blocking.Submodule.Submodule" title="PyGithub.Blocking.Submodule.Submodule"><tt class="xref py py-class docutils literal"><span class="pre">Submodule</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">list</span></tt> of <a class="reference internal" href="File.html#PyGithub.Blocking.File.File" title="PyGithub.Blocking.File.File"><tt class="xref py py-class docutils literal"><span class="pre">File</span></tt></a> or <a class="reference internal" href="Dir.html#PyGithub.Blocking.Dir.Dir" title="PyGithub.Blocking.Dir.Dir"><tt class="xref py py-class docutils literal"><span class="pre">Dir</span></tt></a> or <a class="reference internal" href="SymLink.html#PyGithub.Blocking.SymLink.SymLink" title="PyGithub.Blocking.SymLink.SymLink"><tt class="xref py py-class docutils literal"><span class="pre">SymLink</span></tt></a> or <a class="reference internal" href="Submodule.html#PyGithub.Blocking.Submodule.Submodule" title="PyGithub.Blocking.Submodule.Submodule"><tt class="xref py py-class docutils literal"><span class="pre">Submodule</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
 <dt id="PyGithub.Blocking.Repository.Repository.get_contributors">
 <tt class="descclassname">Repository.</tt><tt class="descname">get_contributors</tt><big>(</big><em>anon=None</em>, <em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Repository.Repository.get_contributors" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/repos#list-contributors">GET /repos/:owner/:repo/contributors</a> end point.</p>
@@ -1302,62 +1330,6 @@
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../bases.html#PyGithub.Blocking.PaginatedList.PaginatedList" title="PyGithub.Blocking.PaginatedList.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">PaginatedList</span></tt></a> of <a class="reference internal" href="Contributor.html#PyGithub.Blocking.Contributor.Contributor" title="PyGithub.Blocking.Contributor.Contributor"><tt class="xref py py-class docutils literal"><span class="pre">Contributor</span></tt></a> or <a class="reference internal" href="#PyGithub.Blocking.Repository.Repository.AnonymousContributor" title="PyGithub.Blocking.Repository.Repository.AnonymousContributor"><tt class="xref py py-class docutils literal"><span class="pre">AnonymousContributor</span></tt></a></p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="PyGithub.Blocking.Repository.Repository.get_dir_content">
-<tt class="descclassname">Repository.</tt><tt class="descname">get_dir_content</tt><big>(</big><em>path</em>, <em>ref=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Repository.Repository.get_dir_content" title="Permalink to this definition">¶</a></dt>
-<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/repos/contents#get-contents">GET /repos/:owner/:repo/contents/:path</a> end point.</p>
-<dl class="docutils">
-<dt>The following methods also call this end point:</dt>
-<dd><ul class="first last simple">
-<li><a class="reference internal" href="#PyGithub.Blocking.Repository.Repository.get_file_content" title="PyGithub.Blocking.Repository.Repository.get_file_content"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_file_content()</span></tt></a></li>
-</ul>
-</dd>
-</dl>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>path</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
-<li><strong>ref</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><tt class="xref py py-class docutils literal"><span class="pre">list</span></tt> of <a class="reference internal" href="File.html#PyGithub.Blocking.File.File" title="PyGithub.Blocking.File.File"><tt class="xref py py-class docutils literal"><span class="pre">File</span></tt></a> or <a class="reference internal" href="Dir.html#PyGithub.Blocking.Dir.Dir" title="PyGithub.Blocking.Dir.Dir"><tt class="xref py py-class docutils literal"><span class="pre">Dir</span></tt></a></p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="PyGithub.Blocking.Repository.Repository.get_file_content">
-<tt class="descclassname">Repository.</tt><tt class="descname">get_file_content</tt><big>(</big><em>path</em>, <em>ref=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Repository.Repository.get_file_content" title="Permalink to this definition">¶</a></dt>
-<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/repos/contents#get-contents">GET /repos/:owner/:repo/contents/:path</a> end point.</p>
-<dl class="docutils">
-<dt>The following methods also call this end point:</dt>
-<dd><ul class="first last simple">
-<li><a class="reference internal" href="#PyGithub.Blocking.Repository.Repository.get_dir_content" title="PyGithub.Blocking.Repository.Repository.get_dir_content"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_dir_content()</span></tt></a></li>
-</ul>
-</dd>
-</dl>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>path</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
-<li><strong>ref</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="File.html#PyGithub.Blocking.File.File" title="PyGithub.Blocking.File.File"><tt class="xref py py-class docutils literal"><span class="pre">File</span></tt></a></p>
 </td>
 </tr>
 </tbody>
@@ -1551,8 +1523,8 @@
   <p class="topless"><a href="PublicKey.html"
                         title="previous chapter">PublicKey</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="Subscription.html"
-                        title="next chapter">Subscription</a></p>
+  <p class="topless"><a href="Submodule.html"
+                        title="next chapter">Submodule</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="../../_sources/reference/classes/Repository.txt"
@@ -1585,7 +1557,7 @@
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="Subscription.html" title="Subscription"
+          <a href="Submodule.html" title="Submodule"
              >next</a> |</li>
         <li class="right" >
           <a href="PublicKey.html" title="PublicKey"
