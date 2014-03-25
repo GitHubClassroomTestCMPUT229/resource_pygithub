@@ -184,6 +184,16 @@ If something is not listed here, please <a class="reference external" href="http
 <p>(<a class="reference external" href="http://developer.github.com/v3/gists#edit-a-gist">Reference documentation of Github API v3</a>)</p>
 <p>Not yet implemented in PyGithub.</p>
 </div>
+<div class="section" id="get-gists-id-commits">
+<h2>GET /gists/:id/commits<a class="headerlink" href="#get-gists-id-commits" title="Permalink to this headline">¶</a></h2>
+<p>(<a class="reference external" href="http://developer.github.com/v3/gists#list-gist-commits">Reference documentation of Github API v3</a>)</p>
+<p>Not yet implemented in PyGithub.</p>
+</div>
+<div class="section" id="get-gists-id-forks">
+<h2>GET /gists/:id/forks<a class="headerlink" href="#get-gists-id-forks" title="Permalink to this headline">¶</a></h2>
+<p>(<a class="reference external" href="http://developer.github.com/v3/gists#list-gist-forks">Reference documentation of Github API v3</a>)</p>
+<p>Not yet implemented in PyGithub.</p>
+</div>
 <div class="section" id="post-gists-id-forks">
 <h2>POST /gists/:id/forks<a class="headerlink" href="#post-gists-id-forks" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/gists#fork-a-gist">Reference documentation of Github API v3</a>)</p>
@@ -749,12 +759,24 @@ If something is not listed here, please <a class="reference external" href="http
 <div class="section" id="post-repos-owner-repo-git-blobs">
 <h2>POST /repos/:owner/:repo/git/blobs<a class="headerlink" href="#post-repos-owner-repo-git-blobs" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/git/blobs#create-a-blob">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Repository.html#PyGithub.Blocking.Repository.Repository.create_git_blob" title="PyGithub.Blocking.Repository.Repository.create_git_blob"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.create_git_blob()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-repos-owner-repo-git-blobs-sha">
 <h2>GET /repos/:owner/:repo/git/blobs/:sha<a class="headerlink" href="#get-repos-owner-repo-git-blobs-sha" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/git/blobs#get-a-blob">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Repository.html#PyGithub.Blocking.Repository.Repository.get_git_blob" title="PyGithub.Blocking.Repository.Repository.get_git_blob"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_git_blob()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="post-repos-owner-repo-git-commits">
 <h2>POST /repos/:owner/:repo/git/commits<a class="headerlink" href="#post-repos-owner-repo-git-commits" title="Permalink to this headline">¶</a></h2>
@@ -1904,6 +1926,8 @@ If something is not listed here, please <a class="reference external" href="http
 <li><a class="reference internal" href="#delete-gists-id">DELETE /gists/:id</a></li>
 <li><a class="reference internal" href="#get-gists-id">GET /gists/:id</a></li>
 <li><a class="reference internal" href="#patch-gists-id">PATCH /gists/:id</a></li>
+<li><a class="reference internal" href="#get-gists-id-commits">GET /gists/:id/commits</a></li>
+<li><a class="reference internal" href="#get-gists-id-forks">GET /gists/:id/forks</a></li>
 <li><a class="reference internal" href="#post-gists-id-forks">POST /gists/:id/forks</a></li>
 <li><a class="reference internal" href="#delete-gists-id-star">DELETE /gists/:id/star</a></li>
 <li><a class="reference internal" href="#get-gists-id-star">GET /gists/:id/star</a></li>

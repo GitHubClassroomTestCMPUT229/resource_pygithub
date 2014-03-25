@@ -1189,6 +1189,28 @@
 </dd></dl>
 
 <dl class="method">
+<dt id="PyGithub.Blocking.Repository.Repository.create_git_blob">
+<tt class="descclassname">Repository.</tt><tt class="descname">create_git_blob</tt><big>(</big><em>content</em>, <em>encoding</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Repository.Repository.create_git_blob" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/git/blobs#create-a-blob">POST /repos/:owner/:repo/git/blobs</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>content</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+<li><strong>encoding</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="GitBlob.html#PyGithub.Blocking.GitBlob.GitBlob" title="PyGithub.Blocking.GitBlob.GitBlob"><tt class="xref py py-class docutils literal"><span class="pre">GitBlob</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
 <dt id="PyGithub.Blocking.Repository.Repository.create_key">
 <tt class="descclassname">Repository.</tt><tt class="descname">create_key</tt><big>(</big><em>title</em>, <em>key</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Repository.Repository.create_key" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/repos/keys#create">POST /repos/:owner/:repo/keys</a> end point.</p>
@@ -1353,6 +1375,23 @@
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../bases.html#PyGithub.Blocking.PaginatedList.PaginatedList" title="PyGithub.Blocking.PaginatedList.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">PaginatedList</span></tt></a> of <a class="reference internal" href="#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a></p>
 </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Repository.Repository.get_git_blob">
+<tt class="descclassname">Repository.</tt><tt class="descname">get_git_blob</tt><big>(</big><em>sha</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Repository.Repository.get_git_blob" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/git/blobs#get-a-blob">GET /repos/:owner/:repo/git/blobs/:sha</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>sha</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="GitBlob.html#PyGithub.Blocking.GitBlob.GitBlob" title="PyGithub.Blocking.GitBlob.GitBlob"><tt class="xref py py-class docutils literal"><span class="pre">GitBlob</span></tt></a></td>
 </tr>
 </tbody>
 </table>
