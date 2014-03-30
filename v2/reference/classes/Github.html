@@ -27,7 +27,7 @@
     <link rel="top" title="PyGithub 2.0.0-alpha.1 documentation" href="../../index.html" />
     <link rel="up" title="Classes" href="../classes.html" />
     <link rel="next" title="Organization" href="Organization.html" />
-    <link rel="prev" title="GitCommit" href="GitCommit.html" /> 
+    <link rel="prev" title="GitTree" href="GitTree.html" /> 
   </head>
   <body>
     <div class="related">
@@ -43,7 +43,7 @@
           <a href="Organization.html" title="Organization"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="GitCommit.html" title="GitCommit"
+          <a href="GitTree.html" title="GitTree"
              accesskey="P">previous</a> |</li>
         <li><a href="../../index.html">PyGithub 2.0.0-alpha.1 documentation</a> &raquo;</li>
           <li><a href="../../reference.html" >Reference documentation</a> &raquo;</li>
@@ -101,6 +101,57 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyGithub.Blocking.Github.Github.Meta">
+<em class="property">class </em><tt class="descclassname">Github.</tt><tt class="descname">Meta</tt><a class="headerlink" href="#PyGithub.Blocking.Github.Github.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Methods and attributes returning instances of this class:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="#PyGithub.Blocking.Github.Github.get_meta" title="PyGithub.Blocking.Github.Github.get_meta"><tt class="xref py py-meth docutils literal"><span class="pre">Github.get_meta()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Github.Github.Meta.git">
+<tt class="descname">git</tt><a class="headerlink" href="#PyGithub.Blocking.Github.Github.Meta.git" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">list</span></tt> of <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Github.Github.Meta.hooks">
+<tt class="descname">hooks</tt><a class="headerlink" href="#PyGithub.Blocking.Github.Github.Meta.hooks" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">list</span></tt> of <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Github.Github.Meta.verifiable_password_authentication">
+<tt class="descname">verifiable_password_authentication</tt><a class="headerlink" href="#PyGithub.Blocking.Github.Github.Meta.verifiable_password_authentication" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
 </tr>
 </tbody>
 </table>
@@ -239,6 +290,21 @@
 </dd></dl>
 
 <dl class="method">
+<dt id="PyGithub.Blocking.Github.Github.get_emojis">
+<tt class="descclassname">Github.</tt><tt class="descname">get_emojis</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Github.Github.get_emojis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/emojis#emojis">GET /emojis</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">dict</span></tt> of <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> to <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
 <dt id="PyGithub.Blocking.Github.Github.get_gitignore_template">
 <tt class="descclassname">Github.</tt><tt class="descname">get_gitignore_template</tt><big>(</big><em>name</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Github.Github.get_gitignore_template" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/gitignore#get-a-single-template">GET /gitignore/templates/:name</a> end point.</p>
@@ -265,6 +331,21 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">list</span></tt> of <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Github.Github.get_meta">
+<tt class="descclassname">Github.</tt><tt class="descname">get_meta</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Github.Github.get_meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/meta#meta">GET /meta</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#PyGithub.Blocking.Github.Github.Meta" title="PyGithub.Blocking.Github.Github.Meta"><tt class="xref py py-class docutils literal"><span class="pre">Meta</span></tt></a></td>
 </tr>
 </tbody>
 </table>
@@ -406,8 +487,8 @@
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="GitCommit.html"
-                        title="previous chapter">GitCommit</a></p>
+  <p class="topless"><a href="GitTree.html"
+                        title="previous chapter">GitTree</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="Organization.html"
                         title="next chapter">Organization</a></p>
@@ -446,7 +527,7 @@
           <a href="Organization.html" title="Organization"
              >next</a> |</li>
         <li class="right" >
-          <a href="GitCommit.html" title="GitCommit"
+          <a href="GitTree.html" title="GitTree"
              >previous</a> |</li>
         <li><a href="../../index.html">PyGithub 2.0.0-alpha.1 documentation</a> &raquo;</li>
           <li><a href="../../reference.html" >Reference documentation</a> &raquo;</li>

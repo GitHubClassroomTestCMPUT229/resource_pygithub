@@ -79,7 +79,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>user</strong> &#8211; mandatory <a class="reference internal" href="User.html#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>user</strong> &#8211; mandatory <a class="reference internal" href="User.html#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <tt class="xref py py-attr docutils literal"><span class="pre">User.login</span></tt>)</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
 </tr>
@@ -96,7 +96,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>repo</strong> &#8211; mandatory <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> or <tt class="xref py py-class docutils literal"><span class="pre">TwoStrings</span></tt></td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>repo</strong> &#8211; mandatory <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> or <tt class="xref py py-class docutils literal"><span class="pre">TwoStrings</span></tt> (its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.full_name" title="PyGithub.Blocking.Repository.Repository.full_name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.full_name</span></tt></a>)</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
 </tr>
@@ -113,7 +113,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>repo</strong> &#8211; mandatory <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> or <tt class="xref py py-class docutils literal"><span class="pre">TwoStrings</span></tt></td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>repo</strong> &#8211; mandatory <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> or <tt class="xref py py-class docutils literal"><span class="pre">TwoStrings</span></tt> (its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.full_name" title="PyGithub.Blocking.Repository.Repository.full_name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.full_name</span></tt></a>)</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
 </tr>
@@ -136,7 +136,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>repo</strong> &#8211; mandatory <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> or <tt class="xref py py-class docutils literal"><span class="pre">TwoStrings</span></tt></td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>repo</strong> &#8211; mandatory <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> or <tt class="xref py py-class docutils literal"><span class="pre">TwoStrings</span></tt> (its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.full_name" title="PyGithub.Blocking.Repository.Repository.full_name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.full_name</span></tt></a>)</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a></td>
 </tr>
@@ -168,7 +168,7 @@
 
 <dl class="method">
 <dt id="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.create_repo">
-<tt class="descname">create_repo</tt><big>(</big><em>name</em>, <em>description=None</em>, <em>homepage=None</em>, <em>private=None</em>, <em>has_issues=None</em>, <em>has_wiki=None</em>, <em>has_downloads=None</em>, <em>auto_init=None</em>, <em>gitignore_template=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.create_repo" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">create_repo</tt><big>(</big><em>name</em>, <em>description=None</em>, <em>homepage=None</em>, <em>private=None</em>, <em>has_issues=None</em>, <em>has_wiki=None</em>, <em>has_downloads=None</em>, <em>auto_init=None</em>, <em>gitignore_template=None</em>, <em>license_template=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.create_repo" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/repos#create">POST /user/repos</a> end point.</p>
 <p>This is the only method calling this end point.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -184,7 +184,8 @@
 <li><strong>has_wiki</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></li>
 <li><strong>has_downloads</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></li>
 <li><strong>auto_init</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></li>
-<li><strong>gitignore_template</strong> &#8211; optional <a class="reference internal" href="Github.html#PyGithub.Blocking.Github.Github.GitIgnoreTemplate" title="PyGithub.Blocking.Github.Github.GitIgnoreTemplate"><tt class="xref py py-class docutils literal"><span class="pre">GitIgnoreTemplate</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+<li><strong>gitignore_template</strong> &#8211; optional <a class="reference internal" href="Github.html#PyGithub.Blocking.Github.Github.GitIgnoreTemplate" title="PyGithub.Blocking.Github.Github.GitIgnoreTemplate"><tt class="xref py py-class docutils literal"><span class="pre">GitIgnoreTemplate</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Github.html#PyGithub.Blocking.Github.Github.GitIgnoreTemplate.name" title="PyGithub.Blocking.Github.Github.GitIgnoreTemplate.name"><tt class="xref py py-attr docutils literal"><span class="pre">GitIgnoreTemplate.name</span></tt></a>)</li>
+<li><strong>license_template</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
 </ul>
 </td>
 </tr>
@@ -211,7 +212,7 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>repo</strong> &#8211; mandatory <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> or <tt class="xref py py-class docutils literal"><span class="pre">TwoStrings</span></tt></li>
+<li><strong>repo</strong> &#8211; mandatory <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> or <tt class="xref py py-class docutils literal"><span class="pre">TwoStrings</span></tt> (its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.full_name" title="PyGithub.Blocking.Repository.Repository.full_name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.full_name</span></tt></a>)</li>
 <li><strong>subscribed</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></li>
 <li><strong>ignored</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></li>
 </ul>
@@ -414,7 +415,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>repo</strong> &#8211; mandatory <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> or <tt class="xref py py-class docutils literal"><span class="pre">TwoStrings</span></tt></td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>repo</strong> &#8211; mandatory <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> or <tt class="xref py py-class docutils literal"><span class="pre">TwoStrings</span></tt> (its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.full_name" title="PyGithub.Blocking.Repository.Repository.full_name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.full_name</span></tt></a>)</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Subscription.html#PyGithub.Blocking.Subscription.Subscription" title="PyGithub.Blocking.Subscription.Subscription"><tt class="xref py py-class docutils literal"><span class="pre">Subscription</span></tt></a></td>
 </tr>
@@ -465,7 +466,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>user</strong> &#8211; mandatory <a class="reference internal" href="User.html#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>user</strong> &#8211; mandatory <a class="reference internal" href="User.html#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <tt class="xref py py-attr docutils literal"><span class="pre">User.login</span></tt>)</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
 </tr>
@@ -482,7 +483,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>repo</strong> &#8211; mandatory <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> or <tt class="xref py py-class docutils literal"><span class="pre">TwoStrings</span></tt></td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>repo</strong> &#8211; mandatory <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> or <tt class="xref py py-class docutils literal"><span class="pre">TwoStrings</span></tt> (its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.full_name" title="PyGithub.Blocking.Repository.Repository.full_name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.full_name</span></tt></a>)</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
 </tr>
@@ -499,7 +500,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>repo</strong> &#8211; mandatory <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> or <tt class="xref py py-class docutils literal"><span class="pre">TwoStrings</span></tt></td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>repo</strong> &#8211; mandatory <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> or <tt class="xref py py-class docutils literal"><span class="pre">TwoStrings</span></tt> (its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.full_name" title="PyGithub.Blocking.Repository.Repository.full_name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.full_name</span></tt></a>)</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
 </tr>
@@ -516,7 +517,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>user</strong> &#8211; mandatory <a class="reference internal" href="User.html#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>user</strong> &#8211; mandatory <a class="reference internal" href="User.html#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <tt class="xref py py-attr docutils literal"><span class="pre">User.login</span></tt>)</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
 </tr>
@@ -533,7 +534,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>repo</strong> &#8211; mandatory <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> or <tt class="xref py py-class docutils literal"><span class="pre">TwoStrings</span></tt></td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>repo</strong> &#8211; mandatory <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> or <tt class="xref py py-class docutils literal"><span class="pre">TwoStrings</span></tt> (its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.full_name" title="PyGithub.Blocking.Repository.Repository.full_name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.full_name</span></tt></a>)</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
 </tr>
@@ -550,7 +551,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>repo</strong> &#8211; mandatory <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> or <tt class="xref py py-class docutils literal"><span class="pre">TwoStrings</span></tt></td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>repo</strong> &#8211; mandatory <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> or <tt class="xref py py-class docutils literal"><span class="pre">TwoStrings</span></tt> (its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.full_name" title="PyGithub.Blocking.Repository.Repository.full_name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.full_name</span></tt></a>)</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
 </tr>
