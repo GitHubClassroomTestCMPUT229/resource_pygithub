@@ -512,6 +512,10 @@ APIs
 
   * GET: :meth:`github.MainClass.Github.get_repos`
 
+* ``/repositories/:id``
+
+  * GET: :meth:`github.MainClass.Github.get_repo`
+
 * ``/search/code``
 
   * GET: :meth:`github.MainClass.Github.search_code`
