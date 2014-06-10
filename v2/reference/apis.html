@@ -89,6 +89,11 @@ If something is not listed here, please <a class="reference external" href="http
 <p>(<a class="reference external" href="http://developer.github.com/v3/oauth_authorizations#check-an-authorization">Reference documentation of Github API v3</a>)</p>
 <p>Not yet implemented in PyGithub.</p>
 </div>
+<div class="section" id="post-applications-client-id-tokens-access-token">
+<h2>POST /applications/:client_id/tokens/:access_token<a class="headerlink" href="#post-applications-client-id-tokens-access-token" title="Permalink to this headline">¶</a></h2>
+<p>(<a class="reference external" href="http://developer.github.com/v3/oauth_authorizations#reset-an-authorization">Reference documentation of Github API v3</a>)</p>
+<p>Not yet implemented in PyGithub.</p>
+</div>
 <div class="section" id="get-authorizations">
 <h2>GET /authorizations<a class="headerlink" href="#get-authorizations" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/oauth_authorizations#list-your-authorizations">Reference documentation of Github API v3</a>)</p>
@@ -634,14 +639,19 @@ If something is not listed here, please <a class="reference external" href="http
 <p>(<a class="reference external" href="http://developer.github.com/v3/repos/commits#list-commits-on-a-repository">Reference documentation of Github API v3</a>)</p>
 <p>Not yet implemented in PyGithub.</p>
 </div>
+<div class="section" id="get-repos-owner-repo-commits-ref-comments">
+<h2>GET /repos/:owner/:repo/commits/:ref/comments<a class="headerlink" href="#get-repos-owner-repo-commits-ref-comments" title="Permalink to this headline">¶</a></h2>
+<p>(<a class="reference external" href="http://developer.github.com/v3/repos/comments#list-comments-for-a-single-commit">Reference documentation of Github API v3</a>)</p>
+<p>Not yet implemented in PyGithub.</p>
+</div>
+<div class="section" id="get-repos-owner-repo-commits-ref-status">
+<h2>GET /repos/:owner/:repo/commits/:ref/status<a class="headerlink" href="#get-repos-owner-repo-commits-ref-status" title="Permalink to this headline">¶</a></h2>
+<p>(<a class="reference external" href="http://developer.github.com/v3/repos/statuses#get-the-combined-status-for-a-specific-ref">Reference documentation of Github API v3</a>)</p>
+<p>Not yet implemented in PyGithub.</p>
+</div>
 <div class="section" id="get-repos-owner-repo-commits-sha">
 <h2>GET /repos/:owner/:repo/commits/:sha<a class="headerlink" href="#get-repos-owner-repo-commits-sha" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/repos/commits#get-a-single-commit">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
-</div>
-<div class="section" id="get-repos-owner-repo-commits-sha-comments">
-<h2>GET /repos/:owner/:repo/commits/:sha/comments<a class="headerlink" href="#get-repos-owner-repo-commits-sha-comments" title="Permalink to this headline">¶</a></h2>
-<p>(<a class="reference external" href="http://developer.github.com/v3/repos/comments#list-comments-for-a-single-commit">Reference documentation of Github API v3</a>)</p>
 <p>Not yet implemented in PyGithub.</p>
 </div>
 <div class="section" id="post-repos-owner-repo-commits-sha-comments">
@@ -981,7 +991,7 @@ If something is not listed here, please <a class="reference external" href="http
 </div>
 <div class="section" id="get-repos-owner-repo-issues-events">
 <h2>GET /repos/:owner/:repo/issues/events<a class="headerlink" href="#get-repos-owner-repo-issues-events" title="Permalink to this headline">¶</a></h2>
-<p>(<a class="reference external" href="http://developer.github.com/v3/activity/events#list-issue-events-for-a-repository">Reference documentation of Github API v3</a>)</p>
+<p>(<a class="reference external" href="http://developer.github.com/v3/issues/events#list-events-for-a-repository">Reference documentation of Github API v3</a>)</p>
 <p>Not yet implemented in PyGithub.</p>
 </div>
 <div class="section" id="get-repos-owner-repo-issues-events-id">
@@ -1170,7 +1180,7 @@ If something is not listed here, please <a class="reference external" href="http
 </div>
 <div class="section" id="put-repos-owner-repo-pulls-number-merge">
 <h2>PUT /repos/:owner/:repo/pulls/:number/merge<a class="headerlink" href="#put-repos-owner-repo-pulls-number-merge" title="Permalink to this headline">¶</a></h2>
-<p>(<a class="reference external" href="http://developer.github.com/v3/pulls#merge-a-pull-request-merge-buttontrade">Reference documentation of Github API v3</a>)</p>
+<p>(<a class="reference external" href="http://developer.github.com/v3/pulls#merge-a-pull-request-merge-button">Reference documentation of Github API v3</a>)</p>
 <p>Not yet implemented in PyGithub.</p>
 </div>
 <div class="section" id="get-repos-owner-repo-pulls-comments">
@@ -1938,6 +1948,7 @@ If something is not listed here, please <a class="reference external" href="http
 <li><a class="reference internal" href="#delete-applications-client-id-tokens">DELETE /applications/:client_id/tokens</a></li>
 <li><a class="reference internal" href="#delete-applications-client-id-tokens-access-token">DELETE /applications/:client_id/tokens/:access_token</a></li>
 <li><a class="reference internal" href="#get-applications-client-id-tokens-access-token">GET /applications/:client_id/tokens/:access_token</a></li>
+<li><a class="reference internal" href="#post-applications-client-id-tokens-access-token">POST /applications/:client_id/tokens/:access_token</a></li>
 <li><a class="reference internal" href="#get-authorizations">GET /authorizations</a></li>
 <li><a class="reference internal" href="#post-authorizations">POST /authorizations</a></li>
 <li><a class="reference internal" href="#delete-authorizations-id">DELETE /authorizations/:id</a></li>
@@ -2014,8 +2025,9 @@ If something is not listed here, please <a class="reference external" href="http
 <li><a class="reference internal" href="#get-repos-owner-repo-comments-id">GET /repos/:owner/:repo/comments/:id</a></li>
 <li><a class="reference internal" href="#patch-repos-owner-repo-comments-id">PATCH /repos/:owner/:repo/comments/:id</a></li>
 <li><a class="reference internal" href="#get-repos-owner-repo-commits">GET /repos/:owner/:repo/commits</a></li>
+<li><a class="reference internal" href="#get-repos-owner-repo-commits-ref-comments">GET /repos/:owner/:repo/commits/:ref/comments</a></li>
+<li><a class="reference internal" href="#get-repos-owner-repo-commits-ref-status">GET /repos/:owner/:repo/commits/:ref/status</a></li>
 <li><a class="reference internal" href="#get-repos-owner-repo-commits-sha">GET /repos/:owner/:repo/commits/:sha</a></li>
-<li><a class="reference internal" href="#get-repos-owner-repo-commits-sha-comments">GET /repos/:owner/:repo/commits/:sha/comments</a></li>
 <li><a class="reference internal" href="#post-repos-owner-repo-commits-sha-comments">POST /repos/:owner/:repo/commits/:sha/comments</a></li>
 <li><a class="reference internal" href="#get-repos-owner-repo-compare-base-head">GET /repos/:owner/:repo/compare/:base...:head</a></li>
 <li><a class="reference internal" href="#get-repos-owner-repo-compare-user1-branchname-user2-branchname">GET /repos/:owner/:repo/compare/user1:branchname...user2:branchname</a></li>
@@ -2243,7 +2255,7 @@ If something is not listed here, please <a class="reference external" href="http
     </div>
     <div class="footer">
         &copy; Copyright 2013-2014, Vincent Jacques.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
     </div>
   </body>
 </html>
