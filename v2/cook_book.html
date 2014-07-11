@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Cook book &mdash; PyGithub 2.0.0-alpha.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2.0.0-alpha.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="PyGithub 2.0.0-alpha.1 documentation" href="index.html" />
+    <link rel="next" title="Rationale" href="rationale.html" />
+    <link rel="prev" title="User guide" href="user_guide.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="rationale.html" title="Rationale"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="user_guide.html" title="User guide"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">PyGithub 2.0.0-alpha.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="cook-book">
+<span id="id1"></span><h1>Cook book<a class="headerlink" href="#cook-book" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="working-with-gists">
+<h2>Working with gists<a class="headerlink" href="#working-with-gists" title="Permalink to this headline">¶</a></h2>
+<p>This cook book shows you everything about <a class="reference external" href="https://gist.github.com">gists</a> and the <a class="reference external" href="https://developer.github.com/v3/gists">gists API</a>.</p>
+<p>Initialization:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">PyGithub</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">g</span> <span class="o">=</span> <span class="n">PyGithub</span><span class="o">.</span><span class="n">BlockingBuilder</span><span class="p">()</span><span class="o">.</span><span class="n">Login</span><span class="p">(</span><span class="s">&quot;your_login&quot;</span><span class="p">,</span> <span class="s">&quot;your_password&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">Build</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">u</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">get_authenticated_user</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="section" id="creating-gists">
+<h3>Creating gists<a class="headerlink" href="#creating-gists" title="Permalink to this headline">¶</a></h3>
+<p>The simplest, personal, private gist, with one file:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span> <span class="o">=</span> <span class="n">u</span><span class="o">.</span><span class="n">create_gist</span><span class="p">(</span><span class="n">files</span><span class="o">=</span><span class="p">{</span><span class="s">&quot;foo.txt&quot;</span><span class="p">:{</span><span class="s">&quot;content&quot;</span><span class="p">:</span> <span class="s">&quot;barbaz&quot;</span><span class="p">}})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">gist</span><span class="o">.</span><span class="n">owner</span><span class="o">.</span><span class="n">login</span>
+<span class="go">jacquev6</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">gist</span><span class="o">.</span><span class="n">public</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+<p>An anonymous gist:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">create_anonymous_gist</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">gist</span><span class="o">.</span><span class="n">owner</span>
+<span class="go">None</span>
+</pre></div>
+</div>
+<p>A secret gist (works with personal and anonymous gists):</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span> <span class="o">=</span> <span class="n">u</span><span class="o">.</span><span class="n">create_gist</span><span class="p">(</span><span class="n">secret</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">gist</span><span class="o">.</span><span class="n">secret</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>A gist with several files:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span> <span class="o">=</span> <span class="n">u</span><span class="o">.</span><span class="n">create_gist</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="retrieving-gists">
+<h3>Retrieving gists<a class="headerlink" href="#retrieving-gists" title="Permalink to this headline">¶</a></h3>
+<p>List public gists:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">g</span><span class="o">.</span><span class="n">get_public_gists</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>List personal gists:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">u</span><span class="o">.</span><span class="n">get_gists</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Get a single gist:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">u</span><span class="o">.</span><span class="n">get_gist</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="modifying-gists">
+<h3>Modifying gists<a class="headerlink" href="#modifying-gists" title="Permalink to this headline">¶</a></h3>
+<p>Change attributes:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span><span class="o">.</span><span class="n">edit</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Add a file:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span><span class="o">.</span><span class="n">edit</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Delete a file:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span><span class="o">.</span><span class="n">edit</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Rename a file:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span><span class="o">.</span><span class="n">edit</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Starring and unstarring:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span><span class="o">.</span><span class="n">star</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">gist</span><span class="o">.</span><span class="n">is_starred</span><span class="p">()</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span><span class="o">.</span><span class="n">unstar</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">gist</span><span class="o">.</span><span class="n">is_starred</span><span class="p">()</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="forking">
+<h3>Forking<a class="headerlink" href="#forking" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">fork</span> <span class="o">=</span> <span class="n">gist</span><span class="o">.</span><span class="n">create_fork</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="deleting-gists">
+<h3>Deleting gists<a class="headerlink" href="#deleting-gists" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Cook book</a><ul>
+<li><a class="reference internal" href="#working-with-gists">Working with gists</a><ul>
+<li><a class="reference internal" href="#creating-gists">Creating gists</a></li>
+<li><a class="reference internal" href="#retrieving-gists">Retrieving gists</a></li>
+<li><a class="reference internal" href="#modifying-gists">Modifying gists</a></li>
+<li><a class="reference internal" href="#forking">Forking</a></li>
+<li><a class="reference internal" href="#deleting-gists">Deleting gists</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="user_guide.html"
+                        title="previous chapter">User guide</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="rationale.html"
+                        title="next chapter">Rationale</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/cook_book.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="rationale.html" title="Rationale"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="user_guide.html" title="User guide"
+             >previous</a> |</li>
+        <li><a href="index.html">PyGithub 2.0.0-alpha.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013-2014, Vincent Jacques.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>

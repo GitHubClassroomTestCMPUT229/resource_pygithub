@@ -1,0 +1,604 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Gist &mdash; PyGithub 2.0.0-alpha.1 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '2.0.0-alpha.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="PyGithub 2.0.0-alpha.1 documentation" href="../../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="GitBlob" href="GitBlob.html" />
+    <link rel="prev" title="File" href="File.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="GitBlob.html" title="GitBlob"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="File.html" title="File"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">PyGithub 2.0.0-alpha.1 documentation</a> &raquo;</li>
+          <li><a href="../../reference.html" >Reference documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-PyGithub.Blocking.Gist">
+<span id="gist"></span><h1>Gist<a class="headerlink" href="#module-PyGithub.Blocking.Gist" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="PyGithub.Blocking.Gist.Gist">
+<em class="property">class </em><tt class="descclassname">PyGithub.Blocking.Gist.</tt><tt class="descname">Gist</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base class: <a class="reference internal" href="../bases.html#PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject" title="PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject"><tt class="xref py py-class docutils literal"><span class="pre">UpdatableGithubObject</span></tt></a></p>
+<p>Derived classes: none.</p>
+<dl class="docutils">
+<dt>Methods and attributes returning instances of this class:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.create_gist" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.create_gist"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.create_gist()</span></tt></a></li>
+<li><a class="reference internal" href="Github.html#PyGithub.Blocking.Github.Github.get_gist" title="PyGithub.Blocking.Github.Github.get_gist"><tt class="xref py py-meth docutils literal"><span class="pre">Github.get_gist()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
+<dl class="class">
+<dt id="PyGithub.Blocking.Gist.Gist.ChangeStatus">
+<em class="property">class </em><tt class="descname">ChangeStatus</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.ChangeStatus" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Methods and attributes returning instances of this class:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="#PyGithub.Blocking.Gist.Gist.HistoryElement.change_status" title="PyGithub.Blocking.Gist.Gist.HistoryElement.change_status"><tt class="xref py py-attr docutils literal"><span class="pre">HistoryElement.change_status</span></tt></a></li>
+</ul>
+</dd>
+</dl>
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.ChangeStatus.additions">
+<tt class="descname">additions</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.ChangeStatus.additions" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.ChangeStatus.deletions">
+<tt class="descname">deletions</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.ChangeStatus.deletions" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.ChangeStatus.total">
+<tt class="descname">total</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.ChangeStatus.total" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyGithub.Blocking.Gist.Gist.GistFile">
+<em class="property">class </em><tt class="descclassname">Gist.</tt><tt class="descname">GistFile</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.GistFile" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Methods and attributes returning instances of this class:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="#PyGithub.Blocking.Gist.Gist.files" title="PyGithub.Blocking.Gist.Gist.files"><tt class="xref py py-attr docutils literal"><span class="pre">Gist.files</span></tt></a></li>
+</ul>
+</dd>
+</dl>
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.GistFile.content">
+<tt class="descname">content</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.GistFile.content" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.GistFile.filename">
+<tt class="descname">filename</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.GistFile.filename" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.GistFile.language">
+<tt class="descname">language</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.GistFile.language" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.GistFile.raw_url">
+<tt class="descname">raw_url</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.GistFile.raw_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.GistFile.size">
+<tt class="descname">size</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.GistFile.size" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.GistFile.truncated">
+<tt class="descname">truncated</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.GistFile.truncated" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.GistFile.type">
+<tt class="descname">type</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.GistFile.type" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyGithub.Blocking.Gist.Gist.HistoryElement">
+<em class="property">class </em><tt class="descclassname">Gist.</tt><tt class="descname">HistoryElement</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.HistoryElement" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Methods and attributes returning instances of this class:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="#PyGithub.Blocking.Gist.Gist.history" title="PyGithub.Blocking.Gist.Gist.history"><tt class="xref py py-attr docutils literal"><span class="pre">Gist.history</span></tt></a></li>
+</ul>
+</dd>
+</dl>
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.HistoryElement.change_status">
+<tt class="descname">change_status</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.HistoryElement.change_status" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#PyGithub.Blocking.Gist.Gist.ChangeStatus" title="PyGithub.Blocking.Gist.Gist.ChangeStatus"><tt class="xref py py-class docutils literal"><span class="pre">ChangeStatus</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.HistoryElement.committed_at">
+<tt class="descname">committed_at</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.HistoryElement.committed_at" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">datetime</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.HistoryElement.url">
+<tt class="descname">url</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.HistoryElement.url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.HistoryElement.user">
+<tt class="descname">user</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.HistoryElement.user" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="User.html#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.HistoryElement.version">
+<tt class="descname">version</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.HistoryElement.version" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.comments">
+<tt class="descclassname">Gist.</tt><tt class="descname">comments</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.comments" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.comments_url">
+<tt class="descclassname">Gist.</tt><tt class="descname">comments_url</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.comments_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.commits_url">
+<tt class="descclassname">Gist.</tt><tt class="descname">commits_url</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.commits_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.created_at">
+<tt class="descclassname">Gist.</tt><tt class="descname">created_at</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.created_at" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">datetime</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.description">
+<tt class="descclassname">Gist.</tt><tt class="descname">description</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.description" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.files">
+<tt class="descclassname">Gist.</tt><tt class="descname">files</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.files" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">dict</span></tt> of <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> to <a class="reference internal" href="#PyGithub.Blocking.Gist.Gist.GistFile" title="PyGithub.Blocking.Gist.Gist.GistFile"><tt class="xref py py-class docutils literal"><span class="pre">GistFile</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.forks_url">
+<tt class="descclassname">Gist.</tt><tt class="descname">forks_url</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.forks_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.git_pull_url">
+<tt class="descclassname">Gist.</tt><tt class="descname">git_pull_url</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.git_pull_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.git_push_url">
+<tt class="descclassname">Gist.</tt><tt class="descname">git_push_url</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.git_push_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.history">
+<tt class="descclassname">Gist.</tt><tt class="descname">history</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.history" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">list</span></tt> of <a class="reference internal" href="#PyGithub.Blocking.Gist.Gist.HistoryElement" title="PyGithub.Blocking.Gist.Gist.HistoryElement"><tt class="xref py py-class docutils literal"><span class="pre">HistoryElement</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.html_url">
+<tt class="descclassname">Gist.</tt><tt class="descname">html_url</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.html_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.id">
+<tt class="descclassname">Gist.</tt><tt class="descname">id</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.id" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.owner">
+<tt class="descclassname">Gist.</tt><tt class="descname">owner</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.owner" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="User.html#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.public">
+<tt class="descclassname">Gist.</tt><tt class="descname">public</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.public" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.updated_at">
+<tt class="descclassname">Gist.</tt><tt class="descname">updated_at</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.updated_at" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">datetime</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.url">
+<tt class="descclassname">Gist.</tt><tt class="descname">url</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.user">
+<tt class="descclassname">Gist.</tt><tt class="descname">user</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.user" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="User.html#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Gist.Gist.delete">
+<tt class="descclassname">Gist.</tt><tt class="descname">delete</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/gists#delete-a-gist">DELETE /gists/:id</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="File.html"
+                        title="previous chapter">File</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="GitBlob.html"
+                        title="next chapter">GitBlob</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/reference/classes/Gist.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="GitBlob.html" title="GitBlob"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="File.html" title="File"
+             >previous</a> |</li>
+        <li><a href="../../index.html">PyGithub 2.0.0-alpha.1 documentation</a> &raquo;</li>
+          <li><a href="../../reference.html" >Reference documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013-2014, Vincent Jacques.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>
