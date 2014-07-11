@@ -75,6 +75,10 @@
 <li><a class="reference internal" href="AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_following" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_following"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.get_following()</span></tt></a></li>
 <li><a class="reference internal" href="Github.html#PyGithub.Blocking.Github.Github.get_user" title="PyGithub.Blocking.Github.Github.get_user"><tt class="xref py py-meth docutils literal"><span class="pre">Github.get_user()</span></tt></a></li>
 <li><a class="reference internal" href="Github.html#PyGithub.Blocking.Github.Github.get_users" title="PyGithub.Blocking.Github.Github.get_users"><tt class="xref py py-meth docutils literal"><span class="pre">Github.get_users()</span></tt></a></li>
+<li><a class="reference internal" href="Issue.html#PyGithub.Blocking.Issue.Issue.assignee" title="PyGithub.Blocking.Issue.Issue.assignee"><tt class="xref py py-attr docutils literal"><span class="pre">Issue.assignee</span></tt></a></li>
+<li><a class="reference internal" href="Issue.html#PyGithub.Blocking.Issue.Issue.closed_by" title="PyGithub.Blocking.Issue.Issue.closed_by"><tt class="xref py py-attr docutils literal"><span class="pre">Issue.closed_by</span></tt></a></li>
+<li><a class="reference internal" href="Issue.html#PyGithub.Blocking.Issue.Issue.user" title="PyGithub.Blocking.Issue.Issue.user"><tt class="xref py py-attr docutils literal"><span class="pre">Issue.user</span></tt></a></li>
+<li><a class="reference internal" href="Milestone.html#PyGithub.Blocking.Milestone.Milestone.creator" title="PyGithub.Blocking.Milestone.Milestone.creator"><tt class="xref py py-attr docutils literal"><span class="pre">Milestone.creator</span></tt></a></li>
 <li><a class="reference internal" href="Organization.html#PyGithub.Blocking.Organization.Organization.get_members" title="PyGithub.Blocking.Organization.Organization.get_members"><tt class="xref py py-meth docutils literal"><span class="pre">Organization.get_members()</span></tt></a></li>
 <li><a class="reference internal" href="Organization.html#PyGithub.Blocking.Organization.Organization.get_public_members" title="PyGithub.Blocking.Organization.Organization.get_public_members"><tt class="xref py py-meth docutils literal"><span class="pre">Organization.get_public_members()</span></tt></a></li>
 <li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.get_assignees" title="PyGithub.Blocking.Repository.Repository.get_assignees"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_assignees()</span></tt></a></li>
@@ -221,7 +225,7 @@
 <dl class="method">
 <dt id="PyGithub.Blocking.User.User.get_followers">
 <tt class="descname">get_followers</tt><big>(</big><em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.User.User.get_followers" title="Permalink to this definition">¶</a></dt>
-<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/users/followers#list-followers-of-a-user">GET /users/:user/followers</a> end point.</p>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/users/followers#list-followers-of-a-user">GET /users/:username/followers</a> end point.</p>
 <p>This is the only method calling this end point.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -238,7 +242,7 @@
 <dl class="method">
 <dt id="PyGithub.Blocking.User.User.get_following">
 <tt class="descname">get_following</tt><big>(</big><em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.User.User.get_following" title="Permalink to this definition">¶</a></dt>
-<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/users/followers#list-users-followed-by-another-user">GET /users/:user/following</a> end point.</p>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/users/followers#list-users-followed-by-another-user">GET /users/:username/following</a> end point.</p>
 <p>This is the only method calling this end point.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -255,7 +259,7 @@
 <dl class="method">
 <dt id="PyGithub.Blocking.User.User.get_keys">
 <tt class="descname">get_keys</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.User.User.get_keys" title="Permalink to this definition">¶</a></dt>
-<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/users/keys#list-public-keys-for-a-user">GET /users/:user/keys</a> end point.</p>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/users/keys#list-public-keys-for-a-user">GET /users/:username/keys</a> end point.</p>
 <p>This is the only method calling this end point.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -270,7 +274,7 @@
 <dl class="method">
 <dt id="PyGithub.Blocking.User.User.get_orgs">
 <tt class="descname">get_orgs</tt><big>(</big><em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.User.User.get_orgs" title="Permalink to this definition">¶</a></dt>
-<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/orgs#list-user-organizations">GET /users/:user/orgs</a> end point.</p>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/orgs#list-user-organizations">GET /users/:username/orgs</a> end point.</p>
 <p>This is the only method calling this end point.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -312,7 +316,7 @@
 <dl class="method">
 <dt id="PyGithub.Blocking.User.User.get_repos">
 <tt class="descname">get_repos</tt><big>(</big><em>sort=None</em>, <em>direction=None</em>, <em>type=None</em>, <em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.User.User.get_repos" title="Permalink to this definition">¶</a></dt>
-<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/repos#list-user-repositories">GET /users/:user/repos</a> end point.</p>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/repos#list-user-repositories">GET /users/:username/repos</a> end point.</p>
 <p>This is the only method calling this end point.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -336,7 +340,7 @@
 <dl class="method">
 <dt id="PyGithub.Blocking.User.User.get_starred">
 <tt class="descname">get_starred</tt><big>(</big><em>sort=None</em>, <em>direction=None</em>, <em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.User.User.get_starred" title="Permalink to this definition">¶</a></dt>
-<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/activity/starring#list-repositories-being-starred">GET /users/:user/starred</a> end point.</p>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/activity/starring#list-repositories-being-starred">GET /users/:username/starred</a> end point.</p>
 <p>This is the only method calling this end point.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -359,7 +363,7 @@
 <dl class="method">
 <dt id="PyGithub.Blocking.User.User.get_subscriptions">
 <tt class="descname">get_subscriptions</tt><big>(</big><em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.User.User.get_subscriptions" title="Permalink to this definition">¶</a></dt>
-<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/activity/watching#list-repositories-being-watched">GET /users/:user/subscriptions</a> end point.</p>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/activity/watching#list-repositories-being-watched">GET /users/:username/subscriptions</a> end point.</p>
 <p>This is the only method calling this end point.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -376,7 +380,7 @@
 <dl class="method">
 <dt id="PyGithub.Blocking.User.User.has_in_following">
 <tt class="descname">has_in_following</tt><big>(</big><em>target_user</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.User.User.has_in_following" title="Permalink to this definition">¶</a></dt>
-<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/users/followers#check-if-one-user-follows-another">GET /users/:user/following/:target_user</a> end point.</p>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/users/followers#check-if-one-user-follows-another">GET /users/:username/following/:target_user</a> end point.</p>
 <p>This is the only method calling this end point.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />

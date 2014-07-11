@@ -134,14 +134,14 @@ length:</p>
 </div>
 <p>If you really mean to take the length of a PaginatedList, you have to explicitelly construct a list and then use its length:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">get_repos</span><span class="p">()))</span>
-<span class="go">27</span>
+<span class="go">24</span>
 </pre></div>
 </div>
 <p>But often, there is an attribute in the parent object:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">user</span><span class="o">.</span><span class="n">public_repos</span>
-<span class="go">24</span>
+<span class="go">20</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">user</span><span class="o">.</span><span class="n">owned_private_repos</span>
-<span class="go">3</span>
+<span class="go">4</span>
 </pre></div>
 </div>
 <p>For reference, see <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.PaginatedList.PaginatedList" title="PyGithub.Blocking.PaginatedList.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">PaginatedList</span></tt></a>.</p>
@@ -186,7 +186,7 @@ length:</p>
 </div>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">pygithub</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">get_repo</span><span class="p">(</span><span class="s">&quot;PyGithub&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">pygithub</span><span class="o">.</span><span class="n">description</span>
-<span class="go">Python library implementing the full Github API v3</span>
+<span class="go">Python library implementing the full GitHub API v3</span>
 </pre></div>
 </div>
 </li>
@@ -200,7 +200,7 @@ length:</p>
 <li><p class="first">if you have the login of its owner and its name, you can call <a class="reference internal" href="reference/classes/Github.html#PyGithub.Blocking.Github.Github.get_repo" title="PyGithub.Blocking.Github.Github.get_repo"><tt class="xref py py-meth docutils literal"><span class="pre">Github.get_repo()</span></tt></a> with a tuple:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">apidoc</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">get_repo</span><span class="p">((</span><span class="s">&quot;github&quot;</span><span class="p">,</span> <span class="s">&quot;developer.github.com&quot;</span><span class="p">))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">apidoc</span><span class="o">.</span><span class="n">description</span>
-<span class="go">GitHub API documentation</span>
+<span class="go">GitHub Developer site</span>
 </pre></div>
 </div>
 </li>

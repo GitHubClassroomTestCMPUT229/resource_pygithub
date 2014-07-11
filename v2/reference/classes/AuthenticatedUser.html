@@ -72,14 +72,14 @@
 </dl>
 <dl class="method">
 <dt id="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.add_to_following">
-<tt class="descname">add_to_following</tt><big>(</big><em>user</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.add_to_following" title="Permalink to this definition">¶</a></dt>
-<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/users/followers#follow-a-user">PUT /user/following/:user</a> end point.</p>
+<tt class="descname">add_to_following</tt><big>(</big><em>username</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.add_to_following" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/users/followers#follow-a-user">PUT /user/following/:username</a> end point.</p>
 <p>This is the only method calling this end point.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>user</strong> &#8211; mandatory <a class="reference internal" href="User.html#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <tt class="xref py py-attr docutils literal"><span class="pre">User.login</span></tt>)</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>username</strong> &#8211; mandatory <a class="reference internal" href="User.html#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <tt class="xref py py-attr docutils literal"><span class="pre">User.login</span></tt>)</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
 </tr>
@@ -459,14 +459,14 @@
 
 <dl class="method">
 <dt id="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.has_in_following">
-<tt class="descname">has_in_following</tt><big>(</big><em>user</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.has_in_following" title="Permalink to this definition">¶</a></dt>
-<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/users/followers#check-if-you-are-following-a-user">GET /user/following/:user</a> end point.</p>
+<tt class="descname">has_in_following</tt><big>(</big><em>username</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.has_in_following" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/users/followers#check-if-you-are-following-a-user">GET /user/following/:username</a> end point.</p>
 <p>This is the only method calling this end point.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>user</strong> &#8211; mandatory <a class="reference internal" href="User.html#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <tt class="xref py py-attr docutils literal"><span class="pre">User.login</span></tt>)</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>username</strong> &#8211; mandatory <a class="reference internal" href="User.html#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <tt class="xref py py-attr docutils literal"><span class="pre">User.login</span></tt>)</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
 </tr>
@@ -510,14 +510,14 @@
 
 <dl class="method">
 <dt id="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.remove_from_following">
-<tt class="descname">remove_from_following</tt><big>(</big><em>user</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.remove_from_following" title="Permalink to this definition">¶</a></dt>
-<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/users/followers#unfollow-a-user">DELETE /user/following/:user</a> end point.</p>
+<tt class="descname">remove_from_following</tt><big>(</big><em>username</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.remove_from_following" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/users/followers#unfollow-a-user">DELETE /user/following/:username</a> end point.</p>
 <p>This is the only method calling this end point.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>user</strong> &#8211; mandatory <a class="reference internal" href="User.html#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <tt class="xref py py-attr docutils literal"><span class="pre">User.login</span></tt>)</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>username</strong> &#8211; mandatory <a class="reference internal" href="User.html#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <tt class="xref py py-attr docutils literal"><span class="pre">User.login</span></tt>)</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
 </tr>

@@ -74,6 +74,21 @@ If something is not listed here, please <a class="reference external" href="http
 <p>(<a class="reference external" href="https://status.github.com/api">Reference documentation of Github API v3</a>)</p>
 <p>Not yet implemented in PyGithub.</p>
 </div>
+<div class="section" id="get-api-v3-enterprise-settings-license">
+<h2>GET /api/v3/enterprise/settings/license<a class="headerlink" href="#get-api-v3-enterprise-settings-license" title="Permalink to this headline">¶</a></h2>
+<p>(<a class="reference external" href="http://developer.github.com/v3/enterprise/license#request">Reference documentation of Github API v3</a>)</p>
+<p>Not yet implemented in PyGithub.</p>
+</div>
+<div class="section" id="get-api-v3-enterprise-stats-type">
+<h2>GET /api/v3/enterprise/stats/:type<a class="headerlink" href="#get-api-v3-enterprise-stats-type" title="Permalink to this headline">¶</a></h2>
+<p>(<a class="reference external" href="http://developer.github.com/v3/enterprise/admin_stats#request">Reference documentation of Github API v3</a>)</p>
+<p>Not yet implemented in PyGithub.</p>
+</div>
+<div class="section" id="post-api-v3-staff-indexing-jobs">
+<h2>POST /api/v3/staff/indexing_jobs<a class="headerlink" href="#post-api-v3-staff-indexing-jobs" title="Permalink to this headline">¶</a></h2>
+<p>(<a class="reference external" href="http://developer.github.com/v3/enterprise/search_indexing#queue-an-indexing-job">Reference documentation of Github API v3</a>)</p>
+<p>Not yet implemented in PyGithub.</p>
+</div>
 <div class="section" id="delete-applications-client-id-tokens">
 <h2>DELETE /applications/:client_id/tokens<a class="headerlink" href="#delete-applications-client-id-tokens" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/oauth_authorizations#revoke-all-authorizations-for-an-application">Reference documentation of Github API v3</a>)</p>
@@ -376,8 +391,8 @@ If something is not listed here, please <a class="reference external" href="http
 </dd>
 </dl>
 </div>
-<div class="section" id="delete-orgs-org-members-user">
-<h2>DELETE /orgs/:org/members/:user<a class="headerlink" href="#delete-orgs-org-members-user" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="delete-orgs-org-members-username">
+<h2>DELETE /orgs/:org/members/:username<a class="headerlink" href="#delete-orgs-org-members-username" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/orgs/members#remove-a-member">Reference documentation of Github API v3</a>)</p>
 <dl class="docutils">
 <dt>Implemented in PyGithub by:</dt>
@@ -387,8 +402,8 @@ If something is not listed here, please <a class="reference external" href="http
 </dd>
 </dl>
 </div>
-<div class="section" id="get-orgs-org-members-user">
-<h2>GET /orgs/:org/members/:user<a class="headerlink" href="#get-orgs-org-members-user" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="get-orgs-org-members-username">
+<h2>GET /orgs/:org/members/:username<a class="headerlink" href="#get-orgs-org-members-username" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/orgs/members#check-membership">Reference documentation of Github API v3</a>)</p>
 <dl class="docutils">
 <dt>Implemented in PyGithub by:</dt>
@@ -409,8 +424,8 @@ If something is not listed here, please <a class="reference external" href="http
 </dd>
 </dl>
 </div>
-<div class="section" id="delete-orgs-org-public-members-user">
-<h2>DELETE /orgs/:org/public_members/:user<a class="headerlink" href="#delete-orgs-org-public-members-user" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="delete-orgs-org-public-members-username">
+<h2>DELETE /orgs/:org/public_members/:username<a class="headerlink" href="#delete-orgs-org-public-members-username" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/orgs/members#conceal-a-users-membership">Reference documentation of Github API v3</a>)</p>
 <dl class="docutils">
 <dt>Implemented in PyGithub by:</dt>
@@ -420,8 +435,8 @@ If something is not listed here, please <a class="reference external" href="http
 </dd>
 </dl>
 </div>
-<div class="section" id="get-orgs-org-public-members-user">
-<h2>GET /orgs/:org/public_members/:user<a class="headerlink" href="#get-orgs-org-public-members-user" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="get-orgs-org-public-members-username">
+<h2>GET /orgs/:org/public_members/:username<a class="headerlink" href="#get-orgs-org-public-members-username" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/orgs/members#check-public-membership">Reference documentation of Github API v3</a>)</p>
 <dl class="docutils">
 <dt>Implemented in PyGithub by:</dt>
@@ -431,8 +446,8 @@ If something is not listed here, please <a class="reference external" href="http
 </dd>
 </dl>
 </div>
-<div class="section" id="put-orgs-org-public-members-user">
-<h2>PUT /orgs/:org/public_members/:user<a class="headerlink" href="#put-orgs-org-public-members-user" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="put-orgs-org-public-members-username">
+<h2>PUT /orgs/:org/public_members/:username<a class="headerlink" href="#put-orgs-org-public-members-username" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/orgs/members#publicize-a-users-membership">Reference documentation of Github API v3</a>)</p>
 <dl class="docutils">
 <dt>Implemented in PyGithub by:</dt>
@@ -581,8 +596,8 @@ If something is not listed here, please <a class="reference external" href="http
 </dd>
 </dl>
 </div>
-<div class="section" id="delete-repos-owner-repo-collaborators-user">
-<h2>DELETE /repos/:owner/:repo/collaborators/:user<a class="headerlink" href="#delete-repos-owner-repo-collaborators-user" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="delete-repos-owner-repo-collaborators-username">
+<h2>DELETE /repos/:owner/:repo/collaborators/:username<a class="headerlink" href="#delete-repos-owner-repo-collaborators-username" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/repos/collaborators#remove-collaborator">Reference documentation of Github API v3</a>)</p>
 <dl class="docutils">
 <dt>Implemented in PyGithub by:</dt>
@@ -592,8 +607,8 @@ If something is not listed here, please <a class="reference external" href="http
 </dd>
 </dl>
 </div>
-<div class="section" id="get-repos-owner-repo-collaborators-user">
-<h2>GET /repos/:owner/:repo/collaborators/:user<a class="headerlink" href="#get-repos-owner-repo-collaborators-user" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="get-repos-owner-repo-collaborators-username">
+<h2>GET /repos/:owner/:repo/collaborators/:username<a class="headerlink" href="#get-repos-owner-repo-collaborators-username" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/repos/collaborators#get">Reference documentation of Github API v3</a>)</p>
 <dl class="docutils">
 <dt>Implemented in PyGithub by:</dt>
@@ -603,8 +618,8 @@ If something is not listed here, please <a class="reference external" href="http
 </dd>
 </dl>
 </div>
-<div class="section" id="put-repos-owner-repo-collaborators-user">
-<h2>PUT /repos/:owner/:repo/collaborators/:user<a class="headerlink" href="#put-repos-owner-repo-collaborators-user" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="put-repos-owner-repo-collaborators-username">
+<h2>PUT /repos/:owner/:repo/collaborators/:username<a class="headerlink" href="#put-repos-owner-repo-collaborators-username" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/repos/collaborators#add-collaborator">Reference documentation of Github API v3</a>)</p>
 <dl class="docutils">
 <dt>Implemented in PyGithub by:</dt>
@@ -647,6 +662,11 @@ If something is not listed here, please <a class="reference external" href="http
 <div class="section" id="get-repos-owner-repo-commits-ref-status">
 <h2>GET /repos/:owner/:repo/commits/:ref/status<a class="headerlink" href="#get-repos-owner-repo-commits-ref-status" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/repos/statuses#get-the-combined-status-for-a-specific-ref">Reference documentation of Github API v3</a>)</p>
+<p>Not yet implemented in PyGithub.</p>
+</div>
+<div class="section" id="get-repos-owner-repo-commits-ref-statuses">
+<h2>GET /repos/:owner/:repo/commits/:ref/statuses<a class="headerlink" href="#get-repos-owner-repo-commits-ref-statuses" title="Permalink to this headline">¶</a></h2>
+<p>(<a class="reference external" href="http://developer.github.com/v3/repos/statuses#list-statuses-for-a-specific-ref">Reference documentation of Github API v3</a>)</p>
 <p>Not yet implemented in PyGithub.</p>
 </div>
 <div class="section" id="get-repos-owner-repo-commits-sha">
@@ -854,14 +874,7 @@ If something is not listed here, please <a class="reference external" href="http
 <div class="section" id="post-repos-owner-repo-git-trees">
 <h2>POST /repos/:owner/:repo/git/trees<a class="headerlink" href="#post-repos-owner-repo-git-trees" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/git/trees#create-a-tree">Reference documentation of Github API v3</a>)</p>
-<dl class="docutils">
-<dt>Implemented in PyGithub by:</dt>
-<dd><ul class="first last simple">
-<li><a class="reference internal" href="classes/GitTree.html#PyGithub.Blocking.GitTree.GitTree.create_modified_copy" title="PyGithub.Blocking.GitTree.GitTree.create_modified_copy"><tt class="xref py py-meth docutils literal"><span class="pre">GitTree.create_modified_copy()</span></tt></a></li>
-<li><a class="reference internal" href="classes/Repository.html#PyGithub.Blocking.Repository.Repository.create_git_tree" title="PyGithub.Blocking.Repository.Repository.create_git_tree"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.create_git_tree()</span></tt></a></li>
-</ul>
-</dd>
-</dl>
+<p>Not yet implemented in PyGithub.</p>
 </div>
 <div class="section" id="get-repos-owner-repo-git-trees-sha">
 <h2>GET /repos/:owner/:repo/git/trees/:sha<a class="headerlink" href="#get-repos-owner-repo-git-trees-sha" title="Permalink to this headline">¶</a></h2>
@@ -927,7 +940,13 @@ If something is not listed here, please <a class="reference external" href="http
 <div class="section" id="get-repos-owner-repo-issues-number">
 <h2>GET /repos/:owner/:repo/issues/:number<a class="headerlink" href="#get-repos-owner-repo-issues-number" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/issues#get-a-single-issue">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Repository.html#PyGithub.Blocking.Repository.Repository.get_issue" title="PyGithub.Blocking.Repository.Repository.get_issue"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_issue()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="patch-repos-owner-repo-issues-number">
 <h2>PATCH /repos/:owner/:repo/issues/:number<a class="headerlink" href="#patch-repos-owner-repo-issues-number" title="Permalink to this headline">¶</a></h2>
@@ -1061,7 +1080,13 @@ If something is not listed here, please <a class="reference external" href="http
 <div class="section" id="get-repos-owner-repo-labels-name">
 <h2>GET /repos/:owner/:repo/labels/:name<a class="headerlink" href="#get-repos-owner-repo-labels-name" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/issues/labels#get-a-single-label">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Repository.html#PyGithub.Blocking.Repository.Repository.get_label" title="PyGithub.Blocking.Repository.Repository.get_label"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_label()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="patch-repos-owner-repo-labels-name">
 <h2>PATCH /repos/:owner/:repo/labels/:name<a class="headerlink" href="#patch-repos-owner-repo-labels-name" title="Permalink to this headline">¶</a></h2>
@@ -1096,7 +1121,13 @@ If something is not listed here, please <a class="reference external" href="http
 <div class="section" id="get-repos-owner-repo-milestones-number">
 <h2>GET /repos/:owner/:repo/milestones/:number<a class="headerlink" href="#get-repos-owner-repo-milestones-number" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/issues/milestones#get-a-single-milestone">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Repository.html#PyGithub.Blocking.Repository.Repository.get_milestone" title="PyGithub.Blocking.Repository.Repository.get_milestone"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_milestone()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="patch-repos-owner-repo-milestones-number">
 <h2>PATCH /repos/:owner/:repo/milestones/:number<a class="headerlink" href="#patch-repos-owner-repo-milestones-number" title="Permalink to this headline">¶</a></h2>
@@ -1295,11 +1326,6 @@ If something is not listed here, please <a class="reference external" href="http
 <p>(<a class="reference external" href="http://developer.github.com/v3/repos/statistics#punch-card">Reference documentation of Github API v3</a>)</p>
 <p>Not yet implemented in PyGithub.</p>
 </div>
-<div class="section" id="get-repos-owner-repo-statuses-ref">
-<h2>GET /repos/:owner/:repo/statuses/:ref<a class="headerlink" href="#get-repos-owner-repo-statuses-ref" title="Permalink to this headline">¶</a></h2>
-<p>(<a class="reference external" href="http://developer.github.com/v3/repos/statuses#list-statuses-for-a-specific-ref">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
-</div>
 <div class="section" id="post-repos-owner-repo-statuses-sha">
 <h2>POST /repos/:owner/:repo/statuses/:sha<a class="headerlink" href="#post-repos-owner-repo-statuses-sha" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/repos/statuses#create-a-status">Reference documentation of Github API v3</a>)</p>
@@ -1397,6 +1423,61 @@ If something is not listed here, please <a class="reference external" href="http
 <p>(<a class="reference external" href="http://developer.github.com/v3/search#search-users">Reference documentation of Github API v3</a>)</p>
 <p>Not yet implemented in PyGithub.</p>
 </div>
+<div class="section" id="get-setup-api-configcheck">
+<h2>GET /setup/api/configcheck<a class="headerlink" href="#get-setup-api-configcheck" title="Permalink to this headline">¶</a></h2>
+<p>(<a class="reference external" href="http://developer.github.com/v3/enterprise/management_console#check-configuration-status">Reference documentation of Github API v3</a>)</p>
+<p>Not yet implemented in PyGithub.</p>
+</div>
+<div class="section" id="post-setup-api-configure">
+<h2>POST /setup/api/configure<a class="headerlink" href="#post-setup-api-configure" title="Permalink to this headline">¶</a></h2>
+<p>(<a class="reference external" href="http://developer.github.com/v3/enterprise/management_console#start-a-configuration-process">Reference documentation of Github API v3</a>)</p>
+<p>Not yet implemented in PyGithub.</p>
+</div>
+<div class="section" id="get-setup-api-maintenance">
+<h2>GET /setup/api/maintenance<a class="headerlink" href="#get-setup-api-maintenance" title="Permalink to this headline">¶</a></h2>
+<p>(<a class="reference external" href="http://developer.github.com/v3/enterprise/management_console#check-maintenance-status">Reference documentation of Github API v3</a>)</p>
+<p>Not yet implemented in PyGithub.</p>
+</div>
+<div class="section" id="post-setup-api-maintenance">
+<h2>POST /setup/api/maintenance<a class="headerlink" href="#post-setup-api-maintenance" title="Permalink to this headline">¶</a></h2>
+<p>(<a class="reference external" href="http://developer.github.com/v3/enterprise/management_console#enable-or-disable-maintenance-mode">Reference documentation of Github API v3</a>)</p>
+<p>Not yet implemented in PyGithub.</p>
+</div>
+<div class="section" id="get-setup-api-settings">
+<h2>GET /setup/api/settings<a class="headerlink" href="#get-setup-api-settings" title="Permalink to this headline">¶</a></h2>
+<p>(<a class="reference external" href="http://developer.github.com/v3/enterprise/management_console#retrieve-settings">Reference documentation of Github API v3</a>)</p>
+<p>Not yet implemented in PyGithub.</p>
+</div>
+<div class="section" id="put-setup-api-settings">
+<h2>PUT /setup/api/settings<a class="headerlink" href="#put-setup-api-settings" title="Permalink to this headline">¶</a></h2>
+<p>(<a class="reference external" href="http://developer.github.com/v3/enterprise/management_console#modify-settings">Reference documentation of Github API v3</a>)</p>
+<p>Not yet implemented in PyGithub.</p>
+</div>
+<div class="section" id="delete-setup-api-settings-authorized-keys">
+<h2>DELETE /setup/api/settings/authorized-keys<a class="headerlink" href="#delete-setup-api-settings-authorized-keys" title="Permalink to this headline">¶</a></h2>
+<p>(<a class="reference external" href="http://developer.github.com/v3/enterprise/management_console#remove-an-authorized-ssh-key">Reference documentation of Github API v3</a>)</p>
+<p>Not yet implemented in PyGithub.</p>
+</div>
+<div class="section" id="get-setup-api-settings-authorized-keys">
+<h2>GET /setup/api/settings/authorized-keys<a class="headerlink" href="#get-setup-api-settings-authorized-keys" title="Permalink to this headline">¶</a></h2>
+<p>(<a class="reference external" href="http://developer.github.com/v3/enterprise/management_console#retrieve-authorized-ssh-keys">Reference documentation of Github API v3</a>)</p>
+<p>Not yet implemented in PyGithub.</p>
+</div>
+<div class="section" id="post-setup-api-settings-authorized-keys">
+<h2>POST /setup/api/settings/authorized-keys<a class="headerlink" href="#post-setup-api-settings-authorized-keys" title="Permalink to this headline">¶</a></h2>
+<p>(<a class="reference external" href="http://developer.github.com/v3/enterprise/management_console#add-a-new-authorized-ssh-key">Reference documentation of Github API v3</a>)</p>
+<p>Not yet implemented in PyGithub.</p>
+</div>
+<div class="section" id="post-setup-api-start">
+<h2>POST /setup/api/start<a class="headerlink" href="#post-setup-api-start" title="Permalink to this headline">¶</a></h2>
+<p>(<a class="reference external" href="http://developer.github.com/v3/enterprise/management_console#upload-a-license-and-software-package-for-the-first-time">Reference documentation of Github API v3</a>)</p>
+<p>Not yet implemented in PyGithub.</p>
+</div>
+<div class="section" id="post-setup-api-upgrade">
+<h2>POST /setup/api/upgrade<a class="headerlink" href="#post-setup-api-upgrade" title="Permalink to this headline">¶</a></h2>
+<p>(<a class="reference external" href="http://developer.github.com/v3/enterprise/management_console#upgrade-a-license-or-software-package">Reference documentation of Github API v3</a>)</p>
+<p>Not yet implemented in PyGithub.</p>
+</div>
 <div class="section" id="delete-teams-id">
 <h2>DELETE /teams/:id<a class="headerlink" href="#delete-teams-id" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/orgs/teams#delete-team">Reference documentation of Github API v3</a>)</p>
@@ -1441,8 +1522,8 @@ If something is not listed here, please <a class="reference external" href="http
 </dd>
 </dl>
 </div>
-<div class="section" id="delete-teams-id-members-user">
-<h2>DELETE /teams/:id/members/:user<a class="headerlink" href="#delete-teams-id-members-user" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="delete-teams-id-members-username">
+<h2>DELETE /teams/:id/members/:username<a class="headerlink" href="#delete-teams-id-members-username" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/orgs/teams#remove-team-member">Reference documentation of Github API v3</a>)</p>
 <dl class="docutils">
 <dt>Implemented in PyGithub by:</dt>
@@ -1452,8 +1533,8 @@ If something is not listed here, please <a class="reference external" href="http
 </dd>
 </dl>
 </div>
-<div class="section" id="get-teams-id-members-user">
-<h2>GET /teams/:id/members/:user<a class="headerlink" href="#get-teams-id-members-user" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="get-teams-id-members-username">
+<h2>GET /teams/:id/members/:username<a class="headerlink" href="#get-teams-id-members-username" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/orgs/teams#get-team-member">Reference documentation of Github API v3</a>)</p>
 <dl class="docutils">
 <dt>Implemented in PyGithub by:</dt>
@@ -1463,8 +1544,8 @@ If something is not listed here, please <a class="reference external" href="http
 </dd>
 </dl>
 </div>
-<div class="section" id="put-teams-id-members-user">
-<h2>PUT /teams/:id/members/:user<a class="headerlink" href="#put-teams-id-members-user" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="put-teams-id-members-username">
+<h2>PUT /teams/:id/members/:username<a class="headerlink" href="#put-teams-id-members-username" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/orgs/teams#add-team-member">Reference documentation of Github API v3</a>)</p>
 <dl class="docutils">
 <dt>Implemented in PyGithub by:</dt>
@@ -1577,8 +1658,8 @@ If something is not listed here, please <a class="reference external" href="http
 </dd>
 </dl>
 </div>
-<div class="section" id="delete-user-following-user">
-<h2>DELETE /user/following/:user<a class="headerlink" href="#delete-user-following-user" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="delete-user-following-username">
+<h2>DELETE /user/following/:username<a class="headerlink" href="#delete-user-following-username" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/users/followers#unfollow-a-user">Reference documentation of Github API v3</a>)</p>
 <dl class="docutils">
 <dt>Implemented in PyGithub by:</dt>
@@ -1588,8 +1669,8 @@ If something is not listed here, please <a class="reference external" href="http
 </dd>
 </dl>
 </div>
-<div class="section" id="get-user-following-user">
-<h2>GET /user/following/:user<a class="headerlink" href="#get-user-following-user" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="get-user-following-username">
+<h2>GET /user/following/:username<a class="headerlink" href="#get-user-following-username" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/users/followers#check-if-you-are-following-a-user">Reference documentation of Github API v3</a>)</p>
 <dl class="docutils">
 <dt>Implemented in PyGithub by:</dt>
@@ -1599,8 +1680,8 @@ If something is not listed here, please <a class="reference external" href="http
 </dd>
 </dl>
 </div>
-<div class="section" id="put-user-following-user">
-<h2>PUT /user/following/:user<a class="headerlink" href="#put-user-following-user" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="put-user-following-username">
+<h2>PUT /user/following/:username<a class="headerlink" href="#put-user-following-username" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/users/followers#follow-a-user">Reference documentation of Github API v3</a>)</p>
 <dl class="docutils">
 <dt>Implemented in PyGithub by:</dt>
@@ -1802,8 +1883,8 @@ If something is not listed here, please <a class="reference external" href="http
 </dd>
 </dl>
 </div>
-<div class="section" id="get-users-user">
-<h2>GET /users/:user<a class="headerlink" href="#get-users-user" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="get-users-username">
+<h2>GET /users/:username<a class="headerlink" href="#get-users-username" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/users#get-a-single-user">Reference documentation of Github API v3</a>)</p>
 <dl class="docutils">
 <dt>Implemented in PyGithub by:</dt>
@@ -1813,23 +1894,23 @@ If something is not listed here, please <a class="reference external" href="http
 </dd>
 </dl>
 </div>
-<div class="section" id="get-users-user-events">
-<h2>GET /users/:user/events<a class="headerlink" href="#get-users-user-events" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="get-users-username-events">
+<h2>GET /users/:username/events<a class="headerlink" href="#get-users-username-events" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/activity/events#list-events-performed-by-a-user">Reference documentation of Github API v3</a>)</p>
 <p>Not yet implemented in PyGithub.</p>
 </div>
-<div class="section" id="get-users-user-events-orgs-org">
-<h2>GET /users/:user/events/orgs/:org<a class="headerlink" href="#get-users-user-events-orgs-org" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="get-users-username-events-orgs-org">
+<h2>GET /users/:username/events/orgs/:org<a class="headerlink" href="#get-users-username-events-orgs-org" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/activity/events#list-events-for-an-organization">Reference documentation of Github API v3</a>)</p>
 <p>Not yet implemented in PyGithub.</p>
 </div>
-<div class="section" id="get-users-user-events-public">
-<h2>GET /users/:user/events/public<a class="headerlink" href="#get-users-user-events-public" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="get-users-username-events-public">
+<h2>GET /users/:username/events/public<a class="headerlink" href="#get-users-username-events-public" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/activity/events#list-public-events-performed-by-a-user">Reference documentation of Github API v3</a>)</p>
 <p>Not yet implemented in PyGithub.</p>
 </div>
-<div class="section" id="get-users-user-followers">
-<h2>GET /users/:user/followers<a class="headerlink" href="#get-users-user-followers" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="get-users-username-followers">
+<h2>GET /users/:username/followers<a class="headerlink" href="#get-users-username-followers" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/users/followers#list-followers-of-a-user">Reference documentation of Github API v3</a>)</p>
 <dl class="docutils">
 <dt>Implemented in PyGithub by:</dt>
@@ -1839,8 +1920,8 @@ If something is not listed here, please <a class="reference external" href="http
 </dd>
 </dl>
 </div>
-<div class="section" id="get-users-user-following">
-<h2>GET /users/:user/following<a class="headerlink" href="#get-users-user-following" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="get-users-username-following">
+<h2>GET /users/:username/following<a class="headerlink" href="#get-users-username-following" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/users/followers#list-users-followed-by-another-user">Reference documentation of Github API v3</a>)</p>
 <dl class="docutils">
 <dt>Implemented in PyGithub by:</dt>
@@ -1850,8 +1931,8 @@ If something is not listed here, please <a class="reference external" href="http
 </dd>
 </dl>
 </div>
-<div class="section" id="get-users-user-following-target-user">
-<h2>GET /users/:user/following/:target_user<a class="headerlink" href="#get-users-user-following-target-user" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="get-users-username-following-target-user">
+<h2>GET /users/:username/following/:target_user<a class="headerlink" href="#get-users-username-following-target-user" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/users/followers#check-if-one-user-follows-another">Reference documentation of Github API v3</a>)</p>
 <dl class="docutils">
 <dt>Implemented in PyGithub by:</dt>
@@ -1861,13 +1942,13 @@ If something is not listed here, please <a class="reference external" href="http
 </dd>
 </dl>
 </div>
-<div class="section" id="get-users-user-gists">
-<h2>GET /users/:user/gists<a class="headerlink" href="#get-users-user-gists" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="get-users-username-gists">
+<h2>GET /users/:username/gists<a class="headerlink" href="#get-users-username-gists" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/gists#list-gists">Reference documentation of Github API v3</a>)</p>
 <p>Not yet implemented in PyGithub.</p>
 </div>
-<div class="section" id="get-users-user-keys">
-<h2>GET /users/:user/keys<a class="headerlink" href="#get-users-user-keys" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="get-users-username-keys">
+<h2>GET /users/:username/keys<a class="headerlink" href="#get-users-username-keys" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/users/keys#list-public-keys-for-a-user">Reference documentation of Github API v3</a>)</p>
 <dl class="docutils">
 <dt>Implemented in PyGithub by:</dt>
@@ -1877,8 +1958,8 @@ If something is not listed here, please <a class="reference external" href="http
 </dd>
 </dl>
 </div>
-<div class="section" id="get-users-user-orgs">
-<h2>GET /users/:user/orgs<a class="headerlink" href="#get-users-user-orgs" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="get-users-username-orgs">
+<h2>GET /users/:username/orgs<a class="headerlink" href="#get-users-username-orgs" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/orgs#list-user-organizations">Reference documentation of Github API v3</a>)</p>
 <dl class="docutils">
 <dt>Implemented in PyGithub by:</dt>
@@ -1888,18 +1969,18 @@ If something is not listed here, please <a class="reference external" href="http
 </dd>
 </dl>
 </div>
-<div class="section" id="get-users-user-received-events">
-<h2>GET /users/:user/received_events<a class="headerlink" href="#get-users-user-received-events" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="get-users-username-received-events">
+<h2>GET /users/:username/received_events<a class="headerlink" href="#get-users-username-received-events" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/activity/events#list-events-that-a-user-has-received">Reference documentation of Github API v3</a>)</p>
 <p>Not yet implemented in PyGithub.</p>
 </div>
-<div class="section" id="get-users-user-received-events-public">
-<h2>GET /users/:user/received_events/public<a class="headerlink" href="#get-users-user-received-events-public" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="get-users-username-received-events-public">
+<h2>GET /users/:username/received_events/public<a class="headerlink" href="#get-users-username-received-events-public" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/activity/events#list-public-events-that-a-user-has-received">Reference documentation of Github API v3</a>)</p>
 <p>Not yet implemented in PyGithub.</p>
 </div>
-<div class="section" id="get-users-user-repos">
-<h2>GET /users/:user/repos<a class="headerlink" href="#get-users-user-repos" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="get-users-username-repos">
+<h2>GET /users/:username/repos<a class="headerlink" href="#get-users-username-repos" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/repos#list-user-repositories">Reference documentation of Github API v3</a>)</p>
 <dl class="docutils">
 <dt>Implemented in PyGithub by:</dt>
@@ -1909,8 +1990,8 @@ If something is not listed here, please <a class="reference external" href="http
 </dd>
 </dl>
 </div>
-<div class="section" id="get-users-user-starred">
-<h2>GET /users/:user/starred<a class="headerlink" href="#get-users-user-starred" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="get-users-username-starred">
+<h2>GET /users/:username/starred<a class="headerlink" href="#get-users-username-starred" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/activity/starring#list-repositories-being-starred">Reference documentation of Github API v3</a>)</p>
 <dl class="docutils">
 <dt>Implemented in PyGithub by:</dt>
@@ -1920,8 +2001,8 @@ If something is not listed here, please <a class="reference external" href="http
 </dd>
 </dl>
 </div>
-<div class="section" id="get-users-user-subscriptions">
-<h2>GET /users/:user/subscriptions<a class="headerlink" href="#get-users-user-subscriptions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="get-users-username-subscriptions">
+<h2>GET /users/:username/subscriptions<a class="headerlink" href="#get-users-username-subscriptions" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/activity/watching#list-repositories-being-watched">Reference documentation of Github API v3</a>)</p>
 <dl class="docutils">
 <dt>Implemented in PyGithub by:</dt>
@@ -1945,6 +2026,9 @@ If something is not listed here, please <a class="reference external" href="http
 <li><a class="reference internal" href="#get-api-last-message-json">GET /api/last-message.json</a></li>
 <li><a class="reference internal" href="#get-api-messages-json">GET /api/messages.json</a></li>
 <li><a class="reference internal" href="#get-api-status-json">GET /api/status.json</a></li>
+<li><a class="reference internal" href="#get-api-v3-enterprise-settings-license">GET /api/v3/enterprise/settings/license</a></li>
+<li><a class="reference internal" href="#get-api-v3-enterprise-stats-type">GET /api/v3/enterprise/stats/:type</a></li>
+<li><a class="reference internal" href="#post-api-v3-staff-indexing-jobs">POST /api/v3/staff/indexing_jobs</a></li>
 <li><a class="reference internal" href="#delete-applications-client-id-tokens">DELETE /applications/:client_id/tokens</a></li>
 <li><a class="reference internal" href="#delete-applications-client-id-tokens-access-token">DELETE /applications/:client_id/tokens/:access_token</a></li>
 <li><a class="reference internal" href="#get-applications-client-id-tokens-access-token">GET /applications/:client_id/tokens/:access_token</a></li>
@@ -1997,12 +2081,12 @@ If something is not listed here, please <a class="reference external" href="http
 <li><a class="reference internal" href="#get-orgs-org-events">GET /orgs/:org/events</a></li>
 <li><a class="reference internal" href="#get-orgs-org-issues">GET /orgs/:org/issues</a></li>
 <li><a class="reference internal" href="#get-orgs-org-members">GET /orgs/:org/members</a></li>
-<li><a class="reference internal" href="#delete-orgs-org-members-user">DELETE /orgs/:org/members/:user</a></li>
-<li><a class="reference internal" href="#get-orgs-org-members-user">GET /orgs/:org/members/:user</a></li>
+<li><a class="reference internal" href="#delete-orgs-org-members-username">DELETE /orgs/:org/members/:username</a></li>
+<li><a class="reference internal" href="#get-orgs-org-members-username">GET /orgs/:org/members/:username</a></li>
 <li><a class="reference internal" href="#get-orgs-org-public-members">GET /orgs/:org/public_members</a></li>
-<li><a class="reference internal" href="#delete-orgs-org-public-members-user">DELETE /orgs/:org/public_members/:user</a></li>
-<li><a class="reference internal" href="#get-orgs-org-public-members-user">GET /orgs/:org/public_members/:user</a></li>
-<li><a class="reference internal" href="#put-orgs-org-public-members-user">PUT /orgs/:org/public_members/:user</a></li>
+<li><a class="reference internal" href="#delete-orgs-org-public-members-username">DELETE /orgs/:org/public_members/:username</a></li>
+<li><a class="reference internal" href="#get-orgs-org-public-members-username">GET /orgs/:org/public_members/:username</a></li>
+<li><a class="reference internal" href="#put-orgs-org-public-members-username">PUT /orgs/:org/public_members/:username</a></li>
 <li><a class="reference internal" href="#get-orgs-org-repos">GET /orgs/:org/repos</a></li>
 <li><a class="reference internal" href="#post-orgs-org-repos">POST /orgs/:org/repos</a></li>
 <li><a class="reference internal" href="#get-orgs-org-teams">GET /orgs/:org/teams</a></li>
@@ -2017,9 +2101,9 @@ If something is not listed here, please <a class="reference external" href="http
 <li><a class="reference internal" href="#get-repos-owner-repo-branches">GET /repos/:owner/:repo/branches</a></li>
 <li><a class="reference internal" href="#get-repos-owner-repo-branches-branch">GET /repos/:owner/:repo/branches/:branch</a></li>
 <li><a class="reference internal" href="#get-repos-owner-repo-collaborators">GET /repos/:owner/:repo/collaborators</a></li>
-<li><a class="reference internal" href="#delete-repos-owner-repo-collaborators-user">DELETE /repos/:owner/:repo/collaborators/:user</a></li>
-<li><a class="reference internal" href="#get-repos-owner-repo-collaborators-user">GET /repos/:owner/:repo/collaborators/:user</a></li>
-<li><a class="reference internal" href="#put-repos-owner-repo-collaborators-user">PUT /repos/:owner/:repo/collaborators/:user</a></li>
+<li><a class="reference internal" href="#delete-repos-owner-repo-collaborators-username">DELETE /repos/:owner/:repo/collaborators/:username</a></li>
+<li><a class="reference internal" href="#get-repos-owner-repo-collaborators-username">GET /repos/:owner/:repo/collaborators/:username</a></li>
+<li><a class="reference internal" href="#put-repos-owner-repo-collaborators-username">PUT /repos/:owner/:repo/collaborators/:username</a></li>
 <li><a class="reference internal" href="#get-repos-owner-repo-comments">GET /repos/:owner/:repo/comments</a></li>
 <li><a class="reference internal" href="#delete-repos-owner-repo-comments-id">DELETE /repos/:owner/:repo/comments/:id</a></li>
 <li><a class="reference internal" href="#get-repos-owner-repo-comments-id">GET /repos/:owner/:repo/comments/:id</a></li>
@@ -2027,6 +2111,7 @@ If something is not listed here, please <a class="reference external" href="http
 <li><a class="reference internal" href="#get-repos-owner-repo-commits">GET /repos/:owner/:repo/commits</a></li>
 <li><a class="reference internal" href="#get-repos-owner-repo-commits-ref-comments">GET /repos/:owner/:repo/commits/:ref/comments</a></li>
 <li><a class="reference internal" href="#get-repos-owner-repo-commits-ref-status">GET /repos/:owner/:repo/commits/:ref/status</a></li>
+<li><a class="reference internal" href="#get-repos-owner-repo-commits-ref-statuses">GET /repos/:owner/:repo/commits/:ref/statuses</a></li>
 <li><a class="reference internal" href="#get-repos-owner-repo-commits-sha">GET /repos/:owner/:repo/commits/:sha</a></li>
 <li><a class="reference internal" href="#post-repos-owner-repo-commits-sha-comments">POST /repos/:owner/:repo/commits/:sha/comments</a></li>
 <li><a class="reference internal" href="#get-repos-owner-repo-compare-base-head">GET /repos/:owner/:repo/compare/:base...:head</a></li>
@@ -2135,7 +2220,6 @@ If something is not listed here, please <a class="reference external" href="http
 <li><a class="reference internal" href="#get-repos-owner-repo-stats-contributors">GET /repos/:owner/:repo/stats/contributors</a></li>
 <li><a class="reference internal" href="#get-repos-owner-repo-stats-participation">GET /repos/:owner/:repo/stats/participation</a></li>
 <li><a class="reference internal" href="#get-repos-owner-repo-stats-punch-card">GET /repos/:owner/:repo/stats/punch_card</a></li>
-<li><a class="reference internal" href="#get-repos-owner-repo-statuses-ref">GET /repos/:owner/:repo/statuses/:ref</a></li>
 <li><a class="reference internal" href="#post-repos-owner-repo-statuses-sha">POST /repos/:owner/:repo/statuses/:sha</a></li>
 <li><a class="reference internal" href="#get-repos-owner-repo-subscribers">GET /repos/:owner/:repo/subscribers</a></li>
 <li><a class="reference internal" href="#delete-repos-owner-repo-subscription">DELETE /repos/:owner/:repo/subscription</a></li>
@@ -2148,13 +2232,24 @@ If something is not listed here, please <a class="reference external" href="http
 <li><a class="reference internal" href="#get-search-issues">GET /search/issues</a></li>
 <li><a class="reference internal" href="#get-search-repositories">GET /search/repositories</a></li>
 <li><a class="reference internal" href="#get-search-users">GET /search/users</a></li>
+<li><a class="reference internal" href="#get-setup-api-configcheck">GET /setup/api/configcheck</a></li>
+<li><a class="reference internal" href="#post-setup-api-configure">POST /setup/api/configure</a></li>
+<li><a class="reference internal" href="#get-setup-api-maintenance">GET /setup/api/maintenance</a></li>
+<li><a class="reference internal" href="#post-setup-api-maintenance">POST /setup/api/maintenance</a></li>
+<li><a class="reference internal" href="#get-setup-api-settings">GET /setup/api/settings</a></li>
+<li><a class="reference internal" href="#put-setup-api-settings">PUT /setup/api/settings</a></li>
+<li><a class="reference internal" href="#delete-setup-api-settings-authorized-keys">DELETE /setup/api/settings/authorized-keys</a></li>
+<li><a class="reference internal" href="#get-setup-api-settings-authorized-keys">GET /setup/api/settings/authorized-keys</a></li>
+<li><a class="reference internal" href="#post-setup-api-settings-authorized-keys">POST /setup/api/settings/authorized-keys</a></li>
+<li><a class="reference internal" href="#post-setup-api-start">POST /setup/api/start</a></li>
+<li><a class="reference internal" href="#post-setup-api-upgrade">POST /setup/api/upgrade</a></li>
 <li><a class="reference internal" href="#delete-teams-id">DELETE /teams/:id</a></li>
 <li><a class="reference internal" href="#get-teams-id">GET /teams/:id</a></li>
 <li><a class="reference internal" href="#patch-teams-id">PATCH /teams/:id</a></li>
 <li><a class="reference internal" href="#get-teams-id-members">GET /teams/:id/members</a></li>
-<li><a class="reference internal" href="#delete-teams-id-members-user">DELETE /teams/:id/members/:user</a></li>
-<li><a class="reference internal" href="#get-teams-id-members-user">GET /teams/:id/members/:user</a></li>
-<li><a class="reference internal" href="#put-teams-id-members-user">PUT /teams/:id/members/:user</a></li>
+<li><a class="reference internal" href="#delete-teams-id-members-username">DELETE /teams/:id/members/:username</a></li>
+<li><a class="reference internal" href="#get-teams-id-members-username">GET /teams/:id/members/:username</a></li>
+<li><a class="reference internal" href="#put-teams-id-members-username">PUT /teams/:id/members/:username</a></li>
 <li><a class="reference internal" href="#get-teams-id-repos">GET /teams/:id/repos</a></li>
 <li><a class="reference internal" href="#put-teams-id-repos-org-repo">PUT /teams/:id/repos/:org/:repo</a></li>
 <li><a class="reference internal" href="#delete-teams-id-repos-owner-repo">DELETE /teams/:id/repos/:owner/:repo</a></li>
@@ -2166,9 +2261,9 @@ If something is not listed here, please <a class="reference external" href="http
 <li><a class="reference internal" href="#post-user-emails">POST /user/emails</a></li>
 <li><a class="reference internal" href="#get-user-followers">GET /user/followers</a></li>
 <li><a class="reference internal" href="#get-user-following">GET /user/following</a></li>
-<li><a class="reference internal" href="#delete-user-following-user">DELETE /user/following/:user</a></li>
-<li><a class="reference internal" href="#get-user-following-user">GET /user/following/:user</a></li>
-<li><a class="reference internal" href="#put-user-following-user">PUT /user/following/:user</a></li>
+<li><a class="reference internal" href="#delete-user-following-username">DELETE /user/following/:username</a></li>
+<li><a class="reference internal" href="#get-user-following-username">GET /user/following/:username</a></li>
+<li><a class="reference internal" href="#put-user-following-username">PUT /user/following/:username</a></li>
 <li><a class="reference internal" href="#get-user-issues">GET /user/issues</a></li>
 <li><a class="reference internal" href="#get-user-keys">GET /user/keys</a></li>
 <li><a class="reference internal" href="#post-user-keys">POST /user/keys</a></li>
@@ -2187,21 +2282,21 @@ If something is not listed here, please <a class="reference external" href="http
 <li><a class="reference internal" href="#put-user-subscriptions-owner-repo">PUT /user/subscriptions/:owner/:repo</a></li>
 <li><a class="reference internal" href="#get-user-teams">GET /user/teams</a></li>
 <li><a class="reference internal" href="#get-users">GET /users</a></li>
-<li><a class="reference internal" href="#get-users-user">GET /users/:user</a></li>
-<li><a class="reference internal" href="#get-users-user-events">GET /users/:user/events</a></li>
-<li><a class="reference internal" href="#get-users-user-events-orgs-org">GET /users/:user/events/orgs/:org</a></li>
-<li><a class="reference internal" href="#get-users-user-events-public">GET /users/:user/events/public</a></li>
-<li><a class="reference internal" href="#get-users-user-followers">GET /users/:user/followers</a></li>
-<li><a class="reference internal" href="#get-users-user-following">GET /users/:user/following</a></li>
-<li><a class="reference internal" href="#get-users-user-following-target-user">GET /users/:user/following/:target_user</a></li>
-<li><a class="reference internal" href="#get-users-user-gists">GET /users/:user/gists</a></li>
-<li><a class="reference internal" href="#get-users-user-keys">GET /users/:user/keys</a></li>
-<li><a class="reference internal" href="#get-users-user-orgs">GET /users/:user/orgs</a></li>
-<li><a class="reference internal" href="#get-users-user-received-events">GET /users/:user/received_events</a></li>
-<li><a class="reference internal" href="#get-users-user-received-events-public">GET /users/:user/received_events/public</a></li>
-<li><a class="reference internal" href="#get-users-user-repos">GET /users/:user/repos</a></li>
-<li><a class="reference internal" href="#get-users-user-starred">GET /users/:user/starred</a></li>
-<li><a class="reference internal" href="#get-users-user-subscriptions">GET /users/:user/subscriptions</a></li>
+<li><a class="reference internal" href="#get-users-username">GET /users/:username</a></li>
+<li><a class="reference internal" href="#get-users-username-events">GET /users/:username/events</a></li>
+<li><a class="reference internal" href="#get-users-username-events-orgs-org">GET /users/:username/events/orgs/:org</a></li>
+<li><a class="reference internal" href="#get-users-username-events-public">GET /users/:username/events/public</a></li>
+<li><a class="reference internal" href="#get-users-username-followers">GET /users/:username/followers</a></li>
+<li><a class="reference internal" href="#get-users-username-following">GET /users/:username/following</a></li>
+<li><a class="reference internal" href="#get-users-username-following-target-user">GET /users/:username/following/:target_user</a></li>
+<li><a class="reference internal" href="#get-users-username-gists">GET /users/:username/gists</a></li>
+<li><a class="reference internal" href="#get-users-username-keys">GET /users/:username/keys</a></li>
+<li><a class="reference internal" href="#get-users-username-orgs">GET /users/:username/orgs</a></li>
+<li><a class="reference internal" href="#get-users-username-received-events">GET /users/:username/received_events</a></li>
+<li><a class="reference internal" href="#get-users-username-received-events-public">GET /users/:username/received_events/public</a></li>
+<li><a class="reference internal" href="#get-users-username-repos">GET /users/:username/repos</a></li>
+<li><a class="reference internal" href="#get-users-username-starred">GET /users/:username/starred</a></li>
+<li><a class="reference internal" href="#get-users-username-subscriptions">GET /users/:username/subscriptions</a></li>
 </ul>
 </li>
 </ul>
