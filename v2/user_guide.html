@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>User guide &mdash; PyGithub 2.0.0-alpha.1 documentation</title>
+    <title>User guide &mdash; PyGithub 2.0.0-alpha.3 documentation</title>
     
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '2.0.0-alpha.1',
+        VERSION:     '2.0.0-alpha.3',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,7 +24,7 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="top" title="PyGithub 2.0.0-alpha.1 documentation" href="index.html" />
+    <link rel="top" title="PyGithub 2.0.0-alpha.3 documentation" href="index.html" />
     <link rel="next" title="Cook book" href="cook_book.html" />
     <link rel="prev" title="Introduction" href="introduction.html" /> 
   </head>
@@ -44,7 +44,7 @@
         <li class="right" >
           <a href="introduction.html" title="Introduction"
              accesskey="P">previous</a> |</li>
-        <li><a href="index.html">PyGithub 2.0.0-alpha.1 documentation</a> &raquo;</li> 
+        <li><a href="index.html">PyGithub 2.0.0-alpha.3 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -55,19 +55,19 @@
             
   <div class="section" id="user-guide">
 <span id="id1"></span><h1>User guide<a class="headerlink" href="#user-guide" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="module-PyGithub.Blocking.Builder">
-<span id="configuring-the-github-session"></span><span id="configuration"></span><h2>Configuring the GitHub session<a class="headerlink" href="#module-PyGithub.Blocking.Builder" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-PyGithub.Blocking._builder">
+<span id="configuring-the-github-session"></span><span id="configuration"></span><h2>Configuring the GitHub session<a class="headerlink" href="#module-PyGithub.Blocking._builder" title="Permalink to this headline">¶</a></h2>
 <p>All the configuration of how to use the GitHub API v3 is done by calling several methods
-on a <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.Builder.Builder" title="PyGithub.Blocking.Builder.Builder"><tt class="xref py py-class docutils literal"><span class="pre">Builder</span></tt></a> object and finally calling its <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.Builder.Builder.Build" title="PyGithub.Blocking.Builder.Builder.Build"><tt class="xref py py-meth docutils literal"><span class="pre">Builder.Build()</span></tt></a> method.</p>
-<p>For example, you choose the authentication type by calling <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.Builder.Builder.OAuth" title="PyGithub.Blocking.Builder.Builder.OAuth"><tt class="xref py py-meth docutils literal"><span class="pre">Builder.OAuth()</span></tt></a> or <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.Builder.Builder.Login" title="PyGithub.Blocking.Builder.Builder.Login"><tt class="xref py py-meth docutils literal"><span class="pre">Builder.Login()</span></tt></a>.</p>
+on a <a class="reference internal" href="reference/bases.html#PyGithub.Blocking._builder.Builder" title="PyGithub.Blocking._builder.Builder"><tt class="xref py py-class docutils literal"><span class="pre">Builder</span></tt></a> object and finally calling its <a class="reference internal" href="reference/bases.html#PyGithub.Blocking._builder.Builder.Build" title="PyGithub.Blocking._builder.Builder.Build"><tt class="xref py py-meth docutils literal"><span class="pre">Builder.Build()</span></tt></a> method.</p>
+<p>For example, you choose the authentication type by calling <a class="reference internal" href="reference/bases.html#PyGithub.Blocking._builder.Builder.OAuth" title="PyGithub.Blocking._builder.Builder.OAuth"><tt class="xref py py-meth docutils literal"><span class="pre">Builder.OAuth()</span></tt></a> or <a class="reference internal" href="reference/bases.html#PyGithub.Blocking._builder.Builder.Login" title="PyGithub.Blocking._builder.Builder.Login"><tt class="xref py py-meth docutils literal"><span class="pre">Builder.Login()</span></tt></a>.</p>
 <p>A complete example:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">PyGithub</span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">PyGithub</span><span class="o">.</span><span class="n">BlockingBuilder</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">b</span><span class="o">.</span><span class="n">Login</span><span class="p">(</span><span class="s">&quot;your_login&quot;</span><span class="p">,</span> <span class="s">&quot;your_password&quot;</span><span class="p">)</span>  
-<span class="go">&lt;PyGithub.Blocking.Builder.Builder object at 0x...&gt;</span>
+<span class="go">&lt;...Builder object at 0x...&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">b</span><span class="o">.</span><span class="n">UserAgent</span><span class="p">(</span><span class="s">&quot;MyWonderfulApplication-1.0.0&quot;</span><span class="p">)</span>  
-<span class="go">&lt;PyGithub.Blocking.Builder.Builder object at 0x...&gt;</span>
+<span class="go">&lt;...Builder object at 0x...&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">g</span> <span class="o">=</span> <span class="n">b</span><span class="o">.</span><span class="n">Build</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -75,18 +75,18 @@ on a <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">g</span> <span class="o">=</span> <span class="n">PyGithub</span><span class="o">.</span><span class="n">BlockingBuilder</span><span class="p">()</span><span class="o">.</span><span class="n">Login</span><span class="p">(</span><span class="s">&quot;your_login&quot;</span><span class="p">,</span> <span class="s">&quot;your_password&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">UserAgent</span><span class="p">(</span><span class="s">&quot;MyWonderfulApplication-1.0.0&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">Build</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>For reference, see <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.Builder.Builder" title="PyGithub.Blocking.Builder.Builder"><tt class="xref py py-class docutils literal"><span class="pre">Builder</span></tt></a>.</p>
+<p>For reference, see <a class="reference internal" href="reference/bases.html#PyGithub.Blocking._builder.Builder" title="PyGithub.Blocking._builder.Builder"><tt class="xref py py-class docutils literal"><span class="pre">Builder</span></tt></a>.</p>
 </div>
-<div class="section" id="module-PyGithub.Blocking.BaseGithubObject">
-<span id="common-functionalities"></span><h2>Common functionalities<a class="headerlink" href="#module-PyGithub.Blocking.BaseGithubObject" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-PyGithub.Blocking._base_github_object">
+<span id="common-functionalities"></span><h2>Common functionalities<a class="headerlink" href="#module-PyGithub.Blocking._base_github_object" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="access-to-the-session">
 <h3>Access to the session<a class="headerlink" href="#access-to-the-session" title="Permalink to this headline">¶</a></h3>
-<p>All objects returned by PyGithub have a <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.BaseGithubObject.SessionedGithubObject.Session" title="PyGithub.Blocking.BaseGithubObject.SessionedGithubObject.Session"><tt class="xref py py-attr docutils literal"><span class="pre">Session</span></tt></a> attribute. You can use it to access session-wide
-information, like your <a class="reference external" href="http://developer.github.com/v3/#rate-limiting">rate limit</a> in <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.Session.Session.RateLimit" title="PyGithub.Blocking.Session.Session.RateLimit"><tt class="xref py py-attr docutils literal"><span class="pre">RateLimit</span></tt></a>.</p>
+<p>All objects returned by PyGithub have a <a class="reference internal" href="reference/bases.html#PyGithub.Blocking._base_github_object.SessionedGithubObject.Session" title="PyGithub.Blocking._base_github_object.SessionedGithubObject.Session"><tt class="xref py py-attr docutils literal"><span class="pre">Session</span></tt></a> attribute. You can use it to access session-wide
+information, like your <a class="reference external" href="http://developer.github.com/v3/#rate-limiting">rate limit</a> in <a class="reference internal" href="reference/bases.html#PyGithub.Blocking._session.Session.RateLimit" title="PyGithub.Blocking._session.Session.RateLimit"><tt class="xref py py-attr docutils literal"><span class="pre">RateLimit</span></tt></a>.</p>
 </div>
 <div class="section" id="conditional-requests">
 <h3>Conditional requests<a class="headerlink" href="#conditional-requests" title="Permalink to this headline">¶</a></h3>
-<p>Many objects returned by PyGithub have a <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject.update" title="PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject.update"><tt class="xref py py-meth docutils literal"><span class="pre">update()</span></tt></a> method.
+<p>Many objects returned by PyGithub have a <a class="reference internal" href="reference/bases.html#PyGithub.Blocking._base_github_object.UpdatableGithubObject.update" title="PyGithub.Blocking._base_github_object.UpdatableGithubObject.update"><tt class="xref py py-meth docutils literal"><span class="pre">update()</span></tt></a> method.
 You can use it to make a <a class="reference external" href="http://developer.github.com/v3/#conditional-requests">conditional request</a>.
 The object&#8217;s attributes will be updated, and your rate limit consumed, only if the object has changed since it
 was created or last updated.</p>
@@ -149,7 +149,7 @@ length:</p>
 <div class="section" id="naming-conventions">
 <h2>Naming conventions<a class="headerlink" href="#naming-conventions" title="Permalink to this headline">¶</a></h2>
 <p>Methods and attributes mapping exactly to the GitHub API v3 are in lower case like <a class="reference internal" href="reference/classes/AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.create_repo" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.create_repo"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.create_repo()</span></tt></a> and <a class="reference internal" href="reference/classes/Repository.html#PyGithub.Blocking.Repository.Repository.stargazers_count" title="PyGithub.Blocking.Repository.Repository.stargazers_count"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.stargazers_count</span></tt></a>.</p>
-<p>Methods and attributes more specific to PyGithub are in upper camel case like <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.Session.Session.RateLimit" title="PyGithub.Blocking.Session.Session.RateLimit"><tt class="xref py py-attr docutils literal"><span class="pre">Session.RateLimit</span></tt></a>.</p>
+<p>Methods and attributes more specific to PyGithub are in upper camel case like <a class="reference internal" href="reference/bases.html#PyGithub.Blocking._session.Session.RateLimit" title="PyGithub.Blocking._session.Session.RateLimit"><tt class="xref py py-attr docutils literal"><span class="pre">Session.RateLimit</span></tt></a>.</p>
 </div>
 <div class="section" id="access-to-common-resources">
 <h2>Access to common resources<a class="headerlink" href="#access-to-common-resources" title="Permalink to this headline">¶</a></h2>
@@ -229,8 +229,8 @@ length:</p>
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">User guide</a><ul>
-<li><a class="reference internal" href="#module-PyGithub.Blocking.Builder">Configuring the GitHub session</a></li>
-<li><a class="reference internal" href="#module-PyGithub.Blocking.BaseGithubObject">Common functionalities</a><ul>
+<li><a class="reference internal" href="#module-PyGithub.Blocking._builder">Configuring the GitHub session</a></li>
+<li><a class="reference internal" href="#module-PyGithub.Blocking._base_github_object">Common functionalities</a><ul>
 <li><a class="reference internal" href="#access-to-the-session">Access to the session</a></li>
 <li><a class="reference internal" href="#conditional-requests">Conditional requests</a></li>
 </ul>
@@ -289,7 +289,7 @@ length:</p>
         <li class="right" >
           <a href="introduction.html" title="Introduction"
              >previous</a> |</li>
-        <li><a href="index.html">PyGithub 2.0.0-alpha.1 documentation</a> &raquo;</li> 
+        <li><a href="index.html">PyGithub 2.0.0-alpha.3 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">

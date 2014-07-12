@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Cook book &mdash; PyGithub 2.0.0-alpha.1 documentation</title>
+    <title>Cook book &mdash; PyGithub 2.0.0-alpha.3 documentation</title>
     
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '2.0.0-alpha.1',
+        VERSION:     '2.0.0-alpha.3',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,7 +24,7 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="top" title="PyGithub 2.0.0-alpha.1 documentation" href="index.html" />
+    <link rel="top" title="PyGithub 2.0.0-alpha.3 documentation" href="index.html" />
     <link rel="next" title="Rationale" href="rationale.html" />
     <link rel="prev" title="User guide" href="user_guide.html" /> 
   </head>
@@ -44,7 +44,7 @@
         <li class="right" >
           <a href="user_guide.html" title="User guide"
              accesskey="P">previous</a> |</li>
-        <li><a href="index.html">PyGithub 2.0.0-alpha.1 documentation</a> &raquo;</li> 
+        <li><a href="index.html">PyGithub 2.0.0-alpha.3 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -59,92 +59,123 @@
 <h2>Working with gists<a class="headerlink" href="#working-with-gists" title="Permalink to this headline">¶</a></h2>
 <p>This cook book shows you everything about <a class="reference external" href="https://gist.github.com">gists</a> and the <a class="reference external" href="https://developer.github.com/v3/gists">gists API</a>.</p>
 <p>Initialization:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">PyGithub</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">datetime</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">PyGithub</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">g</span> <span class="o">=</span> <span class="n">PyGithub</span><span class="o">.</span><span class="n">BlockingBuilder</span><span class="p">()</span><span class="o">.</span><span class="n">Login</span><span class="p">(</span><span class="s">&quot;your_login&quot;</span><span class="p">,</span> <span class="s">&quot;your_password&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">Build</span><span class="p">()</span>
 </pre></div>
 </div>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">u</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">get_authenticated_user</span><span class="p">()</span>
 </pre></div>
 </div>
-<div class="section" id="creating-gists">
-<h3>Creating gists<a class="headerlink" href="#creating-gists" title="Permalink to this headline">¶</a></h3>
-<p>The simplest, personal, private gist, with one file:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span> <span class="o">=</span> <span class="n">u</span><span class="o">.</span><span class="n">create_gist</span><span class="p">(</span><span class="n">files</span><span class="o">=</span><span class="p">{</span><span class="s">&quot;foo.txt&quot;</span><span class="p">:{</span><span class="s">&quot;content&quot;</span><span class="p">:</span> <span class="s">&quot;barbaz&quot;</span><span class="p">}})</span>
+<div class="section" id="creating-and-deleting-gists">
+<h3>Creating and deleting gists<a class="headerlink" href="#creating-and-deleting-gists" title="Permalink to this headline">¶</a></h3>
+<p>The simplest, personal, private gist, with one file and no description:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span> <span class="o">=</span> <span class="n">u</span><span class="o">.</span><span class="n">create_gist</span><span class="p">(</span><span class="n">files</span><span class="o">=</span><span class="p">{</span><span class="s">&quot;foo.txt&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s">&quot;content&quot;</span><span class="p">:</span> <span class="s">&quot;barbaz&quot;</span><span class="p">}})</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">gist</span><span class="o">.</span><span class="n">owner</span><span class="o">.</span><span class="n">login</span>
 <span class="go">jacquev6</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">gist</span><span class="o">.</span><span class="n">public</span>
 <span class="go">False</span>
-</pre></div>
-</div>
-<p>An anonymous gist:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">create_anonymous_gist</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">gist</span><span class="o">.</span><span class="n">owner</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="nb">len</span><span class="p">(</span><span class="n">gist</span><span class="o">.</span><span class="n">files</span><span class="p">)</span>
+<span class="go">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">gist</span><span class="o">.</span><span class="n">description</span>
 <span class="go">None</span>
 </pre></div>
 </div>
-<p>A secret gist (works with personal and anonymous gists):</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span> <span class="o">=</span> <span class="n">u</span><span class="o">.</span><span class="n">create_gist</span><span class="p">(</span><span class="n">secret</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">gist</span><span class="o">.</span><span class="n">secret</span>
+<p>Deletion:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>An anonymous, public gist, with several files and a description:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">create_anonymous_gist</span><span class="p">(</span><span class="n">files</span><span class="o">=</span><span class="p">{</span><span class="s">&quot;foo.txt&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s">&quot;content&quot;</span><span class="p">:</span> <span class="s">&quot;barbaz&quot;</span><span class="p">},</span> <span class="s">&quot;bar.txt&quot;</span><span class="p">:{</span><span class="s">&quot;content&quot;</span><span class="p">:</span> <span class="s">&quot;toto&quot;</span><span class="p">}},</span> <span class="n">public</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s">&quot;Created with PyGithub&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">gist</span><span class="o">.</span><span class="n">owner</span>
+<span class="go">None</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">gist</span><span class="o">.</span><span class="n">public</span>
 <span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">gist</span><span class="o">.</span><span class="n">description</span>
+<span class="go">Created with PyGithub</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="nb">len</span><span class="p">(</span><span class="n">gist</span><span class="o">.</span><span class="n">files</span><span class="p">)</span>
+<span class="go">2</span>
 </pre></div>
 </div>
-<p>A gist with several files:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span> <span class="o">=</span> <span class="n">u</span><span class="o">.</span><span class="n">create_gist</span><span class="p">()</span>
-</pre></div>
-</div>
+<p>You can also fork an existing gist using <a class="reference internal" href="reference/classes/Gist.html#PyGithub.Blocking.Gist.Gist.create_fork" title="PyGithub.Blocking.Gist.Gist.create_fork"><tt class="xref py py-meth docutils literal"><span class="pre">Gist.create_fork()</span></tt></a>.</p>
 </div>
 <div class="section" id="retrieving-gists">
 <h3>Retrieving gists<a class="headerlink" href="#retrieving-gists" title="Permalink to this headline">¶</a></h3>
-<p>List public gists:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">g</span><span class="o">.</span><span class="n">get_public_gists</span><span class="p">()</span>
+<p>List personal gists:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">gist</span> <span class="ow">in</span> <span class="n">u</span><span class="o">.</span><span class="n">get_gists</span><span class="p">():</span>  
+<span class="gp">... </span>  <span class="k">print</span> <span class="n">gist</span><span class="o">.</span><span class="n">description</span>
+<span class="gp">...</span>
+<span class="go">Test script for https://github.com/jacquev6/PyGithub/issues/194</span>
+<span class="go">Github API</span>
+<span class="go">Test gist for PyGithub</span>
+<span class="gp">...</span>
 </pre></div>
 </div>
-<p>List personal gists:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">u</span><span class="o">.</span><span class="n">get_gists</span><span class="p">()</span>
+<p>In addition to <a class="reference internal" href="reference/classes/AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_gists" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_gists"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.get_gists()</span></tt></a>, you can use <a class="reference internal" href="reference/classes/AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_starred_gists" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_starred_gists"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.get_starred_gists()</span></tt></a>, <a class="reference internal" href="reference/classes/User.html#PyGithub.Blocking.User.User.get_gists" title="PyGithub.Blocking.User.User.get_gists"><tt class="xref py py-meth docutils literal"><span class="pre">User.get_gists()</span></tt></a> and <a class="reference internal" href="reference/classes/Github.html#PyGithub.Blocking.Github.Github.get_public_gists" title="PyGithub.Blocking.Github.Github.get_public_gists"><tt class="xref py py-meth docutils literal"><span class="pre">Github.get_public_gists()</span></tt></a> to retrieve lists of gists.</p>
+<p>Here are the gists modified by <a class="reference external" href="https://github.com/nvie">Vincent Driessen</a> since the begining of 2014. GitHub returns them ordered by descending creation date:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">gist</span> <span class="ow">in</span> <span class="n">g</span><span class="o">.</span><span class="n">get_user</span><span class="p">(</span><span class="s">&quot;nvie&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_gists</span><span class="p">(</span><span class="n">since</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2014</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)):</span>
+<span class="gp">... </span>  <span class="k">print</span> <span class="s">&quot;{} ({}, {})&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">gist</span><span class="o">.</span><span class="n">description</span><span class="p">,</span> <span class="n">gist</span><span class="o">.</span><span class="n">created_at</span><span class="p">,</span> <span class="n">gist</span><span class="o">.</span><span class="n">updated_at</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="go">Really useful helper that I use constantly to force myself to write more efficient Django queries. (2013-11-29 08:59:02, 2014-04-22 10:02:20)</span>
+<span class="go">Which API is the nicest for the new RQ with concurrency? (2013-02-04 15:58:06, 2014-06-25 19:09:55)</span>
+<span class="go">Get Mountain Lion and Homebrew to Be Happy (2012-07-26 07:46:47, 2014-04-08 18:19:17)</span>
+<span class="go">A WSGI middleware wrapper to add gzip to your WSGI app (2012-05-22 15:11:17, 2014-01-29 14:12:19)</span>
 </pre></div>
 </div>
 <p>Get a single gist:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">u</span><span class="o">.</span><span class="n">get_gist</span><span class="p">()</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">get_gist</span><span class="p">(</span><span class="s">&quot;5339374&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">gist</span><span class="o">.</span><span class="n">id</span>
+<span class="go">5339374</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">gist</span><span class="o">.</span><span class="n">html_url</span>  <span class="c"># Redirects to https://gist.github.com/jacquev6/5339374</span>
+<span class="go">https://gist.github.com/5339374</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="modifying-gists">
 <h3>Modifying gists<a class="headerlink" href="#modifying-gists" title="Permalink to this headline">¶</a></h3>
-<p>Change attributes:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span><span class="o">.</span><span class="n">edit</span><span class="p">()</span>
+<p>Change description:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">gist</span><span class="o">.</span><span class="n">description</span>
+<span class="go">Test gist for PyGithub</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span><span class="o">.</span><span class="n">edit</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s">&quot;Test gist for PyGithub - edited&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">gist</span><span class="o">.</span><span class="n">description</span>
+<span class="go">Test gist for PyGithub - edited</span>
 </pre></div>
 </div>
-<p>Add a file:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span><span class="o">.</span><span class="n">edit</span><span class="p">()</span>
-</pre></div>
-</div>
-<p>Delete a file:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span><span class="o">.</span><span class="n">edit</span><span class="p">()</span>
-</pre></div>
-</div>
-<p>Rename a file:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span><span class="o">.</span><span class="n">edit</span><span class="p">()</span>
-</pre></div>
-</div>
-<p>Starring and unstarring:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span><span class="o">.</span><span class="n">star</span><span class="p">()</span>
+<p>Star and unstar:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">gist</span><span class="o">.</span><span class="n">is_starred</span><span class="p">()</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span><span class="o">.</span><span class="n">set_starred</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">gist</span><span class="o">.</span><span class="n">is_starred</span><span class="p">()</span>
 <span class="go">True</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span><span class="o">.</span><span class="n">unstar</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span><span class="o">.</span><span class="n">reset_starred</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">gist</span><span class="o">.</span><span class="n">is_starred</span><span class="p">()</span>
 <span class="go">False</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="forking">
-<h3>Forking<a class="headerlink" href="#forking" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">fork</span> <span class="o">=</span> <span class="n">gist</span><span class="o">.</span><span class="n">create_fork</span><span class="p">()</span>
+<p>Add a file (files not listed are kept unchanged):</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">gist</span><span class="o">.</span><span class="n">files</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+<span class="go">[u&#39;baz.txt&#39;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span><span class="o">.</span><span class="n">edit</span><span class="p">(</span><span class="n">files</span><span class="o">=</span><span class="p">{</span><span class="s">&quot;new.txt&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s">&quot;content&quot;</span><span class="p">:</span> <span class="s">&quot;toto&quot;</span><span class="p">}})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">gist</span><span class="o">.</span><span class="n">files</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="go">[u&#39;baz.txt&#39;, u&#39;new.txt&#39;]</span>
 </pre></div>
 </div>
+<p>Move a file:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span><span class="o">.</span><span class="n">edit</span><span class="p">(</span><span class="n">files</span><span class="o">=</span><span class="p">{</span><span class="s">&quot;new.txt&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s">&quot;content&quot;</span><span class="p">:</span> <span class="s">&quot;toto&quot;</span><span class="p">,</span> <span class="s">&quot;filename&quot;</span><span class="p">:</span> <span class="s">&quot;moved.txt&quot;</span><span class="p">}})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># For some reason, from time to time, the response to the PATCH request still contains new.txt. :meth:`.update` fixes that.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span><span class="o">.</span><span class="n">update</span><span class="p">()</span> <span class="ow">or</span> <span class="bp">True</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">gist</span><span class="o">.</span><span class="n">files</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="go">[u&#39;baz.txt&#39;, u&#39;moved.txt&#39;]</span>
+</pre></div>
 </div>
-<div class="section" id="deleting-gists">
-<h3>Deleting gists<a class="headerlink" href="#deleting-gists" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
+<p>Delete a file:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span><span class="o">.</span><span class="n">edit</span><span class="p">(</span><span class="n">files</span><span class="o">=</span><span class="p">{</span><span class="s">&quot;moved.txt&quot;</span><span class="p">:</span> <span class="bp">None</span><span class="p">})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># Idem</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span><span class="o">.</span><span class="n">update</span><span class="p">()</span> <span class="ow">or</span> <span class="bp">True</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">gist</span><span class="o">.</span><span class="n">files</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+<span class="go">[u&#39;baz.txt&#39;]</span>
 </pre></div>
 </div>
 </div>
@@ -161,11 +192,9 @@
   <ul>
 <li><a class="reference internal" href="#">Cook book</a><ul>
 <li><a class="reference internal" href="#working-with-gists">Working with gists</a><ul>
-<li><a class="reference internal" href="#creating-gists">Creating gists</a></li>
+<li><a class="reference internal" href="#creating-and-deleting-gists">Creating and deleting gists</a></li>
 <li><a class="reference internal" href="#retrieving-gists">Retrieving gists</a></li>
 <li><a class="reference internal" href="#modifying-gists">Modifying gists</a></li>
-<li><a class="reference internal" href="#forking">Forking</a></li>
-<li><a class="reference internal" href="#deleting-gists">Deleting gists</a></li>
 </ul>
 </li>
 </ul>
@@ -215,7 +244,7 @@
         <li class="right" >
           <a href="user_guide.html" title="User guide"
              >previous</a> |</li>
-        <li><a href="index.html">PyGithub 2.0.0-alpha.1 documentation</a> &raquo;</li> 
+        <li><a href="index.html">PyGithub 2.0.0-alpha.3 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">

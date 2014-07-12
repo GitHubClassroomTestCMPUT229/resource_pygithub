@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Migration guide &mdash; PyGithub 2.0.0-alpha.1 documentation</title>
+    <title>Migration guide &mdash; PyGithub 2.0.0-alpha.3 documentation</title>
     
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '2.0.0-alpha.1',
+        VERSION:     '2.0.0-alpha.3',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,7 +24,7 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="top" title="PyGithub 2.0.0-alpha.1 documentation" href="index.html" />
+    <link rel="top" title="PyGithub 2.0.0-alpha.3 documentation" href="index.html" />
     <link rel="prev" title="From Github API v3 to PyGithub" href="reference/apis.html" /> 
   </head>
   <body>
@@ -40,7 +40,7 @@
         <li class="right" >
           <a href="reference/apis.html" title="From Github API v3 to PyGithub"
              accesskey="P">previous</a> |</li>
-        <li><a href="index.html">PyGithub 2.0.0-alpha.1 documentation</a> &raquo;</li> 
+        <li><a href="index.html">PyGithub 2.0.0-alpha.3 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -54,7 +54,7 @@
 <p>This migration guide may look a bit terse. I will update it with your questions,
 don&#8217;t hesitate to <a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/new">open an issue</a>.</p>
 <p>The main difference between v1 and v2 is how you build the <a class="reference internal" href="reference/classes/Github.html#PyGithub.Blocking.Github.Github" title="PyGithub.Blocking.Github.Github"><tt class="xref py py-class docutils literal"><span class="pre">Github</span></tt></a> instance:
-in v2, you <tt class="docutils literal"><span class="pre">import</span> <span class="pre">PyGithub</span></tt> and then configure it using the <a class="reference internal" href="reference/bases.html#PyGithub.Blocking.Builder.Builder" title="PyGithub.Blocking.Builder.Builder"><tt class="xref py py-class docutils literal"><span class="pre">Builder</span></tt></a> as described in <a class="reference internal" href="user_guide.html#configuration"><em>Configuring the GitHub session</em></a>.</p>
+in v2, you <tt class="docutils literal"><span class="pre">import</span> <span class="pre">PyGithub</span></tt> and then configure it using the <a class="reference internal" href="reference/bases.html#PyGithub.Blocking._builder.Builder" title="PyGithub.Blocking._builder.Builder"><tt class="xref py py-class docutils literal"><span class="pre">Builder</span></tt></a> as described in <a class="reference internal" href="user_guide.html#configuration"><em>Configuring the GitHub session</em></a>.</p>
 <p>Another difference is that in <a class="reference internal" href="reference/classes/Github.html#PyGithub.Blocking.Github.Github" title="PyGithub.Blocking.Github.Github"><tt class="xref py py-class docutils literal"><span class="pre">Github</span></tt></a>, there are now two different methods to acces the authenticated user
 (<a class="reference internal" href="reference/classes/Github.html#PyGithub.Blocking.Github.Github.get_authenticated_user" title="PyGithub.Blocking.Github.Github.get_authenticated_user"><tt class="xref py py-meth docutils literal"><span class="pre">Github.get_authenticated_user()</span></tt></a>) and another user by its login (<a class="reference internal" href="reference/classes/Github.html#PyGithub.Blocking.Github.Github.get_user" title="PyGithub.Blocking.Github.Github.get_user"><tt class="xref py py-meth docutils literal"><span class="pre">Github.get_user()</span></tt></a>).</p>
 <p>Globally, the other methods look like v1, but accept more types of input: you can always substitute an identifier for an object,
@@ -104,7 +104,7 @@ where in v1 you had to pass a Github object like Repository or User.</p>
         <li class="right" >
           <a href="reference/apis.html" title="From Github API v3 to PyGithub"
              >previous</a> |</li>
-        <li><a href="index.html">PyGithub 2.0.0-alpha.1 documentation</a> &raquo;</li> 
+        <li><a href="index.html">PyGithub 2.0.0-alpha.3 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">

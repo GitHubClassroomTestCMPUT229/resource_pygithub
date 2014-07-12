@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Base and utility classes &mdash; PyGithub 2.0.0-alpha.1 documentation</title>
+    <title>Base and utility classes &mdash; PyGithub 2.0.0-alpha.3 documentation</title>
     
     <link rel="stylesheet" href="../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.0.0-alpha.1',
+        VERSION:     '2.0.0-alpha.3',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,7 +24,7 @@
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="top" title="PyGithub 2.0.0-alpha.1 documentation" href="../index.html" />
+    <link rel="top" title="PyGithub 2.0.0-alpha.3 documentation" href="../index.html" />
     <link rel="up" title="Reference documentation" href="../reference.html" />
     <link rel="next" title="Classes" href="classes.html" />
     <link rel="prev" title="Reference documentation" href="../reference.html" /> 
@@ -45,7 +45,7 @@
         <li class="right" >
           <a href="../reference.html" title="Reference documentation"
              accesskey="P">previous</a> |</li>
-        <li><a href="../index.html">PyGithub 2.0.0-alpha.1 documentation</a> &raquo;</li>
+        <li><a href="../index.html">PyGithub 2.0.0-alpha.3 documentation</a> &raquo;</li>
           <li><a href="../reference.html" accesskey="U">Reference documentation</a> &raquo;</li> 
       </ul>
     </div>  
@@ -59,64 +59,64 @@
 <span id="base-and-utility-classes"></span><h1>Base and utility classes<a class="headerlink" href="#module-PyGithub" title="Permalink to this headline">¶</a></h1>
 <dl class="data">
 <dt id="PyGithub.Version">
-<tt class="descclassname">PyGithub.</tt><tt class="descname">Version</tt><em class="property"> = '2.0.0-alpha.1'</em><a class="headerlink" href="#PyGithub.Version" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">PyGithub.</tt><tt class="descname">Version</tt><em class="property"> = '2.0.0-alpha.3'</em><a class="headerlink" href="#PyGithub.Version" title="Permalink to this definition">¶</a></dt>
 <dd><p>A string representation of the version of PyGithub as described by <a class="reference external" href="http://semver.org">semantic versionning</a>.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="PyGithub.BlockingBuilder">
 <tt class="descclassname">PyGithub.</tt><tt class="descname">BlockingBuilder</tt><a class="headerlink" href="#PyGithub.BlockingBuilder" title="Permalink to this definition">¶</a></dt>
-<dd><p>An alias of <a class="reference internal" href="#PyGithub.Blocking.Builder.Builder" title="PyGithub.Blocking.Builder.Builder"><tt class="xref py py-class docutils literal"><span class="pre">Builder</span></tt></a> to make it easy to instanciate.</p>
+<dd><p>An alias of <a class="reference internal" href="#PyGithub.Blocking._builder.Builder" title="PyGithub.Blocking._builder.Builder"><tt class="xref py py-class docutils literal"><span class="pre">Builder</span></tt></a> to make it easy to instanciate.</p>
 <p>alias of <tt class="xref py py-class docutils literal"><span class="pre">Builder</span></tt></p>
 </dd></dl>
 
 <span class="target" id="module-PyGithub.Blocking"></span><div class="section" id="session-builder">
 <h2>Session builder<a class="headerlink" href="#session-builder" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="PyGithub.Blocking.Builder.Builder">
-<em class="property">class </em><tt class="descclassname">PyGithub.Blocking.Builder.</tt><tt class="descname">Builder</tt><a class="headerlink" href="#PyGithub.Blocking.Builder.Builder" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking._builder.Builder">
+<em class="property">class </em><tt class="descclassname">PyGithub.Blocking._builder.</tt><tt class="descname">Builder</tt><a class="headerlink" href="#PyGithub.Blocking._builder.Builder" title="Permalink to this definition">¶</a></dt>
 <dd><p>Class used to configure the GitHub session. See the <a class="reference internal" href="../user_guide.html#configuration"><em>User Guide</em></a> for an introduction.</p>
 <dl class="method">
-<dt id="PyGithub.Blocking.Builder.Builder.Login">
-<tt class="descname">Login</tt><big>(</big><em>login</em>, <em>password</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Builder.Builder.Login" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking._builder.Builder.Login">
+<tt class="descname">Login</tt><big>(</big><em>login</em>, <em>password</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking._builder.Builder.Login" title="Permalink to this definition">¶</a></dt>
 <dd><p>Use <a class="reference external" href="http://developer.github.com/v3/auth/#via-username-and-password">basic authentication via username and password</a>.</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="PyGithub.Blocking.Builder.Builder.OAuth">
-<tt class="descname">OAuth</tt><big>(</big><em>token</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Builder.Builder.OAuth" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking._builder.Builder.OAuth">
+<tt class="descname">OAuth</tt><big>(</big><em>token</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking._builder.Builder.OAuth" title="Permalink to this definition">¶</a></dt>
 <dd><p>Use <a class="reference external" href="http://developer.github.com/v3/oauth/">OAuth authentication</a>.</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="PyGithub.Blocking.Builder.Builder.PerPage">
-<tt class="descname">PerPage</tt><big>(</big><em>per_page</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Builder.Builder.PerPage" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking._builder.Builder.PerPage">
+<tt class="descname">PerPage</tt><big>(</big><em>per_page</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking._builder.Builder.PerPage" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the default <cite>per_page</cite> url argument for <a class="reference external" href="http://developer.github.com/v3/#pagination">paginated requests</a>.</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="PyGithub.Blocking.Builder.Builder.UserAgent">
-<tt class="descname">UserAgent</tt><big>(</big><em>user_agent</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Builder.Builder.UserAgent" title="Permalink to this definition">¶</a></dt>
-<dd><p>Set the user agent sent by PyGithub to GitHub API v3. Defaults to &#8220;jacquev6/PyGithub/2.0.0-alpha.1&#8221;.</p>
+<dt id="PyGithub.Blocking._builder.Builder.UserAgent">
+<tt class="descname">UserAgent</tt><big>(</big><em>user_agent</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking._builder.Builder.UserAgent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the user agent sent by PyGithub to GitHub API v3. Defaults to &#8220;jacquev6/PyGithub/2.0.0-alpha.3&#8221;.</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="PyGithub.Blocking.Builder.Builder.Build">
-<tt class="descname">Build</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Builder.Builder.Build" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking._builder.Builder.Build">
+<tt class="descname">Build</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking._builder.Builder.Build" title="Permalink to this definition">¶</a></dt>
 <dd><p>Build and return a new instance of <a class="reference internal" href="classes/Github.html#PyGithub.Blocking.Github.Github" title="PyGithub.Blocking.Github.Github"><tt class="xref py py-class docutils literal"><span class="pre">Github</span></tt></a>.</p>
 </dd></dl>
 
 </dd></dl>
 
 <dl class="class">
-<dt id="PyGithub.Blocking.Session.Session">
-<em class="property">class </em><tt class="descclassname">PyGithub.Blocking.Session.</tt><tt class="descname">Session</tt><a class="headerlink" href="#PyGithub.Blocking.Session.Session" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking._session.Session">
+<em class="property">class </em><tt class="descclassname">PyGithub.Blocking._session.</tt><tt class="descname">Session</tt><a class="headerlink" href="#PyGithub.Blocking._session.Session" title="Permalink to this definition">¶</a></dt>
 <dd><p>Class representing a GitHub API v3 session.</p>
-<p>Don&#8217;t create any instance of this class yourself. Use <a class="reference internal" href="#PyGithub.Blocking.Builder.Builder" title="PyGithub.Blocking.Builder.Builder"><tt class="xref py py-class docutils literal"><span class="pre">Builder</span></tt></a> to get a <a class="reference internal" href="classes/Github.html#PyGithub.Blocking.Github.Github" title="PyGithub.Blocking.Github.Github"><tt class="xref py py-class docutils literal"><span class="pre">Github</span></tt></a>
-and then access its <a class="reference internal" href="#PyGithub.Blocking.BaseGithubObject.SessionedGithubObject.Session" title="PyGithub.Blocking.BaseGithubObject.SessionedGithubObject.Session"><tt class="xref py py-attr docutils literal"><span class="pre">SessionedGithubObject.Session</span></tt></a> attribute (or on any returned object).</p>
+<p>Don&#8217;t create any instance of this class yourself. Use <a class="reference internal" href="#PyGithub.Blocking._builder.Builder" title="PyGithub.Blocking._builder.Builder"><tt class="xref py py-class docutils literal"><span class="pre">Builder</span></tt></a> to get a <a class="reference internal" href="classes/Github.html#PyGithub.Blocking.Github.Github" title="PyGithub.Blocking.Github.Github"><tt class="xref py py-class docutils literal"><span class="pre">Github</span></tt></a>
+and then access its <a class="reference internal" href="#PyGithub.Blocking._base_github_object.SessionedGithubObject.Session" title="PyGithub.Blocking._base_github_object.SessionedGithubObject.Session"><tt class="xref py py-attr docutils literal"><span class="pre">SessionedGithubObject.Session</span></tt></a> attribute (or on any returned object).</p>
 <dl class="attribute">
-<dt id="PyGithub.Blocking.Session.Session.RateLimit">
-<tt class="descname">RateLimit</tt><a class="headerlink" href="#PyGithub.Blocking.Session.Session.RateLimit" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking._session.Session.RateLimit">
+<tt class="descname">RateLimit</tt><a class="headerlink" href="#PyGithub.Blocking._session.Session.RateLimit" title="Permalink to this definition">¶</a></dt>
 <dd><p>The last rate limit information received from GitHub (through headers x-ratelimit-...).</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -129,8 +129,8 @@ and then access its <a class="reference internal" href="#PyGithub.Blocking.BaseG
 </dd></dl>
 
 <dl class="attribute">
-<dt id="PyGithub.Blocking.Session.Session.OAuthScopes">
-<tt class="descname">OAuthScopes</tt><a class="headerlink" href="#PyGithub.Blocking.Session.Session.OAuthScopes" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking._session.Session.OAuthScopes">
+<tt class="descname">OAuthScopes</tt><a class="headerlink" href="#PyGithub.Blocking._session.Session.OAuthScopes" title="Permalink to this definition">¶</a></dt>
 <dd><p>The last oauth scopes information received from GitHub (through header x-oauth-scopes).</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -143,8 +143,8 @@ and then access its <a class="reference internal" href="#PyGithub.Blocking.BaseG
 </dd></dl>
 
 <dl class="attribute">
-<dt id="PyGithub.Blocking.Session.Session.AcceptedOAuthScopes">
-<tt class="descname">AcceptedOAuthScopes</tt><a class="headerlink" href="#PyGithub.Blocking.Session.Session.AcceptedOAuthScopes" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking._session.Session.AcceptedOAuthScopes">
+<tt class="descname">AcceptedOAuthScopes</tt><a class="headerlink" href="#PyGithub.Blocking._session.Session.AcceptedOAuthScopes" title="Permalink to this definition">¶</a></dt>
 <dd><p>The last accepted oauth scopes information received from GitHub (through header x-accepted-oauth-scopes).</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -157,8 +157,8 @@ and then access its <a class="reference internal" href="#PyGithub.Blocking.BaseG
 </dd></dl>
 
 <dl class="attribute">
-<dt id="PyGithub.Blocking.Session.Session.PerPage">
-<tt class="descname">PerPage</tt><a class="headerlink" href="#PyGithub.Blocking.Session.Session.PerPage" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking._session.Session.PerPage">
+<tt class="descname">PerPage</tt><a class="headerlink" href="#PyGithub.Blocking._session.Session.PerPage" title="Permalink to this definition">¶</a></dt>
 <dd><p>The value of the per_page argument sent in all paginated requests.</p>
 <p>See also <a class="reference internal" href="#PyGithub.Blocking._paginated_list.PaginatedList" title="PyGithub.Blocking._paginated_list.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">PaginatedList</span></tt></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -177,29 +177,29 @@ and then access its <a class="reference internal" href="#PyGithub.Blocking.BaseG
 <div class="section" id="base-classes">
 <h2>Base classes<a class="headerlink" href="#base-classes" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="PyGithub.Blocking.BaseGithubObject.SessionedGithubObject">
-<em class="property">class </em><tt class="descclassname">PyGithub.Blocking.BaseGithubObject.</tt><tt class="descname">SessionedGithubObject</tt><a class="headerlink" href="#PyGithub.Blocking.BaseGithubObject.SessionedGithubObject" title="Permalink to this definition">¶</a></dt>
-<dd><p>You should not manipulate this class directly. It is public only to document its <a class="reference internal" href="#PyGithub.Blocking.BaseGithubObject.SessionedGithubObject.Session" title="PyGithub.Blocking.BaseGithubObject.SessionedGithubObject.Session"><tt class="xref py py-attr docutils literal"><span class="pre">Session</span></tt></a>
-attribute, but this is an implementation detail. The <a class="reference internal" href="#PyGithub.Blocking.BaseGithubObject.SessionedGithubObject.Session" title="PyGithub.Blocking.BaseGithubObject.SessionedGithubObject.Session"><tt class="xref py py-attr docutils literal"><span class="pre">Session</span></tt></a> attribute may be moved to another class
+<dt id="PyGithub.Blocking._base_github_object.SessionedGithubObject">
+<em class="property">class </em><tt class="descclassname">PyGithub.Blocking._base_github_object.</tt><tt class="descname">SessionedGithubObject</tt><a class="headerlink" href="#PyGithub.Blocking._base_github_object.SessionedGithubObject" title="Permalink to this definition">¶</a></dt>
+<dd><p>You should not manipulate this class directly. It is public only to document its <a class="reference internal" href="#PyGithub.Blocking._base_github_object.SessionedGithubObject.Session" title="PyGithub.Blocking._base_github_object.SessionedGithubObject.Session"><tt class="xref py py-attr docutils literal"><span class="pre">Session</span></tt></a>
+attribute, but this is an implementation detail. The <a class="reference internal" href="#PyGithub.Blocking._base_github_object.SessionedGithubObject.Session" title="PyGithub.Blocking._base_github_object.SessionedGithubObject.Session"><tt class="xref py py-attr docutils literal"><span class="pre">Session</span></tt></a> attribute may be moved to another class
 or duplicated in concrete subclasses.</p>
 <dl class="attribute">
-<dt id="PyGithub.Blocking.BaseGithubObject.SessionedGithubObject.Session">
-<tt class="descname">Session</tt><a class="headerlink" href="#PyGithub.Blocking.BaseGithubObject.SessionedGithubObject.Session" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking._base_github_object.SessionedGithubObject.Session">
+<tt class="descname">Session</tt><a class="headerlink" href="#PyGithub.Blocking._base_github_object.SessionedGithubObject.Session" title="Permalink to this definition">¶</a></dt>
 <dd><p>You can use this shared attribute to access session-wide information, like your
-<a class="reference external" href="http://developer.github.com/v3/#rate-limiting">rate limit</a> in <a class="reference internal" href="#PyGithub.Blocking.Session.Session.RateLimit" title="PyGithub.Blocking.Session.Session.RateLimit"><tt class="xref py py-attr docutils literal"><span class="pre">RateLimit</span></tt></a></p>
+<a class="reference external" href="http://developer.github.com/v3/#rate-limiting">rate limit</a> in <a class="reference internal" href="#PyGithub.Blocking._session.Session.RateLimit" title="PyGithub.Blocking._session.Session.RateLimit"><tt class="xref py py-attr docutils literal"><span class="pre">RateLimit</span></tt></a></p>
 </dd></dl>
 
 </dd></dl>
 
 <dl class="class">
-<dt id="PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject">
-<em class="property">class </em><tt class="descclassname">PyGithub.Blocking.BaseGithubObject.</tt><tt class="descname">UpdatableGithubObject</tt><a class="headerlink" href="#PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject" title="Permalink to this definition">¶</a></dt>
-<dd><p>You should not manipulate this class directly. It is public only to document its <a class="reference internal" href="#PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject.update" title="PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject.update"><tt class="xref py py-meth docutils literal"><span class="pre">update()</span></tt></a>
-method, but this is an implementation detail. The <a class="reference internal" href="#PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject.update" title="PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject.update"><tt class="xref py py-meth docutils literal"><span class="pre">update()</span></tt></a> method may be moved to another class
+<dt id="PyGithub.Blocking._base_github_object.UpdatableGithubObject">
+<em class="property">class </em><tt class="descclassname">PyGithub.Blocking._base_github_object.</tt><tt class="descname">UpdatableGithubObject</tt><a class="headerlink" href="#PyGithub.Blocking._base_github_object.UpdatableGithubObject" title="Permalink to this definition">¶</a></dt>
+<dd><p>You should not manipulate this class directly. It is public only to document its <a class="reference internal" href="#PyGithub.Blocking._base_github_object.UpdatableGithubObject.update" title="PyGithub.Blocking._base_github_object.UpdatableGithubObject.update"><tt class="xref py py-meth docutils literal"><span class="pre">update()</span></tt></a>
+method, but this is an implementation detail. The <a class="reference internal" href="#PyGithub.Blocking._base_github_object.UpdatableGithubObject.update" title="PyGithub.Blocking._base_github_object.UpdatableGithubObject.update"><tt class="xref py py-meth docutils literal"><span class="pre">update()</span></tt></a> method may be moved to another class
 or duplicated in concrete subclasses.</p>
 <dl class="method">
-<dt id="PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject.update">
-<tt class="descname">update</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.BaseGithubObject.UpdatableGithubObject.update" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking._base_github_object.UpdatableGithubObject.update">
+<tt class="descname">update</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking._base_github_object.UpdatableGithubObject.update" title="Permalink to this definition">¶</a></dt>
 <dd><p>Makes a <a class="reference external" href="http://developer.github.com/v3/#conditional-requests">conditional request</a> and updates the object.</p>
 <p>Returns True if the the update was needed.</p>
 </dd></dl>
@@ -207,62 +207,62 @@ or duplicated in concrete subclasses.</p>
 </dd></dl>
 
 </div>
-<div class="section" id="module-PyGithub.Blocking.Exceptions">
-<span id="exceptions"></span><h2>Exceptions<a class="headerlink" href="#module-PyGithub.Blocking.Exceptions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-PyGithub.Blocking._exceptions">
+<span id="exceptions"></span><h2>Exceptions<a class="headerlink" href="#module-PyGithub.Blocking._exceptions" title="Permalink to this headline">¶</a></h2>
 <p>Error handling in PyGithub is done with exceptions. All exceptions derive (indireclty) from
-<a class="reference internal" href="#PyGithub.Blocking.Exceptions.PyGithubException" title="PyGithub.Blocking.Exceptions.PyGithubException"><tt class="xref py py-class docutils literal"><span class="pre">PyGithubException</span></tt></a>.</p>
+<a class="reference internal" href="#PyGithub.Blocking._exceptions.PyGithubException" title="PyGithub.Blocking._exceptions.PyGithubException"><tt class="xref py py-class docutils literal"><span class="pre">PyGithubException</span></tt></a>.</p>
 <p>&#64;todoSomeday generate the exception hierarchy graph</p>
 <dl class="exception">
-<dt id="PyGithub.Blocking.Exceptions.PyGithubException">
-<em class="property">exception </em><tt class="descclassname">PyGithub.Blocking.Exceptions.</tt><tt class="descname">PyGithubException</tt><a class="headerlink" href="#PyGithub.Blocking.Exceptions.PyGithubException" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking._exceptions.PyGithubException">
+<em class="property">exception </em><tt class="descclassname">PyGithub.Blocking._exceptions.</tt><tt class="descname">PyGithubException</tt><a class="headerlink" href="#PyGithub.Blocking._exceptions.PyGithubException" title="Permalink to this definition">¶</a></dt>
 <dd><p>Base class for all exceptions raised by PyGithub.</p>
 </dd></dl>
 
 <dl class="exception">
-<dt id="PyGithub.Blocking.Exceptions.BadAttributeException">
-<em class="property">exception </em><tt class="descclassname">PyGithub.Blocking.Exceptions.</tt><tt class="descname">BadAttributeException</tt><a class="headerlink" href="#PyGithub.Blocking.Exceptions.BadAttributeException" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking._exceptions.BadAttributeException">
+<em class="property">exception </em><tt class="descclassname">PyGithub.Blocking._exceptions.</tt><tt class="descname">BadAttributeException</tt><a class="headerlink" href="#PyGithub.Blocking._exceptions.BadAttributeException" title="Permalink to this definition">¶</a></dt>
 <dd><p>Raised when GitHub API v3 returns an attribute that doesn&#8217;t match the expected type or format.</p>
 </dd></dl>
 
 <dl class="exception">
-<dt id="PyGithub.Blocking.Exceptions.ClientErrorException">
-<em class="property">exception </em><tt class="descclassname">PyGithub.Blocking.Exceptions.</tt><tt class="descname">ClientErrorException</tt><a class="headerlink" href="#PyGithub.Blocking.Exceptions.ClientErrorException" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking._exceptions.ClientErrorException">
+<em class="property">exception </em><tt class="descclassname">PyGithub.Blocking._exceptions.</tt><tt class="descname">ClientErrorException</tt><a class="headerlink" href="#PyGithub.Blocking._exceptions.ClientErrorException" title="Permalink to this definition">¶</a></dt>
 <dd><p>Base class for exceptions raised by PyGithub when GitHub API v3 returns a 4XX HTTP status code.</p>
 </dd></dl>
 
 <dl class="exception">
-<dt id="PyGithub.Blocking.Exceptions.ObjectNotFoundException">
-<em class="property">exception </em><tt class="descclassname">PyGithub.Blocking.Exceptions.</tt><tt class="descname">ObjectNotFoundException</tt><a class="headerlink" href="#PyGithub.Blocking.Exceptions.ObjectNotFoundException" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking._exceptions.ObjectNotFoundException">
+<em class="property">exception </em><tt class="descclassname">PyGithub.Blocking._exceptions.</tt><tt class="descname">ObjectNotFoundException</tt><a class="headerlink" href="#PyGithub.Blocking._exceptions.ObjectNotFoundException" title="Permalink to this definition">¶</a></dt>
 <dd><p>Raised by PyGithub when GitHub API v3 returns an unexpected 404 HTTP status code.</p>
 </dd></dl>
 
 <dl class="exception">
-<dt id="PyGithub.Blocking.Exceptions.UnauthorizedException">
-<em class="property">exception </em><tt class="descclassname">PyGithub.Blocking.Exceptions.</tt><tt class="descname">UnauthorizedException</tt><a class="headerlink" href="#PyGithub.Blocking.Exceptions.UnauthorizedException" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking._exceptions.UnauthorizedException">
+<em class="property">exception </em><tt class="descclassname">PyGithub.Blocking._exceptions.</tt><tt class="descname">UnauthorizedException</tt><a class="headerlink" href="#PyGithub.Blocking._exceptions.UnauthorizedException" title="Permalink to this definition">¶</a></dt>
 <dd><p>Raised by PyGithub when GitHub API v3 returns a 401 HTTP status code.</p>
 </dd></dl>
 
 <dl class="exception">
-<dt id="PyGithub.Blocking.Exceptions.ForbiddenException">
-<em class="property">exception </em><tt class="descclassname">PyGithub.Blocking.Exceptions.</tt><tt class="descname">ForbiddenException</tt><a class="headerlink" href="#PyGithub.Blocking.Exceptions.ForbiddenException" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking._exceptions.ForbiddenException">
+<em class="property">exception </em><tt class="descclassname">PyGithub.Blocking._exceptions.</tt><tt class="descname">ForbiddenException</tt><a class="headerlink" href="#PyGithub.Blocking._exceptions.ForbiddenException" title="Permalink to this definition">¶</a></dt>
 <dd><p>Base class for exceptions raised by PyGithub when GitHub API v3 returns a 403 HTTP status code.</p>
 </dd></dl>
 
 <dl class="exception">
-<dt id="PyGithub.Blocking.Exceptions.RateLimitExceededException">
-<em class="property">exception </em><tt class="descclassname">PyGithub.Blocking.Exceptions.</tt><tt class="descname">RateLimitExceededException</tt><a class="headerlink" href="#PyGithub.Blocking.Exceptions.RateLimitExceededException" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking._exceptions.RateLimitExceededException">
+<em class="property">exception </em><tt class="descclassname">PyGithub.Blocking._exceptions.</tt><tt class="descname">RateLimitExceededException</tt><a class="headerlink" href="#PyGithub.Blocking._exceptions.RateLimitExceededException" title="Permalink to this definition">¶</a></dt>
 <dd><p>Raised by PyGithub when GitHub API v3 returns a 403 HTTP status code and the remaining rate limit is null.</p>
 </dd></dl>
 
 <dl class="exception">
-<dt id="PyGithub.Blocking.Exceptions.UnprocessableEntityException">
-<em class="property">exception </em><tt class="descclassname">PyGithub.Blocking.Exceptions.</tt><tt class="descname">UnprocessableEntityException</tt><a class="headerlink" href="#PyGithub.Blocking.Exceptions.UnprocessableEntityException" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking._exceptions.UnprocessableEntityException">
+<em class="property">exception </em><tt class="descclassname">PyGithub.Blocking._exceptions.</tt><tt class="descname">UnprocessableEntityException</tt><a class="headerlink" href="#PyGithub.Blocking._exceptions.UnprocessableEntityException" title="Permalink to this definition">¶</a></dt>
 <dd><p>Base class for exceptions raised by PyGithub when GitHub API v3 returns a 422 HTTP status code.</p>
 </dd></dl>
 
 <dl class="exception">
-<dt id="PyGithub.Blocking.Exceptions.ServerErrorException">
-<em class="property">exception </em><tt class="descclassname">PyGithub.Blocking.Exceptions.</tt><tt class="descname">ServerErrorException</tt><a class="headerlink" href="#PyGithub.Blocking.Exceptions.ServerErrorException" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking._exceptions.ServerErrorException">
+<em class="property">exception </em><tt class="descclassname">PyGithub.Blocking._exceptions.</tt><tt class="descname">ServerErrorException</tt><a class="headerlink" href="#PyGithub.Blocking._exceptions.ServerErrorException" title="Permalink to this definition">¶</a></dt>
 <dd><p>Base class for exceptions raised by PyGithub when GitHub API v3 returns a 5XX HTTP status code.</p>
 </dd></dl>
 
@@ -273,7 +273,7 @@ or duplicated in concrete subclasses.</p>
 <dt id="PyGithub.Blocking._paginated_list.PaginatedList">
 <em class="property">class </em><tt class="descclassname">PyGithub.Blocking._paginated_list.</tt><tt class="descname">PaginatedList</tt><a class="headerlink" href="#PyGithub.Blocking._paginated_list.PaginatedList" title="Permalink to this definition">¶</a></dt>
 <dd><p>Class abstracting <a class="reference external" href="http://developer.github.com/v3/#pagination">paginated requests</a>. See the <a class="reference internal" href="../user_guide.html#pagination-foo"><em>User Guide</em></a> for an introduction.</p>
-<p>See also <a class="reference internal" href="#PyGithub.Blocking.Builder.Builder.PerPage" title="PyGithub.Blocking.Builder.Builder.PerPage"><tt class="xref py py-meth docutils literal"><span class="pre">Builder.PerPage()</span></tt></a>.</p>
+<p>See also <a class="reference internal" href="#PyGithub.Blocking._builder.Builder.PerPage" title="PyGithub.Blocking._builder.Builder.PerPage"><tt class="xref py py-meth docutils literal"><span class="pre">Builder.PerPage()</span></tt></a>.</p>
 </dd></dl>
 
 </div>
@@ -293,7 +293,7 @@ or duplicated in concrete subclasses.</p>
 <li><a class="reference internal" href="#">Base and utility classes</a><ul>
 <li><a class="reference internal" href="#session-builder">Session builder</a></li>
 <li><a class="reference internal" href="#base-classes">Base classes</a></li>
-<li><a class="reference internal" href="#module-PyGithub.Blocking.Exceptions">Exceptions</a></li>
+<li><a class="reference internal" href="#module-PyGithub.Blocking._exceptions">Exceptions</a></li>
 <li><a class="reference internal" href="#pagination">Pagination</a></li>
 <li><a class="reference internal" href="#logging">Logging</a></li>
 </ul>
@@ -343,7 +343,7 @@ or duplicated in concrete subclasses.</p>
         <li class="right" >
           <a href="../reference.html" title="Reference documentation"
              >previous</a> |</li>
-        <li><a href="../index.html">PyGithub 2.0.0-alpha.1 documentation</a> &raquo;</li>
+        <li><a href="../index.html">PyGithub 2.0.0-alpha.3 documentation</a> &raquo;</li>
           <li><a href="../reference.html" >Reference documentation</a> &raquo;</li> 
       </ul>
     </div>
