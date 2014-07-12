@@ -34,7 +34,7 @@ Exceptions
 Pagination
 ----------
 
-.. autoclass:: PyGithub.Blocking.PaginatedList::PaginatedList()
+.. autoclass:: PyGithub.Blocking._paginated_list::PaginatedList()
     :members:
 
 Logging

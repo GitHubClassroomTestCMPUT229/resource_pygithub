@@ -163,7 +163,13 @@ If something is not listed here, please <a class="reference external" href="http
 <div class="section" id="get-gists">
 <h2>GET /gists<a class="headerlink" href="#get-gists" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/gists#list-gists">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_gists" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_gists"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.get_gists()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="post-gists">
 <h2>POST /gists<a class="headerlink" href="#post-gists" title="Permalink to this headline">¶</a></h2>
@@ -172,6 +178,7 @@ If something is not listed here, please <a class="reference external" href="http
 <dt>Implemented in PyGithub by:</dt>
 <dd><ul class="first last simple">
 <li><a class="reference internal" href="classes/AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.create_gist" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.create_gist"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.create_gist()</span></tt></a></li>
+<li><a class="reference internal" href="classes/Github.html#PyGithub.Blocking.Github.Github.create_anonymous_gist" title="PyGithub.Blocking.Github.Github.create_anonymous_gist"><tt class="xref py py-meth docutils literal"><span class="pre">Github.create_anonymous_gist()</span></tt></a></li>
 </ul>
 </dd>
 </dl>
@@ -226,47 +233,101 @@ If something is not listed here, please <a class="reference external" href="http
 <div class="section" id="patch-gists-id">
 <h2>PATCH /gists/:id<a class="headerlink" href="#patch-gists-id" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/gists#edit-a-gist">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Gist.html#PyGithub.Blocking.Gist.Gist.edit" title="PyGithub.Blocking.Gist.Gist.edit"><tt class="xref py py-meth docutils literal"><span class="pre">Gist.edit()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-gists-id-commits">
 <h2>GET /gists/:id/commits<a class="headerlink" href="#get-gists-id-commits" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/gists#list-gist-commits">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Gist.html#PyGithub.Blocking.Gist.Gist.get_commits" title="PyGithub.Blocking.Gist.Gist.get_commits"><tt class="xref py py-meth docutils literal"><span class="pre">Gist.get_commits()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-gists-id-forks">
 <h2>GET /gists/:id/forks<a class="headerlink" href="#get-gists-id-forks" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/gists#list-gist-forks">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Gist.html#PyGithub.Blocking.Gist.Gist.get_forks" title="PyGithub.Blocking.Gist.Gist.get_forks"><tt class="xref py py-meth docutils literal"><span class="pre">Gist.get_forks()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="post-gists-id-forks">
 <h2>POST /gists/:id/forks<a class="headerlink" href="#post-gists-id-forks" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/gists#fork-a-gist">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Gist.html#PyGithub.Blocking.Gist.Gist.create_fork" title="PyGithub.Blocking.Gist.Gist.create_fork"><tt class="xref py py-meth docutils literal"><span class="pre">Gist.create_fork()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="delete-gists-id-star">
 <h2>DELETE /gists/:id/star<a class="headerlink" href="#delete-gists-id-star" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/gists#unstar-a-gist">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Gist.html#PyGithub.Blocking.Gist.Gist.reset_starred" title="PyGithub.Blocking.Gist.Gist.reset_starred"><tt class="xref py py-meth docutils literal"><span class="pre">Gist.reset_starred()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-gists-id-star">
 <h2>GET /gists/:id/star<a class="headerlink" href="#get-gists-id-star" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/gists#check-if-a-gist-is-starred">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Gist.html#PyGithub.Blocking.Gist.Gist.is_starred" title="PyGithub.Blocking.Gist.Gist.is_starred"><tt class="xref py py-meth docutils literal"><span class="pre">Gist.is_starred()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="put-gists-id-star">
 <h2>PUT /gists/:id/star<a class="headerlink" href="#put-gists-id-star" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/gists#star-a-gist">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Gist.html#PyGithub.Blocking.Gist.Gist.set_starred" title="PyGithub.Blocking.Gist.Gist.set_starred"><tt class="xref py py-meth docutils literal"><span class="pre">Gist.set_starred()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-gists-public">
 <h2>GET /gists/public<a class="headerlink" href="#get-gists-public" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/gists#list-gists">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Github.html#PyGithub.Blocking.Github.Github.get_public_gists" title="PyGithub.Blocking.Github.Github.get_public_gists"><tt class="xref py py-meth docutils literal"><span class="pre">Github.get_public_gists()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-gists-starred">
 <h2>GET /gists/starred<a class="headerlink" href="#get-gists-starred" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/gists#list-gists">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_starred_gists" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_starred_gists"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.get_starred_gists()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-gitignore-templates">
 <h2>GET /gitignore/templates<a class="headerlink" href="#get-gitignore-templates" title="Permalink to this headline">¶</a></h2>
@@ -1963,7 +2024,13 @@ If something is not listed here, please <a class="reference external" href="http
 <div class="section" id="get-users-username-gists">
 <h2>GET /users/:username/gists<a class="headerlink" href="#get-users-username-gists" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/gists#list-gists">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/User.html#PyGithub.Blocking.User.User.get_gists" title="PyGithub.Blocking.User.User.get_gists"><tt class="xref py py-meth docutils literal"><span class="pre">User.get_gists()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-users-username-keys">
 <h2>GET /users/:username/keys<a class="headerlink" href="#get-users-username-keys" title="Permalink to this headline">¶</a></h2>

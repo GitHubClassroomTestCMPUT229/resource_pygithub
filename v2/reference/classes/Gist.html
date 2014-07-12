@@ -67,7 +67,16 @@
 <dt>Methods and attributes returning instances of this class:</dt>
 <dd><ul class="first last simple">
 <li><a class="reference internal" href="AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.create_gist" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.create_gist"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.create_gist()</span></tt></a></li>
+<li><a class="reference internal" href="AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_gists" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_gists"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.get_gists()</span></tt></a></li>
+<li><a class="reference internal" href="AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_starred_gists" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_starred_gists"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.get_starred_gists()</span></tt></a></li>
+<li><a class="reference internal" href="#PyGithub.Blocking.Gist.Gist.create_fork" title="PyGithub.Blocking.Gist.Gist.create_fork"><tt class="xref py py-meth docutils literal"><span class="pre">Gist.create_fork()</span></tt></a></li>
+<li><a class="reference internal" href="#PyGithub.Blocking.Gist.Gist.fork_of" title="PyGithub.Blocking.Gist.Gist.fork_of"><tt class="xref py py-attr docutils literal"><span class="pre">Gist.fork_of</span></tt></a></li>
+<li><a class="reference internal" href="#PyGithub.Blocking.Gist.Gist.forks" title="PyGithub.Blocking.Gist.Gist.forks"><tt class="xref py py-attr docutils literal"><span class="pre">Gist.forks</span></tt></a></li>
+<li><a class="reference internal" href="#PyGithub.Blocking.Gist.Gist.get_forks" title="PyGithub.Blocking.Gist.Gist.get_forks"><tt class="xref py py-meth docutils literal"><span class="pre">Gist.get_forks()</span></tt></a></li>
+<li><a class="reference internal" href="Github.html#PyGithub.Blocking.Github.Github.create_anonymous_gist" title="PyGithub.Blocking.Github.Github.create_anonymous_gist"><tt class="xref py py-meth docutils literal"><span class="pre">Github.create_anonymous_gist()</span></tt></a></li>
 <li><a class="reference internal" href="Github.html#PyGithub.Blocking.Github.Github.get_gist" title="PyGithub.Blocking.Github.Github.get_gist"><tt class="xref py py-meth docutils literal"><span class="pre">Github.get_gist()</span></tt></a></li>
+<li><a class="reference internal" href="Github.html#PyGithub.Blocking.Github.Github.get_public_gists" title="PyGithub.Blocking.Github.Github.get_public_gists"><tt class="xref py py-meth docutils literal"><span class="pre">Github.get_public_gists()</span></tt></a></li>
+<li><a class="reference internal" href="User.html#PyGithub.Blocking.User.User.get_gists" title="PyGithub.Blocking.User.User.get_gists"><tt class="xref py py-meth docutils literal"><span class="pre">User.get_gists()</span></tt></a></li>
 </ul>
 </dd>
 </dl>
@@ -77,6 +86,7 @@
 <dd><dl class="docutils">
 <dt>Methods and attributes returning instances of this class:</dt>
 <dd><ul class="first last simple">
+<li><a class="reference internal" href="#PyGithub.Blocking.Gist.Gist.GistCommit.change_status" title="PyGithub.Blocking.Gist.Gist.GistCommit.change_status"><tt class="xref py py-attr docutils literal"><span class="pre">GistCommit.change_status</span></tt></a></li>
 <li><a class="reference internal" href="#PyGithub.Blocking.Gist.Gist.HistoryElement.change_status" title="PyGithub.Blocking.Gist.Gist.HistoryElement.change_status"><tt class="xref py py-attr docutils literal"><span class="pre">HistoryElement.change_status</span></tt></a></li>
 </ul>
 </dd>
@@ -115,6 +125,83 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyGithub.Blocking.Gist.Gist.GistCommit">
+<em class="property">class </em><tt class="descclassname">Gist.</tt><tt class="descname">GistCommit</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.GistCommit" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Methods and attributes returning instances of this class:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="#PyGithub.Blocking.Gist.Gist.get_commits" title="PyGithub.Blocking.Gist.Gist.get_commits"><tt class="xref py py-meth docutils literal"><span class="pre">Gist.get_commits()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.GistCommit.change_status">
+<tt class="descname">change_status</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.GistCommit.change_status" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#PyGithub.Blocking.Gist.Gist.ChangeStatus" title="PyGithub.Blocking.Gist.Gist.ChangeStatus"><tt class="xref py py-class docutils literal"><span class="pre">ChangeStatus</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.GistCommit.committed_at">
+<tt class="descname">committed_at</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.GistCommit.committed_at" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">datetime</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.GistCommit.url">
+<tt class="descname">url</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.GistCommit.url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.GistCommit.user">
+<tt class="descname">user</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.GistCommit.user" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="User.html#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.GistCommit.version">
+<tt class="descname">version</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.GistCommit.version" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
 </tr>
 </tbody>
 </table>
@@ -381,6 +468,32 @@
 </dd></dl>
 
 <dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.fork_of">
+<tt class="descclassname">Gist.</tt><tt class="descname">fork_of</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.fork_of" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#PyGithub.Blocking.Gist.Gist" title="PyGithub.Blocking.Gist.Gist"><tt class="xref py py-class docutils literal"><span class="pre">Gist</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Gist.Gist.forks">
+<tt class="descclassname">Gist.</tt><tt class="descname">forks</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.forks" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">list</span></tt> of <a class="reference internal" href="#PyGithub.Blocking.Gist.Gist" title="PyGithub.Blocking.Gist.Gist"><tt class="xref py py-class docutils literal"><span class="pre">Gist</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
 <dt id="PyGithub.Blocking.Gist.Gist.forks_url">
 <tt class="descclassname">Gist.</tt><tt class="descname">forks_url</tt><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.forks_url" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
@@ -524,9 +637,125 @@
 </dd></dl>
 
 <dl class="method">
+<dt id="PyGithub.Blocking.Gist.Gist.create_fork">
+<tt class="descclassname">Gist.</tt><tt class="descname">create_fork</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.create_fork" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/gists#fork-a-gist">POST /gists/:id/forks</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#PyGithub.Blocking.Gist.Gist" title="PyGithub.Blocking.Gist.Gist"><tt class="xref py py-class docutils literal"><span class="pre">Gist</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
 <dt id="PyGithub.Blocking.Gist.Gist.delete">
 <tt class="descclassname">Gist.</tt><tt class="descname">delete</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.delete" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/gists#delete-a-gist">DELETE /gists/:id</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Gist.Gist.edit">
+<tt class="descclassname">Gist.</tt><tt class="descname">edit</tt><big>(</big><em>description=None</em>, <em>files=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.edit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/gists#edit-a-gist">PATCH /gists/:id</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>description</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+<li><strong>files</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Gist.Gist.get_commits">
+<tt class="descclassname">Gist.</tt><tt class="descname">get_commits</tt><big>(</big><em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.get_commits" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/gists#list-gist-commits">GET /gists/:id/commits</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>per_page</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../bases.html#PyGithub.Blocking._paginated_list.PaginatedList" title="PyGithub.Blocking._paginated_list.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">PaginatedList</span></tt></a> of <a class="reference internal" href="#PyGithub.Blocking.Gist.Gist.GistCommit" title="PyGithub.Blocking.Gist.Gist.GistCommit"><tt class="xref py py-class docutils literal"><span class="pre">GistCommit</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Gist.Gist.get_forks">
+<tt class="descclassname">Gist.</tt><tt class="descname">get_forks</tt><big>(</big><em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.get_forks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/gists#list-gist-forks">GET /gists/:id/forks</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>per_page</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../bases.html#PyGithub.Blocking._paginated_list.PaginatedList" title="PyGithub.Blocking._paginated_list.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">PaginatedList</span></tt></a> of <a class="reference internal" href="#PyGithub.Blocking.Gist.Gist" title="PyGithub.Blocking.Gist.Gist"><tt class="xref py py-class docutils literal"><span class="pre">Gist</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Gist.Gist.is_starred">
+<tt class="descclassname">Gist.</tt><tt class="descname">is_starred</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.is_starred" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/gists#check-if-a-gist-is-starred">GET /gists/:id/star</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Gist.Gist.reset_starred">
+<tt class="descclassname">Gist.</tt><tt class="descname">reset_starred</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.reset_starred" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/gists#unstar-a-gist">DELETE /gists/:id/star</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Gist.Gist.set_starred">
+<tt class="descclassname">Gist.</tt><tt class="descname">set_starred</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.set_starred" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/gists#star-a-gist">PUT /gists/:id/star</a> end point.</p>
 <p>This is the only method calling this end point.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
