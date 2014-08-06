@@ -1,0 +1,989 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>PullRequest &mdash; PyGithub 2.0.0-alpha.3 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '2.0.0-alpha.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="PyGithub 2.0.0-alpha.3 documentation" href="../../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="Repository" href="Repository.html" />
+    <link rel="prev" title="PublicKey" href="PublicKey.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="Repository.html" title="Repository"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="PublicKey.html" title="PublicKey"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">PyGithub 2.0.0-alpha.3 documentation</a> &raquo;</li>
+          <li><a href="../../reference.html" >Reference documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-PyGithub.Blocking.PullRequest">
+<span id="pullrequest"></span><h1>PullRequest<a class="headerlink" href="#module-PyGithub.Blocking.PullRequest" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest">
+<em class="property">class </em><tt class="descclassname">PyGithub.Blocking.PullRequest.</tt><tt class="descname">PullRequest</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base class: <a class="reference internal" href="../bases.html#PyGithub.Blocking._base_github_object.UpdatableGithubObject" title="PyGithub.Blocking._base_github_object.UpdatableGithubObject"><tt class="xref py py-class docutils literal"><span class="pre">UpdatableGithubObject</span></tt></a></p>
+<p>Derived classes: none.</p>
+<dl class="docutils">
+<dt>Methods and attributes returning instances of this class:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="Issue.html#PyGithub.Blocking.Issue.Issue.create_pull" title="PyGithub.Blocking.Issue.Issue.create_pull"><tt class="xref py py-meth docutils literal"><span class="pre">Issue.create_pull()</span></tt></a></li>
+<li><a class="reference internal" href="Issue.html#PyGithub.Blocking.Issue.Issue.pull_request" title="PyGithub.Blocking.Issue.Issue.pull_request"><tt class="xref py py-attr docutils literal"><span class="pre">Issue.pull_request</span></tt></a></li>
+<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.create_pull" title="PyGithub.Blocking.Repository.Repository.create_pull"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.create_pull()</span></tt></a></li>
+<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.get_pull" title="PyGithub.Blocking.Repository.Repository.get_pull"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_pull()</span></tt></a></li>
+<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.get_pulls" title="PyGithub.Blocking.Repository.Repository.get_pulls"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_pulls()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
+<p>Methods accepting instances of this class as parameter: none.</p>
+<dl class="class">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.End">
+<em class="property">class </em><tt class="descname">End</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.End" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Methods and attributes returning instances of this class:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="#PyGithub.Blocking.PullRequest.PullRequest.base" title="PyGithub.Blocking.PullRequest.PullRequest.base"><tt class="xref py py-attr docutils literal"><span class="pre">PullRequest.base</span></tt></a></li>
+<li><a class="reference internal" href="#PyGithub.Blocking.PullRequest.PullRequest.head" title="PyGithub.Blocking.PullRequest.PullRequest.head"><tt class="xref py py-attr docutils literal"><span class="pre">PullRequest.head</span></tt></a></li>
+</ul>
+</dd>
+</dl>
+<p>Methods accepting instances of this class as parameter: none.</p>
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.End.label">
+<tt class="descname">label</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.End.label" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.End.ref">
+<tt class="descname">ref</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.End.ref" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.End.repo">
+<tt class="descname">repo</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.End.repo" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.End.sha">
+<tt class="descname">sha</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.End.sha" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.End.user">
+<tt class="descname">user</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.End.user" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="User.html#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.File">
+<em class="property">class </em><tt class="descclassname">PullRequest.</tt><tt class="descname">File</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.File" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Methods and attributes returning instances of this class:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="#PyGithub.Blocking.PullRequest.PullRequest.get_files" title="PyGithub.Blocking.PullRequest.PullRequest.get_files"><tt class="xref py py-meth docutils literal"><span class="pre">PullRequest.get_files()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
+<p>Methods accepting instances of this class as parameter: none.</p>
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.File.additions">
+<tt class="descname">additions</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.File.additions" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.File.blob_url">
+<tt class="descname">blob_url</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.File.blob_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.File.changes">
+<tt class="descname">changes</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.File.changes" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.File.contents_url">
+<tt class="descname">contents_url</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.File.contents_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.File.deletions">
+<tt class="descname">deletions</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.File.deletions" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.File.filename">
+<tt class="descname">filename</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.File.filename" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.File.patch">
+<tt class="descname">patch</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.File.patch" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.File.raw_url">
+<tt class="descname">raw_url</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.File.raw_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.File.sha">
+<tt class="descname">sha</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.File.sha" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.File.status">
+<tt class="descname">status</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.File.status" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.MergeResult">
+<em class="property">class </em><tt class="descclassname">PullRequest.</tt><tt class="descname">MergeResult</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.MergeResult" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Methods and attributes returning instances of this class:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="#PyGithub.Blocking.PullRequest.PullRequest.merge" title="PyGithub.Blocking.PullRequest.PullRequest.merge"><tt class="xref py py-meth docutils literal"><span class="pre">PullRequest.merge()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
+<p>Methods accepting instances of this class as parameter: none.</p>
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.MergeResult.merged">
+<tt class="descname">merged</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.MergeResult.merged" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.MergeResult.message">
+<tt class="descname">message</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.MergeResult.message" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.MergeResult.sha">
+<tt class="descname">sha</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.MergeResult.sha" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.additions">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">additions</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.additions" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.assignee">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">assignee</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.assignee" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="User.html#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.base">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">base</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.base" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#PyGithub.Blocking.PullRequest.PullRequest.End" title="PyGithub.Blocking.PullRequest.PullRequest.End"><tt class="xref py py-class docutils literal"><span class="pre">PullRequest.End</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.body">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">body</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.body" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.body_html">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">body_html</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.body_html" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.body_text">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">body_text</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.body_text" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.changed_files">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">changed_files</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.changed_files" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.closed_at">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">closed_at</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.closed_at" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">datetime</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.comments">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">comments</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.comments" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.comments_url">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">comments_url</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.comments_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.commits">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">commits</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.commits" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.commits_url">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">commits_url</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.commits_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.created_at">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">created_at</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.created_at" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">datetime</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.deletions">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">deletions</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.deletions" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.diff_url">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">diff_url</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.diff_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.head">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">head</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.head" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#PyGithub.Blocking.PullRequest.PullRequest.End" title="PyGithub.Blocking.PullRequest.PullRequest.End"><tt class="xref py py-class docutils literal"><span class="pre">PullRequest.End</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.html_url">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">html_url</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.html_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.id">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">id</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.id" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.issue_url">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">issue_url</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.issue_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.merge_commit_sha">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">merge_commit_sha</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.merge_commit_sha" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.mergeable">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">mergeable</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.mergeable" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.mergeable_state">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">mergeable_state</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.mergeable_state" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.merged">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">merged</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.merged" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.merged_at">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">merged_at</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.merged_at" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">datetime</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.merged_by">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">merged_by</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.merged_by" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="User.html#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.milestone">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">milestone</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.milestone" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="Milestone.html#PyGithub.Blocking.Milestone.Milestone" title="PyGithub.Blocking.Milestone.Milestone"><tt class="xref py py-class docutils literal"><span class="pre">Milestone</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.number">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">number</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.number" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.patch_url">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">patch_url</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.patch_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.review_comment_url">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">review_comment_url</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.review_comment_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.review_comments">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">review_comments</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.review_comments" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.review_comments_url">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">review_comments_url</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.review_comments_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.state">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">state</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.state" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.statuses_url">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">statuses_url</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.statuses_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.title">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">title</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.title" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.updated_at">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">updated_at</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.updated_at" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">datetime</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.user">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">user</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.user" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="User.html#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.edit">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">edit</tt><big>(</big><em>title=None</em>, <em>body=None</em>, <em>state=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.edit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/pulls#update-a-pull-request">PATCH /repos/:owner/:repo/pulls/:number</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>title</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+<li><strong>body</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> or <tt class="xref py py-class docutils literal"><span class="pre">Reset</span></tt></li>
+<li><strong>state</strong> &#8211; optional &#8220;closed&#8221; or &#8220;open&#8221;</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.get_commits">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">get_commits</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.get_commits" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/pulls#list-commits-on-a-pull-request">GET /repos/:owner/:repo/pulls/:number/commits</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">list</span></tt> of <a class="reference internal" href="Commit.html#PyGithub.Blocking.Commit.Commit" title="PyGithub.Blocking.Commit.Commit"><tt class="xref py py-class docutils literal"><span class="pre">Commit</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.get_files">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">get_files</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.get_files" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/pulls#list-pull-requests-files">GET /repos/:owner/:repo/pulls/:number/files</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">list</span></tt> of <a class="reference internal" href="#PyGithub.Blocking.PullRequest.PullRequest.File" title="PyGithub.Blocking.PullRequest.PullRequest.File"><tt class="xref py py-class docutils literal"><span class="pre">PullRequest.File</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.get_is_merged">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">get_is_merged</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.get_is_merged" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/pulls#get-if-a-pull-request-has-been-merged">GET /repos/:owner/:repo/pulls/:number/merge</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.get_issue">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">get_issue</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.get_issue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/issues#get-a-single-issue">GET /repos/:owner/:repo/issues/:number</a> end point.</p>
+<dl class="docutils">
+<dt>The following methods also call this end point:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.get_issue" title="PyGithub.Blocking.Repository.Repository.get_issue"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_issue()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Issue.html#PyGithub.Blocking.Issue.Issue" title="PyGithub.Blocking.Issue.Issue"><tt class="xref py py-class docutils literal"><span class="pre">Issue</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.merge">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">merge</tt><big>(</big><em>commit_message=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.merge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/pulls#merge-a-pull-request-merge-button">PUT /repos/:owner/:repo/pulls/:number/merge</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>commit_message</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#PyGithub.Blocking.PullRequest.PullRequest.MergeResult" title="PyGithub.Blocking.PullRequest.PullRequest.MergeResult"><tt class="xref py py-class docutils literal"><span class="pre">PullRequest.MergeResult</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="PublicKey.html"
+                        title="previous chapter">PublicKey</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="Repository.html"
+                        title="next chapter">Repository</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/reference/classes/PullRequest.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="Repository.html" title="Repository"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="PublicKey.html" title="PublicKey"
+             >previous</a> |</li>
+        <li><a href="../../index.html">PyGithub 2.0.0-alpha.3 documentation</a> &raquo;</li>
+          <li><a href="../../reference.html" >Reference documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013-2014, Vincent Jacques.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>

@@ -61,11 +61,10 @@
 <dl class="class">
 <dt id="PyGithub.Blocking.User.User">
 <em class="property">class </em><tt class="descclassname">PyGithub.Blocking.User.</tt><tt class="descname">User</tt><a class="headerlink" href="#PyGithub.Blocking.User.User" title="Permalink to this definition">¶</a></dt>
-<dd><p>Base class: <a class="reference internal" href="Entity.html#PyGithub.Blocking.Entity.Entity" title="PyGithub.Blocking.Entity.Entity"><tt class="xref py py-class docutils literal"><span class="pre">Entity</span></tt></a></p>
+<dd><p>Base class: <a class="reference internal" href="../bases.html#PyGithub.Blocking._base_github_object.UpdatableGithubObject" title="PyGithub.Blocking._base_github_object.UpdatableGithubObject"><tt class="xref py py-class docutils literal"><span class="pre">UpdatableGithubObject</span></tt></a></p>
 <dl class="docutils">
 <dt>Derived classes:</dt>
 <dd><ul class="first last simple">
-<li><a class="reference internal" href="AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser"><tt class="xref py py-class docutils literal"><span class="pre">AuthenticatedUser</span></tt></a></li>
 <li><a class="reference internal" href="Contributor.html#PyGithub.Blocking.Contributor.Contributor" title="PyGithub.Blocking.Contributor.Contributor"><tt class="xref py py-class docutils literal"><span class="pre">Contributor</span></tt></a></li>
 </ul>
 </dd>
@@ -73,18 +72,24 @@
 <dd><ul class="first last simple">
 <li><a class="reference internal" href="AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_followers" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_followers"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.get_followers()</span></tt></a></li>
 <li><a class="reference internal" href="AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_following" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_following"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.get_following()</span></tt></a></li>
+<li><a class="reference internal" href="Commit.html#PyGithub.Blocking.Commit.Commit.author" title="PyGithub.Blocking.Commit.Commit.author"><tt class="xref py py-attr docutils literal"><span class="pre">Commit.author</span></tt></a></li>
+<li><a class="reference internal" href="Commit.html#PyGithub.Blocking.Commit.Commit.committer" title="PyGithub.Blocking.Commit.Commit.committer"><tt class="xref py py-attr docutils literal"><span class="pre">Commit.committer</span></tt></a></li>
+<li><a class="reference internal" href="Gist.html#PyGithub.Blocking.Gist.Gist.Commit.user" title="PyGithub.Blocking.Gist.Gist.Commit.user"><tt class="xref py py-attr docutils literal"><span class="pre">Gist.Commit.user</span></tt></a></li>
+<li><a class="reference internal" href="Gist.html#PyGithub.Blocking.Gist.Gist.HistoryElement.user" title="PyGithub.Blocking.Gist.Gist.HistoryElement.user"><tt class="xref py py-attr docutils literal"><span class="pre">Gist.HistoryElement.user</span></tt></a></li>
 <li><a class="reference internal" href="Gist.html#PyGithub.Blocking.Gist.Gist.owner" title="PyGithub.Blocking.Gist.Gist.owner"><tt class="xref py py-attr docutils literal"><span class="pre">Gist.owner</span></tt></a></li>
 <li><a class="reference internal" href="Gist.html#PyGithub.Blocking.Gist.Gist.user" title="PyGithub.Blocking.Gist.Gist.user"><tt class="xref py py-attr docutils literal"><span class="pre">Gist.user</span></tt></a></li>
-<li><a class="reference internal" href="Gist.html#PyGithub.Blocking.Gist.Gist.GistCommit.user" title="PyGithub.Blocking.Gist.Gist.GistCommit.user"><tt class="xref py py-attr docutils literal"><span class="pre">GistCommit.user</span></tt></a></li>
 <li><a class="reference internal" href="Github.html#PyGithub.Blocking.Github.Github.get_user" title="PyGithub.Blocking.Github.Github.get_user"><tt class="xref py py-meth docutils literal"><span class="pre">Github.get_user()</span></tt></a></li>
 <li><a class="reference internal" href="Github.html#PyGithub.Blocking.Github.Github.get_users" title="PyGithub.Blocking.Github.Github.get_users"><tt class="xref py py-meth docutils literal"><span class="pre">Github.get_users()</span></tt></a></li>
-<li><a class="reference internal" href="Gist.html#PyGithub.Blocking.Gist.Gist.HistoryElement.user" title="PyGithub.Blocking.Gist.Gist.HistoryElement.user"><tt class="xref py py-attr docutils literal"><span class="pre">HistoryElement.user</span></tt></a></li>
 <li><a class="reference internal" href="Issue.html#PyGithub.Blocking.Issue.Issue.assignee" title="PyGithub.Blocking.Issue.Issue.assignee"><tt class="xref py py-attr docutils literal"><span class="pre">Issue.assignee</span></tt></a></li>
 <li><a class="reference internal" href="Issue.html#PyGithub.Blocking.Issue.Issue.closed_by" title="PyGithub.Blocking.Issue.Issue.closed_by"><tt class="xref py py-attr docutils literal"><span class="pre">Issue.closed_by</span></tt></a></li>
 <li><a class="reference internal" href="Issue.html#PyGithub.Blocking.Issue.Issue.user" title="PyGithub.Blocking.Issue.Issue.user"><tt class="xref py py-attr docutils literal"><span class="pre">Issue.user</span></tt></a></li>
 <li><a class="reference internal" href="Milestone.html#PyGithub.Blocking.Milestone.Milestone.creator" title="PyGithub.Blocking.Milestone.Milestone.creator"><tt class="xref py py-attr docutils literal"><span class="pre">Milestone.creator</span></tt></a></li>
 <li><a class="reference internal" href="Organization.html#PyGithub.Blocking.Organization.Organization.get_members" title="PyGithub.Blocking.Organization.Organization.get_members"><tt class="xref py py-meth docutils literal"><span class="pre">Organization.get_members()</span></tt></a></li>
 <li><a class="reference internal" href="Organization.html#PyGithub.Blocking.Organization.Organization.get_public_members" title="PyGithub.Blocking.Organization.Organization.get_public_members"><tt class="xref py py-meth docutils literal"><span class="pre">Organization.get_public_members()</span></tt></a></li>
+<li><a class="reference internal" href="PullRequest.html#PyGithub.Blocking.PullRequest.PullRequest.End.user" title="PyGithub.Blocking.PullRequest.PullRequest.End.user"><tt class="xref py py-attr docutils literal"><span class="pre">PullRequest.End.user</span></tt></a></li>
+<li><a class="reference internal" href="PullRequest.html#PyGithub.Blocking.PullRequest.PullRequest.assignee" title="PyGithub.Blocking.PullRequest.PullRequest.assignee"><tt class="xref py py-attr docutils literal"><span class="pre">PullRequest.assignee</span></tt></a></li>
+<li><a class="reference internal" href="PullRequest.html#PyGithub.Blocking.PullRequest.PullRequest.merged_by" title="PyGithub.Blocking.PullRequest.PullRequest.merged_by"><tt class="xref py py-attr docutils literal"><span class="pre">PullRequest.merged_by</span></tt></a></li>
+<li><a class="reference internal" href="PullRequest.html#PyGithub.Blocking.PullRequest.PullRequest.user" title="PyGithub.Blocking.PullRequest.PullRequest.user"><tt class="xref py py-attr docutils literal"><span class="pre">PullRequest.user</span></tt></a></li>
 <li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.get_assignees" title="PyGithub.Blocking.Repository.Repository.get_assignees"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_assignees()</span></tt></a></li>
 <li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.get_collaborators" title="PyGithub.Blocking.Repository.Repository.get_collaborators"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_collaborators()</span></tt></a></li>
 <li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.get_stargazers" title="PyGithub.Blocking.Repository.Repository.get_stargazers"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_stargazers()</span></tt></a></li>
@@ -95,10 +100,99 @@
 <li><a class="reference internal" href="#PyGithub.Blocking.User.User.get_following" title="PyGithub.Blocking.User.User.get_following"><tt class="xref py py-meth docutils literal"><span class="pre">User.get_following()</span></tt></a></li>
 </ul>
 </dd>
+<dt>Methods accepting instances of this class as parameter:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.add_to_following" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.add_to_following"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.add_to_following()</span></tt></a></li>
+<li><a class="reference internal" href="AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.has_in_following" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.has_in_following"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.has_in_following()</span></tt></a></li>
+<li><a class="reference internal" href="AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.remove_from_following" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.remove_from_following"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.remove_from_following()</span></tt></a></li>
+<li><a class="reference internal" href="Github.html#PyGithub.Blocking.Github.Github.get_users" title="PyGithub.Blocking.Github.Github.get_users"><tt class="xref py py-meth docutils literal"><span class="pre">Github.get_users()</span></tt></a></li>
+<li><a class="reference internal" href="Issue.html#PyGithub.Blocking.Issue.Issue.edit" title="PyGithub.Blocking.Issue.Issue.edit"><tt class="xref py py-meth docutils literal"><span class="pre">Issue.edit()</span></tt></a></li>
+<li><a class="reference internal" href="Organization.html#PyGithub.Blocking.Organization.Organization.has_in_members" title="PyGithub.Blocking.Organization.Organization.has_in_members"><tt class="xref py py-meth docutils literal"><span class="pre">Organization.has_in_members()</span></tt></a></li>
+<li><a class="reference internal" href="Organization.html#PyGithub.Blocking.Organization.Organization.has_in_public_members" title="PyGithub.Blocking.Organization.Organization.has_in_public_members"><tt class="xref py py-meth docutils literal"><span class="pre">Organization.has_in_public_members()</span></tt></a></li>
+<li><a class="reference internal" href="Organization.html#PyGithub.Blocking.Organization.Organization.remove_from_members" title="PyGithub.Blocking.Organization.Organization.remove_from_members"><tt class="xref py py-meth docutils literal"><span class="pre">Organization.remove_from_members()</span></tt></a></li>
+<li><a class="reference internal" href="Organization.html#PyGithub.Blocking.Organization.Organization.remove_from_public_members" title="PyGithub.Blocking.Organization.Organization.remove_from_public_members"><tt class="xref py py-meth docutils literal"><span class="pre">Organization.remove_from_public_members()</span></tt></a></li>
+<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.add_to_collaborators" title="PyGithub.Blocking.Repository.Repository.add_to_collaborators"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.add_to_collaborators()</span></tt></a></li>
+<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.create_issue" title="PyGithub.Blocking.Repository.Repository.create_issue"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.create_issue()</span></tt></a></li>
+<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.get_commits" title="PyGithub.Blocking.Repository.Repository.get_commits"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_commits()</span></tt></a></li>
+<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.get_issues" title="PyGithub.Blocking.Repository.Repository.get_issues"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_issues()</span></tt></a></li>
+<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.has_in_assignees" title="PyGithub.Blocking.Repository.Repository.has_in_assignees"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.has_in_assignees()</span></tt></a></li>
+<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.has_in_collaborators" title="PyGithub.Blocking.Repository.Repository.has_in_collaborators"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.has_in_collaborators()</span></tt></a></li>
+<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.remove_from_collaborators" title="PyGithub.Blocking.Repository.Repository.remove_from_collaborators"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.remove_from_collaborators()</span></tt></a></li>
+<li><a class="reference internal" href="Team.html#PyGithub.Blocking.Team.Team.add_to_members" title="PyGithub.Blocking.Team.Team.add_to_members"><tt class="xref py py-meth docutils literal"><span class="pre">Team.add_to_members()</span></tt></a></li>
+<li><a class="reference internal" href="Team.html#PyGithub.Blocking.Team.Team.has_in_members" title="PyGithub.Blocking.Team.Team.has_in_members"><tt class="xref py py-meth docutils literal"><span class="pre">Team.has_in_members()</span></tt></a></li>
+<li><a class="reference internal" href="Team.html#PyGithub.Blocking.Team.Team.remove_from_members" title="PyGithub.Blocking.Team.Team.remove_from_members"><tt class="xref py py-meth docutils literal"><span class="pre">Team.remove_from_members()</span></tt></a></li>
+<li><a class="reference internal" href="#PyGithub.Blocking.User.User.has_in_following" title="PyGithub.Blocking.User.User.has_in_following"><tt class="xref py py-meth docutils literal"><span class="pre">User.has_in_following()</span></tt></a></li>
+</ul>
+</dd>
 </dl>
+<dl class="class">
+<dt id="PyGithub.Blocking.User.User.Key">
+<em class="property">class </em><tt class="descname">Key</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.Key" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Methods and attributes returning instances of this class:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="#PyGithub.Blocking.User.User.get_keys" title="PyGithub.Blocking.User.User.get_keys"><tt class="xref py py-meth docutils literal"><span class="pre">User.get_keys()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
+<p>Methods accepting instances of this class as parameter: none.</p>
 <dl class="attribute">
-<dt id="PyGithub.Blocking.User.User.followers_url">
-<tt class="descname">followers_url</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.followers_url" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking.User.User.Key.id">
+<tt class="descname">id</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.Key.id" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.Key.key">
+<tt class="descname">key</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.Key.key" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyGithub.Blocking.User.User.Plan">
+<em class="property">class </em><tt class="descclassname">User.</tt><tt class="descname">Plan</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.Plan" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Methods and attributes returning instances of this class:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.plan" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.plan"><tt class="xref py py-attr docutils literal"><span class="pre">AuthenticatedUser.plan</span></tt></a></li>
+<li><a class="reference internal" href="Organization.html#PyGithub.Blocking.Organization.Organization.plan" title="PyGithub.Blocking.Organization.Organization.plan"><tt class="xref py py-attr docutils literal"><span class="pre">Organization.plan</span></tt></a></li>
+<li><a class="reference internal" href="#PyGithub.Blocking.User.User.plan" title="PyGithub.Blocking.User.User.plan"><tt class="xref py py-attr docutils literal"><span class="pre">User.plan</span></tt></a></li>
+</ul>
+</dd>
+</dl>
+<p>Methods accepting instances of this class as parameter: none.</p>
+<dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.Plan.collaborators">
+<tt class="descname">collaborators</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.Plan.collaborators" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.Plan.name">
+<tt class="descname">name</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.Plan.name" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -110,8 +204,179 @@
 </dd></dl>
 
 <dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.Plan.private_repos">
+<tt class="descname">private_repos</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.Plan.private_repos" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.Plan.space">
+<tt class="descname">space</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.Plan.space" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.avatar_url">
+<tt class="descclassname">User.</tt><tt class="descname">avatar_url</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.avatar_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.blog">
+<tt class="descclassname">User.</tt><tt class="descname">blog</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.blog" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.collaborators">
+<tt class="descclassname">User.</tt><tt class="descname">collaborators</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.collaborators" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.company">
+<tt class="descclassname">User.</tt><tt class="descname">company</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.company" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.created_at">
+<tt class="descclassname">User.</tt><tt class="descname">created_at</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.created_at" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">datetime</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.disk_usage">
+<tt class="descclassname">User.</tt><tt class="descname">disk_usage</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.disk_usage" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.email">
+<tt class="descclassname">User.</tt><tt class="descname">email</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.email" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.events_url">
+<tt class="descclassname">User.</tt><tt class="descname">events_url</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.events_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.followers">
+<tt class="descclassname">User.</tt><tt class="descname">followers</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.followers" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.followers_url">
+<tt class="descclassname">User.</tt><tt class="descname">followers_url</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.followers_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.following">
+<tt class="descclassname">User.</tt><tt class="descname">following</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.following" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
 <dt id="PyGithub.Blocking.User.User.following_url">
-<tt class="descname">following_url</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.following_url" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">User.</tt><tt class="descname">following_url</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.following_url" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -124,7 +389,7 @@
 
 <dl class="attribute">
 <dt id="PyGithub.Blocking.User.User.gists_url">
-<tt class="descname">gists_url</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.gists_url" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">User.</tt><tt class="descname">gists_url</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.gists_url" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -137,7 +402,7 @@
 
 <dl class="attribute">
 <dt id="PyGithub.Blocking.User.User.gravatar_id">
-<tt class="descname">gravatar_id</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.gravatar_id" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">User.</tt><tt class="descname">gravatar_id</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.gravatar_id" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -150,7 +415,7 @@
 
 <dl class="attribute">
 <dt id="PyGithub.Blocking.User.User.hireable">
-<tt class="descname">hireable</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.hireable" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">User.</tt><tt class="descname">hireable</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.hireable" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -162,8 +427,8 @@
 </dd></dl>
 
 <dl class="attribute">
-<dt id="PyGithub.Blocking.User.User.organizations_url">
-<tt class="descname">organizations_url</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.organizations_url" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking.User.User.html_url">
+<tt class="descclassname">User.</tt><tt class="descname">html_url</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.html_url" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -175,8 +440,151 @@
 </dd></dl>
 
 <dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.id">
+<tt class="descclassname">User.</tt><tt class="descname">id</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.id" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.location">
+<tt class="descclassname">User.</tt><tt class="descname">location</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.location" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.login">
+<tt class="descclassname">User.</tt><tt class="descname">login</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.login" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.name">
+<tt class="descclassname">User.</tt><tt class="descname">name</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.organizations_url">
+<tt class="descclassname">User.</tt><tt class="descname">organizations_url</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.organizations_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.owned_private_repos">
+<tt class="descclassname">User.</tt><tt class="descname">owned_private_repos</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.owned_private_repos" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.plan">
+<tt class="descclassname">User.</tt><tt class="descname">plan</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.plan" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#PyGithub.Blocking.User.User.Plan" title="PyGithub.Blocking.User.User.Plan"><tt class="xref py py-class docutils literal"><span class="pre">User.Plan</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.private_gists">
+<tt class="descclassname">User.</tt><tt class="descname">private_gists</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.private_gists" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.public_gists">
+<tt class="descclassname">User.</tt><tt class="descname">public_gists</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.public_gists" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.public_repos">
+<tt class="descclassname">User.</tt><tt class="descname">public_repos</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.public_repos" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
 <dt id="PyGithub.Blocking.User.User.received_events_url">
-<tt class="descname">received_events_url</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.received_events_url" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">User.</tt><tt class="descname">received_events_url</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.received_events_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.repos_url">
+<tt class="descclassname">User.</tt><tt class="descname">repos_url</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.repos_url" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -189,7 +597,7 @@
 
 <dl class="attribute">
 <dt id="PyGithub.Blocking.User.User.site_admin">
-<tt class="descname">site_admin</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.site_admin" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">User.</tt><tt class="descname">site_admin</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.site_admin" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -202,7 +610,7 @@
 
 <dl class="attribute">
 <dt id="PyGithub.Blocking.User.User.starred_url">
-<tt class="descname">starred_url</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.starred_url" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">User.</tt><tt class="descname">starred_url</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.starred_url" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -215,7 +623,7 @@
 
 <dl class="attribute">
 <dt id="PyGithub.Blocking.User.User.subscriptions_url">
-<tt class="descname">subscriptions_url</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.subscriptions_url" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">User.</tt><tt class="descname">subscriptions_url</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.subscriptions_url" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -226,9 +634,61 @@
 </table>
 </dd></dl>
 
+<dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.suspended_at">
+<tt class="descclassname">User.</tt><tt class="descname">suspended_at</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.suspended_at" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">datetime</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.total_private_repos">
+<tt class="descclassname">User.</tt><tt class="descname">total_private_repos</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.total_private_repos" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.type">
+<tt class="descclassname">User.</tt><tt class="descname">type</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.type" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.User.User.updated_at">
+<tt class="descclassname">User.</tt><tt class="descname">updated_at</tt><a class="headerlink" href="#PyGithub.Blocking.User.User.updated_at" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">datetime</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
 <dl class="method">
 <dt id="PyGithub.Blocking.User.User.get_followers">
-<tt class="descname">get_followers</tt><big>(</big><em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.User.User.get_followers" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">User.</tt><tt class="descname">get_followers</tt><big>(</big><em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.User.User.get_followers" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/users/followers#list-followers-of-a-user">GET /users/:username/followers</a> end point.</p>
 <p>This is the only method calling this end point.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -245,7 +705,7 @@
 
 <dl class="method">
 <dt id="PyGithub.Blocking.User.User.get_following">
-<tt class="descname">get_following</tt><big>(</big><em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.User.User.get_following" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">User.</tt><tt class="descname">get_following</tt><big>(</big><em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.User.User.get_following" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/users/followers#list-users-followed-by-another-user">GET /users/:username/following</a> end point.</p>
 <p>This is the only method calling this end point.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -262,7 +722,7 @@
 
 <dl class="method">
 <dt id="PyGithub.Blocking.User.User.get_gists">
-<tt class="descname">get_gists</tt><big>(</big><em>since=None</em>, <em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.User.User.get_gists" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">User.</tt><tt class="descname">get_gists</tt><big>(</big><em>since=None</em>, <em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.User.User.get_gists" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/gists#list-gists">GET /users/:username/gists</a> end point.</p>
 <p>This is the only method calling this end point.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -284,14 +744,14 @@
 
 <dl class="method">
 <dt id="PyGithub.Blocking.User.User.get_keys">
-<tt class="descname">get_keys</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.User.User.get_keys" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">User.</tt><tt class="descname">get_keys</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.User.User.get_keys" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/users/keys#list-public-keys-for-a-user">GET /users/:username/keys</a> end point.</p>
 <p>This is the only method calling this end point.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">list</span></tt> of <a class="reference internal" href="PublicKey.html#PyGithub.Blocking.PublicKey.PublicKey" title="PyGithub.Blocking.PublicKey.PublicKey"><tt class="xref py py-class docutils literal"><span class="pre">PublicKey</span></tt></a></td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">list</span></tt> of <a class="reference internal" href="#PyGithub.Blocking.User.User.Key" title="PyGithub.Blocking.User.User.Key"><tt class="xref py py-class docutils literal"><span class="pre">User.Key</span></tt></a></td>
 </tr>
 </tbody>
 </table>
@@ -299,7 +759,7 @@
 
 <dl class="method">
 <dt id="PyGithub.Blocking.User.User.get_orgs">
-<tt class="descname">get_orgs</tt><big>(</big><em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.User.User.get_orgs" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">User.</tt><tt class="descname">get_orgs</tt><big>(</big><em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.User.User.get_orgs" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/orgs#list-user-organizations">GET /users/:username/orgs</a> end point.</p>
 <p>This is the only method calling this end point.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -316,7 +776,7 @@
 
 <dl class="method">
 <dt id="PyGithub.Blocking.User.User.get_repo">
-<tt class="descname">get_repo</tt><big>(</big><em>repo</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.User.User.get_repo" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">User.</tt><tt class="descname">get_repo</tt><big>(</big><em>repo</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.User.User.get_repo" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/repos#get">GET /repos/:owner/:repo</a> end point.</p>
 <dl class="docutils">
 <dt>The following methods also call this end point:</dt>
@@ -341,7 +801,7 @@
 
 <dl class="method">
 <dt id="PyGithub.Blocking.User.User.get_repos">
-<tt class="descname">get_repos</tt><big>(</big><em>sort=None</em>, <em>direction=None</em>, <em>type=None</em>, <em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.User.User.get_repos" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">User.</tt><tt class="descname">get_repos</tt><big>(</big><em>type=None</em>, <em>sort=None</em>, <em>direction=None</em>, <em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.User.User.get_repos" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/repos#list-user-repositories">GET /users/:username/repos</a> end point.</p>
 <p>This is the only method calling this end point.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -349,9 +809,9 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>sort</strong> &#8211; optional &#8220;created&#8221; or &#8220;updated&#8221; or &#8220;pushed&#8221; or &#8220;full_name&#8221;</li>
+<li><strong>type</strong> &#8211; optional &#8220;all&#8221; or &#8220;forks&#8221; or &#8220;member&#8221; or &#8220;owner&#8221; or &#8220;sources&#8221;</li>
+<li><strong>sort</strong> &#8211; optional &#8220;created&#8221; or &#8220;full_name&#8221; or &#8220;pushed&#8221; or &#8220;updated&#8221;</li>
 <li><strong>direction</strong> &#8211; optional &#8220;asc&#8221; or &#8220;desc&#8221;</li>
-<li><strong>type</strong> &#8211; optional &#8220;all&#8221; or &#8220;owner&#8221; or &#8220;forks&#8221; or &#8220;sources&#8221; or &#8220;member&#8221;</li>
 <li><strong>per_page</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></li>
 </ul>
 </td>
@@ -365,7 +825,7 @@
 
 <dl class="method">
 <dt id="PyGithub.Blocking.User.User.get_starred">
-<tt class="descname">get_starred</tt><big>(</big><em>sort=None</em>, <em>direction=None</em>, <em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.User.User.get_starred" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">User.</tt><tt class="descname">get_starred</tt><big>(</big><em>sort=None</em>, <em>direction=None</em>, <em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.User.User.get_starred" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/activity/starring#list-repositories-being-starred">GET /users/:username/starred</a> end point.</p>
 <p>This is the only method calling this end point.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -388,7 +848,7 @@
 
 <dl class="method">
 <dt id="PyGithub.Blocking.User.User.get_subscriptions">
-<tt class="descname">get_subscriptions</tt><big>(</big><em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.User.User.get_subscriptions" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">User.</tt><tt class="descname">get_subscriptions</tt><big>(</big><em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.User.User.get_subscriptions" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/activity/watching#list-repositories-being-watched">GET /users/:username/subscriptions</a> end point.</p>
 <p>This is the only method calling this end point.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -405,14 +865,14 @@
 
 <dl class="method">
 <dt id="PyGithub.Blocking.User.User.has_in_following">
-<tt class="descname">has_in_following</tt><big>(</big><em>target_user</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.User.User.has_in_following" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">User.</tt><tt class="descname">has_in_following</tt><big>(</big><em>target_user</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.User.User.has_in_following" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/users/followers#check-if-one-user-follows-another">GET /users/:username/following/:target_user</a> end point.</p>
 <p>This is the only method calling this end point.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>target_user</strong> &#8211; mandatory <a class="reference internal" href="#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <tt class="xref py py-attr docutils literal"><span class="pre">User.login</span></tt>)</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>target_user</strong> &#8211; mandatory <a class="reference internal" href="#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="#PyGithub.Blocking.User.User.login" title="PyGithub.Blocking.User.User.login"><tt class="xref py py-attr docutils literal"><span class="pre">User.login</span></tt></a>) or <a class="reference internal" href="AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser"><tt class="xref py py-class docutils literal"><span class="pre">AuthenticatedUser</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.login" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.login"><tt class="xref py py-attr docutils literal"><span class="pre">AuthenticatedUser.login</span></tt></a>)</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
 </tr>

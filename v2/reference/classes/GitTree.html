@@ -27,7 +27,7 @@
     <link rel="top" title="PyGithub 2.0.0-alpha.3 documentation" href="../../index.html" />
     <link rel="up" title="Classes" href="../classes.html" />
     <link rel="next" title="Github" href="Github.html" />
-    <link rel="prev" title="GitCommit" href="GitCommit.html" /> 
+    <link rel="prev" title="GitTag" href="GitTag.html" /> 
   </head>
   <body>
     <div class="related">
@@ -43,7 +43,7 @@
           <a href="Github.html" title="Github"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="GitCommit.html" title="GitCommit"
+          <a href="GitTag.html" title="GitTag"
              accesskey="P">previous</a> |</li>
         <li><a href="../../index.html">PyGithub 2.0.0-alpha.3 documentation</a> &raquo;</li>
           <li><a href="../../reference.html" >Reference documentation</a> &raquo;</li>
@@ -67,8 +67,17 @@
 <dt>Methods and attributes returning instances of this class:</dt>
 <dd><ul class="first last simple">
 <li><a class="reference internal" href="GitCommit.html#PyGithub.Blocking.GitCommit.GitCommit.tree" title="PyGithub.Blocking.GitCommit.GitCommit.tree"><tt class="xref py py-attr docutils literal"><span class="pre">GitCommit.tree</span></tt></a></li>
+<li><a class="reference internal" href="GitRef.html#PyGithub.Blocking.GitRef.GitRef.object" title="PyGithub.Blocking.GitRef.GitRef.object"><tt class="xref py py-attr docutils literal"><span class="pre">GitRef.object</span></tt></a></li>
+<li><a class="reference internal" href="GitTag.html#PyGithub.Blocking.GitTag.GitTag.object" title="PyGithub.Blocking.GitTag.GitTag.object"><tt class="xref py py-attr docutils literal"><span class="pre">GitTag.object</span></tt></a></li>
+<li><a class="reference internal" href="#PyGithub.Blocking.GitTree.GitTree.create_modified_copy" title="PyGithub.Blocking.GitTree.GitTree.create_modified_copy"><tt class="xref py py-meth docutils literal"><span class="pre">GitTree.create_modified_copy()</span></tt></a></li>
 <li><a class="reference internal" href="#PyGithub.Blocking.GitTree.GitTree.tree" title="PyGithub.Blocking.GitTree.GitTree.tree"><tt class="xref py py-attr docutils literal"><span class="pre">GitTree.tree</span></tt></a></li>
+<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.create_git_tree" title="PyGithub.Blocking.Repository.Repository.create_git_tree"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.create_git_tree()</span></tt></a></li>
 <li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.get_git_tree" title="PyGithub.Blocking.Repository.Repository.get_git_tree"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_git_tree()</span></tt></a></li>
+</ul>
+</dd>
+<dt>Methods accepting instances of this class as parameter:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.create_git_commit" title="PyGithub.Blocking.Repository.Repository.create_git_commit"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.create_git_commit()</span></tt></a></li>
 </ul>
 </dd>
 </dl>
@@ -82,6 +91,7 @@
 </ul>
 </dd>
 </dl>
+<p>Methods accepting instances of this class as parameter: none.</p>
 <dl class="attribute">
 <dt id="PyGithub.Blocking.GitTree.GitTree.GitSubmodule.mode">
 <tt class="descname">mode</tt><a class="headerlink" href="#PyGithub.Blocking.GitTree.GitTree.GitSubmodule.mode" title="Permalink to this definition">¶</a></dt>
@@ -182,7 +192,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">list</span></tt> of <a class="reference internal" href="#PyGithub.Blocking.GitTree.GitTree" title="PyGithub.Blocking.GitTree.GitTree"><tt class="xref py py-class docutils literal"><span class="pre">GitTree</span></tt></a> or <a class="reference internal" href="GitBlob.html#PyGithub.Blocking.GitBlob.GitBlob" title="PyGithub.Blocking.GitBlob.GitBlob"><tt class="xref py py-class docutils literal"><span class="pre">GitBlob</span></tt></a> or <a class="reference internal" href="#PyGithub.Blocking.GitTree.GitTree.GitSubmodule" title="PyGithub.Blocking.GitTree.GitTree.GitSubmodule"><tt class="xref py py-class docutils literal"><span class="pre">GitSubmodule</span></tt></a></td>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">list</span></tt> of <a class="reference internal" href="#PyGithub.Blocking.GitTree.GitTree" title="PyGithub.Blocking.GitTree.GitTree"><tt class="xref py py-class docutils literal"><span class="pre">GitTree</span></tt></a> or <a class="reference internal" href="GitBlob.html#PyGithub.Blocking.GitBlob.GitBlob" title="PyGithub.Blocking.GitBlob.GitBlob"><tt class="xref py py-class docutils literal"><span class="pre">GitBlob</span></tt></a> or <a class="reference internal" href="#PyGithub.Blocking.GitTree.GitTree.GitSubmodule" title="PyGithub.Blocking.GitTree.GitTree.GitSubmodule"><tt class="xref py py-class docutils literal"><span class="pre">GitTree.GitSubmodule</span></tt></a></td>
 </tr>
 </tbody>
 </table>
@@ -201,14 +211,24 @@
 </table>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="PyGithub.Blocking.GitTree.GitTree.url">
-<tt class="descclassname">GitTree.</tt><tt class="descname">url</tt><a class="headerlink" href="#PyGithub.Blocking.GitTree.GitTree.url" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dl class="method">
+<dt id="PyGithub.Blocking.GitTree.GitTree.create_modified_copy">
+<tt class="descclassname">GitTree.</tt><tt class="descname">create_modified_copy</tt><big>(</big><em>tree</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.GitTree.GitTree.create_modified_copy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/git/trees#create-a-tree">POST /repos/:owner/:repo/git/trees</a> end point.</p>
+<dl class="docutils">
+<dt>The following methods also call this end point:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.create_git_tree" title="PyGithub.Blocking.Repository.Repository.create_git_tree"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.create_git_tree()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>tree</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">list</span></tt> of <tt class="xref py py-class docutils literal"><span class="pre">dict</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#PyGithub.Blocking.GitTree.GitTree" title="PyGithub.Blocking.GitTree.GitTree"><tt class="xref py py-class docutils literal"><span class="pre">GitTree</span></tt></a></td>
 </tr>
 </tbody>
 </table>
@@ -225,8 +245,8 @@
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="GitCommit.html"
-                        title="previous chapter">GitCommit</a></p>
+  <p class="topless"><a href="GitTag.html"
+                        title="previous chapter">GitTag</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="Github.html"
                         title="next chapter">Github</a></p>
@@ -265,7 +285,7 @@
           <a href="Github.html" title="Github"
              >next</a> |</li>
         <li class="right" >
-          <a href="GitCommit.html" title="GitCommit"
+          <a href="GitTag.html" title="GitTag"
              >previous</a> |</li>
         <li><a href="../../index.html">PyGithub 2.0.0-alpha.3 documentation</a> &raquo;</li>
           <li><a href="../../reference.html" >Reference documentation</a> &raquo;</li>

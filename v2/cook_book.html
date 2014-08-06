@@ -55,6 +55,8 @@
             
   <div class="section" id="cook-book">
 <span id="id1"></span><h1>Cook book<a class="headerlink" href="#cook-book" title="Permalink to this headline">¶</a></h1>
+<p>&#64;todoAlpha Cookbook about Repository.create_file etc.
+&#64;todoAlpha Write it &#8220;cookbook&#8221; everywhere as the internets seem to agree on this spelling</p>
 <div class="section" id="working-with-gists">
 <h2>Working with gists<a class="headerlink" href="#working-with-gists" title="Permalink to this headline">¶</a></h2>
 <p>This cook book shows you everything about <a class="reference external" href="https://gist.github.com">gists</a> and the <a class="reference external" href="https://developer.github.com/v3/gists">gists API</a>.</p>
@@ -97,7 +99,7 @@
 <span class="go">2</span>
 </pre></div>
 </div>
-<p>You can also fork an existing gist using <a class="reference internal" href="reference/classes/Gist.html#PyGithub.Blocking.Gist.Gist.create_fork" title="PyGithub.Blocking.Gist.Gist.create_fork"><tt class="xref py py-meth docutils literal"><span class="pre">Gist.create_fork()</span></tt></a>.</p>
+<p>You can also fork an existing gist using <tt class="xref py py-meth docutils literal"><span class="pre">Gist.create_fork()</span></tt>.</p>
 </div>
 <div class="section" id="retrieving-gists">
 <h3>Retrieving gists<a class="headerlink" href="#retrieving-gists" title="Permalink to this headline">¶</a></h3>
@@ -118,6 +120,7 @@
 <span class="gp">...</span>
 <span class="go">Really useful helper that I use constantly to force myself to write more efficient Django queries. (2013-11-29 08:59:02, 2014-04-22 10:02:20)</span>
 <span class="go">Which API is the nicest for the new RQ with concurrency? (2013-02-04 15:58:06, 2014-06-25 19:09:55)</span>
+<span class="go">Initial experiment with a possible new worker structure for RQ (2012-08-30 21:22:56, 2014-07-16 08:54:35)</span>
 <span class="go">Get Mountain Lion and Homebrew to Be Happy (2012-07-26 07:46:47, 2014-04-08 18:19:17)</span>
 <span class="go">A WSGI middleware wrapper to add gzip to your WSGI app (2012-05-22 15:11:17, 2014-01-29 14:12:19)</span>
 </pre></div>
@@ -142,13 +145,13 @@
 </pre></div>
 </div>
 <p>Star and unstar:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">gist</span><span class="o">.</span><span class="n">is_starred</span><span class="p">()</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">u</span><span class="o">.</span><span class="n">has_in_starred_gists</span><span class="p">(</span><span class="n">gist</span><span class="p">)</span>
 <span class="go">False</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span><span class="o">.</span><span class="n">set_starred</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">gist</span><span class="o">.</span><span class="n">is_starred</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">u</span><span class="o">.</span><span class="n">add_to_starred_gists</span><span class="p">(</span><span class="n">gist</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">u</span><span class="o">.</span><span class="n">has_in_starred_gists</span><span class="p">(</span><span class="n">gist</span><span class="p">)</span>
 <span class="go">True</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span><span class="o">.</span><span class="n">reset_starred</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">gist</span><span class="o">.</span><span class="n">is_starred</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">u</span><span class="o">.</span><span class="n">remove_from_starred_gists</span><span class="p">(</span><span class="n">gist</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">u</span><span class="o">.</span><span class="n">has_in_starred_gists</span><span class="p">(</span><span class="n">gist</span><span class="p">)</span>
 <span class="go">False</span>
 </pre></div>
 </div>
@@ -156,13 +159,16 @@
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">gist</span><span class="o">.</span><span class="n">files</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
 <span class="go">[u&#39;baz.txt&#39;]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span><span class="o">.</span><span class="n">edit</span><span class="p">(</span><span class="n">files</span><span class="o">=</span><span class="p">{</span><span class="s">&quot;new.txt&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s">&quot;content&quot;</span><span class="p">:</span> <span class="s">&quot;toto&quot;</span><span class="p">}})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># For some reason, from time to time, the response to the PATCH request still contains new.txt. :meth:`.update` fixes that.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span><span class="o">.</span><span class="n">update</span><span class="p">()</span> <span class="ow">or</span> <span class="bp">True</span>
+<span class="go">True</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">gist</span><span class="o">.</span><span class="n">files</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
 <span class="go">[u&#39;baz.txt&#39;, u&#39;new.txt&#39;]</span>
 </pre></div>
 </div>
 <p>Move a file:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span><span class="o">.</span><span class="n">edit</span><span class="p">(</span><span class="n">files</span><span class="o">=</span><span class="p">{</span><span class="s">&quot;new.txt&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s">&quot;content&quot;</span><span class="p">:</span> <span class="s">&quot;toto&quot;</span><span class="p">,</span> <span class="s">&quot;filename&quot;</span><span class="p">:</span> <span class="s">&quot;moved.txt&quot;</span><span class="p">}})</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="c"># For some reason, from time to time, the response to the PATCH request still contains new.txt. :meth:`.update` fixes that.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># Idem</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">gist</span><span class="o">.</span><span class="n">update</span><span class="p">()</span> <span class="ow">or</span> <span class="bp">True</span>
 <span class="go">True</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">gist</span><span class="o">.</span><span class="n">files</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
@@ -179,6 +185,66 @@
 </pre></div>
 </div>
 </div>
+</div>
+<div class="section" id="working-with-raw-git-objects">
+<h2>Working with raw Git objects<a class="headerlink" href="#working-with-raw-git-objects" title="Permalink to this headline">¶</a></h2>
+<p>This cook book shows you how to manipulate raw <a class="reference external" href="https://developer.github.com/v3/git">Git objects</a>. Do not forget that higher-level functions like <a class="reference internal" href="reference/classes/File.html#PyGithub.Blocking.File.File.edit" title="PyGithub.Blocking.File.File.edit"><tt class="xref py py-meth docutils literal"><span class="pre">File.edit()</span></tt></a> are available. If you really need to use these low-level functions and are not too familiar with git internals, you may want to read <a class="reference external" href="http://git-scm.com/book/en/Git-Internals-Git-Objects">the &#8220;Git Internal Objects&#8221; chapter of Pro Git</a>.</p>
+<p>In this cook book, we are going to create a new branch with two commits:</p>
+<img alt="_images/cook_book_raw_git_objects_final_state.dot.png" src="_images/cook_book_raw_git_objects_final_state.dot.png" />
+<p>Initialization:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">PyGithub</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">g</span> <span class="o">=</span> <span class="n">PyGithub</span><span class="o">.</span><span class="n">BlockingBuilder</span><span class="p">()</span><span class="o">.</span><span class="n">Login</span><span class="p">(</span><span class="s">&quot;your_login&quot;</span><span class="p">,</span> <span class="s">&quot;your_password&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">Build</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">u</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">get_authenticated_user</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">u</span><span class="o">.</span><span class="n">create_repo</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">&quot;PyGithubCookbookRawGitObjects&quot;</span><span class="p">,</span> <span class="n">auto_init</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Create the first blob:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">v1</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">create_git_blob</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="s">&quot;version 1&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">v1</span><span class="o">.</span><span class="n">sha</span>
+<span class="go">e32092a83f837140c08e85a60ef16a6b2a208986</span>
+</pre></div>
+</div>
+<p>Create the first tree:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">t1</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">create_git_tree</span><span class="p">(</span><span class="n">tree</span><span class="o">=</span><span class="p">[{</span><span class="s">&quot;path&quot;</span><span class="p">:</span> <span class="s">&quot;test.txt&quot;</span><span class="p">,</span> <span class="s">&quot;mode&quot;</span><span class="p">:</span> <span class="s">&quot;100644&quot;</span><span class="p">,</span> <span class="s">&quot;type&quot;</span><span class="p">:</span> <span class="s">&quot;blob&quot;</span><span class="p">,</span> <span class="s">&quot;sha&quot;</span><span class="p">:</span> <span class="n">v1</span><span class="o">.</span><span class="n">sha</span><span class="p">}])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">t1</span><span class="o">.</span><span class="n">sha</span>
+<span class="go">ffe9ce5421c3a1cbd84a858f8f5696029574abdc</span>
+</pre></div>
+</div>
+<p>Create the first commit:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">c1</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">create_git_commit</span><span class="p">(</span><span class="n">tree</span><span class="o">=</span><span class="n">t1</span><span class="p">,</span> <span class="n">message</span><span class="o">=</span><span class="s">&quot;first commit&quot;</span><span class="p">,</span> <span class="n">parents</span><span class="o">=</span><span class="p">[])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">c1</span><span class="o">.</span><span class="n">sha</span>  
+<span class="go">82edca525abba78394bf6494b568fccff00a7117</span>
+</pre></div>
+</div>
+<p>Finally create the branch:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">ref</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">create_git_ref</span><span class="p">(</span><span class="n">ref</span><span class="o">=</span><span class="s">&quot;refs/heads/feature&quot;</span><span class="p">,</span> <span class="n">sha</span><span class="o">=</span><span class="n">c1</span><span class="o">.</span><span class="n">sha</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>We now have a branch with one commit. You should check on <a class="reference external" href="http://github.com">http://github.com</a>/{user}/PyGithubCookbookRawGitObjects/branches:</p>
+<img alt="_images/cook_book_raw_git_objects_intermediate_state.dot.png" src="_images/cook_book_raw_git_objects_intermediate_state.dot.png" />
+<p>Create a new tree and a second commit:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">new</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">create_git_blob</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="s">&quot;new file&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">new</span><span class="o">.</span><span class="n">sha</span>
+<span class="go">1271944b7e20c7a2cc2708dba5cf8370147d77d4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t2</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">create_git_tree</span><span class="p">(</span><span class="n">tree</span><span class="o">=</span><span class="p">[{</span><span class="s">&quot;path&quot;</span><span class="p">:</span> <span class="s">&quot;test.txt&quot;</span><span class="p">,</span> <span class="s">&quot;mode&quot;</span><span class="p">:</span> <span class="s">&quot;100644&quot;</span><span class="p">,</span> <span class="s">&quot;type&quot;</span><span class="p">:</span> <span class="s">&quot;blob&quot;</span><span class="p">,</span> <span class="s">&quot;sha&quot;</span><span class="p">:</span> <span class="n">v1</span><span class="o">.</span><span class="n">sha</span><span class="p">},</span> <span class="p">{</span><span class="s">&quot;path&quot;</span><span class="p">:</span> <span class="s">&quot;new.txt&quot;</span><span class="p">,</span> <span class="s">&quot;mode&quot;</span><span class="p">:</span> <span class="s">&quot;100644&quot;</span><span class="p">,</span> <span class="s">&quot;type&quot;</span><span class="p">:</span> <span class="s">&quot;blob&quot;</span><span class="p">,</span> <span class="s">&quot;sha&quot;</span><span class="p">:</span> <span class="n">new</span><span class="o">.</span><span class="n">sha</span><span class="p">}])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">t2</span><span class="o">.</span><span class="n">sha</span>
+<span class="go">13697ff08a956c8c2076eaac7a0fb27de17d8fb5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c2</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">create_git_commit</span><span class="p">(</span><span class="n">tree</span><span class="o">=</span><span class="n">t2</span><span class="p">,</span> <span class="n">message</span><span class="o">=</span><span class="s">&quot;second commit&quot;</span><span class="p">,</span> <span class="n">parents</span><span class="o">=</span><span class="p">[</span><span class="n">c1</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">c2</span><span class="o">.</span><span class="n">sha</span>  
+<span class="go">bc6e1205629f3ee927e603e2c657866dbd9396e6</span>
+</pre></div>
+</div>
+<p>Update the branch:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">ref</span><span class="o">.</span><span class="n">edit</span><span class="p">(</span><span class="n">sha</span><span class="o">=</span><span class="n">c2</span><span class="o">.</span><span class="n">sha</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>And we&#8217;re done:</p>
+<img alt="_images/cook_book_raw_git_objects_final_state.dot.png" src="_images/cook_book_raw_git_objects_final_state.dot.png" />
+<p>&#64;todoAlpha Demonstrate <a class="reference internal" href="reference/classes/GitTree.html#PyGithub.Blocking.GitTree.GitTree.create_modified_copy" title="PyGithub.Blocking.GitTree.GitTree.create_modified_copy"><tt class="xref py py-meth docutils literal"><span class="pre">GitTree.create_modified_copy()</span></tt></a> and usage of parameter <cite>content</cite> in <a class="reference internal" href="reference/classes/Repository.html#PyGithub.Blocking.Repository.Repository.create_git_tree" title="PyGithub.Blocking.Repository.Repository.create_git_tree"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.create_git_tree()</span></tt></a>.
+&#64;todoAlpha Demonstrate lightweight tags (through <a class="reference internal" href="reference/classes/GitRef.html#PyGithub.Blocking.GitRef.GitRef" title="PyGithub.Blocking.GitRef.GitRef"><tt class="xref py py-class docutils literal"><span class="pre">GitRef</span></tt></a>) and tag objects (actual <a class="reference internal" href="reference/classes/GitTag.html#PyGithub.Blocking.GitTag.GitTag" title="PyGithub.Blocking.GitTag.GitTag"><tt class="xref py py-class docutils literal"><span class="pre">GitTag</span></tt></a>).
+&#64;todoAlpha GitRef.object and GitTag.object should be a union of GitTree GitBlob and GitCommit.</p>
 </div>
 </div>
 
@@ -197,6 +263,7 @@
 <li><a class="reference internal" href="#modifying-gists">Modifying gists</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#working-with-raw-git-objects">Working with raw Git objects</a></li>
 </ul>
 </li>
 </ul>

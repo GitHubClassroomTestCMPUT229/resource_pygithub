@@ -89,6 +89,12 @@
 </dd></dl>
 
 <dl class="method">
+<dt id="PyGithub.Blocking._builder.Builder.Enterprise">
+<tt class="descname">Enterprise</tt><big>(</big><em>netloc</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking._builder.Builder.Enterprise" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use the <a class="reference external" href="https://enterprise.github.com/">GitHub Enterprise</a> server with domain name or ip address <cite>netloc</cite>.</p>
+</dd></dl>
+
+<dl class="method">
 <dt id="PyGithub.Blocking._builder.Builder.PerPage">
 <tt class="descname">PerPage</tt><big>(</big><em>per_page</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking._builder.Builder.PerPage" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the default <cite>per_page</cite> url argument for <a class="reference external" href="http://developer.github.com/v3/#pagination">paginated requests</a>.</p>
@@ -204,6 +210,19 @@ or duplicated in concrete subclasses.</p>
 <p>Returns True if the the update was needed.</p>
 </dd></dl>
 
+<dl class="attribute">
+<dt id="PyGithub.Blocking._base_github_object.UpdatableGithubObject.url">
+<tt class="descname">url</tt><a class="headerlink" href="#PyGithub.Blocking._base_github_object.UpdatableGithubObject.url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
 </dd></dl>
 
 </div>
@@ -234,6 +253,18 @@ or duplicated in concrete subclasses.</p>
 <dt id="PyGithub.Blocking._exceptions.ObjectNotFoundException">
 <em class="property">exception </em><tt class="descclassname">PyGithub.Blocking._exceptions.</tt><tt class="descname">ObjectNotFoundException</tt><a class="headerlink" href="#PyGithub.Blocking._exceptions.ObjectNotFoundException" title="Permalink to this definition">¶</a></dt>
 <dd><p>Raised by PyGithub when GitHub API v3 returns an unexpected 404 HTTP status code.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="PyGithub.Blocking._exceptions.MethodNotAllowedException">
+<em class="property">exception </em><tt class="descclassname">PyGithub.Blocking._exceptions.</tt><tt class="descname">MethodNotAllowedException</tt><a class="headerlink" href="#PyGithub.Blocking._exceptions.MethodNotAllowedException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raised by PyGithub when GitHub API v3 returns a 405 HTTP status code. For example when <a class="reference internal" href="classes/PullRequest.html#PyGithub.Blocking.PullRequest.PullRequest.merge" title="PyGithub.Blocking.PullRequest.PullRequest.merge"><tt class="xref py py-meth docutils literal"><span class="pre">PullRequest.merge()</span></tt></a> is called and <tt class="xref py py-attr docutils literal"><span class="pre">PullRequest.meargeable</span></tt> was false.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="PyGithub.Blocking._exceptions.ConflictException">
+<em class="property">exception </em><tt class="descclassname">PyGithub.Blocking._exceptions.</tt><tt class="descname">ConflictException</tt><a class="headerlink" href="#PyGithub.Blocking._exceptions.ConflictException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raised by PyGithub when GitHub API v3 returns a 409 HTTP status code. For example when there is a conflict in <tt class="xref py py-meth docutils literal"><span class="pre">Repository.merge()</span></tt>.</p>
 </dd></dl>
 
 <dl class="exception">

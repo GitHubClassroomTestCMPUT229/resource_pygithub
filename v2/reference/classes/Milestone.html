@@ -61,13 +61,23 @@
 <dl class="class">
 <dt id="PyGithub.Blocking.Milestone.Milestone">
 <em class="property">class </em><tt class="descclassname">PyGithub.Blocking.Milestone.</tt><tt class="descname">Milestone</tt><a class="headerlink" href="#PyGithub.Blocking.Milestone.Milestone" title="Permalink to this definition">¶</a></dt>
-<dd><p>Base class: <a class="reference internal" href="../bases.html#PyGithub.Blocking._base_github_object.SessionedGithubObject" title="PyGithub.Blocking._base_github_object.SessionedGithubObject"><tt class="xref py py-class docutils literal"><span class="pre">SessionedGithubObject</span></tt></a></p>
+<dd><p>Base class: <a class="reference internal" href="../bases.html#PyGithub.Blocking._base_github_object.UpdatableGithubObject" title="PyGithub.Blocking._base_github_object.UpdatableGithubObject"><tt class="xref py py-class docutils literal"><span class="pre">UpdatableGithubObject</span></tt></a></p>
 <p>Derived classes: none.</p>
 <dl class="docutils">
 <dt>Methods and attributes returning instances of this class:</dt>
 <dd><ul class="first last simple">
 <li><a class="reference internal" href="Issue.html#PyGithub.Blocking.Issue.Issue.milestone" title="PyGithub.Blocking.Issue.Issue.milestone"><tt class="xref py py-attr docutils literal"><span class="pre">Issue.milestone</span></tt></a></li>
+<li><a class="reference internal" href="PullRequest.html#PyGithub.Blocking.PullRequest.PullRequest.milestone" title="PyGithub.Blocking.PullRequest.PullRequest.milestone"><tt class="xref py py-attr docutils literal"><span class="pre">PullRequest.milestone</span></tt></a></li>
+<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.create_milestone" title="PyGithub.Blocking.Repository.Repository.create_milestone"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.create_milestone()</span></tt></a></li>
 <li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.get_milestone" title="PyGithub.Blocking.Repository.Repository.get_milestone"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_milestone()</span></tt></a></li>
+<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.get_milestones" title="PyGithub.Blocking.Repository.Repository.get_milestones"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_milestones()</span></tt></a></li>
+</ul>
+</dd>
+<dt>Methods accepting instances of this class as parameter:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="Issue.html#PyGithub.Blocking.Issue.Issue.edit" title="PyGithub.Blocking.Issue.Issue.edit"><tt class="xref py py-meth docutils literal"><span class="pre">Issue.edit()</span></tt></a></li>
+<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.create_issue" title="PyGithub.Blocking.Repository.Repository.create_issue"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.create_issue()</span></tt></a></li>
+<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.get_issues" title="PyGithub.Blocking.Repository.Repository.get_issues"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_issues()</span></tt></a></li>
 </ul>
 </dd>
 </dl>
@@ -227,14 +237,55 @@
 </table>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="PyGithub.Blocking.Milestone.Milestone.url">
-<tt class="descname">url</tt><a class="headerlink" href="#PyGithub.Blocking.Milestone.Milestone.url" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dl class="method">
+<dt id="PyGithub.Blocking.Milestone.Milestone.delete">
+<tt class="descname">delete</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Milestone.Milestone.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/issues/milestones#delete-a-milestone">DELETE /repos/:owner/:repo/milestones/:number</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Milestone.Milestone.edit">
+<tt class="descname">edit</tt><big>(</big><em>title=None</em>, <em>state=None</em>, <em>description=None</em>, <em>due_on=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Milestone.Milestone.edit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/issues/milestones#update-a-milestone">PATCH /repos/:owner/:repo/milestones/:number</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>title</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+<li><strong>state</strong> &#8211; optional &#8220;closed&#8221; or &#8220;open&#8221;</li>
+<li><strong>description</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> or <tt class="xref py py-class docutils literal"><span class="pre">Reset</span></tt></li>
+<li><strong>due_on</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">datetime</span></tt> or <tt class="xref py py-class docutils literal"><span class="pre">Reset</span></tt></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Milestone.Milestone.get_labels">
+<tt class="descname">get_labels</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Milestone.Milestone.get_labels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/issues/labels#get-labels-for-every-issue-in-a-milestone">GET /repos/:owner/:repo/milestones/:number/labels</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">list</span></tt> of <a class="reference internal" href="Label.html#PyGithub.Blocking.Label.Label" title="PyGithub.Blocking.Label.Label"><tt class="xref py py-class docutils literal"><span class="pre">Label</span></tt></a></td>
 </tr>
 </tbody>
 </table>

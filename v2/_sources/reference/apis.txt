@@ -240,7 +240,7 @@ POST /gists/:id/forks
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/gists#fork-a-gist>`__)
 
 Implemented in PyGithub by:
-  * :meth:`.Gist.create_fork`
+  * :meth:`.AuthenticatedUser.create_gist_fork`
 
 DELETE /gists/:id/star
 ----------------------
@@ -248,7 +248,7 @@ DELETE /gists/:id/star
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/gists#unstar-a-gist>`__)
 
 Implemented in PyGithub by:
-  * :meth:`.Gist.reset_starred`
+  * :meth:`.AuthenticatedUser.remove_from_starred_gists`
 
 GET /gists/:id/star
 -------------------
@@ -256,7 +256,7 @@ GET /gists/:id/star
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/gists#check-if-a-gist-is-starred>`__)
 
 Implemented in PyGithub by:
-  * :meth:`.Gist.is_starred`
+  * :meth:`.AuthenticatedUser.has_in_starred_gists`
 
 PUT /gists/:id/star
 -------------------
@@ -264,7 +264,7 @@ PUT /gists/:id/star
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/gists#star-a-gist>`__)
 
 Implemented in PyGithub by:
-  * :meth:`.Gist.set_starred`
+  * :meth:`.AuthenticatedUser.add_to_starred_gists`
 
 GET /gists/public
 -----------------
@@ -578,14 +578,16 @@ GET /repos/:owner/:repo/branches
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/repos#list-branches>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Repository.get_branches`
 
 GET /repos/:owner/:repo/branches/:branch
 ----------------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/repos#get-branch>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Repository.get_branch`
 
 GET /repos/:owner/:repo/collaborators
 -------------------------------------
@@ -652,7 +654,8 @@ GET /repos/:owner/:repo/commits
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/repos/commits#list-commits-on-a-repository>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Repository.get_commits`
 
 GET /repos/:owner/:repo/commits/:ref/comments
 ---------------------------------------------
@@ -680,7 +683,8 @@ GET /repos/:owner/:repo/commits/:sha
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/repos/commits#get-a-single-commit>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Repository.get_commit`
 
 POST /repos/:owner/:repo/commits/:sha/comments
 ----------------------------------------------
@@ -831,7 +835,8 @@ POST /repos/:owner/:repo/git/commits
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/git/commits#create-a-commit>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Repository.create_git_commit`
 
 GET /repos/:owner/:repo/git/commits/:sha
 ----------------------------------------
@@ -846,56 +851,65 @@ GET /repos/:owner/:repo/git/refs
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/git/refs#get-all-references>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Repository.get_git_refs`
 
 POST /repos/:owner/:repo/git/refs
 ---------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/git/refs#create-a-reference>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Repository.create_git_ref`
 
 DELETE /repos/:owner/:repo/git/refs/:ref
 ----------------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/git/refs#delete-a-reference>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.GitRef.delete`
 
 GET /repos/:owner/:repo/git/refs/:ref
 -------------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/git/refs#get-a-reference>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Repository.get_git_ref`
 
 PATCH /repos/:owner/:repo/git/refs/:ref
 ---------------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/git/refs#update-a-reference>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.GitRef.edit`
 
 POST /repos/:owner/:repo/git/tags
 ---------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/git/tags#create-a-tag-object>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Repository.create_git_tag`
 
 GET /repos/:owner/:repo/git/tags/:sha
 -------------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/git/tags#get-a-tag>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Repository.get_git_tag`
 
 POST /repos/:owner/:repo/git/trees
 ----------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/git/trees#create-a-tree>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.GitTree.create_modified_copy`
+  * :meth:`.Repository.create_git_tree`
 
 GET /repos/:owner/:repo/git/trees/:sha
 --------------------------------------
@@ -959,14 +973,16 @@ GET /repos/:owner/:repo/issues
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/issues#list-issues-for-a-repository>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Repository.get_issues`
 
 POST /repos/:owner/:repo/issues
 -------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/issues#create-an-issue>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Repository.create_issue`
 
 GET /repos/:owner/:repo/issues/:issue_number/events
 ---------------------------------------------------
@@ -981,6 +997,7 @@ GET /repos/:owner/:repo/issues/:number
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/issues#get-a-single-issue>`__)
 
 Implemented in PyGithub by:
+  * :meth:`.PullRequest.get_issue`
   * :meth:`.Repository.get_issue`
 
 PATCH /repos/:owner/:repo/issues/:number
@@ -988,7 +1005,8 @@ PATCH /repos/:owner/:repo/issues/:number
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/issues#edit-an-issue>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Issue.edit`
 
 GET /repos/:owner/:repo/issues/:number/comments
 -----------------------------------------------
@@ -1009,35 +1027,40 @@ DELETE /repos/:owner/:repo/issues/:number/labels
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/issues/labels#remove-all-labels-from-an-issue>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Issue.remove_all_labels`
 
 GET /repos/:owner/:repo/issues/:number/labels
 ---------------------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/issues/labels#list-labels-on-an-issue>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Issue.get_labels`
 
 POST /repos/:owner/:repo/issues/:number/labels
 ----------------------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/issues/labels#add-labels-to-an-issue>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Issue.add_to_labels`
 
 PUT /repos/:owner/:repo/issues/:number/labels
 ---------------------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/issues/labels#replace-all-labels-for-an-issue>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Issue.set_labels`
 
 DELETE /repos/:owner/:repo/issues/:number/labels/:name
 ------------------------------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/issues/labels#remove-a-label-from-an-issue>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Issue.remove_from_labels`
 
 GET /repos/:owner/:repo/issues/comments
 ---------------------------------------
@@ -1118,21 +1141,24 @@ GET /repos/:owner/:repo/labels
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/issues/labels#list-all-labels-for-this-repository>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Repository.get_labels`
 
 POST /repos/:owner/:repo/labels
 -------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/issues/labels#create-a-label>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Repository.create_label`
 
 DELETE /repos/:owner/:repo/labels/:name
 ---------------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/issues/labels#delete-a-label>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Label.delete`
 
 GET /repos/:owner/:repo/labels/:name
 ------------------------------------
@@ -1147,7 +1173,8 @@ PATCH /repos/:owner/:repo/labels/:name
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/issues/labels#update-a-label>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Label.edit`
 
 GET /repos/:owner/:repo/languages
 ---------------------------------
@@ -1168,21 +1195,24 @@ GET /repos/:owner/:repo/milestones
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/issues/milestones#list-milestones-for-a-repository>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Repository.get_milestones`
 
 POST /repos/:owner/:repo/milestones
 -----------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/issues/milestones#create-a-milestone>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Repository.create_milestone`
 
 DELETE /repos/:owner/:repo/milestones/:number
 ---------------------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/issues/milestones#delete-a-milestone>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Milestone.delete`
 
 GET /repos/:owner/:repo/milestones/:number
 ------------------------------------------
@@ -1197,14 +1227,16 @@ PATCH /repos/:owner/:repo/milestones/:number
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/issues/milestones#update-a-milestone>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Milestone.edit`
 
 GET /repos/:owner/:repo/milestones/:number/labels
 -------------------------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/issues/labels#get-labels-for-every-issue-in-a-milestone>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Milestone.get_labels`
 
 GET /repos/:owner/:repo/notifications
 -------------------------------------
@@ -1246,28 +1278,33 @@ GET /repos/:owner/:repo/pulls
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/pulls#list-pull-requests>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Repository.get_pulls`
 
 POST /repos/:owner/:repo/pulls
 ------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/pulls#create-a-pull-request>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Issue.create_pull`
+  * :meth:`.Repository.create_pull`
 
 GET /repos/:owner/:repo/pulls/:number
 -------------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/pulls#get-a-single-pull-request>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Repository.get_pull`
 
 PATCH /repos/:owner/:repo/pulls/:number
 ---------------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/pulls#update-a-pull-request>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.PullRequest.edit`
 
 GET /repos/:owner/:repo/pulls/:number/comments
 ----------------------------------------------
@@ -1288,28 +1325,32 @@ GET /repos/:owner/:repo/pulls/:number/commits
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/pulls#list-commits-on-a-pull-request>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.PullRequest.get_commits`
 
 GET /repos/:owner/:repo/pulls/:number/files
 -------------------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/pulls#list-pull-requests-files>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.PullRequest.get_files`
 
 GET /repos/:owner/:repo/pulls/:number/merge
 -------------------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/pulls#get-if-a-pull-request-has-been-merged>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.PullRequest.get_is_merged`
 
 PUT /repos/:owner/:repo/pulls/:number/merge
 -------------------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/pulls#merge-a-pull-request-merge-button>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.PullRequest.merge`
 
 GET /repos/:owner/:repo/pulls/comments
 --------------------------------------
@@ -1498,7 +1539,8 @@ GET /repos/:owner/:repo/tags
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/repos#list-tags>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Repository.get_tags`
 
 GET /repos/:owner/:repo/teams
 -----------------------------
@@ -1730,21 +1772,24 @@ DELETE /user/emails
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/users/emails#delete-email-addresses>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.AuthenticatedUser.remove_from_emails`
 
 GET /user/emails
 ----------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/users/emails#list-email-addresses-for-a-user>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.AuthenticatedUser.get_emails`
 
 POST /user/emails
 -----------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/users/emails#add-email-addresses>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.AuthenticatedUser.add_to_emails`
 
 GET /user/followers
 -------------------
@@ -1791,7 +1836,8 @@ GET /user/issues
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/issues#list-issues>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.AuthenticatedUser.get_issues`
 
 GET /user/keys
 --------------
@@ -1888,30 +1934,6 @@ GET /user/subscriptions
 
 Implemented in PyGithub by:
   * :meth:`.AuthenticatedUser.get_subscriptions`
-
-DELETE /user/subscriptions/:owner/:repo
----------------------------------------
-
-(`Reference documentation of Github API v3 <http://developer.github.com/v3/activity/watching#stop-watching-a-repository-legacy>`__)
-
-Implemented in PyGithub by:
-  * :meth:`.AuthenticatedUser.remove_from_subscriptions`
-
-GET /user/subscriptions/:owner/:repo
-------------------------------------
-
-(`Reference documentation of Github API v3 <http://developer.github.com/v3/activity/watching#check-if-you-are-watching-a-repository-legacy>`__)
-
-Implemented in PyGithub by:
-  * :meth:`.AuthenticatedUser.has_in_subscriptions`
-
-PUT /user/subscriptions/:owner/:repo
-------------------------------------
-
-(`Reference documentation of Github API v3 <http://developer.github.com/v3/activity/watching#watch-a-repository-legacy>`__)
-
-Implemented in PyGithub by:
-  * :meth:`.AuthenticatedUser.add_to_subscriptions`
 
 GET /user/teams
 ---------------

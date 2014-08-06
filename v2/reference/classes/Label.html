@@ -61,13 +61,28 @@
 <dl class="class">
 <dt id="PyGithub.Blocking.Label.Label">
 <em class="property">class </em><tt class="descclassname">PyGithub.Blocking.Label.</tt><tt class="descname">Label</tt><a class="headerlink" href="#PyGithub.Blocking.Label.Label" title="Permalink to this definition">¶</a></dt>
-<dd><p>Base class: <a class="reference internal" href="../bases.html#PyGithub.Blocking._base_github_object.SessionedGithubObject" title="PyGithub.Blocking._base_github_object.SessionedGithubObject"><tt class="xref py py-class docutils literal"><span class="pre">SessionedGithubObject</span></tt></a></p>
+<dd><p>Base class: <a class="reference internal" href="../bases.html#PyGithub.Blocking._base_github_object.UpdatableGithubObject" title="PyGithub.Blocking._base_github_object.UpdatableGithubObject"><tt class="xref py py-class docutils literal"><span class="pre">UpdatableGithubObject</span></tt></a></p>
 <p>Derived classes: none.</p>
 <dl class="docutils">
 <dt>Methods and attributes returning instances of this class:</dt>
 <dd><ul class="first last simple">
+<li><a class="reference internal" href="Issue.html#PyGithub.Blocking.Issue.Issue.get_labels" title="PyGithub.Blocking.Issue.Issue.get_labels"><tt class="xref py py-meth docutils literal"><span class="pre">Issue.get_labels()</span></tt></a></li>
 <li><a class="reference internal" href="Issue.html#PyGithub.Blocking.Issue.Issue.labels" title="PyGithub.Blocking.Issue.Issue.labels"><tt class="xref py py-attr docutils literal"><span class="pre">Issue.labels</span></tt></a></li>
+<li><a class="reference internal" href="Milestone.html#PyGithub.Blocking.Milestone.Milestone.get_labels" title="PyGithub.Blocking.Milestone.Milestone.get_labels"><tt class="xref py py-meth docutils literal"><span class="pre">Milestone.get_labels()</span></tt></a></li>
+<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.create_label" title="PyGithub.Blocking.Repository.Repository.create_label"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.create_label()</span></tt></a></li>
 <li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.get_label" title="PyGithub.Blocking.Repository.Repository.get_label"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_label()</span></tt></a></li>
+<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.get_labels" title="PyGithub.Blocking.Repository.Repository.get_labels"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_labels()</span></tt></a></li>
+</ul>
+</dd>
+<dt>Methods accepting instances of this class as parameter:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_issues" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_issues"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.get_issues()</span></tt></a></li>
+<li><a class="reference internal" href="Issue.html#PyGithub.Blocking.Issue.Issue.add_to_labels" title="PyGithub.Blocking.Issue.Issue.add_to_labels"><tt class="xref py py-meth docutils literal"><span class="pre">Issue.add_to_labels()</span></tt></a></li>
+<li><a class="reference internal" href="Issue.html#PyGithub.Blocking.Issue.Issue.edit" title="PyGithub.Blocking.Issue.Issue.edit"><tt class="xref py py-meth docutils literal"><span class="pre">Issue.edit()</span></tt></a></li>
+<li><a class="reference internal" href="Issue.html#PyGithub.Blocking.Issue.Issue.remove_from_labels" title="PyGithub.Blocking.Issue.Issue.remove_from_labels"><tt class="xref py py-meth docutils literal"><span class="pre">Issue.remove_from_labels()</span></tt></a></li>
+<li><a class="reference internal" href="Issue.html#PyGithub.Blocking.Issue.Issue.set_labels" title="PyGithub.Blocking.Issue.Issue.set_labels"><tt class="xref py py-meth docutils literal"><span class="pre">Issue.set_labels()</span></tt></a></li>
+<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.create_issue" title="PyGithub.Blocking.Repository.Repository.create_issue"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.create_issue()</span></tt></a></li>
+<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.get_issues" title="PyGithub.Blocking.Repository.Repository.get_issues"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_issues()</span></tt></a></li>
 </ul>
 </dd>
 </dl>
@@ -97,14 +112,38 @@
 </table>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="PyGithub.Blocking.Label.Label.url">
-<tt class="descname">url</tt><a class="headerlink" href="#PyGithub.Blocking.Label.Label.url" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dl class="method">
+<dt id="PyGithub.Blocking.Label.Label.delete">
+<tt class="descname">delete</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Label.Label.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/issues/labels#delete-a-label">DELETE /repos/:owner/:repo/labels/:name</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Label.Label.edit">
+<tt class="descname">edit</tt><big>(</big><em>name=None</em>, <em>color=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Label.Label.edit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/issues/labels#update-a-label">PATCH /repos/:owner/:repo/labels/:name</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>name</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+<li><strong>color</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">None</p>
+</td>
 </tr>
 </tbody>
 </table>

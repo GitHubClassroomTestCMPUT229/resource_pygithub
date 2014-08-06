@@ -269,7 +269,7 @@ If something is not listed here, please <a class="reference external" href="http
 <dl class="docutils">
 <dt>Implemented in PyGithub by:</dt>
 <dd><ul class="first last simple">
-<li><a class="reference internal" href="classes/Gist.html#PyGithub.Blocking.Gist.Gist.create_fork" title="PyGithub.Blocking.Gist.Gist.create_fork"><tt class="xref py py-meth docutils literal"><span class="pre">Gist.create_fork()</span></tt></a></li>
+<li><a class="reference internal" href="classes/AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.create_gist_fork" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.create_gist_fork"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.create_gist_fork()</span></tt></a></li>
 </ul>
 </dd>
 </dl>
@@ -280,7 +280,7 @@ If something is not listed here, please <a class="reference external" href="http
 <dl class="docutils">
 <dt>Implemented in PyGithub by:</dt>
 <dd><ul class="first last simple">
-<li><a class="reference internal" href="classes/Gist.html#PyGithub.Blocking.Gist.Gist.reset_starred" title="PyGithub.Blocking.Gist.Gist.reset_starred"><tt class="xref py py-meth docutils literal"><span class="pre">Gist.reset_starred()</span></tt></a></li>
+<li><a class="reference internal" href="classes/AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.remove_from_starred_gists" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.remove_from_starred_gists"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.remove_from_starred_gists()</span></tt></a></li>
 </ul>
 </dd>
 </dl>
@@ -291,7 +291,7 @@ If something is not listed here, please <a class="reference external" href="http
 <dl class="docutils">
 <dt>Implemented in PyGithub by:</dt>
 <dd><ul class="first last simple">
-<li><a class="reference internal" href="classes/Gist.html#PyGithub.Blocking.Gist.Gist.is_starred" title="PyGithub.Blocking.Gist.Gist.is_starred"><tt class="xref py py-meth docutils literal"><span class="pre">Gist.is_starred()</span></tt></a></li>
+<li><a class="reference internal" href="classes/AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.has_in_starred_gists" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.has_in_starred_gists"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.has_in_starred_gists()</span></tt></a></li>
 </ul>
 </dd>
 </dl>
@@ -302,7 +302,7 @@ If something is not listed here, please <a class="reference external" href="http
 <dl class="docutils">
 <dt>Implemented in PyGithub by:</dt>
 <dd><ul class="first last simple">
-<li><a class="reference internal" href="classes/Gist.html#PyGithub.Blocking.Gist.Gist.set_starred" title="PyGithub.Blocking.Gist.Gist.set_starred"><tt class="xref py py-meth docutils literal"><span class="pre">Gist.set_starred()</span></tt></a></li>
+<li><a class="reference internal" href="classes/AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.add_to_starred_gists" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.add_to_starred_gists"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.add_to_starred_gists()</span></tt></a></li>
 </ul>
 </dd>
 </dl>
@@ -657,12 +657,24 @@ If something is not listed here, please <a class="reference external" href="http
 <div class="section" id="get-repos-owner-repo-branches">
 <h2>GET /repos/:owner/:repo/branches<a class="headerlink" href="#get-repos-owner-repo-branches" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/repos#list-branches">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Repository.html#PyGithub.Blocking.Repository.Repository.get_branches" title="PyGithub.Blocking.Repository.Repository.get_branches"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_branches()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-repos-owner-repo-branches-branch">
 <h2>GET /repos/:owner/:repo/branches/:branch<a class="headerlink" href="#get-repos-owner-repo-branches-branch" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/repos#get-branch">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Repository.html#PyGithub.Blocking.Repository.Repository.get_branch" title="PyGithub.Blocking.Repository.Repository.get_branch"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_branch()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-repos-owner-repo-collaborators">
 <h2>GET /repos/:owner/:repo/collaborators<a class="headerlink" href="#get-repos-owner-repo-collaborators" title="Permalink to this headline">¶</a></h2>
@@ -731,7 +743,13 @@ If something is not listed here, please <a class="reference external" href="http
 <div class="section" id="get-repos-owner-repo-commits">
 <h2>GET /repos/:owner/:repo/commits<a class="headerlink" href="#get-repos-owner-repo-commits" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/repos/commits#list-commits-on-a-repository">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Repository.html#PyGithub.Blocking.Repository.Repository.get_commits" title="PyGithub.Blocking.Repository.Repository.get_commits"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_commits()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-repos-owner-repo-commits-ref-comments">
 <h2>GET /repos/:owner/:repo/commits/:ref/comments<a class="headerlink" href="#get-repos-owner-repo-commits-ref-comments" title="Permalink to this headline">¶</a></h2>
@@ -751,7 +769,13 @@ If something is not listed here, please <a class="reference external" href="http
 <div class="section" id="get-repos-owner-repo-commits-sha">
 <h2>GET /repos/:owner/:repo/commits/:sha<a class="headerlink" href="#get-repos-owner-repo-commits-sha" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/repos/commits#get-a-single-commit">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Repository.html#PyGithub.Blocking.Repository.Repository.get_commit" title="PyGithub.Blocking.Repository.Repository.get_commit"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_commit()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="post-repos-owner-repo-commits-sha-comments">
 <h2>POST /repos/:owner/:repo/commits/:sha/comments<a class="headerlink" href="#post-repos-owner-repo-commits-sha-comments" title="Permalink to this headline">¶</a></h2>
@@ -902,7 +926,13 @@ If something is not listed here, please <a class="reference external" href="http
 <div class="section" id="post-repos-owner-repo-git-commits">
 <h2>POST /repos/:owner/:repo/git/commits<a class="headerlink" href="#post-repos-owner-repo-git-commits" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/git/commits#create-a-commit">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Repository.html#PyGithub.Blocking.Repository.Repository.create_git_commit" title="PyGithub.Blocking.Repository.Repository.create_git_commit"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.create_git_commit()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-repos-owner-repo-git-commits-sha">
 <h2>GET /repos/:owner/:repo/git/commits/:sha<a class="headerlink" href="#get-repos-owner-repo-git-commits-sha" title="Permalink to this headline">¶</a></h2>
@@ -918,42 +948,91 @@ If something is not listed here, please <a class="reference external" href="http
 <div class="section" id="get-repos-owner-repo-git-refs">
 <h2>GET /repos/:owner/:repo/git/refs<a class="headerlink" href="#get-repos-owner-repo-git-refs" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/git/refs#get-all-references">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Repository.html#PyGithub.Blocking.Repository.Repository.get_git_refs" title="PyGithub.Blocking.Repository.Repository.get_git_refs"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_git_refs()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="post-repos-owner-repo-git-refs">
 <h2>POST /repos/:owner/:repo/git/refs<a class="headerlink" href="#post-repos-owner-repo-git-refs" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/git/refs#create-a-reference">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Repository.html#PyGithub.Blocking.Repository.Repository.create_git_ref" title="PyGithub.Blocking.Repository.Repository.create_git_ref"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.create_git_ref()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="delete-repos-owner-repo-git-refs-ref">
 <h2>DELETE /repos/:owner/:repo/git/refs/:ref<a class="headerlink" href="#delete-repos-owner-repo-git-refs-ref" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/git/refs#delete-a-reference">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/GitRef.html#PyGithub.Blocking.GitRef.GitRef.delete" title="PyGithub.Blocking.GitRef.GitRef.delete"><tt class="xref py py-meth docutils literal"><span class="pre">GitRef.delete()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-repos-owner-repo-git-refs-ref">
 <h2>GET /repos/:owner/:repo/git/refs/:ref<a class="headerlink" href="#get-repos-owner-repo-git-refs-ref" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/git/refs#get-a-reference">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Repository.html#PyGithub.Blocking.Repository.Repository.get_git_ref" title="PyGithub.Blocking.Repository.Repository.get_git_ref"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_git_ref()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="patch-repos-owner-repo-git-refs-ref">
 <h2>PATCH /repos/:owner/:repo/git/refs/:ref<a class="headerlink" href="#patch-repos-owner-repo-git-refs-ref" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/git/refs#update-a-reference">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/GitRef.html#PyGithub.Blocking.GitRef.GitRef.edit" title="PyGithub.Blocking.GitRef.GitRef.edit"><tt class="xref py py-meth docutils literal"><span class="pre">GitRef.edit()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="post-repos-owner-repo-git-tags">
 <h2>POST /repos/:owner/:repo/git/tags<a class="headerlink" href="#post-repos-owner-repo-git-tags" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/git/tags#create-a-tag-object">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Repository.html#PyGithub.Blocking.Repository.Repository.create_git_tag" title="PyGithub.Blocking.Repository.Repository.create_git_tag"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.create_git_tag()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-repos-owner-repo-git-tags-sha">
 <h2>GET /repos/:owner/:repo/git/tags/:sha<a class="headerlink" href="#get-repos-owner-repo-git-tags-sha" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/git/tags#get-a-tag">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Repository.html#PyGithub.Blocking.Repository.Repository.get_git_tag" title="PyGithub.Blocking.Repository.Repository.get_git_tag"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_git_tag()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="post-repos-owner-repo-git-trees">
 <h2>POST /repos/:owner/:repo/git/trees<a class="headerlink" href="#post-repos-owner-repo-git-trees" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/git/trees#create-a-tree">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/GitTree.html#PyGithub.Blocking.GitTree.GitTree.create_modified_copy" title="PyGithub.Blocking.GitTree.GitTree.create_modified_copy"><tt class="xref py py-meth docutils literal"><span class="pre">GitTree.create_modified_copy()</span></tt></a></li>
+<li><a class="reference internal" href="classes/Repository.html#PyGithub.Blocking.Repository.Repository.create_git_tree" title="PyGithub.Blocking.Repository.Repository.create_git_tree"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.create_git_tree()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-repos-owner-repo-git-trees-sha">
 <h2>GET /repos/:owner/:repo/git/trees/:sha<a class="headerlink" href="#get-repos-owner-repo-git-trees-sha" title="Permalink to this headline">¶</a></h2>
@@ -1004,12 +1083,24 @@ If something is not listed here, please <a class="reference external" href="http
 <div class="section" id="get-repos-owner-repo-issues">
 <h2>GET /repos/:owner/:repo/issues<a class="headerlink" href="#get-repos-owner-repo-issues" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/issues#list-issues-for-a-repository">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Repository.html#PyGithub.Blocking.Repository.Repository.get_issues" title="PyGithub.Blocking.Repository.Repository.get_issues"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_issues()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="post-repos-owner-repo-issues">
 <h2>POST /repos/:owner/:repo/issues<a class="headerlink" href="#post-repos-owner-repo-issues" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/issues#create-an-issue">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Repository.html#PyGithub.Blocking.Repository.Repository.create_issue" title="PyGithub.Blocking.Repository.Repository.create_issue"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.create_issue()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-repos-owner-repo-issues-issue-number-events">
 <h2>GET /repos/:owner/:repo/issues/:issue_number/events<a class="headerlink" href="#get-repos-owner-repo-issues-issue-number-events" title="Permalink to this headline">¶</a></h2>
@@ -1022,6 +1113,7 @@ If something is not listed here, please <a class="reference external" href="http
 <dl class="docutils">
 <dt>Implemented in PyGithub by:</dt>
 <dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/PullRequest.html#PyGithub.Blocking.PullRequest.PullRequest.get_issue" title="PyGithub.Blocking.PullRequest.PullRequest.get_issue"><tt class="xref py py-meth docutils literal"><span class="pre">PullRequest.get_issue()</span></tt></a></li>
 <li><a class="reference internal" href="classes/Repository.html#PyGithub.Blocking.Repository.Repository.get_issue" title="PyGithub.Blocking.Repository.Repository.get_issue"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_issue()</span></tt></a></li>
 </ul>
 </dd>
@@ -1030,7 +1122,13 @@ If something is not listed here, please <a class="reference external" href="http
 <div class="section" id="patch-repos-owner-repo-issues-number">
 <h2>PATCH /repos/:owner/:repo/issues/:number<a class="headerlink" href="#patch-repos-owner-repo-issues-number" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/issues#edit-an-issue">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Issue.html#PyGithub.Blocking.Issue.Issue.edit" title="PyGithub.Blocking.Issue.Issue.edit"><tt class="xref py py-meth docutils literal"><span class="pre">Issue.edit()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-repos-owner-repo-issues-number-comments">
 <h2>GET /repos/:owner/:repo/issues/:number/comments<a class="headerlink" href="#get-repos-owner-repo-issues-number-comments" title="Permalink to this headline">¶</a></h2>
@@ -1045,27 +1143,57 @@ If something is not listed here, please <a class="reference external" href="http
 <div class="section" id="delete-repos-owner-repo-issues-number-labels">
 <h2>DELETE /repos/:owner/:repo/issues/:number/labels<a class="headerlink" href="#delete-repos-owner-repo-issues-number-labels" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/issues/labels#remove-all-labels-from-an-issue">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Issue.html#PyGithub.Blocking.Issue.Issue.remove_all_labels" title="PyGithub.Blocking.Issue.Issue.remove_all_labels"><tt class="xref py py-meth docutils literal"><span class="pre">Issue.remove_all_labels()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-repos-owner-repo-issues-number-labels">
 <h2>GET /repos/:owner/:repo/issues/:number/labels<a class="headerlink" href="#get-repos-owner-repo-issues-number-labels" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/issues/labels#list-labels-on-an-issue">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Issue.html#PyGithub.Blocking.Issue.Issue.get_labels" title="PyGithub.Blocking.Issue.Issue.get_labels"><tt class="xref py py-meth docutils literal"><span class="pre">Issue.get_labels()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="post-repos-owner-repo-issues-number-labels">
 <h2>POST /repos/:owner/:repo/issues/:number/labels<a class="headerlink" href="#post-repos-owner-repo-issues-number-labels" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/issues/labels#add-labels-to-an-issue">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Issue.html#PyGithub.Blocking.Issue.Issue.add_to_labels" title="PyGithub.Blocking.Issue.Issue.add_to_labels"><tt class="xref py py-meth docutils literal"><span class="pre">Issue.add_to_labels()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="put-repos-owner-repo-issues-number-labels">
 <h2>PUT /repos/:owner/:repo/issues/:number/labels<a class="headerlink" href="#put-repos-owner-repo-issues-number-labels" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/issues/labels#replace-all-labels-for-an-issue">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Issue.html#PyGithub.Blocking.Issue.Issue.set_labels" title="PyGithub.Blocking.Issue.Issue.set_labels"><tt class="xref py py-meth docutils literal"><span class="pre">Issue.set_labels()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="delete-repos-owner-repo-issues-number-labels-name">
 <h2>DELETE /repos/:owner/:repo/issues/:number/labels/:name<a class="headerlink" href="#delete-repos-owner-repo-issues-number-labels-name" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/issues/labels#remove-a-label-from-an-issue">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Issue.html#PyGithub.Blocking.Issue.Issue.remove_from_labels" title="PyGithub.Blocking.Issue.Issue.remove_from_labels"><tt class="xref py py-meth docutils literal"><span class="pre">Issue.remove_from_labels()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-repos-owner-repo-issues-comments">
 <h2>GET /repos/:owner/:repo/issues/comments<a class="headerlink" href="#get-repos-owner-repo-issues-comments" title="Permalink to this headline">¶</a></h2>
@@ -1144,17 +1272,35 @@ If something is not listed here, please <a class="reference external" href="http
 <div class="section" id="get-repos-owner-repo-labels">
 <h2>GET /repos/:owner/:repo/labels<a class="headerlink" href="#get-repos-owner-repo-labels" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/issues/labels#list-all-labels-for-this-repository">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Repository.html#PyGithub.Blocking.Repository.Repository.get_labels" title="PyGithub.Blocking.Repository.Repository.get_labels"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_labels()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="post-repos-owner-repo-labels">
 <h2>POST /repos/:owner/:repo/labels<a class="headerlink" href="#post-repos-owner-repo-labels" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/issues/labels#create-a-label">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Repository.html#PyGithub.Blocking.Repository.Repository.create_label" title="PyGithub.Blocking.Repository.Repository.create_label"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.create_label()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="delete-repos-owner-repo-labels-name">
 <h2>DELETE /repos/:owner/:repo/labels/:name<a class="headerlink" href="#delete-repos-owner-repo-labels-name" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/issues/labels#delete-a-label">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Label.html#PyGithub.Blocking.Label.Label.delete" title="PyGithub.Blocking.Label.Label.delete"><tt class="xref py py-meth docutils literal"><span class="pre">Label.delete()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-repos-owner-repo-labels-name">
 <h2>GET /repos/:owner/:repo/labels/:name<a class="headerlink" href="#get-repos-owner-repo-labels-name" title="Permalink to this headline">¶</a></h2>
@@ -1170,7 +1316,13 @@ If something is not listed here, please <a class="reference external" href="http
 <div class="section" id="patch-repos-owner-repo-labels-name">
 <h2>PATCH /repos/:owner/:repo/labels/:name<a class="headerlink" href="#patch-repos-owner-repo-labels-name" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/issues/labels#update-a-label">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Label.html#PyGithub.Blocking.Label.Label.edit" title="PyGithub.Blocking.Label.Label.edit"><tt class="xref py py-meth docutils literal"><span class="pre">Label.edit()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-repos-owner-repo-languages">
 <h2>GET /repos/:owner/:repo/languages<a class="headerlink" href="#get-repos-owner-repo-languages" title="Permalink to this headline">¶</a></h2>
@@ -1185,17 +1337,35 @@ If something is not listed here, please <a class="reference external" href="http
 <div class="section" id="get-repos-owner-repo-milestones">
 <h2>GET /repos/:owner/:repo/milestones<a class="headerlink" href="#get-repos-owner-repo-milestones" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/issues/milestones#list-milestones-for-a-repository">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Repository.html#PyGithub.Blocking.Repository.Repository.get_milestones" title="PyGithub.Blocking.Repository.Repository.get_milestones"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_milestones()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="post-repos-owner-repo-milestones">
 <h2>POST /repos/:owner/:repo/milestones<a class="headerlink" href="#post-repos-owner-repo-milestones" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/issues/milestones#create-a-milestone">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Repository.html#PyGithub.Blocking.Repository.Repository.create_milestone" title="PyGithub.Blocking.Repository.Repository.create_milestone"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.create_milestone()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="delete-repos-owner-repo-milestones-number">
 <h2>DELETE /repos/:owner/:repo/milestones/:number<a class="headerlink" href="#delete-repos-owner-repo-milestones-number" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/issues/milestones#delete-a-milestone">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Milestone.html#PyGithub.Blocking.Milestone.Milestone.delete" title="PyGithub.Blocking.Milestone.Milestone.delete"><tt class="xref py py-meth docutils literal"><span class="pre">Milestone.delete()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-repos-owner-repo-milestones-number">
 <h2>GET /repos/:owner/:repo/milestones/:number<a class="headerlink" href="#get-repos-owner-repo-milestones-number" title="Permalink to this headline">¶</a></h2>
@@ -1211,12 +1381,24 @@ If something is not listed here, please <a class="reference external" href="http
 <div class="section" id="patch-repos-owner-repo-milestones-number">
 <h2>PATCH /repos/:owner/:repo/milestones/:number<a class="headerlink" href="#patch-repos-owner-repo-milestones-number" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/issues/milestones#update-a-milestone">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Milestone.html#PyGithub.Blocking.Milestone.Milestone.edit" title="PyGithub.Blocking.Milestone.Milestone.edit"><tt class="xref py py-meth docutils literal"><span class="pre">Milestone.edit()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-repos-owner-repo-milestones-number-labels">
 <h2>GET /repos/:owner/:repo/milestones/:number/labels<a class="headerlink" href="#get-repos-owner-repo-milestones-number-labels" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/issues/labels#get-labels-for-every-issue-in-a-milestone">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Milestone.html#PyGithub.Blocking.Milestone.Milestone.get_labels" title="PyGithub.Blocking.Milestone.Milestone.get_labels"><tt class="xref py py-meth docutils literal"><span class="pre">Milestone.get_labels()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-repos-owner-repo-notifications">
 <h2>GET /repos/:owner/:repo/notifications<a class="headerlink" href="#get-repos-owner-repo-notifications" title="Permalink to this headline">¶</a></h2>
@@ -1246,22 +1428,47 @@ If something is not listed here, please <a class="reference external" href="http
 <div class="section" id="get-repos-owner-repo-pulls">
 <h2>GET /repos/:owner/:repo/pulls<a class="headerlink" href="#get-repos-owner-repo-pulls" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/pulls#list-pull-requests">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Repository.html#PyGithub.Blocking.Repository.Repository.get_pulls" title="PyGithub.Blocking.Repository.Repository.get_pulls"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_pulls()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="post-repos-owner-repo-pulls">
 <h2>POST /repos/:owner/:repo/pulls<a class="headerlink" href="#post-repos-owner-repo-pulls" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/pulls#create-a-pull-request">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Issue.html#PyGithub.Blocking.Issue.Issue.create_pull" title="PyGithub.Blocking.Issue.Issue.create_pull"><tt class="xref py py-meth docutils literal"><span class="pre">Issue.create_pull()</span></tt></a></li>
+<li><a class="reference internal" href="classes/Repository.html#PyGithub.Blocking.Repository.Repository.create_pull" title="PyGithub.Blocking.Repository.Repository.create_pull"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.create_pull()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-repos-owner-repo-pulls-number">
 <h2>GET /repos/:owner/:repo/pulls/:number<a class="headerlink" href="#get-repos-owner-repo-pulls-number" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/pulls#get-a-single-pull-request">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Repository.html#PyGithub.Blocking.Repository.Repository.get_pull" title="PyGithub.Blocking.Repository.Repository.get_pull"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_pull()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="patch-repos-owner-repo-pulls-number">
 <h2>PATCH /repos/:owner/:repo/pulls/:number<a class="headerlink" href="#patch-repos-owner-repo-pulls-number" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/pulls#update-a-pull-request">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/PullRequest.html#PyGithub.Blocking.PullRequest.PullRequest.edit" title="PyGithub.Blocking.PullRequest.PullRequest.edit"><tt class="xref py py-meth docutils literal"><span class="pre">PullRequest.edit()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-repos-owner-repo-pulls-number-comments">
 <h2>GET /repos/:owner/:repo/pulls/:number/comments<a class="headerlink" href="#get-repos-owner-repo-pulls-number-comments" title="Permalink to this headline">¶</a></h2>
@@ -1276,22 +1483,46 @@ If something is not listed here, please <a class="reference external" href="http
 <div class="section" id="get-repos-owner-repo-pulls-number-commits">
 <h2>GET /repos/:owner/:repo/pulls/:number/commits<a class="headerlink" href="#get-repos-owner-repo-pulls-number-commits" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/pulls#list-commits-on-a-pull-request">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/PullRequest.html#PyGithub.Blocking.PullRequest.PullRequest.get_commits" title="PyGithub.Blocking.PullRequest.PullRequest.get_commits"><tt class="xref py py-meth docutils literal"><span class="pre">PullRequest.get_commits()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-repos-owner-repo-pulls-number-files">
 <h2>GET /repos/:owner/:repo/pulls/:number/files<a class="headerlink" href="#get-repos-owner-repo-pulls-number-files" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/pulls#list-pull-requests-files">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/PullRequest.html#PyGithub.Blocking.PullRequest.PullRequest.get_files" title="PyGithub.Blocking.PullRequest.PullRequest.get_files"><tt class="xref py py-meth docutils literal"><span class="pre">PullRequest.get_files()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-repos-owner-repo-pulls-number-merge">
 <h2>GET /repos/:owner/:repo/pulls/:number/merge<a class="headerlink" href="#get-repos-owner-repo-pulls-number-merge" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/pulls#get-if-a-pull-request-has-been-merged">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/PullRequest.html#PyGithub.Blocking.PullRequest.PullRequest.get_is_merged" title="PyGithub.Blocking.PullRequest.PullRequest.get_is_merged"><tt class="xref py py-meth docutils literal"><span class="pre">PullRequest.get_is_merged()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="put-repos-owner-repo-pulls-number-merge">
 <h2>PUT /repos/:owner/:repo/pulls/:number/merge<a class="headerlink" href="#put-repos-owner-repo-pulls-number-merge" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/pulls#merge-a-pull-request-merge-button">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/PullRequest.html#PyGithub.Blocking.PullRequest.PullRequest.merge" title="PyGithub.Blocking.PullRequest.PullRequest.merge"><tt class="xref py py-meth docutils literal"><span class="pre">PullRequest.merge()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-repos-owner-repo-pulls-comments">
 <h2>GET /repos/:owner/:repo/pulls/comments<a class="headerlink" href="#get-repos-owner-repo-pulls-comments" title="Permalink to this headline">¶</a></h2>
@@ -1458,7 +1689,13 @@ If something is not listed here, please <a class="reference external" href="http
 <div class="section" id="get-repos-owner-repo-tags">
 <h2>GET /repos/:owner/:repo/tags<a class="headerlink" href="#get-repos-owner-repo-tags" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/repos#list-tags">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Repository.html#PyGithub.Blocking.Repository.Repository.get_tags" title="PyGithub.Blocking.Repository.Repository.get_tags"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_tags()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-repos-owner-repo-teams">
 <h2>GET /repos/:owner/:repo/teams<a class="headerlink" href="#get-repos-owner-repo-teams" title="Permalink to this headline">¶</a></h2>
@@ -1703,17 +1940,35 @@ If something is not listed here, please <a class="reference external" href="http
 <div class="section" id="delete-user-emails">
 <h2>DELETE /user/emails<a class="headerlink" href="#delete-user-emails" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/users/emails#delete-email-addresses">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.remove_from_emails" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.remove_from_emails"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.remove_from_emails()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-user-emails">
 <h2>GET /user/emails<a class="headerlink" href="#get-user-emails" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/users/emails#list-email-addresses-for-a-user">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_emails" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_emails"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.get_emails()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="post-user-emails">
 <h2>POST /user/emails<a class="headerlink" href="#post-user-emails" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/users/emails#add-email-addresses">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.add_to_emails" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.add_to_emails"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.add_to_emails()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-user-followers">
 <h2>GET /user/followers<a class="headerlink" href="#get-user-followers" title="Permalink to this headline">¶</a></h2>
@@ -1773,7 +2028,13 @@ If something is not listed here, please <a class="reference external" href="http
 <div class="section" id="get-user-issues">
 <h2>GET /user/issues<a class="headerlink" href="#get-user-issues" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/issues#list-issues">Reference documentation of Github API v3</a>)</p>
-<p>Not yet implemented in PyGithub.</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_issues" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_issues"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.get_issues()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 <div class="section" id="get-user-keys">
 <h2>GET /user/keys<a class="headerlink" href="#get-user-keys" title="Permalink to this headline">¶</a></h2>
@@ -1903,39 +2164,6 @@ If something is not listed here, please <a class="reference external" href="http
 <dt>Implemented in PyGithub by:</dt>
 <dd><ul class="first last simple">
 <li><a class="reference internal" href="classes/AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_subscriptions" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_subscriptions"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.get_subscriptions()</span></tt></a></li>
-</ul>
-</dd>
-</dl>
-</div>
-<div class="section" id="delete-user-subscriptions-owner-repo">
-<h2>DELETE /user/subscriptions/:owner/:repo<a class="headerlink" href="#delete-user-subscriptions-owner-repo" title="Permalink to this headline">¶</a></h2>
-<p>(<a class="reference external" href="http://developer.github.com/v3/activity/watching#stop-watching-a-repository-legacy">Reference documentation of Github API v3</a>)</p>
-<dl class="docutils">
-<dt>Implemented in PyGithub by:</dt>
-<dd><ul class="first last simple">
-<li><a class="reference internal" href="classes/AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.remove_from_subscriptions" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.remove_from_subscriptions"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.remove_from_subscriptions()</span></tt></a></li>
-</ul>
-</dd>
-</dl>
-</div>
-<div class="section" id="get-user-subscriptions-owner-repo">
-<h2>GET /user/subscriptions/:owner/:repo<a class="headerlink" href="#get-user-subscriptions-owner-repo" title="Permalink to this headline">¶</a></h2>
-<p>(<a class="reference external" href="http://developer.github.com/v3/activity/watching#check-if-you-are-watching-a-repository-legacy">Reference documentation of Github API v3</a>)</p>
-<dl class="docutils">
-<dt>Implemented in PyGithub by:</dt>
-<dd><ul class="first last simple">
-<li><a class="reference internal" href="classes/AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.has_in_subscriptions" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.has_in_subscriptions"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.has_in_subscriptions()</span></tt></a></li>
-</ul>
-</dd>
-</dl>
-</div>
-<div class="section" id="put-user-subscriptions-owner-repo">
-<h2>PUT /user/subscriptions/:owner/:repo<a class="headerlink" href="#put-user-subscriptions-owner-repo" title="Permalink to this headline">¶</a></h2>
-<p>(<a class="reference external" href="http://developer.github.com/v3/activity/watching#watch-a-repository-legacy">Reference documentation of Github API v3</a>)</p>
-<dl class="docutils">
-<dt>Implemented in PyGithub by:</dt>
-<dd><ul class="first last simple">
-<li><a class="reference internal" href="classes/AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.add_to_subscriptions" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.add_to_subscriptions"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.add_to_subscriptions()</span></tt></a></li>
 </ul>
 </dd>
 </dl>
@@ -2362,9 +2590,6 @@ If something is not listed here, please <a class="reference external" href="http
 <li><a class="reference internal" href="#get-user-starred-owner-repo">GET /user/starred/:owner/:repo</a></li>
 <li><a class="reference internal" href="#put-user-starred-owner-repo">PUT /user/starred/:owner/:repo</a></li>
 <li><a class="reference internal" href="#get-user-subscriptions">GET /user/subscriptions</a></li>
-<li><a class="reference internal" href="#delete-user-subscriptions-owner-repo">DELETE /user/subscriptions/:owner/:repo</a></li>
-<li><a class="reference internal" href="#get-user-subscriptions-owner-repo">GET /user/subscriptions/:owner/:repo</a></li>
-<li><a class="reference internal" href="#put-user-subscriptions-owner-repo">PUT /user/subscriptions/:owner/:repo</a></li>
 <li><a class="reference internal" href="#get-user-teams">GET /user/teams</a></li>
 <li><a class="reference internal" href="#get-users">GET /users</a></li>
 <li><a class="reference internal" href="#get-users-username">GET /users/:username</a></li>

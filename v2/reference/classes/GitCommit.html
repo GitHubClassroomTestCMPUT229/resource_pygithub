@@ -26,7 +26,7 @@
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="top" title="PyGithub 2.0.0-alpha.3 documentation" href="../../index.html" />
     <link rel="up" title="Classes" href="../classes.html" />
-    <link rel="next" title="GitTree" href="GitTree.html" />
+    <link rel="next" title="GitRef" href="GitRef.html" />
     <link rel="prev" title="GitBlob" href="GitBlob.html" /> 
   </head>
   <body>
@@ -40,7 +40,7 @@
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="GitTree.html" title="GitTree"
+          <a href="GitRef.html" title="GitRef"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="GitBlob.html" title="GitBlob"
@@ -66,11 +66,20 @@
 <dl class="docutils">
 <dt>Methods and attributes returning instances of this class:</dt>
 <dd><ul class="first last simple">
-<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.ContentCommit.commit" title="PyGithub.Blocking.Repository.Repository.ContentCommit.commit"><tt class="xref py py-attr docutils literal"><span class="pre">ContentCommit.commit</span></tt></a></li>
+<li><a class="reference internal" href="Commit.html#PyGithub.Blocking.Commit.Commit.commit" title="PyGithub.Blocking.Commit.Commit.commit"><tt class="xref py py-attr docutils literal"><span class="pre">Commit.commit</span></tt></a></li>
 <li><a class="reference internal" href="File.html#PyGithub.Blocking.File.File.delete" title="PyGithub.Blocking.File.File.delete"><tt class="xref py py-meth docutils literal"><span class="pre">File.delete()</span></tt></a></li>
 <li><a class="reference internal" href="File.html#PyGithub.Blocking.File.File.edit" title="PyGithub.Blocking.File.File.edit"><tt class="xref py py-meth docutils literal"><span class="pre">File.edit()</span></tt></a></li>
 <li><a class="reference internal" href="#PyGithub.Blocking.GitCommit.GitCommit.parents" title="PyGithub.Blocking.GitCommit.GitCommit.parents"><tt class="xref py py-attr docutils literal"><span class="pre">GitCommit.parents</span></tt></a></li>
+<li><a class="reference internal" href="GitRef.html#PyGithub.Blocking.GitRef.GitRef.object" title="PyGithub.Blocking.GitRef.GitRef.object"><tt class="xref py py-attr docutils literal"><span class="pre">GitRef.object</span></tt></a></li>
+<li><a class="reference internal" href="GitTag.html#PyGithub.Blocking.GitTag.GitTag.object" title="PyGithub.Blocking.GitTag.GitTag.object"><tt class="xref py py-attr docutils literal"><span class="pre">GitTag.object</span></tt></a></li>
+<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.ContentCommit.commit" title="PyGithub.Blocking.Repository.Repository.ContentCommit.commit"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.ContentCommit.commit</span></tt></a></li>
+<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.create_git_commit" title="PyGithub.Blocking.Repository.Repository.create_git_commit"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.create_git_commit()</span></tt></a></li>
 <li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.get_git_commit" title="PyGithub.Blocking.Repository.Repository.get_git_commit"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_git_commit()</span></tt></a></li>
+</ul>
+</dd>
+<dt>Methods accepting instances of this class as parameter:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.create_git_commit" title="PyGithub.Blocking.Repository.Repository.create_git_commit"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.create_git_commit()</span></tt></a></li>
 </ul>
 </dd>
 </dl>
@@ -82,9 +91,11 @@
 <dd><ul class="first last simple">
 <li><a class="reference internal" href="#PyGithub.Blocking.GitCommit.GitCommit.author" title="PyGithub.Blocking.GitCommit.GitCommit.author"><tt class="xref py py-attr docutils literal"><span class="pre">GitCommit.author</span></tt></a></li>
 <li><a class="reference internal" href="#PyGithub.Blocking.GitCommit.GitCommit.committer" title="PyGithub.Blocking.GitCommit.GitCommit.committer"><tt class="xref py py-attr docutils literal"><span class="pre">GitCommit.committer</span></tt></a></li>
+<li><a class="reference internal" href="GitTag.html#PyGithub.Blocking.GitTag.GitTag.tagger" title="PyGithub.Blocking.GitTag.GitTag.tagger"><tt class="xref py py-attr docutils literal"><span class="pre">GitTag.tagger</span></tt></a></li>
 </ul>
 </dd>
 </dl>
+<p>Methods accepting instances of this class as parameter: none.</p>
 <dl class="attribute">
 <dt id="PyGithub.Blocking.GitCommit.GitCommit.Author.date">
 <tt class="descname">date</tt><a class="headerlink" href="#PyGithub.Blocking.GitCommit.GitCommit.Author.date" title="Permalink to this definition">¶</a></dt>
@@ -133,7 +144,20 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#PyGithub.Blocking.GitCommit.GitCommit.Author" title="PyGithub.Blocking.GitCommit.GitCommit.Author"><tt class="xref py py-class docutils literal"><span class="pre">Author</span></tt></a></td>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#PyGithub.Blocking.GitCommit.GitCommit.Author" title="PyGithub.Blocking.GitCommit.GitCommit.Author"><tt class="xref py py-class docutils literal"><span class="pre">GitCommit.Author</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.GitCommit.GitCommit.comment_count">
+<tt class="descclassname">GitCommit.</tt><tt class="descname">comment_count</tt><a class="headerlink" href="#PyGithub.Blocking.GitCommit.GitCommit.comment_count" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
 </tr>
 </tbody>
 </table>
@@ -146,7 +170,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#PyGithub.Blocking.GitCommit.GitCommit.Author" title="PyGithub.Blocking.GitCommit.GitCommit.Author"><tt class="xref py py-class docutils literal"><span class="pre">Author</span></tt></a></td>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#PyGithub.Blocking.GitCommit.GitCommit.Author" title="PyGithub.Blocking.GitCommit.GitCommit.Author"><tt class="xref py py-class docutils literal"><span class="pre">GitCommit.Author</span></tt></a></td>
 </tr>
 </tbody>
 </table>
@@ -218,8 +242,8 @@
 </dd></dl>
 
 <dl class="attribute">
-<dt id="PyGithub.Blocking.GitCommit.GitCommit.url">
-<tt class="descclassname">GitCommit.</tt><tt class="descname">url</tt><a class="headerlink" href="#PyGithub.Blocking.GitCommit.GitCommit.url" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking.GitCommit.GitCommit.type">
+<tt class="descclassname">GitCommit.</tt><tt class="descname">type</tt><a class="headerlink" href="#PyGithub.Blocking.GitCommit.GitCommit.type" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -244,8 +268,8 @@
   <p class="topless"><a href="GitBlob.html"
                         title="previous chapter">GitBlob</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="GitTree.html"
-                        title="next chapter">GitTree</a></p>
+  <p class="topless"><a href="GitRef.html"
+                        title="next chapter">GitRef</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="../../_sources/reference/classes/GitCommit.txt"
@@ -278,7 +302,7 @@
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="GitTree.html" title="GitTree"
+          <a href="GitRef.html" title="GitRef"
              >next</a> |</li>
         <li class="right" >
           <a href="GitBlob.html" title="GitBlob"

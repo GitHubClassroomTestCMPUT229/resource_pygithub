@@ -2,16 +2,16 @@
    ###### This file is generated. Manual changes will likely be lost. #####
    ########################################################################
 
-User
-====
+Commit
+======
 
-.. automodule:: PyGithub.Blocking.User
+.. automodule:: PyGithub.Blocking.Commit
 
-.. autoclass:: PyGithub.Blocking.User::User()
+.. autoclass:: PyGithub.Blocking.Commit::Commit()
     :members:
-    :exclude-members: Key, Plan
+    :exclude-members: File, Stats
 
-    .. autoclass:: PyGithub.Blocking.User::User.Key()
+    .. autoclass:: PyGithub.Blocking.Commit::Commit.File()
         :members:
-    .. autoclass:: PyGithub.Blocking.User::User.Plan()
+    .. autoclass:: PyGithub.Blocking.Commit::Commit.Stats()
         :members:

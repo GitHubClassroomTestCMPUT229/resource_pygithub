@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Dir &mdash; PyGithub 2.0.0-alpha.3 documentation</title>
+    <title>GitTag &mdash; PyGithub 2.0.0-alpha.3 documentation</title>
     
     <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -26,8 +26,8 @@
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="top" title="PyGithub 2.0.0-alpha.3 documentation" href="../../index.html" />
     <link rel="up" title="Classes" href="../classes.html" />
-    <link rel="next" title="File" href="File.html" />
-    <link rel="prev" title="Contributor" href="Contributor.html" /> 
+    <link rel="next" title="GitTree" href="GitTree.html" />
+    <link rel="prev" title="GitRef" href="GitRef.html" /> 
   </head>
   <body>
     <div class="related">
@@ -40,10 +40,10 @@
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="File.html" title="File"
+          <a href="GitTree.html" title="GitTree"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="Contributor.html" title="Contributor"
+          <a href="GitRef.html" title="GitRef"
              accesskey="P">previous</a> |</li>
         <li><a href="../../index.html">PyGithub 2.0.0-alpha.3 documentation</a> &raquo;</li>
           <li><a href="../../reference.html" >Reference documentation</a> &raquo;</li>
@@ -56,25 +56,27 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="module-PyGithub.Blocking.Dir">
-<span id="dir"></span><h1>Dir<a class="headerlink" href="#module-PyGithub.Blocking.Dir" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="module-PyGithub.Blocking.GitTag">
+<span id="gittag"></span><h1>GitTag<a class="headerlink" href="#module-PyGithub.Blocking.GitTag" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
-<dt id="PyGithub.Blocking.Dir.Dir">
-<em class="property">class </em><tt class="descclassname">PyGithub.Blocking.Dir.</tt><tt class="descname">Dir</tt><a class="headerlink" href="#PyGithub.Blocking.Dir.Dir" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking.GitTag.GitTag">
+<em class="property">class </em><tt class="descclassname">PyGithub.Blocking.GitTag.</tt><tt class="descname">GitTag</tt><a class="headerlink" href="#PyGithub.Blocking.GitTag.GitTag" title="Permalink to this definition">¶</a></dt>
 <dd><p>Base class: <a class="reference internal" href="../bases.html#PyGithub.Blocking._base_github_object.UpdatableGithubObject" title="PyGithub.Blocking._base_github_object.UpdatableGithubObject"><tt class="xref py py-class docutils literal"><span class="pre">UpdatableGithubObject</span></tt></a></p>
 <p>Derived classes: none.</p>
 <dl class="docutils">
 <dt>Methods and attributes returning instances of this class:</dt>
 <dd><ul class="first last simple">
-<li><a class="reference internal" href="#PyGithub.Blocking.Dir.Dir.get_contents" title="PyGithub.Blocking.Dir.Dir.get_contents"><tt class="xref py py-meth docutils literal"><span class="pre">Dir.get_contents()</span></tt></a></li>
-<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.get_contents" title="PyGithub.Blocking.Repository.Repository.get_contents"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_contents()</span></tt></a></li>
+<li><a class="reference internal" href="GitRef.html#PyGithub.Blocking.GitRef.GitRef.object" title="PyGithub.Blocking.GitRef.GitRef.object"><tt class="xref py py-attr docutils literal"><span class="pre">GitRef.object</span></tt></a></li>
+<li><a class="reference internal" href="#PyGithub.Blocking.GitTag.GitTag.object" title="PyGithub.Blocking.GitTag.GitTag.object"><tt class="xref py py-attr docutils literal"><span class="pre">GitTag.object</span></tt></a></li>
+<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.create_git_tag" title="PyGithub.Blocking.Repository.Repository.create_git_tag"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.create_git_tag()</span></tt></a></li>
+<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.get_git_tag" title="PyGithub.Blocking.Repository.Repository.get_git_tag"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_git_tag()</span></tt></a></li>
 </ul>
 </dd>
 </dl>
 <p>Methods accepting instances of this class as parameter: none.</p>
 <dl class="attribute">
-<dt id="PyGithub.Blocking.Dir.Dir.git_url">
-<tt class="descname">git_url</tt><a class="headerlink" href="#PyGithub.Blocking.Dir.Dir.git_url" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking.GitTag.GitTag.message">
+<tt class="descname">message</tt><a class="headerlink" href="#PyGithub.Blocking.GitTag.GitTag.message" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -86,8 +88,21 @@
 </dd></dl>
 
 <dl class="attribute">
-<dt id="PyGithub.Blocking.Dir.Dir.html_url">
-<tt class="descname">html_url</tt><a class="headerlink" href="#PyGithub.Blocking.Dir.Dir.html_url" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking.GitTag.GitTag.object">
+<tt class="descname">object</tt><a class="headerlink" href="#PyGithub.Blocking.GitTag.GitTag.object" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="GitBlob.html#PyGithub.Blocking.GitBlob.GitBlob" title="PyGithub.Blocking.GitBlob.GitBlob"><tt class="xref py py-class docutils literal"><span class="pre">GitBlob</span></tt></a> or <a class="reference internal" href="GitTree.html#PyGithub.Blocking.GitTree.GitTree" title="PyGithub.Blocking.GitTree.GitTree"><tt class="xref py py-class docutils literal"><span class="pre">GitTree</span></tt></a> or <a class="reference internal" href="GitCommit.html#PyGithub.Blocking.GitCommit.GitCommit" title="PyGithub.Blocking.GitCommit.GitCommit"><tt class="xref py py-class docutils literal"><span class="pre">GitCommit</span></tt></a> or <a class="reference internal" href="#PyGithub.Blocking.GitTag.GitTag" title="PyGithub.Blocking.GitTag.GitTag"><tt class="xref py py-class docutils literal"><span class="pre">GitTag</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.GitTag.GitTag.sha">
+<tt class="descname">sha</tt><a class="headerlink" href="#PyGithub.Blocking.GitTag.GitTag.sha" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -99,8 +114,8 @@
 </dd></dl>
 
 <dl class="attribute">
-<dt id="PyGithub.Blocking.Dir.Dir.name">
-<tt class="descname">name</tt><a class="headerlink" href="#PyGithub.Blocking.Dir.Dir.name" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking.GitTag.GitTag.tag">
+<tt class="descname">tag</tt><a class="headerlink" href="#PyGithub.Blocking.GitTag.GitTag.tag" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -112,73 +127,26 @@
 </dd></dl>
 
 <dl class="attribute">
-<dt id="PyGithub.Blocking.Dir.Dir.path">
-<tt class="descname">path</tt><a class="headerlink" href="#PyGithub.Blocking.Dir.Dir.path" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking.GitTag.GitTag.tagger">
+<tt class="descname">tagger</tt><a class="headerlink" href="#PyGithub.Blocking.GitTag.GitTag.tagger" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="GitCommit.html#PyGithub.Blocking.GitCommit.GitCommit.Author" title="PyGithub.Blocking.GitCommit.GitCommit.Author"><tt class="xref py py-class docutils literal"><span class="pre">GitCommit.Author</span></tt></a></td>
 </tr>
 </tbody>
 </table>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="PyGithub.Blocking.Dir.Dir.sha">
-<tt class="descname">sha</tt><a class="headerlink" href="#PyGithub.Blocking.Dir.Dir.sha" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking.GitTag.GitTag.type">
+<tt class="descname">type</tt><a class="headerlink" href="#PyGithub.Blocking.GitTag.GitTag.type" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="PyGithub.Blocking.Dir.Dir.size">
-<tt class="descname">size</tt><a class="headerlink" href="#PyGithub.Blocking.Dir.Dir.size" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="PyGithub.Blocking.Dir.Dir.type">
-<tt class="descname">type</tt><a class="headerlink" href="#PyGithub.Blocking.Dir.Dir.type" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="PyGithub.Blocking.Dir.Dir.get_contents">
-<tt class="descname">get_contents</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Dir.Dir.get_contents" title="Permalink to this definition">¶</a></dt>
-<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/repos/contents#get-contents">GET /repos/:owner/:repo/contents/:path</a> end point.</p>
-<dl class="docutils">
-<dt>The following methods also call this end point:</dt>
-<dd><ul class="first last simple">
-<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.get_contents" title="PyGithub.Blocking.Repository.Repository.get_contents"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_contents()</span></tt></a></li>
-</ul>
-</dd>
-</dl>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">list</span></tt> of <a class="reference internal" href="PullRequest.html#PyGithub.Blocking.PullRequest.PullRequest.File" title="PyGithub.Blocking.PullRequest.PullRequest.File"><tt class="xref py py-class docutils literal"><span class="pre">File</span></tt></a> or <a class="reference internal" href="#PyGithub.Blocking.Dir.Dir" title="PyGithub.Blocking.Dir.Dir"><tt class="xref py py-class docutils literal"><span class="pre">Dir</span></tt></a> or <a class="reference internal" href="Submodule.html#PyGithub.Blocking.Submodule.Submodule" title="PyGithub.Blocking.Submodule.Submodule"><tt class="xref py py-class docutils literal"><span class="pre">Submodule</span></tt></a> or <a class="reference internal" href="SymLink.html#PyGithub.Blocking.SymLink.SymLink" title="PyGithub.Blocking.SymLink.SymLink"><tt class="xref py py-class docutils literal"><span class="pre">SymLink</span></tt></a></td>
 </tr>
 </tbody>
 </table>
@@ -195,14 +163,14 @@
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="Contributor.html"
-                        title="previous chapter">Contributor</a></p>
+  <p class="topless"><a href="GitRef.html"
+                        title="previous chapter">GitRef</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="File.html"
-                        title="next chapter">File</a></p>
+  <p class="topless"><a href="GitTree.html"
+                        title="next chapter">GitTree</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="../../_sources/reference/classes/Dir.txt"
+    <li><a href="../../_sources/reference/classes/GitTag.txt"
            rel="nofollow">Show Source</a></li>
   </ul>
 <div id="searchbox" style="display: none">
@@ -232,10 +200,10 @@
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="File.html" title="File"
+          <a href="GitTree.html" title="GitTree"
              >next</a> |</li>
         <li class="right" >
-          <a href="Contributor.html" title="Contributor"
+          <a href="GitRef.html" title="GitRef"
              >previous</a> |</li>
         <li><a href="../../index.html">PyGithub 2.0.0-alpha.3 documentation</a> &raquo;</li>
           <li><a href="../../reference.html" >Reference documentation</a> &raquo;</li>
