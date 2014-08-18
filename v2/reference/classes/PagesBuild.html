@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Dir &mdash; PyGithub 2.0.0-alpha.4 documentation</title>
+    <title>PagesBuild &mdash; PyGithub 2.0.0-alpha.4 documentation</title>
     
     <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -26,8 +26,8 @@
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="top" title="PyGithub 2.0.0-alpha.4 documentation" href="../../index.html" />
     <link rel="up" title="Classes" href="../classes.html" />
-    <link rel="next" title="File" href="File.html" />
-    <link rel="prev" title="Contributor" href="Contributor.html" /> 
+    <link rel="next" title="PagesInformation" href="PagesInformation.html" />
+    <link rel="prev" title="Organization" href="Organization.html" /> 
   </head>
   <body>
     <div class="related">
@@ -40,10 +40,10 @@
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="File.html" title="File"
+          <a href="PagesInformation.html" title="PagesInformation"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="Contributor.html" title="Contributor"
+          <a href="Organization.html" title="Organization"
              accesskey="P">previous</a> |</li>
         <li><a href="../../index.html">PyGithub 2.0.0-alpha.4 documentation</a> &raquo;</li>
           <li><a href="../../reference.html" >Reference documentation</a> &raquo;</li>
@@ -56,25 +56,51 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="module-PyGithub.Blocking.Dir">
-<span id="dir"></span><h1>Dir<a class="headerlink" href="#module-PyGithub.Blocking.Dir" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="module-PyGithub.Blocking.PagesBuild">
+<span id="pagesbuild"></span><h1>PagesBuild<a class="headerlink" href="#module-PyGithub.Blocking.PagesBuild" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
-<dt id="PyGithub.Blocking.Dir.Dir">
-<em class="property">class </em><tt class="descclassname">PyGithub.Blocking.Dir.</tt><tt class="descname">Dir</tt><a class="headerlink" href="#PyGithub.Blocking.Dir.Dir" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking.PagesBuild.PagesBuild">
+<em class="property">class </em><tt class="descclassname">PyGithub.Blocking.PagesBuild.</tt><tt class="descname">PagesBuild</tt><a class="headerlink" href="#PyGithub.Blocking.PagesBuild.PagesBuild" title="Permalink to this definition">¶</a></dt>
 <dd><p>Base class: <a class="reference internal" href="../bases.html#PyGithub.Blocking._base_github_object.UpdatableGithubObject" title="PyGithub.Blocking._base_github_object.UpdatableGithubObject"><tt class="xref py py-class docutils literal"><span class="pre">UpdatableGithubObject</span></tt></a></p>
 <p>Derived classes: none.</p>
 <dl class="docutils">
 <dt>Methods and attributes returning instances of this class:</dt>
 <dd><ul class="first last simple">
-<li><a class="reference internal" href="#PyGithub.Blocking.Dir.Dir.get_contents" title="PyGithub.Blocking.Dir.Dir.get_contents"><tt class="xref py py-meth docutils literal"><span class="pre">Dir.get_contents()</span></tt></a></li>
-<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.get_contents" title="PyGithub.Blocking.Repository.Repository.get_contents"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_contents()</span></tt></a></li>
+<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.get_latest_pages_build" title="PyGithub.Blocking.Repository.Repository.get_latest_pages_build"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_latest_pages_build()</span></tt></a></li>
+<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.get_pages_builds" title="PyGithub.Blocking.Repository.Repository.get_pages_builds"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_pages_builds()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
+<p>Methods accepting instances of this class as parameter: none.</p>
+<dl class="class">
+<dt id="PyGithub.Blocking.PagesBuild.PagesBuild.Error">
+<em class="property">class </em><tt class="descname">Error</tt><a class="headerlink" href="#PyGithub.Blocking.PagesBuild.PagesBuild.Error" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Methods and attributes returning instances of this class:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="#PyGithub.Blocking.PagesBuild.PagesBuild.error" title="PyGithub.Blocking.PagesBuild.PagesBuild.error"><tt class="xref py py-attr docutils literal"><span class="pre">PagesBuild.error</span></tt></a></li>
 </ul>
 </dd>
 </dl>
 <p>Methods accepting instances of this class as parameter: none.</p>
 <dl class="attribute">
-<dt id="PyGithub.Blocking.Dir.Dir.git_url">
-<tt class="descname">git_url</tt><a class="headerlink" href="#PyGithub.Blocking.Dir.Dir.git_url" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking.PagesBuild.PagesBuild.Error.message">
+<tt class="descname">message</tt><a class="headerlink" href="#PyGithub.Blocking.PagesBuild.PagesBuild.Error.message" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PagesBuild.PagesBuild.commit">
+<tt class="descclassname">PagesBuild.</tt><tt class="descname">commit</tt><a class="headerlink" href="#PyGithub.Blocking.PagesBuild.PagesBuild.commit" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -86,60 +112,21 @@
 </dd></dl>
 
 <dl class="attribute">
-<dt id="PyGithub.Blocking.Dir.Dir.html_url">
-<tt class="descname">html_url</tt><a class="headerlink" href="#PyGithub.Blocking.Dir.Dir.html_url" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking.PagesBuild.PagesBuild.created_at">
+<tt class="descclassname">PagesBuild.</tt><tt class="descname">created_at</tt><a class="headerlink" href="#PyGithub.Blocking.PagesBuild.PagesBuild.created_at" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">datetime</span></tt></td>
 </tr>
 </tbody>
 </table>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="PyGithub.Blocking.Dir.Dir.name">
-<tt class="descname">name</tt><a class="headerlink" href="#PyGithub.Blocking.Dir.Dir.name" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="PyGithub.Blocking.Dir.Dir.path">
-<tt class="descname">path</tt><a class="headerlink" href="#PyGithub.Blocking.Dir.Dir.path" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="PyGithub.Blocking.Dir.Dir.sha">
-<tt class="descname">sha</tt><a class="headerlink" href="#PyGithub.Blocking.Dir.Dir.sha" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="PyGithub.Blocking.Dir.Dir.size">
-<tt class="descname">size</tt><a class="headerlink" href="#PyGithub.Blocking.Dir.Dir.size" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking.PagesBuild.PagesBuild.duration">
+<tt class="descclassname">PagesBuild.</tt><tt class="descname">duration</tt><a class="headerlink" href="#PyGithub.Blocking.PagesBuild.PagesBuild.duration" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -151,8 +138,60 @@
 </dd></dl>
 
 <dl class="attribute">
-<dt id="PyGithub.Blocking.Dir.Dir.type">
-<tt class="descname">type</tt><a class="headerlink" href="#PyGithub.Blocking.Dir.Dir.type" title="Permalink to this definition">¶</a></dt>
+<dt id="PyGithub.Blocking.PagesBuild.PagesBuild.error">
+<tt class="descclassname">PagesBuild.</tt><tt class="descname">error</tt><a class="headerlink" href="#PyGithub.Blocking.PagesBuild.PagesBuild.error" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#PyGithub.Blocking.PagesBuild.PagesBuild.Error" title="PyGithub.Blocking.PagesBuild.PagesBuild.Error"><tt class="xref py py-class docutils literal"><span class="pre">PagesBuild.Error</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PagesBuild.PagesBuild.pusher">
+<tt class="descclassname">PagesBuild.</tt><tt class="descname">pusher</tt><a class="headerlink" href="#PyGithub.Blocking.PagesBuild.PagesBuild.pusher" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="User.html#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PagesBuild.PagesBuild.status">
+<tt class="descclassname">PagesBuild.</tt><tt class="descname">status</tt><a class="headerlink" href="#PyGithub.Blocking.PagesBuild.PagesBuild.status" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PagesBuild.PagesBuild.updated_at">
+<tt class="descclassname">PagesBuild.</tt><tt class="descname">updated_at</tt><a class="headerlink" href="#PyGithub.Blocking.PagesBuild.PagesBuild.updated_at" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">datetime</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.PagesBuild.PagesBuild.url">
+<tt class="descclassname">PagesBuild.</tt><tt class="descname">url</tt><a class="headerlink" href="#PyGithub.Blocking.PagesBuild.PagesBuild.url" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -164,21 +203,15 @@
 </dd></dl>
 
 <dl class="method">
-<dt id="PyGithub.Blocking.Dir.Dir.get_contents">
-<tt class="descname">get_contents</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Dir.Dir.get_contents" title="Permalink to this definition">¶</a></dt>
-<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/repos/contents#get-contents">GET /repos/:owner/:repo/contents/:path</a> end point.</p>
-<dl class="docutils">
-<dt>The following methods also call this end point:</dt>
-<dd><ul class="first last simple">
-<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.get_contents" title="PyGithub.Blocking.Repository.Repository.get_contents"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_contents()</span></tt></a></li>
-</ul>
-</dd>
-</dl>
+<dt id="PyGithub.Blocking.PagesBuild.PagesBuild.update">
+<tt class="descclassname">PagesBuild.</tt><tt class="descname">update</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.PagesBuild.PagesBuild.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes a <a class="reference external" href="http://developer.github.com/v3/#conditional-requests">conditional request</a> and updates the object.
+Returns True if the object was updated.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">list</span></tt> of <a class="reference internal" href="PullRequest.html#PyGithub.Blocking.PullRequest.PullRequest.File" title="PyGithub.Blocking.PullRequest.PullRequest.File"><tt class="xref py py-class docutils literal"><span class="pre">File</span></tt></a> or <a class="reference internal" href="#PyGithub.Blocking.Dir.Dir" title="PyGithub.Blocking.Dir.Dir"><tt class="xref py py-class docutils literal"><span class="pre">Dir</span></tt></a> or <a class="reference internal" href="Submodule.html#PyGithub.Blocking.Submodule.Submodule" title="PyGithub.Blocking.Submodule.Submodule"><tt class="xref py py-class docutils literal"><span class="pre">Submodule</span></tt></a> or <a class="reference internal" href="SymLink.html#PyGithub.Blocking.SymLink.SymLink" title="PyGithub.Blocking.SymLink.SymLink"><tt class="xref py py-class docutils literal"><span class="pre">SymLink</span></tt></a></td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
 </tr>
 </tbody>
 </table>
@@ -198,14 +231,14 @@
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="Contributor.html"
-                        title="previous chapter">Contributor</a></p>
+  <p class="topless"><a href="Organization.html"
+                        title="previous chapter">Organization</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="File.html"
-                        title="next chapter">File</a></p>
+  <p class="topless"><a href="PagesInformation.html"
+                        title="next chapter">PagesInformation</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="../../_sources/reference/classes/Dir.txt"
+    <li><a href="../../_sources/reference/classes/PagesBuild.txt"
            rel="nofollow">Show Source</a></li>
   </ul>
 <div id="searchbox" style="display: none">
@@ -235,10 +268,10 @@
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="File.html" title="File"
+          <a href="PagesInformation.html" title="PagesInformation"
              >next</a> |</li>
         <li class="right" >
-          <a href="Contributor.html" title="Contributor"
+          <a href="Organization.html" title="Organization"
              >previous</a> |</li>
         <li><a href="../../index.html">PyGithub 2.0.0-alpha.4 documentation</a> &raquo;</li>
           <li><a href="../../reference.html" >Reference documentation</a> &raquo;</li>

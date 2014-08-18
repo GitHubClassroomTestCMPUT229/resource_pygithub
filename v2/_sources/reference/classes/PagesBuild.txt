@@ -2,10 +2,14 @@
    ###### This file is generated. Manual changes will likely be lost. #####
    ########################################################################
 
-Dir
-===
+PagesBuild
+==========
 
-.. automodule:: PyGithub.Blocking.Dir
+.. automodule:: PyGithub.Blocking.PagesBuild
 
-.. autoclass:: PyGithub.Blocking.Dir::Dir()
+.. autoclass:: PyGithub.Blocking.PagesBuild::PagesBuild()
     :members:
+    :exclude-members: Error
+
+    .. autoclass:: PyGithub.Blocking.PagesBuild::PagesBuild.Error()
+        :members:

@@ -1,16 +1,15 @@
-.. _cook_book:
+.. _cookbook:
 
-=========
-Cook book
-=========
+========
+Cookbook
+========
 
 @todoAlpha Cookbook about Repository.create_file etc.
-@todoAlpha Write it "cookbook" everywhere as the internets seem to agree on this spelling
 
 Working with gists
 ==================
 
-This cook book shows you everything about `gists <https://gist.github.com>`__ and the `gists API <https://developer.github.com/v3/gists>`__.
+This cookbook shows you everything about `gists <https://gist.github.com>`__ and the `gists API <https://developer.github.com/v3/gists>`__.
 
 Initialization::
 
@@ -150,11 +149,11 @@ Delete a file::
 Working with raw Git objects
 ============================
 
-This cook book shows you how to manipulate raw `Git objects <https://developer.github.com/v3/git>`__. Do not forget that higher-level functions like :meth:`.File.edit` are available. If you really need to use these low-level functions and are not too familiar with git internals, you may want to read `the "Git Internal Objects" chapter of Pro Git <http://git-scm.com/book/en/Git-Internals-Git-Objects>`__.
+This cookbook shows you how to manipulate raw `Git objects <https://developer.github.com/v3/git>`__. Do not forget that higher-level functions like :meth:`.File.edit` are available. If you really need to use these low-level functions and are not too familiar with git internals, you may want to read `the "Git Internal Objects" chapter of Pro Git <http://git-scm.com/book/en/Git-Internals-Git-Objects>`__.
 
-In this cook book, we are going to create a new branch with two commits:
+In this cookbook, we are going to create a new branch with two commits:
 
-.. image:: cook_book_raw_git_objects_final_state.dot.png
+.. image:: cookbook_raw_git_objects_final_state.dot.png
 
 Initialization::
 
@@ -194,7 +193,7 @@ Finally create the branch::
 
 We now have a branch with one commit. You should check on http://github.com/{user}/PyGithubCookbookRawGitObjects/branches:
 
-.. image:: cook_book_raw_git_objects_intermediate_state.dot.png
+.. image:: cookbook_raw_git_objects_intermediate_state.dot.png
 
 Create a new tree and a second commit::
 
@@ -214,7 +213,7 @@ Update the branch::
 
 And we're done:
 
-.. image:: cook_book_raw_git_objects_final_state.dot.png
+.. image:: cookbook_raw_git_objects_final_state.dot.png
 
 @todoAlpha Demonstrate :meth:`.GitTree.create_modified_copy` and usage of parameter `content` in :meth:`.Repository.create_git_tree`.
 @todoAlpha Demonstrate lightweight tags (through :class:`.GitRef`) and tag objects (actual :class:`.GitTag`).

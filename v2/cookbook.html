@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Cook book &mdash; PyGithub 2.0.0-alpha.4 documentation</title>
+    <title>Cookbook &mdash; PyGithub 2.0.0-alpha.4 documentation</title>
     
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -53,13 +53,12 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="cook-book">
-<span id="id1"></span><h1>Cook book<a class="headerlink" href="#cook-book" title="Permalink to this headline">¶</a></h1>
-<p>&#64;todoAlpha Cookbook about Repository.create_file etc.
-&#64;todoAlpha Write it &#8220;cookbook&#8221; everywhere as the internets seem to agree on this spelling</p>
+  <div class="section" id="cookbook">
+<span id="id1"></span><h1>Cookbook<a class="headerlink" href="#cookbook" title="Permalink to this headline">¶</a></h1>
+<p>&#64;todoAlpha Cookbook about Repository.create_file etc.</p>
 <div class="section" id="working-with-gists">
 <h2>Working with gists<a class="headerlink" href="#working-with-gists" title="Permalink to this headline">¶</a></h2>
-<p>This cook book shows you everything about <a class="reference external" href="https://gist.github.com">gists</a> and the <a class="reference external" href="https://developer.github.com/v3/gists">gists API</a>.</p>
+<p>This cookbook shows you everything about <a class="reference external" href="https://gist.github.com">gists</a> and the <a class="reference external" href="https://developer.github.com/v3/gists">gists API</a>.</p>
 <p>Initialization:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">datetime</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">PyGithub</span>
@@ -188,9 +187,9 @@
 </div>
 <div class="section" id="working-with-raw-git-objects">
 <h2>Working with raw Git objects<a class="headerlink" href="#working-with-raw-git-objects" title="Permalink to this headline">¶</a></h2>
-<p>This cook book shows you how to manipulate raw <a class="reference external" href="https://developer.github.com/v3/git">Git objects</a>. Do not forget that higher-level functions like <a class="reference internal" href="reference/classes/File.html#PyGithub.Blocking.File.File.edit" title="PyGithub.Blocking.File.File.edit"><tt class="xref py py-meth docutils literal"><span class="pre">File.edit()</span></tt></a> are available. If you really need to use these low-level functions and are not too familiar with git internals, you may want to read <a class="reference external" href="http://git-scm.com/book/en/Git-Internals-Git-Objects">the &#8220;Git Internal Objects&#8221; chapter of Pro Git</a>.</p>
-<p>In this cook book, we are going to create a new branch with two commits:</p>
-<img alt="_images/cook_book_raw_git_objects_final_state.dot.png" src="_images/cook_book_raw_git_objects_final_state.dot.png" />
+<p>This cookbook shows you how to manipulate raw <a class="reference external" href="https://developer.github.com/v3/git">Git objects</a>. Do not forget that higher-level functions like <a class="reference internal" href="reference/classes/File.html#PyGithub.Blocking.File.File.edit" title="PyGithub.Blocking.File.File.edit"><tt class="xref py py-meth docutils literal"><span class="pre">File.edit()</span></tt></a> are available. If you really need to use these low-level functions and are not too familiar with git internals, you may want to read <a class="reference external" href="http://git-scm.com/book/en/Git-Internals-Git-Objects">the &#8220;Git Internal Objects&#8221; chapter of Pro Git</a>.</p>
+<p>In this cookbook, we are going to create a new branch with two commits:</p>
+<img alt="_images/cookbook_raw_git_objects_final_state.dot.png" src="_images/cookbook_raw_git_objects_final_state.dot.png" />
 <p>Initialization:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">PyGithub</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">g</span> <span class="o">=</span> <span class="n">PyGithub</span><span class="o">.</span><span class="n">BlockingBuilder</span><span class="p">()</span><span class="o">.</span><span class="n">Login</span><span class="p">(</span><span class="s">&quot;your_login&quot;</span><span class="p">,</span> <span class="s">&quot;your_password&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">Build</span><span class="p">()</span>
@@ -223,7 +222,7 @@
 </pre></div>
 </div>
 <p>We now have a branch with one commit. You should check on <a class="reference external" href="http://github.com">http://github.com</a>/{user}/PyGithubCookbookRawGitObjects/branches:</p>
-<img alt="_images/cook_book_raw_git_objects_intermediate_state.dot.png" src="_images/cook_book_raw_git_objects_intermediate_state.dot.png" />
+<img alt="_images/cookbook_raw_git_objects_intermediate_state.dot.png" src="_images/cookbook_raw_git_objects_intermediate_state.dot.png" />
 <p>Create a new tree and a second commit:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">new</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">create_git_blob</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="s">&quot;new file&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">new</span><span class="o">.</span><span class="n">sha</span>
@@ -241,7 +240,7 @@
 </pre></div>
 </div>
 <p>And we&#8217;re done:</p>
-<img alt="_images/cook_book_raw_git_objects_final_state.dot.png" src="_images/cook_book_raw_git_objects_final_state.dot.png" />
+<img alt="_images/cookbook_raw_git_objects_final_state.dot.png" src="_images/cookbook_raw_git_objects_final_state.dot.png" />
 <p>&#64;todoAlpha Demonstrate <a class="reference internal" href="reference/classes/GitTree.html#PyGithub.Blocking.GitTree.GitTree.create_modified_copy" title="PyGithub.Blocking.GitTree.GitTree.create_modified_copy"><tt class="xref py py-meth docutils literal"><span class="pre">GitTree.create_modified_copy()</span></tt></a> and usage of parameter <cite>content</cite> in <a class="reference internal" href="reference/classes/Repository.html#PyGithub.Blocking.Repository.Repository.create_git_tree" title="PyGithub.Blocking.Repository.Repository.create_git_tree"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.create_git_tree()</span></tt></a>.
 &#64;todoAlpha Demonstrate lightweight tags (through <a class="reference internal" href="reference/classes/GitRef.html#PyGithub.Blocking.GitRef.GitRef" title="PyGithub.Blocking.GitRef.GitRef"><tt class="xref py py-class docutils literal"><span class="pre">GitRef</span></tt></a>) and tag objects (actual <a class="reference internal" href="reference/classes/GitTag.html#PyGithub.Blocking.GitTag.GitTag" title="PyGithub.Blocking.GitTag.GitTag"><tt class="xref py py-class docutils literal"><span class="pre">GitTag</span></tt></a>).
 &#64;todoAlpha GitRef.object and GitTag.object should be a union of GitTree GitBlob and GitCommit.</p>
@@ -259,7 +258,7 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Cook book</a><ul>
+<li><a class="reference internal" href="#">Cookbook</a><ul>
 <li><a class="reference internal" href="#working-with-gists">Working with gists</a><ul>
 <li><a class="reference internal" href="#creating-and-deleting-gists">Creating and deleting gists</a></li>
 <li><a class="reference internal" href="#retrieving-gists">Retrieving gists</a></li>
@@ -279,7 +278,7 @@
                         title="next chapter">Rationale</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="_sources/cook_book.txt"
+    <li><a href="_sources/cookbook.txt"
            rel="nofollow">Show Source</a></li>
   </ul>
 <div id="searchbox" style="display: none">

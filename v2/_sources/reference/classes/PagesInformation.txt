@@ -2,14 +2,10 @@
    ###### This file is generated. Manual changes will likely be lost. #####
    ########################################################################
 
-Entity
-======
+PagesInformation
+================
 
-.. automodule:: PyGithub.Blocking.Entity
+.. automodule:: PyGithub.Blocking.PagesInformation
 
-.. autoclass:: PyGithub.Blocking.Entity::Entity()
+.. autoclass:: PyGithub.Blocking.PagesInformation::PagesInformation()
     :members:
-    :exclude-members: Plan
-
-    .. autoclass:: PyGithub.Blocking.Entity::Entity.Plan()
-        :members:

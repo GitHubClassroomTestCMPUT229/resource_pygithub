@@ -77,10 +77,12 @@
 <dt>Methods accepting instances of this class as parameter:</dt>
 <dd><ul class="first last simple">
 <li><a class="reference internal" href="AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_issues" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_issues"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.get_issues()</span></tt></a></li>
+<li><a class="reference internal" href="AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_user_issues" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_user_issues"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.get_user_issues()</span></tt></a></li>
 <li><a class="reference internal" href="Issue.html#PyGithub.Blocking.Issue.Issue.add_to_labels" title="PyGithub.Blocking.Issue.Issue.add_to_labels"><tt class="xref py py-meth docutils literal"><span class="pre">Issue.add_to_labels()</span></tt></a></li>
 <li><a class="reference internal" href="Issue.html#PyGithub.Blocking.Issue.Issue.edit" title="PyGithub.Blocking.Issue.Issue.edit"><tt class="xref py py-meth docutils literal"><span class="pre">Issue.edit()</span></tt></a></li>
 <li><a class="reference internal" href="Issue.html#PyGithub.Blocking.Issue.Issue.remove_from_labels" title="PyGithub.Blocking.Issue.Issue.remove_from_labels"><tt class="xref py py-meth docutils literal"><span class="pre">Issue.remove_from_labels()</span></tt></a></li>
 <li><a class="reference internal" href="Issue.html#PyGithub.Blocking.Issue.Issue.set_labels" title="PyGithub.Blocking.Issue.Issue.set_labels"><tt class="xref py py-meth docutils literal"><span class="pre">Issue.set_labels()</span></tt></a></li>
+<li><a class="reference internal" href="Organization.html#PyGithub.Blocking.Organization.Organization.get_issues" title="PyGithub.Blocking.Organization.Organization.get_issues"><tt class="xref py py-meth docutils literal"><span class="pre">Organization.get_issues()</span></tt></a></li>
 <li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.create_issue" title="PyGithub.Blocking.Repository.Repository.create_issue"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.create_issue()</span></tt></a></li>
 <li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.get_issues" title="PyGithub.Blocking.Repository.Repository.get_issues"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_issues()</span></tt></a></li>
 </ul>
@@ -102,6 +104,19 @@
 <dl class="attribute">
 <dt id="PyGithub.Blocking.Label.Label.name">
 <tt class="descname">name</tt><a class="headerlink" href="#PyGithub.Blocking.Label.Label.name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Label.Label.url">
+<tt class="descname">url</tt><a class="headerlink" href="#PyGithub.Blocking.Label.Label.url" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -144,6 +159,21 @@
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">None</p>
 </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Label.Label.update">
+<tt class="descname">update</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Label.Label.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes a <a class="reference external" href="http://developer.github.com/v3/#conditional-requests">conditional request</a> and updates the object.
+Returns True if the object was updated.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
 </tr>
 </tbody>
 </table>

@@ -25,7 +25,7 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="top" title="PyGithub 2.0.0-alpha.4 documentation" href="index.html" />
-    <link rel="next" title="Cook book" href="cook_book.html" />
+    <link rel="next" title="Cookbook" href="cookbook.html" />
     <link rel="prev" title="Introduction" href="introduction.html" /> 
   </head>
   <body>
@@ -39,7 +39,7 @@
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="cook_book.html" title="Cook book"
+          <a href="cookbook.html" title="Cookbook"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="introduction.html" title="Introduction"
@@ -86,7 +86,7 @@ information, like your <a class="reference external" href="http://developer.gith
 </div>
 <div class="section" id="conditional-requests">
 <h3>Conditional requests<a class="headerlink" href="#conditional-requests" title="Permalink to this headline">¶</a></h3>
-<p>Many objects returned by PyGithub have a <a class="reference internal" href="reference/bases.html#PyGithub.Blocking._base_github_object.UpdatableGithubObject.update" title="PyGithub.Blocking._base_github_object.UpdatableGithubObject.update"><tt class="xref py py-meth docutils literal"><span class="pre">update()</span></tt></a> method.
+<p>Many objects returned by PyGithub have a <a class="reference internal" href="reference/classes/GitRef.html#PyGithub.Blocking.GitRef.GitRef.update" title="PyGithub.Blocking.GitRef.GitRef.update"><tt class="xref py py-meth docutils literal"><span class="pre">update()</span></tt></a> method.
 You can use it to make a <a class="reference external" href="http://developer.github.com/v3/#conditional-requests">conditional request</a>.
 The object&#8217;s attributes will be updated, and your rate limit consumed, only if the object has changed since it
 was created or last updated.</p>
@@ -134,12 +134,12 @@ length:</p>
 </div>
 <p>If you really mean to take the length of a PaginatedList, you have to explicitelly construct a list and then use its length:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">get_repos</span><span class="p">()))</span>
-<span class="go">24</span>
+<span class="go">25</span>
 </pre></div>
 </div>
 <p>But often, there is an attribute in the parent object:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">user</span><span class="o">.</span><span class="n">public_repos</span>
-<span class="go">20</span>
+<span class="go">21</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">user</span><span class="o">.</span><span class="n">owned_private_repos</span>
 <span class="go">4</span>
 </pre></div>
@@ -211,7 +211,7 @@ length:</p>
 <span class="go">whisper</span>
 <span class="go">graphite-web</span>
 <span class="go">ceres</span>
-<span class="go">graphite-project.github.com</span>
+<span class="go">graphite-project.github.io</span>
 </pre></div>
 </div>
 </li>
@@ -253,8 +253,8 @@ length:</p>
   <p class="topless"><a href="introduction.html"
                         title="previous chapter">Introduction</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="cook_book.html"
-                        title="next chapter">Cook book</a></p>
+  <p class="topless"><a href="cookbook.html"
+                        title="next chapter">Cookbook</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="_sources/user_guide.txt"
@@ -287,7 +287,7 @@ length:</p>
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="cook_book.html" title="Cook book"
+          <a href="cookbook.html" title="Cookbook"
              >next</a> |</li>
         <li class="right" >
           <a href="introduction.html" title="Introduction"

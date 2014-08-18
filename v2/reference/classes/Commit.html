@@ -27,7 +27,7 @@
     <link rel="top" title="PyGithub 2.0.0-alpha.4 documentation" href="../../index.html" />
     <link rel="up" title="Classes" href="../classes.html" />
     <link rel="next" title="Contributor" href="Contributor.html" />
-    <link rel="prev" title="AuthenticatedUser" href="AuthenticatedUser.html" /> 
+    <link rel="prev" title="Authorization" href="Authorization.html" /> 
   </head>
   <body>
     <div class="related">
@@ -43,7 +43,7 @@
           <a href="Contributor.html" title="Contributor"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="AuthenticatedUser.html" title="AuthenticatedUser"
+          <a href="Authorization.html" title="Authorization"
              accesskey="P">previous</a> |</li>
         <li><a href="../../index.html">PyGithub 2.0.0-alpha.4 documentation</a> &raquo;</li>
           <li><a href="../../reference.html" >Reference documentation</a> &raquo;</li>
@@ -271,6 +271,124 @@
 
 </dd></dl>
 
+<dl class="class">
+<dt id="PyGithub.Blocking.Commit.Commit.Status">
+<em class="property">class </em><tt class="descclassname">Commit.</tt><tt class="descname">Status</tt><a class="headerlink" href="#PyGithub.Blocking.Commit.Commit.Status" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Methods and attributes returning instances of this class:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="#PyGithub.Blocking.Commit.Commit.create_status" title="PyGithub.Blocking.Commit.Commit.create_status"><tt class="xref py py-meth docutils literal"><span class="pre">Commit.create_status()</span></tt></a></li>
+<li><a class="reference internal" href="#PyGithub.Blocking.Commit.Commit.get_statuses" title="PyGithub.Blocking.Commit.Commit.get_statuses"><tt class="xref py py-meth docutils literal"><span class="pre">Commit.get_statuses()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
+<p>Methods accepting instances of this class as parameter: none.</p>
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Commit.Commit.Status.created_at">
+<tt class="descname">created_at</tt><a class="headerlink" href="#PyGithub.Blocking.Commit.Commit.Status.created_at" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">datetime</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Commit.Commit.Status.creator">
+<tt class="descname">creator</tt><a class="headerlink" href="#PyGithub.Blocking.Commit.Commit.Status.creator" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="User.html#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Commit.Commit.Status.description">
+<tt class="descname">description</tt><a class="headerlink" href="#PyGithub.Blocking.Commit.Commit.Status.description" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Commit.Commit.Status.id">
+<tt class="descname">id</tt><a class="headerlink" href="#PyGithub.Blocking.Commit.Commit.Status.id" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Commit.Commit.Status.state">
+<tt class="descname">state</tt><a class="headerlink" href="#PyGithub.Blocking.Commit.Commit.Status.state" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Commit.Commit.Status.target_url">
+<tt class="descname">target_url</tt><a class="headerlink" href="#PyGithub.Blocking.Commit.Commit.Status.target_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Commit.Commit.Status.updated_at">
+<tt class="descname">updated_at</tt><a class="headerlink" href="#PyGithub.Blocking.Commit.Commit.Status.updated_at" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">datetime</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Commit.Commit.Status.url">
+<tt class="descname">url</tt><a class="headerlink" href="#PyGithub.Blocking.Commit.Commit.Status.url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
 <dl class="attribute">
 <dt id="PyGithub.Blocking.Commit.Commit.author">
 <tt class="descclassname">Commit.</tt><tt class="descname">author</tt><a class="headerlink" href="#PyGithub.Blocking.Commit.Commit.author" title="Permalink to this definition">¶</a></dt>
@@ -388,6 +506,74 @@
 </table>
 </dd></dl>
 
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Commit.Commit.url">
+<tt class="descclassname">Commit.</tt><tt class="descname">url</tt><a class="headerlink" href="#PyGithub.Blocking.Commit.Commit.url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Commit.Commit.create_status">
+<tt class="descclassname">Commit.</tt><tt class="descname">create_status</tt><big>(</big><em>state</em>, <em>target_url=None</em>, <em>description=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Commit.Commit.create_status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/repos/statuses#create-a-status">POST /repos/:owner/:repo/statuses/:sha</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>state</strong> &#8211; mandatory &#8220;error&#8221; or &#8220;failure&#8221; or &#8220;pending&#8221; or &#8220;success&#8221;</li>
+<li><strong>target_url</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+<li><strong>description</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#PyGithub.Blocking.Commit.Commit.Status" title="PyGithub.Blocking.Commit.Commit.Status"><tt class="xref py py-class docutils literal"><span class="pre">Commit.Status</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Commit.Commit.get_statuses">
+<tt class="descclassname">Commit.</tt><tt class="descname">get_statuses</tt><big>(</big><em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Commit.Commit.get_statuses" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/repos/statuses#list-statuses-for-a-specific-ref">GET /repos/:owner/:repo/commits/:ref/statuses</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>per_page</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../bases.html#PyGithub.Blocking._paginated_list.PaginatedList" title="PyGithub.Blocking._paginated_list.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">PaginatedList</span></tt></a> of <a class="reference internal" href="#PyGithub.Blocking.Commit.Commit.Status" title="PyGithub.Blocking.Commit.Commit.Status"><tt class="xref py py-class docutils literal"><span class="pre">Commit.Status</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Commit.Commit.update">
+<tt class="descclassname">Commit.</tt><tt class="descname">update</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Commit.Commit.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes a <a class="reference external" href="http://developer.github.com/v3/#conditional-requests">conditional request</a> and updates the object.
+Returns True if the object was updated.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
 </dd></dl>
 
 </div>
@@ -402,8 +588,8 @@
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="AuthenticatedUser.html"
-                        title="previous chapter">AuthenticatedUser</a></p>
+  <p class="topless"><a href="Authorization.html"
+                        title="previous chapter">Authorization</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="Contributor.html"
                         title="next chapter">Contributor</a></p>
@@ -442,7 +628,7 @@
           <a href="Contributor.html" title="Contributor"
              >next</a> |</li>
         <li class="right" >
-          <a href="AuthenticatedUser.html" title="AuthenticatedUser"
+          <a href="Authorization.html" title="Authorization"
              >previous</a> |</li>
         <li><a href="../../index.html">PyGithub 2.0.0-alpha.4 documentation</a> &raquo;</li>
           <li><a href="../../reference.html" >Reference documentation</a> &raquo;</li>

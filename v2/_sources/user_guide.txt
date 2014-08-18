@@ -98,4 +98,4 @@ There are several ways to access a repository:
     whisper
     graphite-web
     ceres
-    graphite-project.github.com
+    graphite-project.github.io

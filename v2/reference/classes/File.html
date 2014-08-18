@@ -27,7 +27,7 @@
     <link rel="top" title="PyGithub 2.0.0-alpha.4 documentation" href="../../index.html" />
     <link rel="up" title="Classes" href="../classes.html" />
     <link rel="next" title="Gist" href="Gist.html" />
-    <link rel="prev" title="Dir" href="Dir.html" /> 
+    <link rel="prev" title="Contributor" href="Contributor.html" /> 
   </head>
   <body>
     <div class="related">
@@ -43,7 +43,7 @@
           <a href="Gist.html" title="Gist"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="Dir.html" title="Dir"
+          <a href="Contributor.html" title="Contributor"
              accesskey="P">previous</a> |</li>
         <li><a href="../../index.html">PyGithub 2.0.0-alpha.4 documentation</a> &raquo;</li>
           <li><a href="../../reference.html" >Reference documentation</a> &raquo;</li>
@@ -66,7 +66,6 @@
 <dl class="docutils">
 <dt>Methods and attributes returning instances of this class:</dt>
 <dd><ul class="first last simple">
-<li><a class="reference internal" href="Dir.html#PyGithub.Blocking.Dir.Dir.get_contents" title="PyGithub.Blocking.Dir.Dir.get_contents"><tt class="xref py py-meth docutils literal"><span class="pre">Dir.get_contents()</span></tt></a></li>
 <li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.ContentCommit.content" title="PyGithub.Blocking.Repository.Repository.ContentCommit.content"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.ContentCommit.content</span></tt></a></li>
 <li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.get_contents" title="PyGithub.Blocking.Repository.Repository.get_contents"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_contents()</span></tt></a></li>
 <li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.get_readme" title="PyGithub.Blocking.Repository.Repository.get_readme"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_readme()</span></tt></a></li>
@@ -191,9 +190,22 @@
 </table>
 </dd></dl>
 
+<dl class="attribute">
+<dt id="PyGithub.Blocking.File.File.url">
+<tt class="descname">url</tt><a class="headerlink" href="#PyGithub.Blocking.File.File.url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
 <dl class="method">
 <dt id="PyGithub.Blocking.File.File.delete">
-<tt class="descname">delete</tt><big>(</big><em>message</em>, <em>author=None</em>, <em>committer=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.File.File.delete" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">delete</tt><big>(</big><em>message</em>, <em>branch=None</em>, <em>author=None</em>, <em>committer=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.File.File.delete" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/repos/contents#delete-a-file">DELETE /repos/:owner/:repo/contents/:path</a> end point.</p>
 <p>This is the only method calling this end point.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -202,6 +214,7 @@
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>message</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+<li><strong>branch</strong> &#8211; optional <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.Branch" title="PyGithub.Blocking.Repository.Repository.Branch"><tt class="xref py py-class docutils literal"><span class="pre">Repository.Branch</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.Branch.name" title="PyGithub.Blocking.Repository.Repository.Branch.name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.Branch.name</span></tt></a>)</li>
 <li><strong>author</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">GitAuthor</span></tt></li>
 <li><strong>committer</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">GitAuthor</span></tt></li>
 </ul>
@@ -216,7 +229,7 @@
 
 <dl class="method">
 <dt id="PyGithub.Blocking.File.File.edit">
-<tt class="descname">edit</tt><big>(</big><em>message</em>, <em>content</em>, <em>author=None</em>, <em>committer=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.File.File.edit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">edit</tt><big>(</big><em>message</em>, <em>content</em>, <em>branch=None</em>, <em>author=None</em>, <em>committer=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.File.File.edit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/repos/contents#update-a-file">PUT /repos/:owner/:repo/contents/:path</a> end point.</p>
 <dl class="docutils">
 <dt>The following methods also call this end point:</dt>
@@ -232,6 +245,7 @@
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>message</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
 <li><strong>content</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+<li><strong>branch</strong> &#8211; optional <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.Branch" title="PyGithub.Blocking.Repository.Repository.Branch"><tt class="xref py py-class docutils literal"><span class="pre">Repository.Branch</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.Branch.name" title="PyGithub.Blocking.Repository.Repository.Branch.name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.Branch.name</span></tt></a>)</li>
 <li><strong>author</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">GitAuthor</span></tt></li>
 <li><strong>committer</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">GitAuthor</span></tt></li>
 </ul>
@@ -239,6 +253,21 @@
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="GitCommit.html#PyGithub.Blocking.GitCommit.GitCommit" title="PyGithub.Blocking.GitCommit.GitCommit"><tt class="xref py py-class docutils literal"><span class="pre">GitCommit</span></tt></a></p>
 </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.File.File.update">
+<tt class="descname">update</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.File.File.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes a <a class="reference external" href="http://developer.github.com/v3/#conditional-requests">conditional request</a> and updates the object.
+Returns True if the object was updated.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
 </tr>
 </tbody>
 </table>
@@ -258,8 +287,8 @@
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="Dir.html"
-                        title="previous chapter">Dir</a></p>
+  <p class="topless"><a href="Contributor.html"
+                        title="previous chapter">Contributor</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="Gist.html"
                         title="next chapter">Gist</a></p>
@@ -298,7 +327,7 @@
           <a href="Gist.html" title="Gist"
              >next</a> |</li>
         <li class="right" >
-          <a href="Dir.html" title="Dir"
+          <a href="Contributor.html" title="Contributor"
              >previous</a> |</li>
         <li><a href="../../index.html">PyGithub 2.0.0-alpha.4 documentation</a> &raquo;</li>
           <li><a href="../../reference.html" >Reference documentation</a> &raquo;</li>

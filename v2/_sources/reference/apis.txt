@@ -29,27 +29,6 @@ GET /api/status.json
 
 Not yet implemented in PyGithub.
 
-GET /api/v3/enterprise/settings/license
----------------------------------------
-
-(`Reference documentation of Github API v3 <http://developer.github.com/v3/enterprise/license#request>`__)
-
-Not yet implemented in PyGithub.
-
-GET /api/v3/enterprise/stats/:type
-----------------------------------
-
-(`Reference documentation of Github API v3 <http://developer.github.com/v3/enterprise/admin_stats#request>`__)
-
-Not yet implemented in PyGithub.
-
-POST /api/v3/staff/indexing_jobs
---------------------------------
-
-(`Reference documentation of Github API v3 <http://developer.github.com/v3/enterprise/search_indexing#queue-an-indexing-job>`__)
-
-Not yet implemented in PyGithub.
-
 DELETE /applications/:client_id/tokens
 --------------------------------------
 
@@ -83,42 +62,48 @@ GET /authorizations
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/oauth_authorizations#list-your-authorizations>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.AuthenticatedUser.get_authorizations`
 
 POST /authorizations
 --------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/oauth_authorizations#create-a-new-authorization>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.AuthenticatedUser.create_authorization`
 
 DELETE /authorizations/:id
 --------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/oauth_authorizations#delete-an-authorization>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Authorization.delete`
 
 GET /authorizations/:id
 -----------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/oauth_authorizations#get-a-single-authorization>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.AuthenticatedUser.get_authorization`
 
 PATCH /authorizations/:id
 -------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/oauth_authorizations#update-an-existing-authorization>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Authorization.edit`
 
 PUT /authorizations/clients/:client_id
 --------------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/oauth_authorizations#get-or-create-an-authorization-for-a-specific-app>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.AuthenticatedUser.get_or_create_authorization`
 
 GET /emojis
 -----------
@@ -127,6 +112,20 @@ GET /emojis
 
 Implemented in PyGithub by:
   * :meth:`.Github.get_emojis`
+
+GET /enterprise/settings/license
+--------------------------------
+
+(`Reference documentation of Github API v3 <http://developer.github.com/v3/enterprise/license#request>`__)
+
+Not yet implemented in PyGithub.
+
+GET /enterprise/stats/:type
+---------------------------
+
+(`Reference documentation of Github API v3 <http://developer.github.com/v3/enterprise/admin_stats#request>`__)
+
+Not yet implemented in PyGithub.
 
 GET /events
 -----------
@@ -303,14 +302,16 @@ GET /hooks
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/repos/hooks>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Github.get_hooks`
 
 GET /hooks/:name
 ----------------
 
 (`Reference documentation of Github API v3 <https://github.com/jacquev6/PyGithub/issues/196>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Github.get_hook`
 
 POST /hub
 ---------
@@ -324,7 +325,8 @@ GET /issues
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/issues#list-issues>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.AuthenticatedUser.get_issues`
 
 POST /markdown
 --------------
@@ -425,7 +427,8 @@ GET /orgs/:org/issues
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/issues#list-issues>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Organization.get_issues`
 
 GET /orgs/:org/members
 ----------------------
@@ -676,7 +679,8 @@ GET /repos/:owner/:repo/commits/:ref/statuses
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/repos/statuses#list-statuses-for-a-specific-ref>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Commit.get_statuses`
 
 GET /repos/:owner/:repo/commits/:sha
 ------------------------------------
@@ -700,13 +704,6 @@ GET /repos/:owner/:repo/compare/:base...:head
 
 Not yet implemented in PyGithub.
 
-GET /repos/:owner/:repo/compare/user1:branchname...user2:branchname
--------------------------------------------------------------------
-
-(`Reference documentation of Github API v3 <http://developer.github.com/v3/repos/commits#compare-two-commits>`__)
-
-Not yet implemented in PyGithub.
-
 DELETE /repos/:owner/:repo/contents/:path
 -----------------------------------------
 
@@ -721,7 +718,6 @@ GET /repos/:owner/:repo/contents/:path
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/repos/contents#get-contents>`__)
 
 Implemented in PyGithub by:
-  * :meth:`.Dir.get_contents`
   * :meth:`.Repository.get_contents`
 
 PUT /repos/:owner/:repo/contents/:path
@@ -766,27 +762,6 @@ POST /repos/:owner/:repo/deployments/:id/statuses
 -------------------------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/repos/deployments#create-a-deployment-status>`__)
-
-Not yet implemented in PyGithub.
-
-GET /repos/:owner/:repo/downloads
----------------------------------
-
-(`Reference documentation of Github API v3 <http://developer.github.com/v3/repos/downloads#list-downloads-for-a-repository>`__)
-
-Not yet implemented in PyGithub.
-
-DELETE /repos/:owner/:repo/downloads/:id
-----------------------------------------
-
-(`Reference documentation of Github API v3 <http://developer.github.com/v3/repos/downloads#delete-a-download>`__)
-
-Not yet implemented in PyGithub.
-
-GET /repos/:owner/:repo/downloads/:id
--------------------------------------
-
-(`Reference documentation of Github API v3 <http://developer.github.com/v3/repos/downloads#get-a-single-download>`__)
 
 Not yet implemented in PyGithub.
 
@@ -1257,21 +1232,24 @@ GET /repos/:owner/:repo/pages
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/repos/pages#get-information-about-a-pages-site>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Repository.get_pages`
 
 GET /repos/:owner/:repo/pages/builds
 ------------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/repos/pages#list-pages-builds>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Repository.get_pages_builds`
 
 GET /repos/:owner/:repo/pages/builds/latest
 -------------------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/repos/pages#list-latest-pages-build>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Repository.get_latest_pages_build`
 
 GET /repos/:owner/:repo/pulls
 -----------------------------
@@ -1393,63 +1371,80 @@ GET /repos/:owner/:repo/releases
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/repos/releases#list-releases-for-a-repository>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Repository.get_releases`
 
 POST /repos/:owner/:repo/releases
 ---------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/repos/releases#create-a-release>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Repository.create_release`
 
 DELETE /repos/:owner/:repo/releases/:id
 ---------------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/repos/releases#delete-a-release>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Release.delete`
 
 GET /repos/:owner/:repo/releases/:id
 ------------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/repos/releases#get-a-single-release>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Repository.get_release`
 
 PATCH /repos/:owner/:repo/releases/:id
 --------------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/repos/releases#edit-a-release>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Release.edit`
 
 GET /repos/:owner/:repo/releases/:id/assets
 -------------------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/repos/releases#list-assets-for-a-release>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Release.get_assets`
+
+POST /repos/:owner/:repo/releases/:id/assets
+--------------------------------------------
+
+(`Reference documentation of Github API v3 <https://developer.github.com/v3/repos/releases/#upload-a-release-asset>`__)
+
+Implemented in PyGithub by:
+  * :meth:`.Release.create_asset`
 
 DELETE /repos/:owner/:repo/releases/assets/:id
 ----------------------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/repos/releases#delete-a-release-asset>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Asset.delete`
 
 GET /repos/:owner/:repo/releases/assets/:id
 -------------------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/repos/releases#get-a-single-release-asset>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Repository.get_release_asset`
 
 PATCH /repos/:owner/:repo/releases/assets/:id
 ---------------------------------------------
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/repos/releases#edit-a-release-asset>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Asset.edit`
 
 GET /repos/:owner/:repo/stargazers
 ----------------------------------
@@ -1499,7 +1494,8 @@ POST /repos/:owner/:repo/statuses/:sha
 
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/repos/statuses#create-a-status>`__)
 
-Not yet implemented in PyGithub.
+Implemented in PyGithub by:
+  * :meth:`.Commit.create_status`
 
 GET /repos/:owner/:repo/subscribers
 -----------------------------------
@@ -1663,6 +1659,13 @@ POST /setup/api/upgrade
 
 Not yet implemented in PyGithub.
 
+POST /staff/indexing_jobs
+-------------------------
+
+(`Reference documentation of Github API v3 <http://developer.github.com/v3/enterprise/search_indexing#queue-an-indexing-job>`__)
+
+Not yet implemented in PyGithub.
+
 DELETE /teams/:id
 -----------------
 
@@ -1719,6 +1722,27 @@ PUT /teams/:id/members/:username
 Implemented in PyGithub by:
   * :meth:`.Team.add_to_members`
 
+DELETE /teams/:id/memberships/:username
+---------------------------------------
+
+(`Reference documentation of Github API v3 <http://developer.github.com/v3/orgs/teams#remove-team-membership>`__)
+
+Not yet implemented in PyGithub.
+
+GET /teams/:id/memberships/:username
+------------------------------------
+
+(`Reference documentation of Github API v3 <http://developer.github.com/v3/orgs/teams#get-team-membership>`__)
+
+Not yet implemented in PyGithub.
+
+PUT /teams/:id/memberships/:username
+------------------------------------
+
+(`Reference documentation of Github API v3 <http://developer.github.com/v3/orgs/teams#add-team-membership>`__)
+
+Not yet implemented in PyGithub.
+
 GET /teams/:id/repos
 --------------------
 
@@ -1766,6 +1790,34 @@ PATCH /user
 
 Implemented in PyGithub by:
   * :meth:`.AuthenticatedUser.edit`
+
+DELETE /user/:username/site_admin
+---------------------------------
+
+(`Reference documentation of Github API v3 <http://developer.github.com/v3/users/administration#demote-a-site-administrator-to-an-ordinary-user>`__)
+
+Not yet implemented in PyGithub.
+
+PUT /user/:username/site_admin
+------------------------------
+
+(`Reference documentation of Github API v3 <http://developer.github.com/v3/users/administration#promote-an-ordinary-user-to-a-site-administrator>`__)
+
+Not yet implemented in PyGithub.
+
+DELETE /user/:username/suspended
+--------------------------------
+
+(`Reference documentation of Github API v3 <http://developer.github.com/v3/users/administration#unsuspend-a-user>`__)
+
+Not yet implemented in PyGithub.
+
+PUT /user/:username/suspended
+-----------------------------
+
+(`Reference documentation of Github API v3 <http://developer.github.com/v3/users/administration#suspend-a-user>`__)
+
+Not yet implemented in PyGithub.
 
 DELETE /user/emails
 -------------------
@@ -1837,7 +1889,7 @@ GET /user/issues
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/issues#list-issues>`__)
 
 Implemented in PyGithub by:
-  * :meth:`.AuthenticatedUser.get_issues`
+  * :meth:`.AuthenticatedUser.get_user_issues`
 
 GET /user/keys
 --------------

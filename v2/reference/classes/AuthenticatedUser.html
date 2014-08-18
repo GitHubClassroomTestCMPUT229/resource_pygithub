@@ -26,8 +26,8 @@
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="top" title="PyGithub 2.0.0-alpha.4 documentation" href="../../index.html" />
     <link rel="up" title="Classes" href="../classes.html" />
-    <link rel="next" title="Commit" href="Commit.html" />
-    <link rel="prev" title="Classes" href="../classes.html" /> 
+    <link rel="next" title="Authorization" href="Authorization.html" />
+    <link rel="prev" title="Asset" href="Asset.html" /> 
   </head>
   <body>
     <div class="related">
@@ -40,10 +40,10 @@
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="Commit.html" title="Commit"
+          <a href="Authorization.html" title="Authorization"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="../classes.html" title="Classes"
+          <a href="Asset.html" title="Asset"
              accesskey="P">previous</a> |</li>
         <li><a href="../../index.html">PyGithub 2.0.0-alpha.4 documentation</a> &raquo;</li>
           <li><a href="../../reference.html" >Reference documentation</a> &raquo;</li>
@@ -597,6 +597,19 @@
 </table>
 </dd></dl>
 
+<dl class="attribute">
+<dt id="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.url">
+<tt class="descclassname">AuthenticatedUser.</tt><tt class="descname">url</tt><a class="headerlink" href="#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
 <dl class="method">
 <dt id="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.add_to_emails">
 <tt class="descclassname">AuthenticatedUser.</tt><tt class="descname">add_to_emails</tt><big>(</big><em>*email</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.add_to_emails" title="Permalink to this definition">¶</a></dt>
@@ -640,7 +653,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>repo</strong> &#8211; mandatory <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.full_name" title="PyGithub.Blocking.Repository.Repository.full_name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.full_name</span></tt></a>) or <tt class="xref py py-class docutils literal"><span class="pre">(string,</span> <span class="pre">string)</span></tt> (its owner&#8217;s <tt class="xref py py-attr docutils literal"><span class="pre">Entity.login</span></tt> and <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.name" title="PyGithub.Blocking.Repository.Repository.name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.name</span></tt></a>)</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>repo</strong> &#8211; mandatory <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.full_name" title="PyGithub.Blocking.Repository.Repository.full_name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.full_name</span></tt></a>) or <tt class="xref py py-class docutils literal"><span class="pre">(string,</span> <span class="pre">string)</span></tt> (its owner&#8217;s <a class="reference internal" href="User.html#PyGithub.Blocking.User.User.login" title="PyGithub.Blocking.User.User.login"><tt class="xref py py-attr docutils literal"><span class="pre">User.login</span></tt></a> or <a class="reference internal" href="Organization.html#PyGithub.Blocking.Organization.Organization.login" title="PyGithub.Blocking.Organization.Organization.login"><tt class="xref py py-attr docutils literal"><span class="pre">Organization.login</span></tt></a> and its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.name" title="PyGithub.Blocking.Repository.Repository.name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.name</span></tt></a>)</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
 </tr>
@@ -666,6 +679,31 @@
 </dd></dl>
 
 <dl class="method">
+<dt id="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.create_authorization">
+<tt class="descclassname">AuthenticatedUser.</tt><tt class="descname">create_authorization</tt><big>(</big><em>note</em>, <em>scopes=None</em>, <em>note_url=None</em>, <em>client_id=None</em>, <em>client_secret=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.create_authorization" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/oauth_authorizations#create-a-new-authorization">POST /authorizations</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>note</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+<li><strong>scopes</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">list</span></tt> of <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+<li><strong>note_url</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+<li><strong>client_id</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+<li><strong>client_secret</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="Authorization.html#PyGithub.Blocking.Authorization.Authorization" title="PyGithub.Blocking.Authorization.Authorization"><tt class="xref py py-class docutils literal"><span class="pre">Authorization</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
 <dt id="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.create_fork">
 <tt class="descclassname">AuthenticatedUser.</tt><tt class="descname">create_fork</tt><big>(</big><em>repo</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.create_fork" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/repos/forks#create-a-fork">POST /repos/:owner/:repo/forks</a> end point.</p>
@@ -680,7 +718,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>repo</strong> &#8211; mandatory <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.full_name" title="PyGithub.Blocking.Repository.Repository.full_name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.full_name</span></tt></a>) or <tt class="xref py py-class docutils literal"><span class="pre">(string,</span> <span class="pre">string)</span></tt> (its owner&#8217;s <tt class="xref py py-attr docutils literal"><span class="pre">Entity.login</span></tt> and <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.name" title="PyGithub.Blocking.Repository.Repository.name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.name</span></tt></a>)</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>repo</strong> &#8211; mandatory <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.full_name" title="PyGithub.Blocking.Repository.Repository.full_name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.full_name</span></tt></a>) or <tt class="xref py py-class docutils literal"><span class="pre">(string,</span> <span class="pre">string)</span></tt> (its owner&#8217;s <a class="reference internal" href="User.html#PyGithub.Blocking.User.User.login" title="PyGithub.Blocking.User.User.login"><tt class="xref py py-attr docutils literal"><span class="pre">User.login</span></tt></a> or <a class="reference internal" href="Organization.html#PyGithub.Blocking.Organization.Organization.login" title="PyGithub.Blocking.Organization.Organization.login"><tt class="xref py py-attr docutils literal"><span class="pre">Organization.login</span></tt></a> and its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.name" title="PyGithub.Blocking.Repository.Repository.name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.name</span></tt></a>)</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a></td>
 </tr>
@@ -801,7 +839,7 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>repo</strong> &#8211; mandatory <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.full_name" title="PyGithub.Blocking.Repository.Repository.full_name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.full_name</span></tt></a>) or <tt class="xref py py-class docutils literal"><span class="pre">(string,</span> <span class="pre">string)</span></tt> (its owner&#8217;s <tt class="xref py py-attr docutils literal"><span class="pre">Entity.login</span></tt> and <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.name" title="PyGithub.Blocking.Repository.Repository.name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.name</span></tt></a>)</li>
+<li><strong>repo</strong> &#8211; mandatory <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.full_name" title="PyGithub.Blocking.Repository.Repository.full_name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.full_name</span></tt></a>) or <tt class="xref py py-class docutils literal"><span class="pre">(string,</span> <span class="pre">string)</span></tt> (its owner&#8217;s <a class="reference internal" href="User.html#PyGithub.Blocking.User.User.login" title="PyGithub.Blocking.User.User.login"><tt class="xref py py-attr docutils literal"><span class="pre">User.login</span></tt></a> or <a class="reference internal" href="Organization.html#PyGithub.Blocking.Organization.Organization.login" title="PyGithub.Blocking.Organization.Organization.login"><tt class="xref py py-attr docutils literal"><span class="pre">Organization.login</span></tt></a> and its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.name" title="PyGithub.Blocking.Repository.Repository.name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.name</span></tt></a>)</li>
 <li><strong>subscribed</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></li>
 <li><strong>ignored</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></li>
 </ul>
@@ -835,6 +873,40 @@
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">None</p>
 </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_authorization">
+<tt class="descclassname">AuthenticatedUser.</tt><tt class="descname">get_authorization</tt><big>(</big><em>id</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_authorization" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/oauth_authorizations#get-a-single-authorization">GET /authorizations/:id</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>id</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Authorization.html#PyGithub.Blocking.Authorization.Authorization" title="PyGithub.Blocking.Authorization.Authorization"><tt class="xref py py-class docutils literal"><span class="pre">Authorization</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_authorizations">
+<tt class="descclassname">AuthenticatedUser.</tt><tt class="descname">get_authorizations</tt><big>(</big><em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_authorizations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/oauth_authorizations#list-your-authorizations">GET /authorizations</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>per_page</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../bases.html#PyGithub.Blocking._paginated_list.PaginatedList" title="PyGithub.Blocking._paginated_list.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">PaginatedList</span></tt></a> of <a class="reference internal" href="Authorization.html#PyGithub.Blocking.Authorization.Authorization" title="PyGithub.Blocking.Authorization.Authorization"><tt class="xref py py-class docutils literal"><span class="pre">Authorization</span></tt></a></td>
 </tr>
 </tbody>
 </table>
@@ -914,7 +986,7 @@
 <dl class="method">
 <dt id="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_issues">
 <tt class="descclassname">AuthenticatedUser.</tt><tt class="descname">get_issues</tt><big>(</big><em>filter=None</em>, <em>state=None</em>, <em>labels=None</em>, <em>sort=None</em>, <em>direction=None</em>, <em>since=None</em>, <em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_issues" title="Permalink to this definition">¶</a></dt>
-<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/issues#list-issues">GET /user/issues</a> end point.</p>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/issues#list-issues">GET /issues</a> end point.</p>
 <p>This is the only method calling this end point.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -965,6 +1037,31 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">list</span></tt> of <a class="reference internal" href="PublicKey.html#PyGithub.Blocking.PublicKey.PublicKey" title="PyGithub.Blocking.PublicKey.PublicKey"><tt class="xref py py-class docutils literal"><span class="pre">PublicKey</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_or_create_authorization">
+<tt class="descclassname">AuthenticatedUser.</tt><tt class="descname">get_or_create_authorization</tt><big>(</big><em>client_id</em>, <em>client_secret</em>, <em>scopes=None</em>, <em>note=None</em>, <em>note_url=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_or_create_authorization" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/oauth_authorizations#get-or-create-an-authorization-for-a-specific-app">PUT /authorizations/clients/:client_id</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>client_id</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+<li><strong>client_secret</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+<li><strong>scopes</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">list</span></tt> of <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+<li><strong>note</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+<li><strong>note_url</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="Authorization.html#PyGithub.Blocking.Authorization.Authorization" title="PyGithub.Blocking.Authorization.Authorization"><tt class="xref py py-class docutils literal"><span class="pre">Authorization</span></tt></a></p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -1090,7 +1187,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>repo</strong> &#8211; mandatory <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.full_name" title="PyGithub.Blocking.Repository.Repository.full_name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.full_name</span></tt></a>) or <tt class="xref py py-class docutils literal"><span class="pre">(string,</span> <span class="pre">string)</span></tt> (its owner&#8217;s <tt class="xref py py-attr docutils literal"><span class="pre">Entity.login</span></tt> and <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.name" title="PyGithub.Blocking.Repository.Repository.name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.name</span></tt></a>)</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>repo</strong> &#8211; mandatory <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.full_name" title="PyGithub.Blocking.Repository.Repository.full_name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.full_name</span></tt></a>) or <tt class="xref py py-class docutils literal"><span class="pre">(string,</span> <span class="pre">string)</span></tt> (its owner&#8217;s <a class="reference internal" href="User.html#PyGithub.Blocking.User.User.login" title="PyGithub.Blocking.User.User.login"><tt class="xref py py-attr docutils literal"><span class="pre">User.login</span></tt></a> or <a class="reference internal" href="Organization.html#PyGithub.Blocking.Organization.Organization.login" title="PyGithub.Blocking.Organization.Organization.login"><tt class="xref py py-attr docutils literal"><span class="pre">Organization.login</span></tt></a> and its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.name" title="PyGithub.Blocking.Repository.Repository.name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.name</span></tt></a>)</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Subscription.html#PyGithub.Blocking.Subscription.Subscription" title="PyGithub.Blocking.Subscription.Subscription"><tt class="xref py py-class docutils literal"><span class="pre">Subscription</span></tt></a></td>
 </tr>
@@ -1133,6 +1230,33 @@
 </dd></dl>
 
 <dl class="method">
+<dt id="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_user_issues">
+<tt class="descclassname">AuthenticatedUser.</tt><tt class="descname">get_user_issues</tt><big>(</big><em>filter=None</em>, <em>state=None</em>, <em>labels=None</em>, <em>sort=None</em>, <em>direction=None</em>, <em>since=None</em>, <em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_user_issues" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/issues#list-issues">GET /user/issues</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>filter</strong> &#8211; optional &#8220;all&#8221; or &#8220;assigned&#8221; or &#8220;created&#8221; or &#8220;mentioned&#8221; or &#8220;subscribed&#8221;</li>
+<li><strong>state</strong> &#8211; optional &#8220;all&#8221; or &#8220;closed&#8221; or &#8220;open&#8221;</li>
+<li><strong>labels</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">list</span></tt> of <a class="reference internal" href="Label.html#PyGithub.Blocking.Label.Label" title="PyGithub.Blocking.Label.Label"><tt class="xref py py-class docutils literal"><span class="pre">Label</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Label.html#PyGithub.Blocking.Label.Label.name" title="PyGithub.Blocking.Label.Label.name"><tt class="xref py py-attr docutils literal"><span class="pre">Label.name</span></tt></a>)</li>
+<li><strong>sort</strong> &#8211; optional &#8220;comments&#8221; or &#8220;created&#8221; or &#8220;updated&#8221;</li>
+<li><strong>direction</strong> &#8211; optional &#8220;asc&#8221; or &#8220;desc&#8221;</li>
+<li><strong>since</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">datetime</span></tt></li>
+<li><strong>per_page</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../bases.html#PyGithub.Blocking._paginated_list.PaginatedList" title="PyGithub.Blocking._paginated_list.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">PaginatedList</span></tt></a> of <a class="reference internal" href="Issue.html#PyGithub.Blocking.Issue.Issue" title="PyGithub.Blocking.Issue.Issue"><tt class="xref py py-class docutils literal"><span class="pre">Issue</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
 <dt id="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.has_in_following">
 <tt class="descclassname">AuthenticatedUser.</tt><tt class="descname">has_in_following</tt><big>(</big><em>username</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.has_in_following" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/users/followers#check-if-you-are-following-a-user">GET /user/following/:username</a> end point.</p>
@@ -1158,7 +1282,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>repo</strong> &#8211; mandatory <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.full_name" title="PyGithub.Blocking.Repository.Repository.full_name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.full_name</span></tt></a>) or <tt class="xref py py-class docutils literal"><span class="pre">(string,</span> <span class="pre">string)</span></tt> (its owner&#8217;s <tt class="xref py py-attr docutils literal"><span class="pre">Entity.login</span></tt> and <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.name" title="PyGithub.Blocking.Repository.Repository.name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.name</span></tt></a>)</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>repo</strong> &#8211; mandatory <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.full_name" title="PyGithub.Blocking.Repository.Repository.full_name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.full_name</span></tt></a>) or <tt class="xref py py-class docutils literal"><span class="pre">(string,</span> <span class="pre">string)</span></tt> (its owner&#8217;s <a class="reference internal" href="User.html#PyGithub.Blocking.User.User.login" title="PyGithub.Blocking.User.User.login"><tt class="xref py py-attr docutils literal"><span class="pre">User.login</span></tt></a> or <a class="reference internal" href="Organization.html#PyGithub.Blocking.Organization.Organization.login" title="PyGithub.Blocking.Organization.Organization.login"><tt class="xref py py-attr docutils literal"><span class="pre">Organization.login</span></tt></a> and its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.name" title="PyGithub.Blocking.Repository.Repository.name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.name</span></tt></a>)</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
 </tr>
@@ -1226,7 +1350,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>repo</strong> &#8211; mandatory <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.full_name" title="PyGithub.Blocking.Repository.Repository.full_name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.full_name</span></tt></a>) or <tt class="xref py py-class docutils literal"><span class="pre">(string,</span> <span class="pre">string)</span></tt> (its owner&#8217;s <tt class="xref py py-attr docutils literal"><span class="pre">Entity.login</span></tt> and <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.name" title="PyGithub.Blocking.Repository.Repository.name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.name</span></tt></a>)</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>repo</strong> &#8211; mandatory <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.full_name" title="PyGithub.Blocking.Repository.Repository.full_name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.full_name</span></tt></a>) or <tt class="xref py py-class docutils literal"><span class="pre">(string,</span> <span class="pre">string)</span></tt> (its owner&#8217;s <a class="reference internal" href="User.html#PyGithub.Blocking.User.User.login" title="PyGithub.Blocking.User.User.login"><tt class="xref py py-attr docutils literal"><span class="pre">User.login</span></tt></a> or <a class="reference internal" href="Organization.html#PyGithub.Blocking.Organization.Organization.login" title="PyGithub.Blocking.Organization.Organization.login"><tt class="xref py py-attr docutils literal"><span class="pre">Organization.login</span></tt></a> and its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.name" title="PyGithub.Blocking.Repository.Repository.name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.name</span></tt></a>)</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
 </tr>
@@ -1251,6 +1375,21 @@
 </table>
 </dd></dl>
 
+<dl class="method">
+<dt id="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.update">
+<tt class="descclassname">AuthenticatedUser.</tt><tt class="descname">update</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes a <a class="reference external" href="http://developer.github.com/v3/#conditional-requests">conditional request</a> and updates the object.
+Returns True if the object was updated.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
 </dd></dl>
 
 </div>
@@ -1265,11 +1404,11 @@
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="../classes.html"
-                        title="previous chapter">Classes</a></p>
+  <p class="topless"><a href="Asset.html"
+                        title="previous chapter">Asset</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="Commit.html"
-                        title="next chapter">Commit</a></p>
+  <p class="topless"><a href="Authorization.html"
+                        title="next chapter">Authorization</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="../../_sources/reference/classes/AuthenticatedUser.txt"
@@ -1302,10 +1441,10 @@
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="Commit.html" title="Commit"
+          <a href="Authorization.html" title="Authorization"
              >next</a> |</li>
         <li class="right" >
-          <a href="../classes.html" title="Classes"
+          <a href="Asset.html" title="Asset"
              >previous</a> |</li>
         <li><a href="../../index.html">PyGithub 2.0.0-alpha.4 documentation</a> &raquo;</li>
           <li><a href="../../reference.html" >Reference documentation</a> &raquo;</li>

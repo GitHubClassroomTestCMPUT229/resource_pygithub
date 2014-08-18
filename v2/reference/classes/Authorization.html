@@ -1,0 +1,367 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Authorization &mdash; PyGithub 2.0.0-alpha.4 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '2.0.0-alpha.4',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="PyGithub 2.0.0-alpha.4 documentation" href="../../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="Commit" href="Commit.html" />
+    <link rel="prev" title="AuthenticatedUser" href="AuthenticatedUser.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="Commit.html" title="Commit"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="AuthenticatedUser.html" title="AuthenticatedUser"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">PyGithub 2.0.0-alpha.4 documentation</a> &raquo;</li>
+          <li><a href="../../reference.html" >Reference documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-PyGithub.Blocking.Authorization">
+<span id="authorization"></span><h1>Authorization<a class="headerlink" href="#module-PyGithub.Blocking.Authorization" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="PyGithub.Blocking.Authorization.Authorization">
+<em class="property">class </em><tt class="descclassname">PyGithub.Blocking.Authorization.</tt><tt class="descname">Authorization</tt><a class="headerlink" href="#PyGithub.Blocking.Authorization.Authorization" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base class: <a class="reference internal" href="../bases.html#PyGithub.Blocking._base_github_object.UpdatableGithubObject" title="PyGithub.Blocking._base_github_object.UpdatableGithubObject"><tt class="xref py py-class docutils literal"><span class="pre">UpdatableGithubObject</span></tt></a></p>
+<p>Derived classes: none.</p>
+<dl class="docutils">
+<dt>Methods and attributes returning instances of this class:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.create_authorization" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.create_authorization"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.create_authorization()</span></tt></a></li>
+<li><a class="reference internal" href="AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_authorization" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_authorization"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.get_authorization()</span></tt></a></li>
+<li><a class="reference internal" href="AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_authorizations" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_authorizations"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.get_authorizations()</span></tt></a></li>
+<li><a class="reference internal" href="AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_or_create_authorization" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_or_create_authorization"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.get_or_create_authorization()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
+<p>Methods accepting instances of this class as parameter: none.</p>
+<dl class="class">
+<dt id="PyGithub.Blocking.Authorization.Authorization.Application">
+<em class="property">class </em><tt class="descname">Application</tt><a class="headerlink" href="#PyGithub.Blocking.Authorization.Authorization.Application" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Methods and attributes returning instances of this class:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="#PyGithub.Blocking.Authorization.Authorization.app" title="PyGithub.Blocking.Authorization.Authorization.app"><tt class="xref py py-attr docutils literal"><span class="pre">Authorization.app</span></tt></a></li>
+</ul>
+</dd>
+</dl>
+<p>Methods accepting instances of this class as parameter: none.</p>
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Authorization.Authorization.Application.client_id">
+<tt class="descname">client_id</tt><a class="headerlink" href="#PyGithub.Blocking.Authorization.Authorization.Application.client_id" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Authorization.Authorization.Application.name">
+<tt class="descname">name</tt><a class="headerlink" href="#PyGithub.Blocking.Authorization.Authorization.Application.name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Authorization.Authorization.Application.url">
+<tt class="descname">url</tt><a class="headerlink" href="#PyGithub.Blocking.Authorization.Authorization.Application.url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Authorization.Authorization.app">
+<tt class="descclassname">Authorization.</tt><tt class="descname">app</tt><a class="headerlink" href="#PyGithub.Blocking.Authorization.Authorization.app" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#PyGithub.Blocking.Authorization.Authorization.Application" title="PyGithub.Blocking.Authorization.Authorization.Application"><tt class="xref py py-class docutils literal"><span class="pre">Authorization.Application</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Authorization.Authorization.created_at">
+<tt class="descclassname">Authorization.</tt><tt class="descname">created_at</tt><a class="headerlink" href="#PyGithub.Blocking.Authorization.Authorization.created_at" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">datetime</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Authorization.Authorization.id">
+<tt class="descclassname">Authorization.</tt><tt class="descname">id</tt><a class="headerlink" href="#PyGithub.Blocking.Authorization.Authorization.id" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Authorization.Authorization.note">
+<tt class="descclassname">Authorization.</tt><tt class="descname">note</tt><a class="headerlink" href="#PyGithub.Blocking.Authorization.Authorization.note" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Authorization.Authorization.note_url">
+<tt class="descclassname">Authorization.</tt><tt class="descname">note_url</tt><a class="headerlink" href="#PyGithub.Blocking.Authorization.Authorization.note_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Authorization.Authorization.scopes">
+<tt class="descclassname">Authorization.</tt><tt class="descname">scopes</tt><a class="headerlink" href="#PyGithub.Blocking.Authorization.Authorization.scopes" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">list</span></tt> of <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Authorization.Authorization.token">
+<tt class="descclassname">Authorization.</tt><tt class="descname">token</tt><a class="headerlink" href="#PyGithub.Blocking.Authorization.Authorization.token" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Authorization.Authorization.updated_at">
+<tt class="descclassname">Authorization.</tt><tt class="descname">updated_at</tt><a class="headerlink" href="#PyGithub.Blocking.Authorization.Authorization.updated_at" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">datetime</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyGithub.Blocking.Authorization.Authorization.url">
+<tt class="descclassname">Authorization.</tt><tt class="descname">url</tt><a class="headerlink" href="#PyGithub.Blocking.Authorization.Authorization.url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Authorization.Authorization.delete">
+<tt class="descclassname">Authorization.</tt><tt class="descname">delete</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Authorization.Authorization.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/oauth_authorizations#delete-an-authorization">DELETE /authorizations/:id</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Authorization.Authorization.edit">
+<tt class="descclassname">Authorization.</tt><tt class="descname">edit</tt><big>(</big><em>scopes=None</em>, <em>add_scopes=None</em>, <em>remove_scopes=None</em>, <em>note=None</em>, <em>note_url=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Authorization.Authorization.edit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/oauth_authorizations#update-an-existing-authorization">PATCH /authorizations/:id</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>scopes</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">list</span></tt> of <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+<li><strong>add_scopes</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">list</span></tt> of <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+<li><strong>remove_scopes</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">list</span></tt> of <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+<li><strong>note</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+<li><strong>note_url</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> or <tt class="xref py py-class docutils literal"><span class="pre">Reset</span></tt></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Authorization.Authorization.update">
+<tt class="descclassname">Authorization.</tt><tt class="descname">update</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Authorization.Authorization.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes a <a class="reference external" href="http://developer.github.com/v3/#conditional-requests">conditional request</a> and updates the object.
+Returns True if the object was updated.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+            <p>Please use comments to share something specific about this page with the community. Use <a href="http://github.com/jacquev6/PyGithub/issues">GitHub issues</a> if you have a question, want to report a bug. Note that you <em>can</em> comment anonymously.</p>
+            <div id="disqus_thread"></div>
+            <script type="text/javascript" src="http://pygithub-doc.disqus.com/embed.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="AuthenticatedUser.html"
+                        title="previous chapter">AuthenticatedUser</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="Commit.html"
+                        title="next chapter">Commit</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/reference/classes/Authorization.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="Commit.html" title="Commit"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="AuthenticatedUser.html" title="AuthenticatedUser"
+             >previous</a> |</li>
+        <li><a href="../../index.html">PyGithub 2.0.0-alpha.4 documentation</a> &raquo;</li>
+          <li><a href="../../reference.html" >Reference documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013-2014, Vincent Jacques.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>
