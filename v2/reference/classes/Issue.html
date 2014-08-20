@@ -26,7 +26,7 @@
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="top" title="PyGithub 2.0.0-alpha.4 documentation" href="../../index.html" />
     <link rel="up" title="Classes" href="../classes.html" />
-    <link rel="next" title="Label" href="Label.html" />
+    <link rel="next" title="IssueComment" href="IssueComment.html" />
     <link rel="prev" title="Github" href="Github.html" /> 
   </head>
   <body>
@@ -40,7 +40,7 @@
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="Label.html" title="Label"
+          <a href="IssueComment.html" title="IssueComment"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="Github.html" title="Github"
@@ -394,6 +394,23 @@
 </dd></dl>
 
 <dl class="method">
+<dt id="PyGithub.Blocking.Issue.Issue.create_issue_comment">
+<tt class="descname">create_issue_comment</tt><big>(</big><em>body</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Issue.Issue.create_issue_comment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/issues/comments#create-a-comment">POST /repos/:owner/:repo/issues/:number/comments</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>body</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="IssueComment.html#PyGithub.Blocking.IssueComment.IssueComment" title="PyGithub.Blocking.IssueComment.IssueComment"><tt class="xref py py-class docutils literal"><span class="pre">IssueComment</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
 <dt id="PyGithub.Blocking.Issue.Issue.create_pull">
 <tt class="descname">create_pull</tt><big>(</big><em>head</em>, <em>base</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Issue.Issue.create_pull" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/pulls#create-a-pull-request">POST /repos/:owner/:repo/pulls</a> end point.</p>
@@ -442,6 +459,23 @@
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">None</p>
 </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Issue.Issue.get_issue_comments">
+<tt class="descname">get_issue_comments</tt><big>(</big><em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Issue.Issue.get_issue_comments" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/issues/comments#list-comments-on-an-issue">GET /repos/:owner/:repo/issues/:number/comments</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>per_page</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../bases.html#PyGithub.Blocking._paginated_list.PaginatedList" title="PyGithub.Blocking._paginated_list.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">PaginatedList</span></tt></a> of <a class="reference internal" href="IssueComment.html#PyGithub.Blocking.IssueComment.IssueComment" title="PyGithub.Blocking.IssueComment.IssueComment"><tt class="xref py py-class docutils literal"><span class="pre">IssueComment</span></tt></a></td>
 </tr>
 </tbody>
 </table>
@@ -543,8 +577,8 @@ Returns True if the object was updated.</p>
   <p class="topless"><a href="Github.html"
                         title="previous chapter">Github</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="Label.html"
-                        title="next chapter">Label</a></p>
+  <p class="topless"><a href="IssueComment.html"
+                        title="next chapter">IssueComment</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="../../_sources/reference/classes/Issue.txt"
@@ -577,7 +611,7 @@ Returns True if the object was updated.</p>
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="Label.html" title="Label"
+          <a href="IssueComment.html" title="IssueComment"
              >next</a> |</li>
         <li class="right" >
           <a href="Github.html" title="Github"

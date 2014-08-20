@@ -1792,6 +1792,40 @@
 </dd></dl>
 
 <dl class="method">
+<dt id="PyGithub.Blocking.Repository.Repository.get_commit_comment">
+<tt class="descclassname">Repository.</tt><tt class="descname">get_commit_comment</tt><big>(</big><em>id</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Repository.Repository.get_commit_comment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/repos/comments#get-a-single-commit-comment">GET /repos/:owner/:repo/comments/:id</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>id</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="CommitComment.html#PyGithub.Blocking.CommitComment.CommitComment" title="PyGithub.Blocking.CommitComment.CommitComment"><tt class="xref py py-class docutils literal"><span class="pre">CommitComment</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Repository.Repository.get_commit_comments">
+<tt class="descclassname">Repository.</tt><tt class="descname">get_commit_comments</tt><big>(</big><em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Repository.Repository.get_commit_comments" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/repos/comments#list-commit-comments-for-a-repository">GET /repos/:owner/:repo/comments</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>per_page</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../bases.html#PyGithub.Blocking._paginated_list.PaginatedList" title="PyGithub.Blocking._paginated_list.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">PaginatedList</span></tt></a> of <a class="reference internal" href="CommitComment.html#PyGithub.Blocking.CommitComment.CommitComment" title="PyGithub.Blocking.CommitComment.CommitComment"><tt class="xref py py-class docutils literal"><span class="pre">CommitComment</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
 <dt id="PyGithub.Blocking.Repository.Repository.get_commits">
 <tt class="descclassname">Repository.</tt><tt class="descname">get_commits</tt><big>(</big><em>sha=None</em>, <em>path=None</em>, <em>author=None</em>, <em>since=None</em>, <em>until=None</em>, <em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Repository.Repository.get_commits" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/repos/commits#list-commits-on-a-repository">GET /repos/:owner/:repo/commits</a> end point.</p>
@@ -2009,6 +2043,47 @@
 </dd></dl>
 
 <dl class="method">
+<dt id="PyGithub.Blocking.Repository.Repository.get_issue_comment">
+<tt class="descclassname">Repository.</tt><tt class="descname">get_issue_comment</tt><big>(</big><em>id</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Repository.Repository.get_issue_comment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/issues/comments#get-a-single-comment">GET /repos/:owner/:repo/issues/comments/:id</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>id</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="IssueComment.html#PyGithub.Blocking.IssueComment.IssueComment" title="PyGithub.Blocking.IssueComment.IssueComment"><tt class="xref py py-class docutils literal"><span class="pre">IssueComment</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Repository.Repository.get_issue_comments">
+<tt class="descclassname">Repository.</tt><tt class="descname">get_issue_comments</tt><big>(</big><em>sort=None</em>, <em>direction=None</em>, <em>since=None</em>, <em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Repository.Repository.get_issue_comments" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/issues/comments#list-comments-in-a-repository">GET /repos/:owner/:repo/issues/comments</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>sort</strong> &#8211; optional &#8220;created&#8221; or &#8220;updated&#8221;</li>
+<li><strong>direction</strong> &#8211; optional &#8220;asc&#8221; or &#8220;desc&#8221;</li>
+<li><strong>since</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">datetime</span></tt></li>
+<li><strong>per_page</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../bases.html#PyGithub.Blocking._paginated_list.PaginatedList" title="PyGithub.Blocking._paginated_list.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">PaginatedList</span></tt></a> of <a class="reference internal" href="IssueComment.html#PyGithub.Blocking.IssueComment.IssueComment" title="PyGithub.Blocking.IssueComment.IssueComment"><tt class="xref py py-class docutils literal"><span class="pre">IssueComment</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
 <dt id="PyGithub.Blocking.Repository.Repository.get_issues">
 <tt class="descclassname">Repository.</tt><tt class="descname">get_issues</tt><big>(</big><em>milestone=None</em>, <em>state=None</em>, <em>assignee=None</em>, <em>creator=None</em>, <em>mentioned=None</em>, <em>labels=None</em>, <em>sort=None</em>, <em>direction=None</em>, <em>since=None</em>, <em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Repository.Repository.get_issues" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/issues#list-issues-for-a-repository">GET /repos/:owner/:repo/issues</a> end point.</p>
@@ -2202,6 +2277,47 @@
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>number</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="PullRequest.html#PyGithub.Blocking.PullRequest.PullRequest" title="PyGithub.Blocking.PullRequest.PullRequest"><tt class="xref py py-class docutils literal"><span class="pre">PullRequest</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Repository.Repository.get_pull_comment">
+<tt class="descclassname">Repository.</tt><tt class="descname">get_pull_comment</tt><big>(</big><em>number</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Repository.Repository.get_pull_comment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/pulls/comments#get-a-single-comment">GET /repos/:owner/:repo/pulls/comments/:number</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>number</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="PullComment.html#PyGithub.Blocking.PullComment.PullComment" title="PyGithub.Blocking.PullComment.PullComment"><tt class="xref py py-class docutils literal"><span class="pre">PullComment</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Repository.Repository.get_pull_comments">
+<tt class="descclassname">Repository.</tt><tt class="descname">get_pull_comments</tt><big>(</big><em>sort=None</em>, <em>direction=None</em>, <em>since=None</em>, <em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Repository.Repository.get_pull_comments" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/pulls/comments#list-comments-in-a-repository">GET /repos/:owner/:repo/pulls/comments</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>sort</strong> &#8211; optional &#8220;created&#8221; or &#8220;updated&#8221;</li>
+<li><strong>direction</strong> &#8211; optional &#8220;asc&#8221; or &#8220;desc&#8221;</li>
+<li><strong>since</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">datetime</span></tt></li>
+<li><strong>per_page</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../bases.html#PyGithub.Blocking._paginated_list.PaginatedList" title="PyGithub.Blocking._paginated_list.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">PaginatedList</span></tt></a> of <a class="reference internal" href="PullComment.html#PyGithub.Blocking.PullComment.PullComment" title="PyGithub.Blocking.PullComment.PullComment"><tt class="xref py py-class docutils literal"><span class="pre">PullComment</span></tt></a></p>
+</td>
 </tr>
 </tbody>
 </table>

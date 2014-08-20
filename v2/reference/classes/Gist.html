@@ -26,7 +26,7 @@
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="top" title="PyGithub 2.0.0-alpha.4 documentation" href="../../index.html" />
     <link rel="up" title="Classes" href="../classes.html" />
-    <link rel="next" title="GitBlob" href="GitBlob.html" />
+    <link rel="next" title="GistComment" href="GistComment.html" />
     <link rel="prev" title="File" href="File.html" /> 
   </head>
   <body>
@@ -40,7 +40,7 @@
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="GitBlob.html" title="GitBlob"
+          <a href="GistComment.html" title="GistComment"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="File.html" title="File"
@@ -649,6 +649,23 @@
 </dd></dl>
 
 <dl class="method">
+<dt id="PyGithub.Blocking.Gist.Gist.create_comment">
+<tt class="descclassname">Gist.</tt><tt class="descname">create_comment</tt><big>(</big><em>body</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.create_comment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/gists/comments#create-a-comment">POST /gists/:gist_id/comments</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>body</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="GistComment.html#PyGithub.Blocking.GistComment.GistComment" title="PyGithub.Blocking.GistComment.GistComment"><tt class="xref py py-class docutils literal"><span class="pre">GistComment</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
 <dt id="PyGithub.Blocking.Gist.Gist.delete">
 <tt class="descclassname">Gist.</tt><tt class="descname">delete</tt><big>(</big><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.delete" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/gists#delete-a-gist">DELETE /gists/:id</a> end point.</p>
@@ -680,6 +697,40 @@
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">None</p>
 </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Gist.Gist.get_comment">
+<tt class="descclassname">Gist.</tt><tt class="descname">get_comment</tt><big>(</big><em>id</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.get_comment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/gists/comments#get-a-single-comment">GET /gists/:gist_id/comments/:id</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>id</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="GistComment.html#PyGithub.Blocking.GistComment.GistComment" title="PyGithub.Blocking.GistComment.GistComment"><tt class="xref py py-class docutils literal"><span class="pre">GistComment</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Gist.Gist.get_comments">
+<tt class="descclassname">Gist.</tt><tt class="descname">get_comments</tt><big>(</big><em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Gist.Gist.get_comments" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/gists/comments#list-comments-on-a-gist">GET /gists/:gist_id/comments</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>per_page</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../bases.html#PyGithub.Blocking._paginated_list.PaginatedList" title="PyGithub.Blocking._paginated_list.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">PaginatedList</span></tt></a> of <a class="reference internal" href="GistComment.html#PyGithub.Blocking.GistComment.GistComment" title="PyGithub.Blocking.GistComment.GistComment"><tt class="xref py py-class docutils literal"><span class="pre">GistComment</span></tt></a></td>
 </tr>
 </tbody>
 </table>
@@ -751,8 +802,8 @@ Returns True if the object was updated.</p>
   <p class="topless"><a href="File.html"
                         title="previous chapter">File</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="GitBlob.html"
-                        title="next chapter">GitBlob</a></p>
+  <p class="topless"><a href="GistComment.html"
+                        title="next chapter">GistComment</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="../../_sources/reference/classes/Gist.txt"
@@ -785,7 +836,7 @@ Returns True if the object was updated.</p>
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="GitBlob.html" title="GitBlob"
+          <a href="GistComment.html" title="GistComment"
              >next</a> |</li>
         <li class="right" >
           <a href="File.html" title="File"

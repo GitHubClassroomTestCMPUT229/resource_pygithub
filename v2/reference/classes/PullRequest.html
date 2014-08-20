@@ -27,7 +27,7 @@
     <link rel="top" title="PyGithub 2.0.0-alpha.4 documentation" href="../../index.html" />
     <link rel="up" title="Classes" href="../classes.html" />
     <link rel="next" title="Release" href="Release.html" />
-    <link rel="prev" title="PublicKey" href="PublicKey.html" /> 
+    <link rel="prev" title="PullComment" href="PullComment.html" /> 
   </head>
   <body>
     <div class="related">
@@ -43,7 +43,7 @@
           <a href="Release.html" title="Release"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="PublicKey.html" title="PublicKey"
+          <a href="PullComment.html" title="PullComment"
              accesskey="P">previous</a> |</li>
         <li><a href="../../index.html">PyGithub 2.0.0-alpha.4 documentation</a> &raquo;</li>
           <li><a href="../../reference.html" >Reference documentation</a> &raquo;</li>
@@ -831,6 +831,30 @@
 </dd></dl>
 
 <dl class="method">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.create_pull_comment">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">create_pull_comment</tt><big>(</big><em>body</em>, <em>commit_id</em>, <em>path</em>, <em>position</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.create_pull_comment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/pulls/comments#create-a-comment">POST /repos/:owner/:repo/pulls/:number/comments</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>body</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+<li><strong>commit_id</strong> &#8211; mandatory <a class="reference internal" href="Commit.html#PyGithub.Blocking.Commit.Commit" title="PyGithub.Blocking.Commit.Commit"><tt class="xref py py-class docutils literal"><span class="pre">Commit</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Commit.html#PyGithub.Blocking.Commit.Commit.sha" title="PyGithub.Blocking.Commit.Commit.sha"><tt class="xref py py-attr docutils literal"><span class="pre">Commit.sha</span></tt></a>)</li>
+<li><strong>path</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+<li><strong>position</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="PullComment.html#PyGithub.Blocking.PullComment.PullComment" title="PyGithub.Blocking.PullComment.PullComment"><tt class="xref py py-class docutils literal"><span class="pre">PullComment</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
 <dt id="PyGithub.Blocking.PullRequest.PullRequest.edit">
 <tt class="descclassname">PullRequest.</tt><tt class="descname">edit</tt><big>(</big><em>title=None</em>, <em>body=None</em>, <em>state=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.edit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/pulls#update-a-pull-request">PATCH /repos/:owner/:repo/pulls/:number</a> end point.</p>
@@ -920,6 +944,23 @@
 </dd></dl>
 
 <dl class="method">
+<dt id="PyGithub.Blocking.PullRequest.PullRequest.get_pull_comments">
+<tt class="descclassname">PullRequest.</tt><tt class="descname">get_pull_comments</tt><big>(</big><em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.get_pull_comments" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/pulls/comments#list-comments-on-a-pull-request">GET /repos/:owner/:repo/pulls/:number/comments</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>per_page</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../bases.html#PyGithub.Blocking._paginated_list.PaginatedList" title="PyGithub.Blocking._paginated_list.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">PaginatedList</span></tt></a> of <a class="reference internal" href="PullComment.html#PyGithub.Blocking.PullComment.PullComment" title="PyGithub.Blocking.PullComment.PullComment"><tt class="xref py py-class docutils literal"><span class="pre">PullComment</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
 <dt id="PyGithub.Blocking.PullRequest.PullRequest.merge">
 <tt class="descclassname">PullRequest.</tt><tt class="descname">merge</tt><big>(</big><em>commit_message=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.merge" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/pulls#merge-a-pull-request-merge-button">PUT /repos/:owner/:repo/pulls/:number/merge</a> end point.</p>
@@ -965,8 +1006,8 @@ Returns True if the object was updated.</p>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="PublicKey.html"
-                        title="previous chapter">PublicKey</a></p>
+  <p class="topless"><a href="PullComment.html"
+                        title="previous chapter">PullComment</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="Release.html"
                         title="next chapter">Release</a></p>
@@ -1005,7 +1046,7 @@ Returns True if the object was updated.</p>
           <a href="Release.html" title="Release"
              >next</a> |</li>
         <li class="right" >
-          <a href="PublicKey.html" title="PublicKey"
+          <a href="PullComment.html" title="PullComment"
              >previous</a> |</li>
         <li><a href="../../index.html">PyGithub 2.0.0-alpha.4 documentation</a> &raquo;</li>
           <li><a href="../../reference.html" >Reference documentation</a> &raquo;</li>
