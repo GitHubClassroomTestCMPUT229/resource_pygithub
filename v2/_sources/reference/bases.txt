@@ -22,9 +22,6 @@ Base classes
 .. autoclass:: PyGithub.Blocking._base_github_object::SessionedGithubObject()
     :members:
 
-.. autoclass:: PyGithub.Blocking._base_github_object::UpdatableGithubObject()
-    :members:
-
 Exceptions
 ----------
 

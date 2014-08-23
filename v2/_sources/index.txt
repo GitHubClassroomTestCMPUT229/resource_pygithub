@@ -18,11 +18,11 @@ This documentation is structured as follows:
   :hidden:
 
   introduction
+  migration
   user_guide
   cookbook
   rationale
   reference
-  migration
 
 Migration strategy and maintenance schedule
 ===========================================

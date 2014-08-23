@@ -61,7 +61,7 @@
 <dl class="class">
 <dt id="PyGithub.Blocking.PullRequest.PullRequest">
 <em class="property">class </em><tt class="descclassname">PyGithub.Blocking.PullRequest.</tt><tt class="descname">PullRequest</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest" title="Permalink to this definition">¶</a></dt>
-<dd><p>Base class: <a class="reference internal" href="../bases.html#PyGithub.Blocking._base_github_object.UpdatableGithubObject" title="PyGithub.Blocking._base_github_object.UpdatableGithubObject"><tt class="xref py py-class docutils literal"><span class="pre">UpdatableGithubObject</span></tt></a></p>
+<dd><p>Base class: <tt class="xref py py-class docutils literal"><span class="pre">UpdatableGithubObject</span></tt></p>
 <p>Derived classes: none.</p>
 <dl class="docutils">
 <dt>Methods and attributes returning instances of this class:</dt>
@@ -612,7 +612,8 @@
 <dl class="attribute">
 <dt id="PyGithub.Blocking.PullRequest.PullRequest.mergeable">
 <tt class="descclassname">PullRequest.</tt><tt class="descname">mergeable</tt><a class="headerlink" href="#PyGithub.Blocking.PullRequest.PullRequest.mergeable" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>This attribute is None for new requests (until it&#8217;s actually computed by GitHub) and for merged requests. See <a class="reference external" href="https://github.com/jacquev6/PyGithub/issues/256">issue #256</a> for details.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -841,7 +842,7 @@
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>body</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
-<li><strong>commit_id</strong> &#8211; mandatory <a class="reference internal" href="Commit.html#PyGithub.Blocking.Commit.Commit" title="PyGithub.Blocking.Commit.Commit"><tt class="xref py py-class docutils literal"><span class="pre">Commit</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Commit.html#PyGithub.Blocking.Commit.Commit.sha" title="PyGithub.Blocking.Commit.Commit.sha"><tt class="xref py py-attr docutils literal"><span class="pre">Commit.sha</span></tt></a>)</li>
+<li><strong>commit_id</strong> &#8211; mandatory <a class="reference internal" href="Commit.html#PyGithub.Blocking.Commit.Commit" title="PyGithub.Blocking.Commit.Commit"><tt class="xref py py-class docutils literal"><span class="pre">Commit</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Commit.html#PyGithub.Blocking.Commit.Commit.sha" title="PyGithub.Blocking.Commit.Commit.sha"><tt class="xref py py-attr docutils literal"><span class="pre">sha</span></tt></a>)</li>
 <li><strong>path</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
 <li><strong>position</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></li>
 </ul>

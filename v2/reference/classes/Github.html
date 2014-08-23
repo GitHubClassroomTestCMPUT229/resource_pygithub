@@ -26,7 +26,7 @@
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="top" title="PyGithub 2.0.0-alpha.4 documentation" href="../../index.html" />
     <link rel="up" title="Classes" href="../classes.html" />
-    <link rel="next" title="Issue" href="Issue.html" />
+    <link rel="next" title="Hook" href="Hook.html" />
     <link rel="prev" title="GitTree" href="GitTree.html" /> 
   </head>
   <body>
@@ -40,7 +40,7 @@
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="Issue.html" title="Issue"
+          <a href="Hook.html" title="Hook"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="GitTree.html" title="GitTree"
@@ -125,8 +125,12 @@
 <li><a class="reference internal" href="#PyGithub.Blocking.Github.Github.get_hooks" title="PyGithub.Blocking.Github.Github.get_hooks"><tt class="xref py py-meth docutils literal"><span class="pre">Github.get_hooks()</span></tt></a></li>
 </ul>
 </dd>
+<dt>Methods accepting instances of this class as parameter:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.create_hook" title="PyGithub.Blocking.Repository.Repository.create_hook"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.create_hook()</span></tt></a></li>
+</ul>
+</dd>
 </dl>
-<p>Methods accepting instances of this class as parameter: none.</p>
 <dl class="attribute">
 <dt id="PyGithub.Blocking.Github.Github.HookDescription.events">
 <tt class="descname">events</tt><a class="headerlink" href="#PyGithub.Blocking.Github.Github.HookDescription.events" title="Permalink to this definition">¶</a></dt>
@@ -608,7 +612,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>since</strong> &#8211; optional <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt> (its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.id" title="PyGithub.Blocking.Repository.Repository.id"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.id</span></tt></a>)</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>since</strong> &#8211; optional <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt> (its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.id" title="PyGithub.Blocking.Repository.Repository.id"><tt class="xref py py-attr docutils literal"><span class="pre">id</span></tt></a>)</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../bases.html#PyGithub.Blocking._paginated_list.PaginatedList" title="PyGithub.Blocking._paginated_list.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">PaginatedList</span></tt></a> of <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a></td>
 </tr>
@@ -659,9 +663,128 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>since</strong> &#8211; optional <a class="reference internal" href="User.html#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt> (its <a class="reference internal" href="User.html#PyGithub.Blocking.User.User.id" title="PyGithub.Blocking.User.User.id"><tt class="xref py py-attr docutils literal"><span class="pre">User.id</span></tt></a>)</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>since</strong> &#8211; optional <a class="reference internal" href="User.html#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt> (its <a class="reference internal" href="User.html#PyGithub.Blocking.User.User.id" title="PyGithub.Blocking.User.User.id"><tt class="xref py py-attr docutils literal"><span class="pre">id</span></tt></a>)</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../bases.html#PyGithub.Blocking._paginated_list.PaginatedList" title="PyGithub.Blocking._paginated_list.PaginatedList"><tt class="xref py py-class docutils literal"><span class="pre">PaginatedList</span></tt></a> of <a class="reference internal" href="User.html#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a> or <a class="reference internal" href="Organization.html#PyGithub.Blocking.Organization.Organization" title="PyGithub.Blocking.Organization.Organization"><tt class="xref py py-class docutils literal"><span class="pre">Organization</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Github.Github.render_markdown">
+<tt class="descclassname">Github.</tt><tt class="descname">render_markdown</tt><big>(</big><em>text</em>, <em>mode=None</em>, <em>context=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Github.Github.render_markdown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/markdown#render-an-arbitrary-markdown-document">POST /markdown</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>text</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+<li><strong>mode</strong> &#8211; optional &#8220;gfm&#8221; or &#8220;markdown&#8221;</li>
+<li><strong>context</strong> &#8211; optional <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.full_name" title="PyGithub.Blocking.Repository.Repository.full_name"><tt class="xref py py-attr docutils literal"><span class="pre">full_name</span></tt></a>) or <tt class="xref py py-class docutils literal"><span class="pre">(string,</span> <span class="pre">string)</span></tt> (its owner&#8217;s <a class="reference internal" href="User.html#PyGithub.Blocking.User.User.login" title="PyGithub.Blocking.User.User.login"><tt class="xref py py-attr docutils literal"><span class="pre">User.login</span></tt></a> or <a class="reference internal" href="Organization.html#PyGithub.Blocking.Organization.Organization.login" title="PyGithub.Blocking.Organization.Organization.login"><tt class="xref py py-attr docutils literal"><span class="pre">Organization.login</span></tt></a> and its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.name" title="PyGithub.Blocking.Repository.Repository.name"><tt class="xref py py-attr docutils literal"><span class="pre">name</span></tt></a>)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Github.Github.search_code">
+<tt class="descclassname">Github.</tt><tt class="descname">search_code</tt><big>(</big><em>q</em>, <em>sort=None</em>, <em>order=None</em>, <em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Github.Github.search_code" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/search#search-code">GET /search/code</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>q</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+<li><strong>sort</strong> &#8211; optional &#8220;indexed&#8221;</li>
+<li><strong>order</strong> &#8211; optional &#8220;asc&#8221; or &#8220;desc&#8221;</li>
+<li><strong>per_page</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><tt class="xref py py-class docutils literal"><span class="pre">SearchResult</span></tt> of <a class="reference internal" href="File.html#PyGithub.Blocking.File.File" title="PyGithub.Blocking.File.File"><tt class="xref py py-class docutils literal"><span class="pre">File</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Github.Github.search_issues">
+<tt class="descclassname">Github.</tt><tt class="descname">search_issues</tt><big>(</big><em>q</em>, <em>sort=None</em>, <em>order=None</em>, <em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Github.Github.search_issues" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/search#search-issues">GET /search/issues</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>q</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+<li><strong>sort</strong> &#8211; optional &#8220;comments&#8221; or &#8220;created&#8221; or &#8220;updated&#8221;</li>
+<li><strong>order</strong> &#8211; optional &#8220;asc&#8221; or &#8220;desc&#8221;</li>
+<li><strong>per_page</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><tt class="xref py py-class docutils literal"><span class="pre">SearchResult</span></tt> of <a class="reference internal" href="Issue.html#PyGithub.Blocking.Issue.Issue" title="PyGithub.Blocking.Issue.Issue"><tt class="xref py py-class docutils literal"><span class="pre">Issue</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Github.Github.search_repositories">
+<tt class="descclassname">Github.</tt><tt class="descname">search_repositories</tt><big>(</big><em>q</em>, <em>sort=None</em>, <em>order=None</em>, <em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Github.Github.search_repositories" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/search#search-repositories">GET /search/repositories</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>q</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+<li><strong>sort</strong> &#8211; optional &#8220;forks&#8221; or &#8220;stars&#8221; or &#8220;updated&#8221;</li>
+<li><strong>order</strong> &#8211; optional &#8220;asc&#8221; or &#8220;desc&#8221;</li>
+<li><strong>per_page</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><tt class="xref py py-class docutils literal"><span class="pre">SearchResult</span></tt> of <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyGithub.Blocking.Github.Github.search_users">
+<tt class="descclassname">Github.</tt><tt class="descname">search_users</tt><big>(</big><em>q</em>, <em>sort=None</em>, <em>order=None</em>, <em>per_page=None</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking.Github.Github.search_users" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <a class="reference external" href="http://developer.github.com/v3/search#search-users">GET /search/users</a> end point.</p>
+<p>This is the only method calling this end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>q</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
+<li><strong>sort</strong> &#8211; optional &#8220;followers&#8221; or &#8220;joined&#8221; or &#8220;repositories&#8221;</li>
+<li><strong>order</strong> &#8211; optional &#8220;asc&#8221; or &#8220;desc&#8221;</li>
+<li><strong>per_page</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><tt class="xref py py-class docutils literal"><span class="pre">SearchResult</span></tt> of <a class="reference internal" href="User.html#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a></p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -684,8 +807,8 @@
   <p class="topless"><a href="GitTree.html"
                         title="previous chapter">GitTree</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="Issue.html"
-                        title="next chapter">Issue</a></p>
+  <p class="topless"><a href="Hook.html"
+                        title="next chapter">Hook</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="../../_sources/reference/classes/Github.txt"
@@ -718,7 +841,7 @@
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="Issue.html" title="Issue"
+          <a href="Hook.html" title="Hook"
              >next</a> |</li>
         <li class="right" >
           <a href="GitTree.html" title="GitTree"

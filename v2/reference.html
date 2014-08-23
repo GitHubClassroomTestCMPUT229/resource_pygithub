@@ -81,6 +81,7 @@
 <li class="toctree-l2"><a class="reference internal" href="reference/classes/GitTag.html">GitTag</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/classes/GitTree.html">GitTree</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/classes/Github.html">Github</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/classes/Hook.html">Hook</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/classes/Issue.html">Issue</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/classes/IssueComment.html">IssueComment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/classes/Label.html">Label</a></li>
@@ -143,7 +144,12 @@
 <li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-hooks-name">GET /hooks/:name</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-hub">POST /hub</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-issues">GET /issues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-legacy-issues-search-owner-repository-state-keyword">GET /legacy/issues/search/:owner/:repository/:state/:keyword</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-legacy-repos-search-keyword">GET /legacy/repos/search/:keyword</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-legacy-user-email-email">GET /legacy/user/email/:email</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-legacy-user-search-keyword">GET /legacy/user/search/:keyword</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-markdown">POST /markdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-markdown-raw">POST /markdown/raw</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-meta">GET /meta</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-networks-owner-repo-events">GET /networks/:owner/:repo/events</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-notifications">GET /notifications</a></li>
@@ -200,6 +206,9 @@
 <li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-repos-owner-repo-deployments">POST /repos/:owner/:repo/deployments</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-deployments-id-statuses">GET /repos/:owner/:repo/deployments/:id/statuses</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-repos-owner-repo-deployments-id-statuses">POST /repos/:owner/:repo/deployments/:id/statuses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-downloads">GET /repos/:owner/:repo/downloads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-repos-owner-repo-downloads-id">DELETE /repos/:owner/:repo/downloads/:id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-downloads-id">GET /repos/:owner/:repo/downloads/:id</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-events">GET /repos/:owner/:repo/events</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-repos-owner-repo-forks">GET /repos/:owner/:repo/forks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/apis.html#post-repos-owner-repo-forks">POST /repos/:owner/:repo/forks</a></li>
@@ -359,6 +368,9 @@
 <li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-user-starred-owner-repo">GET /user/starred/:owner/:repo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/apis.html#put-user-starred-owner-repo">PUT /user/starred/:owner/:repo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-user-subscriptions">GET /user/subscriptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#delete-user-subscriptions-owner-repo">DELETE /user/subscriptions/:owner/:repo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-user-subscriptions-owner-repo">GET /user/subscriptions/:owner/:repo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/apis.html#put-user-subscriptions-owner-repo">PUT /user/subscriptions/:owner/:repo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-user-teams">GET /user/teams</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-users">GET /users</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/apis.html#get-users-username">GET /users/:username</a></li>

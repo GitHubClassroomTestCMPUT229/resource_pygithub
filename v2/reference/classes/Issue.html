@@ -27,7 +27,7 @@
     <link rel="top" title="PyGithub 2.0.0-alpha.4 documentation" href="../../index.html" />
     <link rel="up" title="Classes" href="../classes.html" />
     <link rel="next" title="IssueComment" href="IssueComment.html" />
-    <link rel="prev" title="Github" href="Github.html" /> 
+    <link rel="prev" title="Hook" href="Hook.html" /> 
   </head>
   <body>
     <div class="related">
@@ -43,7 +43,7 @@
           <a href="IssueComment.html" title="IssueComment"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="Github.html" title="Github"
+          <a href="Hook.html" title="Hook"
              accesskey="P">previous</a> |</li>
         <li><a href="../../index.html">PyGithub 2.0.0-alpha.4 documentation</a> &raquo;</li>
           <li><a href="../../reference.html" >Reference documentation</a> &raquo;</li>
@@ -61,13 +61,14 @@
 <dl class="class">
 <dt id="PyGithub.Blocking.Issue.Issue">
 <em class="property">class </em><tt class="descclassname">PyGithub.Blocking.Issue.</tt><tt class="descname">Issue</tt><a class="headerlink" href="#PyGithub.Blocking.Issue.Issue" title="Permalink to this definition">¶</a></dt>
-<dd><p>Base class: <a class="reference internal" href="../bases.html#PyGithub.Blocking._base_github_object.UpdatableGithubObject" title="PyGithub.Blocking._base_github_object.UpdatableGithubObject"><tt class="xref py py-class docutils literal"><span class="pre">UpdatableGithubObject</span></tt></a></p>
+<dd><p>Base class: <tt class="xref py py-class docutils literal"><span class="pre">UpdatableGithubObject</span></tt></p>
 <p>Derived classes: none.</p>
 <dl class="docutils">
 <dt>Methods and attributes returning instances of this class:</dt>
 <dd><ul class="first last simple">
 <li><a class="reference internal" href="AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_issues" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_issues"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.get_issues()</span></tt></a></li>
 <li><a class="reference internal" href="AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_user_issues" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.get_user_issues"><tt class="xref py py-meth docutils literal"><span class="pre">AuthenticatedUser.get_user_issues()</span></tt></a></li>
+<li><a class="reference internal" href="Github.html#PyGithub.Blocking.Github.Github.search_issues" title="PyGithub.Blocking.Github.Github.search_issues"><tt class="xref py py-meth docutils literal"><span class="pre">Github.search_issues()</span></tt></a></li>
 <li><a class="reference internal" href="Organization.html#PyGithub.Blocking.Organization.Organization.get_issues" title="PyGithub.Blocking.Organization.Organization.get_issues"><tt class="xref py py-meth docutils literal"><span class="pre">Organization.get_issues()</span></tt></a></li>
 <li><a class="reference internal" href="PullRequest.html#PyGithub.Blocking.PullRequest.PullRequest.get_issue" title="PyGithub.Blocking.PullRequest.PullRequest.get_issue"><tt class="xref py py-meth docutils literal"><span class="pre">PullRequest.get_issue()</span></tt></a></li>
 <li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.create_issue" title="PyGithub.Blocking.Repository.Repository.create_issue"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.create_issue()</span></tt></a></li>
@@ -260,6 +261,19 @@
 </dd></dl>
 
 <dl class="attribute">
+<dt id="PyGithub.Blocking.Issue.Issue.locked">
+<tt class="descname">locked</tt><a class="headerlink" href="#PyGithub.Blocking.Issue.Issue.locked" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
 <dt id="PyGithub.Blocking.Issue.Issue.milestone">
 <tt class="descname">milestone</tt><a class="headerlink" href="#PyGithub.Blocking.Issue.Issue.milestone" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
@@ -385,7 +399,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>label</strong> &#8211; mandatory <a class="reference internal" href="Label.html#PyGithub.Blocking.Label.Label" title="PyGithub.Blocking.Label.Label"><tt class="xref py py-class docutils literal"><span class="pre">Label</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Label.html#PyGithub.Blocking.Label.Label.name" title="PyGithub.Blocking.Label.Label.name"><tt class="xref py py-attr docutils literal"><span class="pre">Label.name</span></tt></a>)</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>label</strong> &#8211; mandatory <a class="reference internal" href="Label.html#PyGithub.Blocking.Label.Label" title="PyGithub.Blocking.Label.Label"><tt class="xref py py-class docutils literal"><span class="pre">Label</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Label.html#PyGithub.Blocking.Label.Label.name" title="PyGithub.Blocking.Label.Label.name"><tt class="xref py py-attr docutils literal"><span class="pre">name</span></tt></a>)</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
 </tr>
@@ -450,10 +464,10 @@
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>title</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
 <li><strong>body</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> or <tt class="xref py py-class docutils literal"><span class="pre">Reset</span></tt></li>
-<li><strong>assignee</strong> &#8211; optional <a class="reference internal" href="User.html#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="User.html#PyGithub.Blocking.User.User.login" title="PyGithub.Blocking.User.User.login"><tt class="xref py py-attr docutils literal"><span class="pre">User.login</span></tt></a>) or <a class="reference internal" href="AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser"><tt class="xref py py-class docutils literal"><span class="pre">AuthenticatedUser</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.login" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.login"><tt class="xref py py-attr docutils literal"><span class="pre">AuthenticatedUser.login</span></tt></a>) or <tt class="xref py py-class docutils literal"><span class="pre">Reset</span></tt></li>
+<li><strong>assignee</strong> &#8211; optional <a class="reference internal" href="User.html#PyGithub.Blocking.User.User" title="PyGithub.Blocking.User.User"><tt class="xref py py-class docutils literal"><span class="pre">User</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="User.html#PyGithub.Blocking.User.User.login" title="PyGithub.Blocking.User.User.login"><tt class="xref py py-attr docutils literal"><span class="pre">login</span></tt></a>) or <a class="reference internal" href="AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser"><tt class="xref py py-class docutils literal"><span class="pre">AuthenticatedUser</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="AuthenticatedUser.html#PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.login" title="PyGithub.Blocking.AuthenticatedUser.AuthenticatedUser.login"><tt class="xref py py-attr docutils literal"><span class="pre">login</span></tt></a>) or <tt class="xref py py-class docutils literal"><span class="pre">Reset</span></tt></li>
 <li><strong>state</strong> &#8211; optional &#8220;closed&#8221; or &#8220;open&#8221;</li>
-<li><strong>milestone</strong> &#8211; optional <a class="reference internal" href="Milestone.html#PyGithub.Blocking.Milestone.Milestone" title="PyGithub.Blocking.Milestone.Milestone"><tt class="xref py py-class docutils literal"><span class="pre">Milestone</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt> (its <a class="reference internal" href="Milestone.html#PyGithub.Blocking.Milestone.Milestone.number" title="PyGithub.Blocking.Milestone.Milestone.number"><tt class="xref py py-attr docutils literal"><span class="pre">Milestone.number</span></tt></a>) or <tt class="xref py py-class docutils literal"><span class="pre">Reset</span></tt></li>
-<li><strong>labels</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">list</span></tt> of <a class="reference internal" href="Label.html#PyGithub.Blocking.Label.Label" title="PyGithub.Blocking.Label.Label"><tt class="xref py py-class docutils literal"><span class="pre">Label</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Label.html#PyGithub.Blocking.Label.Label.name" title="PyGithub.Blocking.Label.Label.name"><tt class="xref py py-attr docutils literal"><span class="pre">Label.name</span></tt></a>)</li>
+<li><strong>milestone</strong> &#8211; optional <a class="reference internal" href="Milestone.html#PyGithub.Blocking.Milestone.Milestone" title="PyGithub.Blocking.Milestone.Milestone"><tt class="xref py py-class docutils literal"><span class="pre">Milestone</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt> (its <a class="reference internal" href="Milestone.html#PyGithub.Blocking.Milestone.Milestone.number" title="PyGithub.Blocking.Milestone.Milestone.number"><tt class="xref py py-attr docutils literal"><span class="pre">number</span></tt></a>) or <tt class="xref py py-class docutils literal"><span class="pre">Reset</span></tt></li>
+<li><strong>labels</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">list</span></tt> of <a class="reference internal" href="Label.html#PyGithub.Blocking.Label.Label" title="PyGithub.Blocking.Label.Label"><tt class="xref py py-class docutils literal"><span class="pre">Label</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Label.html#PyGithub.Blocking.Label.Label.name" title="PyGithub.Blocking.Label.Label.name"><tt class="xref py py-attr docutils literal"><span class="pre">name</span></tt></a>)</li>
 </ul>
 </td>
 </tr>
@@ -520,7 +534,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>label</strong> &#8211; mandatory <a class="reference internal" href="Label.html#PyGithub.Blocking.Label.Label" title="PyGithub.Blocking.Label.Label"><tt class="xref py py-class docutils literal"><span class="pre">Label</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Label.html#PyGithub.Blocking.Label.Label.name" title="PyGithub.Blocking.Label.Label.name"><tt class="xref py py-attr docutils literal"><span class="pre">Label.name</span></tt></a>)</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>label</strong> &#8211; mandatory <a class="reference internal" href="Label.html#PyGithub.Blocking.Label.Label" title="PyGithub.Blocking.Label.Label"><tt class="xref py py-class docutils literal"><span class="pre">Label</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Label.html#PyGithub.Blocking.Label.Label.name" title="PyGithub.Blocking.Label.Label.name"><tt class="xref py py-attr docutils literal"><span class="pre">name</span></tt></a>)</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
 </tr>
@@ -537,7 +551,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>label</strong> &#8211; mandatory <a class="reference internal" href="Label.html#PyGithub.Blocking.Label.Label" title="PyGithub.Blocking.Label.Label"><tt class="xref py py-class docutils literal"><span class="pre">Label</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Label.html#PyGithub.Blocking.Label.Label.name" title="PyGithub.Blocking.Label.Label.name"><tt class="xref py py-attr docutils literal"><span class="pre">Label.name</span></tt></a>)</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>label</strong> &#8211; mandatory <a class="reference internal" href="Label.html#PyGithub.Blocking.Label.Label" title="PyGithub.Blocking.Label.Label"><tt class="xref py py-class docutils literal"><span class="pre">Label</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Label.html#PyGithub.Blocking.Label.Label.name" title="PyGithub.Blocking.Label.Label.name"><tt class="xref py py-attr docutils literal"><span class="pre">name</span></tt></a>)</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
 </tr>
@@ -574,8 +588,8 @@ Returns True if the object was updated.</p>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="Github.html"
-                        title="previous chapter">Github</a></p>
+  <p class="topless"><a href="Hook.html"
+                        title="previous chapter">Hook</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="IssueComment.html"
                         title="next chapter">IssueComment</a></p>
@@ -614,7 +628,7 @@ Returns True if the object was updated.</p>
           <a href="IssueComment.html" title="IssueComment"
              >next</a> |</li>
         <li class="right" >
-          <a href="Github.html" title="Github"
+          <a href="Hook.html" title="Hook"
              >previous</a> |</li>
         <li><a href="../../index.html">PyGithub 2.0.0-alpha.4 documentation</a> &raquo;</li>
           <li><a href="../../reference.html" >Reference documentation</a> &raquo;</li>

@@ -61,11 +61,12 @@
 <dl class="class">
 <dt id="PyGithub.Blocking.File.File">
 <em class="property">class </em><tt class="descclassname">PyGithub.Blocking.File.</tt><tt class="descname">File</tt><a class="headerlink" href="#PyGithub.Blocking.File.File" title="Permalink to this definition">¶</a></dt>
-<dd><p>Base class: <a class="reference internal" href="../bases.html#PyGithub.Blocking._base_github_object.UpdatableGithubObject" title="PyGithub.Blocking._base_github_object.UpdatableGithubObject"><tt class="xref py py-class docutils literal"><span class="pre">UpdatableGithubObject</span></tt></a></p>
+<dd><p>Base class: <tt class="xref py py-class docutils literal"><span class="pre">UpdatableGithubObject</span></tt></p>
 <p>Derived classes: none.</p>
 <dl class="docutils">
 <dt>Methods and attributes returning instances of this class:</dt>
 <dd><ul class="first last simple">
+<li><a class="reference internal" href="Github.html#PyGithub.Blocking.Github.Github.search_code" title="PyGithub.Blocking.Github.Github.search_code"><tt class="xref py py-meth docutils literal"><span class="pre">Github.search_code()</span></tt></a></li>
 <li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.ContentCommit.content" title="PyGithub.Blocking.Repository.Repository.ContentCommit.content"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.ContentCommit.content</span></tt></a></li>
 <li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.get_contents" title="PyGithub.Blocking.Repository.Repository.get_contents"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_contents()</span></tt></a></li>
 <li><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.get_readme" title="PyGithub.Blocking.Repository.Repository.get_readme"><tt class="xref py py-meth docutils literal"><span class="pre">Repository.get_readme()</span></tt></a></li>
@@ -152,6 +153,19 @@
 </dd></dl>
 
 <dl class="attribute">
+<dt id="PyGithub.Blocking.File.File.repository">
+<tt class="descname">repository</tt><a class="headerlink" href="#PyGithub.Blocking.File.File.repository" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository" title="PyGithub.Blocking.Repository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">Repository</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
 <dt id="PyGithub.Blocking.File.File.sha">
 <tt class="descname">sha</tt><a class="headerlink" href="#PyGithub.Blocking.File.File.sha" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
@@ -214,7 +228,7 @@
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>message</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
-<li><strong>branch</strong> &#8211; optional <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.Branch" title="PyGithub.Blocking.Repository.Repository.Branch"><tt class="xref py py-class docutils literal"><span class="pre">Repository.Branch</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.Branch.name" title="PyGithub.Blocking.Repository.Repository.Branch.name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.Branch.name</span></tt></a>)</li>
+<li><strong>branch</strong> &#8211; optional <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.Branch" title="PyGithub.Blocking.Repository.Repository.Branch"><tt class="xref py py-class docutils literal"><span class="pre">Branch</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.Branch.name" title="PyGithub.Blocking.Repository.Repository.Branch.name"><tt class="xref py py-attr docutils literal"><span class="pre">name</span></tt></a>)</li>
 <li><strong>author</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">GitAuthor</span></tt></li>
 <li><strong>committer</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">GitAuthor</span></tt></li>
 </ul>
@@ -245,7 +259,7 @@
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>message</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
 <li><strong>content</strong> &#8211; mandatory <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt></li>
-<li><strong>branch</strong> &#8211; optional <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.Branch" title="PyGithub.Blocking.Repository.Repository.Branch"><tt class="xref py py-class docutils literal"><span class="pre">Repository.Branch</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.Branch.name" title="PyGithub.Blocking.Repository.Repository.Branch.name"><tt class="xref py py-attr docutils literal"><span class="pre">Repository.Branch.name</span></tt></a>)</li>
+<li><strong>branch</strong> &#8211; optional <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.Branch" title="PyGithub.Blocking.Repository.Repository.Branch"><tt class="xref py py-class docutils literal"><span class="pre">Branch</span></tt></a> or <tt class="xref py py-class docutils literal"><span class="pre">string</span></tt> (its <a class="reference internal" href="Repository.html#PyGithub.Blocking.Repository.Repository.Branch.name" title="PyGithub.Blocking.Repository.Repository.Branch.name"><tt class="xref py py-attr docutils literal"><span class="pre">name</span></tt></a>)</li>
 <li><strong>author</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">GitAuthor</span></tt></li>
 <li><strong>committer</strong> &#8211; optional <tt class="xref py py-class docutils literal"><span class="pre">GitAuthor</span></tt></li>
 </ul>
