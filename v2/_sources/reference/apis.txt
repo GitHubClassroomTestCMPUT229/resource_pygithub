@@ -1648,7 +1648,7 @@ GET /repositories
 (`Reference documentation of Github API v3 <http://developer.github.com/v3/repos#list-all-public-repositories>`__)
 
 Implemented in PyGithub by:
-  * :meth:`.Github.get_repos`
+  * :meth:`.Github.get_repositories`
 
 GET /repositories/:id
 ---------------------
