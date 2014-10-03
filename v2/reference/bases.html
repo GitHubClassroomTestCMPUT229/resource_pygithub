@@ -83,6 +83,12 @@
 </dd></dl>
 
 <dl class="method">
+<dt id="PyGithub.Blocking._builder.Builder.Otp">
+<tt class="descname">Otp</tt><big>(</big><em>login</em>, <em>password</em>, <em>otp</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking._builder.Builder.Otp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use <a class="reference external" href="https://developer.github.com/v3/auth/#working-with-two-factor-authentication">two-factor authentication</a>.</p>
+</dd></dl>
+
+<dl class="method">
 <dt id="PyGithub.Blocking._builder.Builder.OAuth">
 <tt class="descname">OAuth</tt><big>(</big><em>token</em><big>)</big><a class="headerlink" href="#PyGithub.Blocking._builder.Builder.OAuth" title="Permalink to this definition">¶</a></dt>
 <dd><p>Use <a class="reference external" href="http://developer.github.com/v3/oauth/">OAuth authentication</a>.</p>
@@ -252,6 +258,12 @@ or duplicated in concrete subclasses.</p>
 </dd></dl>
 
 <dl class="exception">
+<dt id="PyGithub.Blocking._exceptions.OtpRequiredException">
+<em class="property">exception </em><tt class="descclassname">PyGithub.Blocking._exceptions.</tt><tt class="descname">OtpRequiredException</tt><a class="headerlink" href="#PyGithub.Blocking._exceptions.OtpRequiredException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raised by PyGithub when GitHub API v3 returns a 401 HTTP status code and x-github-otp header.</p>
+</dd></dl>
+
+<dl class="exception">
 <dt id="PyGithub.Blocking._exceptions.ForbiddenException">
 <em class="property">exception </em><tt class="descclassname">PyGithub.Blocking._exceptions.</tt><tt class="descname">ForbiddenException</tt><a class="headerlink" href="#PyGithub.Blocking._exceptions.ForbiddenException" title="Permalink to this definition">¶</a></dt>
 <dd><p>Base class for exceptions raised by PyGithub when GitHub API v3 returns a 403 HTTP status code.</p>
@@ -361,7 +373,7 @@ or duplicated in concrete subclasses.</p>
     </div>
     <div class="footer">
         &copy; Copyright 2013-2014, Vincent Jacques.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
     </div>
   </body>
 </html>
