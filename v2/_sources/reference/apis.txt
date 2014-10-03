@@ -5,8 +5,8 @@
 From Github API v3 to PyGithub
 ==============================
 
-Here are the 286 end points I'm aware of, and if/where they are implemented in PyGithub.
-55 end points are not yet implemented, and I don't plan to implement 13 end points for reasons described below.
+Here are the 290 end points I'm aware of, and if/where they are implemented in PyGithub.
+58 end points are not yet implemented, and I don't plan to implement 13 end points for reasons described below.
 If something is not listed here, please `open an issue <http://github.com/jacquev6/PyGithub/issues>`__ with a link to the corresponding documentation of Github API v3.
 
 GET /api/last-message.json
@@ -1650,6 +1650,14 @@ GET /repositories
 Implemented in PyGithub by:
   * :meth:`.Github.get_repos`
 
+GET /repositories/:id
+---------------------
+
+(`Reference documentation of Github API v3 <http://developer.github.com/v3/repos#get>`__)
+
+Implemented in PyGithub by:
+  * :meth:`.Github.get_repository`
+
 GET /search/code
 ----------------
 
@@ -2022,6 +2030,27 @@ GET /user/keys/:id
 
 Implemented in PyGithub by:
   * :meth:`.AuthenticatedUser.get_key`
+
+GET /user/memberships/orgs
+--------------------------
+
+(`Reference documentation of Github API v3 <http://developer.github.com/v3/orgs/members#list-your-organization-memberships>`__)
+
+Not yet implemented in PyGithub.
+
+GET /user/memberships/orgs/:org
+-------------------------------
+
+(`Reference documentation of Github API v3 <http://developer.github.com/v3/orgs/members#get-your-organization-membership>`__)
+
+Not yet implemented in PyGithub.
+
+PATCH /user/memberships/orgs/:org
+---------------------------------
+
+(`Reference documentation of Github API v3 <http://developer.github.com/v3/orgs/members#edit-your-organization-membership>`__)
+
+Not yet implemented in PyGithub.
 
 GET /user/orgs
 --------------

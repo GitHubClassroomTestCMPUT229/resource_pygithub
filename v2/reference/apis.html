@@ -53,8 +53,8 @@
             
   <div class="section" id="from-github-api-v3-to-pygithub">
 <h1>From Github API v3 to PyGithub<a class="headerlink" href="#from-github-api-v3-to-pygithub" title="Permalink to this headline">¶</a></h1>
-<p>Here are the 286 end points I&#8217;m aware of, and if/where they are implemented in PyGithub.
-55 end points are not yet implemented, and I don&#8217;t plan to implement 13 end points for reasons described below.
+<p>Here are the 290 end points I&#8217;m aware of, and if/where they are implemented in PyGithub.
+58 end points are not yet implemented, and I don&#8217;t plan to implement 13 end points for reasons described below.
 If something is not listed here, please <a class="reference external" href="http://github.com/jacquev6/PyGithub/issues">open an issue</a> with a link to the corresponding documentation of Github API v3.</p>
 <div class="section" id="get-api-last-message-json">
 <h2>GET /api/last-message.json<a class="headerlink" href="#get-api-last-message-json" title="Permalink to this headline">¶</a></h2>
@@ -2119,6 +2119,17 @@ If something is not listed here, please <a class="reference external" href="http
 </dd>
 </dl>
 </div>
+<div class="section" id="get-repositories-id">
+<h2>GET /repositories/:id<a class="headerlink" href="#get-repositories-id" title="Permalink to this headline">¶</a></h2>
+<p>(<a class="reference external" href="http://developer.github.com/v3/repos#get">Reference documentation of Github API v3</a>)</p>
+<dl class="docutils">
+<dt>Implemented in PyGithub by:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="classes/Github.html#PyGithub.Blocking.Github.Github.get_repository" title="PyGithub.Blocking.Github.Github.get_repository"><tt class="xref py py-meth docutils literal"><span class="pre">Github.get_repository()</span></tt></a></li>
+</ul>
+</dd>
+</dl>
+</div>
 <div class="section" id="get-search-code">
 <h2>GET /search/code<a class="headerlink" href="#get-search-code" title="Permalink to this headline">¶</a></h2>
 <p>(<a class="reference external" href="http://developer.github.com/v3/search#search-code">Reference documentation of Github API v3</a>)</p>
@@ -2543,6 +2554,21 @@ If something is not listed here, please <a class="reference external" href="http
 </ul>
 </dd>
 </dl>
+</div>
+<div class="section" id="get-user-memberships-orgs">
+<h2>GET /user/memberships/orgs<a class="headerlink" href="#get-user-memberships-orgs" title="Permalink to this headline">¶</a></h2>
+<p>(<a class="reference external" href="http://developer.github.com/v3/orgs/members#list-your-organization-memberships">Reference documentation of Github API v3</a>)</p>
+<p>Not yet implemented in PyGithub.</p>
+</div>
+<div class="section" id="get-user-memberships-orgs-org">
+<h2>GET /user/memberships/orgs/:org<a class="headerlink" href="#get-user-memberships-orgs-org" title="Permalink to this headline">¶</a></h2>
+<p>(<a class="reference external" href="http://developer.github.com/v3/orgs/members#get-your-organization-membership">Reference documentation of Github API v3</a>)</p>
+<p>Not yet implemented in PyGithub.</p>
+</div>
+<div class="section" id="patch-user-memberships-orgs-org">
+<h2>PATCH /user/memberships/orgs/:org<a class="headerlink" href="#patch-user-memberships-orgs-org" title="Permalink to this headline">¶</a></h2>
+<p>(<a class="reference external" href="http://developer.github.com/v3/orgs/members#edit-your-organization-membership">Reference documentation of Github API v3</a>)</p>
+<p>Not yet implemented in PyGithub.</p>
 </div>
 <div class="section" id="get-user-orgs">
 <h2>GET /user/orgs<a class="headerlink" href="#get-user-orgs" title="Permalink to this headline">¶</a></h2>
@@ -3027,6 +3053,7 @@ If something is not listed here, please <a class="reference external" href="http
 <li><a class="reference internal" href="#get-repos-owner-repo-tags">GET /repos/:owner/:repo/tags</a></li>
 <li><a class="reference internal" href="#get-repos-owner-repo-teams">GET /repos/:owner/:repo/teams</a></li>
 <li><a class="reference internal" href="#get-repositories">GET /repositories</a></li>
+<li><a class="reference internal" href="#get-repositories-id">GET /repositories/:id</a></li>
 <li><a class="reference internal" href="#get-search-code">GET /search/code</a></li>
 <li><a class="reference internal" href="#get-search-issues">GET /search/issues</a></li>
 <li><a class="reference internal" href="#get-search-repositories">GET /search/repositories</a></li>
@@ -3076,6 +3103,9 @@ If something is not listed here, please <a class="reference external" href="http
 <li><a class="reference internal" href="#post-user-keys">POST /user/keys</a></li>
 <li><a class="reference internal" href="#delete-user-keys-id">DELETE /user/keys/:id</a></li>
 <li><a class="reference internal" href="#get-user-keys-id">GET /user/keys/:id</a></li>
+<li><a class="reference internal" href="#get-user-memberships-orgs">GET /user/memberships/orgs</a></li>
+<li><a class="reference internal" href="#get-user-memberships-orgs-org">GET /user/memberships/orgs/:org</a></li>
+<li><a class="reference internal" href="#patch-user-memberships-orgs-org">PATCH /user/memberships/orgs/:org</a></li>
 <li><a class="reference internal" href="#get-user-orgs">GET /user/orgs</a></li>
 <li><a class="reference internal" href="#get-user-repos">GET /user/repos</a></li>
 <li><a class="reference internal" href="#post-user-repos">POST /user/repos</a></li>
